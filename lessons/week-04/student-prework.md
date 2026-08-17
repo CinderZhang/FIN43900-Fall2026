@@ -13,7 +13,9 @@ and predicting one reason a precedent-transaction multiple may exceed a trading 
 assessed.
 Use the linked source directly; do not copy its slides/transcript into an AI system.
 
-**Before Thursday** (10–15 minutes): reread the deal-evidence sections of the real-deal source
-packet and bring your Week 3 DCF range next to your Lab 07 implied comps range. Thursday opens
+**Before Thursday** (10–15 minutes): rewatch the multiples/sum-of-the-parts segment of the
+instructor's [three-lens valuation video](https://youtu.be/LlmBzbQbNwQ) from Week 2, reread
+the deal-evidence sections of the real-deal source packet, and bring your Week 3 DCF range
+next to your Lab 07 implied comps range. Thursday opens
 with a short guided launch, then the graded work is reconciling those two ranges against the
 deal evidence for your own target.
