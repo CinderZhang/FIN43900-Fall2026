@@ -12,3 +12,8 @@ and predicting one reason a precedent-transaction multiple may exceed a trading 
 30–35 minutes total; do not ask AI for peers until the policy is frozen. No video-specific detail is
 assessed.
 Use the linked source directly; do not copy its slides/transcript into an AI system.
+
+**Before Thursday** (10–15 minutes): reread the deal-evidence sections of the real-deal source
+packet and bring your Week 3 DCF range next to your Lab 07 implied comps range. Thursday opens
+with a short guided launch, then the graded work is reconciling those two ranges against the
+deal evidence for your own target.

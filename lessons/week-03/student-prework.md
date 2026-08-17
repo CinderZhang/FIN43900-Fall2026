@@ -27,7 +27,9 @@ training-case convention.
    Answer: **Which stable-growth assumption is incompatible with the rest of the model, and
    what direction should value move when it is repaired?**
 5. Reread the worked example's Step 6 and bring your written WACC-change prediction — Lab 06
-   grades the predict-before-run habit it teaches.
+   grades the predict-before-run habit it teaches. Bring your target's reconciled input table
+   from Lab 05; Thursday opens with a short guided launch, then the graded work runs on your
+   own company.
 
 If either media path fails, use the corresponding FCFF or terminal-value/sensitivity reference
 in the student handout and the worked example; no video-specific detail is assessed. Run the

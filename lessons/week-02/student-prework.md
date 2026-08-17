@@ -18,3 +18,9 @@ needs for the Edition A checkpoint. Budget 30–35 minutes total, including the 
 do not begin valuation-specific AI work before the first successful Edition A receipt. Use the shared
 **AI Boundary Card — Use This All Semester** for ordinary tools, integrated AI, the exact end event, and the honest
 recovery route after accidental use.
+
+**Before Thursday** (15–20 minutes): bring your target's current primary filing reference and
+three to five candidate model inputs, each with its source and as-of date, transferred into the
+evidence-ledger format. Thursday's lab opens with a short guided launch on the training case,
+then your real-company work uses these rows — arriving without them means spending lab time on
+filing hunting instead of graded judgment work.
