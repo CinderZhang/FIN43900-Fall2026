@@ -1,0 +1,11 @@
+{
+  "decision_user": "",
+  "decision": "",
+  "objective": "",
+  "horizon_years": null,
+  "benchmark": "",
+  "risk_measure": "",
+  "constraints": [],
+  "validation_tests": [],
+  "unresolved_ambiguity": ""
+}

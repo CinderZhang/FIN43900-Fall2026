@@ -1,0 +1,15 @@
+PROJECT:
+STUDENT:
+VIDEO: 1 Research Evolution | 2 Codebase Walkthrough | 3 Committee Presentation
+STABLE VIDEO ID/URL:
+TITLE:
+DURATION:
+REPOSITORY COMMIT/FROZEN VERSION:
+
+[00:00] Speaker: Corrected transcript begins.
+
+Use timestamps at each required evidence moment. Platform-generated captions or automated
+transcription may be the starting point. Correct finance terms, names, tickers, speaker
+attribution, and material numbers. Harmless filler-word perfection is not required.
+
+END OF CORRECTED TRANSCRIPT

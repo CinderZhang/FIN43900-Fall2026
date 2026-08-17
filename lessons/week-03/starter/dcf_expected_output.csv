@@ -1,0 +1,13 @@
+output,expected_value,unit,tolerance
+fcff_year_1,108.000000,USD millions,0.01
+fcff_year_2,114.480000,USD millions,0.01
+fcff_year_3,120.204000,USD millions,0.01
+fcff_year_4,125.012160,USD millions,0.01
+fcff_year_5,128.762525,USD millions,0.01
+pv_explicit_fcff,448.440817,USD millions,0.01
+terminal_value_year_5,1894.648579,USD millions,0.01
+pv_terminal_value,1176.427703,USD millions,0.01
+enterprise_value,1624.868520,USD millions,0.01
+common_equity_value,1374.868520,USD millions,0.01
+value_per_diluted_share,27.497370,USD per share,0.01
+terminal_value_share,0.724014,decimal,0.0002

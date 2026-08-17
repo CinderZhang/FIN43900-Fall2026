@@ -1,0 +1,5 @@
+scenario,ebitda,depreciation_amortization,interest_expense,total_debt,cash
+Base,150,30,30,600,60
+Rate shock,150,30,45,600,55
+Demand,100,30,30,600,35
+Combined,75,30,45,630,10

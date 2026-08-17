@@ -1,0 +1,12 @@
+metric,value,unit
+ebit,150,USD millions
+tax_rate,0.25,decimal
+depreciation_and_amortization,40,USD millions
+capital_expenditures,60,USD millions
+increase_in_operating_nwc,15,USD millions
+enterprise_value,1000,USD millions
+nonoperating_cash,100,USD millions
+debt,250,USD millions
+noncontrolling_interest,20,USD millions
+unfunded_pension,10,USD millions
+diluted_shares,100,millions of shares

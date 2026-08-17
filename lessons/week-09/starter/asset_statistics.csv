@@ -1,0 +1,5 @@
+asset,expected_return,volatility
+GovBond,0.040,0.060
+CorpBond,0.055,0.090
+USEquity,0.085,0.180
+IntlEquity,0.080,0.200

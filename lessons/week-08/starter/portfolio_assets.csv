@@ -1,0 +1,6 @@
+asset,annual_return,annual_volatility,liquidity_days,sector
+GovShort,0.035,0.025,1,Government
+GovLong,0.045,0.110,1,Government
+CorpIG,0.052,0.085,2,Credit
+EquityUS,0.085,0.180,1,Equity
+EquityIntl,0.080,0.195,2,Equity

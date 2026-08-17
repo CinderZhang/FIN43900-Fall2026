@@ -1,0 +1,5 @@
+asset,GovBond,CorpBond,USEquity,IntlEquity
+GovBond,1.00,0.35,-0.10,-0.05
+CorpBond,0.35,1.00,0.25,0.20
+USEquity,-0.10,0.25,1.00,0.75
+IntlEquity,-0.05,0.20,0.75,1.00

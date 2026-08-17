@@ -1,0 +1,8 @@
+# Generated distribution copy of ../../environment/requirements-project.txt.
+# The project-package validator fails if these supported ranges drift.
+numpy>=1.26,<3
+pandas>=2.2,<3
+matplotlib>=3.8,<4
+scipy>=1.13,<2
+yfinance>=0.2.54,<2
+streamlit>=1.40,<2

@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research-Evolution.pdf,yes,,,,,,,
+Repository,yes,,,,,,,
+Visible executed output,yes,,,,,,,
+Decision memo or deck,yes,,,,,,,
+Validation-and-AI-Use.pdf,yes,,,,,,,
+Video 1,yes,,,,,,,
+Transcript Video 1,yes,,,,,,,
+Video 2,yes,,,,,,,
+Transcript Video 2,yes,,,,,,,
+Video 3,yes,,,,,,,
+Transcript Video 3,yes,,,,,,,
+Optional deployed output,no,,,,,,,

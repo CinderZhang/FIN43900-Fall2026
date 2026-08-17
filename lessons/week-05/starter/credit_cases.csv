@@ -1,0 +1,7 @@
+borrower,ebitda,depreciation_amortization,interest_expense,total_debt,current_assets,current_liabilities,cfo,capital_expenditures,adverse_outcome_next_12m
+A,150,30,24,600,250,200,100,50,0
+B,80,20,40,640,150,200,50,40,1
+C,200,50,20,400,300,150,180,80,0
+D,120,20,20,600,200,180,100,90,1
+E,100,40,15,350,100,150,90,30,0
+F,-10,20,10,100,80,70,-5,10,1
