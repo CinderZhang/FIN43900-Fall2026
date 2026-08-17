@@ -68,7 +68,9 @@ Use the most authoritative evidence available for the claim:
 Two sources can share a label and measure different objects. Do not average a discrepancy
 before explaining it.
 
-## Evidence ledger fields
+## This week's working steps
+
+### Evidence ledger fields
 
 | Field | Required content |
 |---|---|
@@ -81,7 +83,34 @@ before explaining it.
 | independent check | second calculation, source, or reconciliation |
 | uncertainty/failure mode | what could make the row wrong |
 
-## Edition A — AI-off valuation baseline
+### AI architecture comparison
+
+After Edition A is submitted, give Codex and Gemini the same requirements. Ask each for a
+model architecture and evidence schema—not a valuation conclusion.
+
+| Material suggestion | Codex | Gemini | Accept/modify/reject | Finance reason/evidence |
+|---|---|---|---|---|
+| valuation object |  |  |  |  |
+| FCFF construction |  |  |  |  |
+| normalization |  |  |  |  |
+| enterprise-equity bridge |  |  |  |  |
+| validation tests |  |  |  |  |
+
+Agreement is not validation. Arbitrate with the filing, definitions, finance logic, and known
+answers.
+
+### Readiness statement
+
+End the week with three sentences:
+
+1. **Ready:** the evidence/model element safe to carry into Week 3.
+2. **Unsafe:** the unresolved item that could contaminate value.
+3. **Next test:** the smallest check that can resolve it.
+
+## Rules and receipts — Edition A (AI-off valuation baseline)
+
+*This section is procedure, not teaching. Read it once, follow it exactly; it protects the
+evidence that the judgment in Project 1 is yours.*
 
 Preserve:
 
@@ -100,28 +129,5 @@ addendum while the original remains unchanged.
 
 Submit Edition A to the **separate ungraded Project 1 Edition A assignment**. Record its first
 successful receipt/attempt identifier in Lab 03. Do not attach a second copy to the droppable
-lab checkout or treat the Lab 03 score as the baseline record.
-
-## AI architecture comparison
-
-After Edition A is submitted, give Codex and Gemini the same requirements. Ask each for a
-model architecture and evidence schema—not a valuation conclusion.
-
-| Material suggestion | Codex | Gemini | Accept/modify/reject | Finance reason/evidence |
-|---|---|---|---|---|
-| valuation object |  |  |  |  |
-| FCFF construction |  |  |  |  |
-| normalization |  |  |  |  |
-| enterprise-equity bridge |  |  |  |  |
-| validation tests |  |  |  |  |
-
-Agreement is not validation. Arbitrate with the filing, definitions, finance logic, and known
-answers.
-
-## Readiness statement
-
-End the week with three sentences:
-
-1. **Ready:** the evidence/model element safe to carry into Week 3.
-2. **Unsafe:** the unresolved item that could contaminate value.
-3. **Next test:** the smallest check that can resolve it.
+lab checkout or treat the Lab 03 score as the baseline record. The AI architecture comparison
+above begins only after Edition A is submitted.

@@ -38,7 +38,9 @@ you have seen it.
 
 `Per-share value = Equity value / diluted common shares`
 
-## Validation ladder
+## This week's working steps
+
+### Validation ladder
 
 1. **Known answer:** reproduce the synthetic case before using a real company.
 2. **Boundary:** reject `g >= WACC`, missing/negative shares, mixed units, or a zero/negative
@@ -50,7 +52,7 @@ you have seen it.
 6. **Changed input:** show the effect of one economically plausible operating change.
 7. **AI risk:** independently verify one AI-proposed assumption, formula, or source.
 
-## Scenario design
+### Scenario design
 
 A scenario is a coherent causal story, not three arbitrary growth rates.
 
@@ -66,7 +68,7 @@ A scenario is a coherent causal story, not three arbitrary growth rates.
 Name dependencies. Higher growth may require higher reinvestment; higher risk may change both
 cash flows and discount rate. Avoid combining mutually inconsistent “best” assumptions.
 
-## Reverse DCF
+### Reverse DCF
 
 Reverse DCF begins with an observed market price and solves for one explicit assumption that
 makes model value equal market value while other assumptions remain stated. It identifies an
@@ -80,7 +82,7 @@ Record:
 - economic interpretation; and
 - evidence that would make the implied expectation plausible or implausible.
 
-## Decision language
+### Decision language
 
 > My supported valuation range is **[low–high]** per diluted share versus a market price of
 > **[price] as of [time/date/source]**. The conclusion is most sensitive to **[driver]**.
@@ -89,4 +91,8 @@ Record:
 > **[monitorable trigger]**. Terminal value represents **[share]** of enterprise value, so
 > **[limitation]** remains material.
 
-Do not use the instructor demonstration company, Asbury Automotive Group (`ABG`).
+## Rules for this week
+
+- Do not use the instructor demonstration company, Asbury Automotive Group (`ABG`).
+- The training-case convention at the top of this handout is the graded convention; do not
+  switch discounting conventions silently mid-model.

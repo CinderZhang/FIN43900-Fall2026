@@ -133,6 +133,21 @@ Year-1 numbers, then implement the engine that reproduces every figure on this p
 tolerance — and only then point it at your own target company, where the inputs stop being
 given and start being defended.
 
+## Reasonableness bands — a desk reference
+
+Adapted from the course's prior-term materials. These are *smell tests*, not rules: a value
+outside a band demands a written justification, not automatic rejection.
+
+| Quantity | Ordinary band | Outside it, ask |
+|---|---|---|
+| Terminal growth g | ≤ 2–3% (long-run nominal GDP; FRED series `A191RL1Q225SBEA` for the US history) | What lets this company outgrow the economy forever? |
+| TV share of EV | 50–80% | Above 80%: is the explicit window too short? Above 90%: something is likely wrong |
+| WACC | ~8–12% for typical operating companies | Below 6% or above 15%: re-check every input; is cost of equity > cost of debt? |
+| Revenue growth path | fades toward industry/economy | Does the growth story match the reinvestment the model shows? |
+
+Our training case sits inside every band (g = 3%, TV share 72.4%, WACC 10%, fading growth) —
+which is exactly why it makes a clean known answer.
+
 ## Check yourself (answers upside-down style — work first)
 
 1. FCFF₃ from the table's FCFF₂, by hand.

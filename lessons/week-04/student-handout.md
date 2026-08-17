@@ -12,6 +12,10 @@ evidence with a timestamp: what was knowable at announcement, not what hindsight
 and analyst interviews test comps selection logic constantly, precisely because it cannot be
 automated away.
 
+**Before class, work through [The Training-Case Comps, Worked End to
+End](teach-comps-worked-example.md).** It computes every multiple below with digits — Labs 07
+and 08 assume you have seen it.
+
 ## Peer-selection policy
 
 Define before using AI or a database:
