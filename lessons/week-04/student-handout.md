@@ -1,5 +1,17 @@
 # Week 4 Student Handout — Market Evidence Is a Selection Problem
 
+## Why this week matters
+
+When your DCF says $27 and the market says $19, somebody is wrong — and comparables are how
+you find out who, using the prices real investors are paying for similar businesses right now.
+But "similar" is a judgment hiding inside a word: pick flattering peers and multiples will
+bless any conclusion you brought with you. That is why this week's rule is *policy before
+peers* — you commit to selection criteria before you see who passes them, the same discipline
+that separates research from advocacy. It is also the week you learn to read a live deal as
+evidence with a timestamp: what was knowable at announcement, not what hindsight added. Banker
+and analyst interviews test comps selection logic constantly, precisely because it cannot be
+automated away.
+
 ## Peer-selection policy
 
 Define before using AI or a database:

@@ -124,4 +124,4 @@ target. They choose different stress tests. The OpenAI response attacks MSFT's c
 the Google response attacks LIN's missing-data disqualifier. Compare why each system chose that
 test, identify one important test neither performed, decide whether each one-variable change is
 economically defensible, and name what evidence would evaluate it. Then complete the student-authored follow-up
-workflow in `AI Access — No Purchase Required and No-Cost Comparison Route`.
+workflow in `AI Access — Required Subscriptions and the Fallback Routes`.

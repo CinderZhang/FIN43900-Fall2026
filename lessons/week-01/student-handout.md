@@ -1,5 +1,16 @@
 # Week 1 Student Handout — Readiness and Provisional Company Screening
 
+## Why this week matters
+
+Every research career starts with the same unglamorous decision: *which company deserves your
+next hundred hours?* Screening is how professionals ration attention — and it is also where
+AI is most seductive and most dangerous, because a model will happily rank companies on
+definitions nobody checked. This week you set up the toolchain you'll use all semester and
+make your first defended professional judgment: a provisional target you can justify, with a
+named disqualifier that would make you drop it. Employers phone-screen for exactly this —
+"walk me through why you picked the company you analyzed" — and by Thursday you will have a
+real answer.
+
 ## Your role and deliverable
 
 You are an equity-research analyst deciding which public operating company deserves deeper
@@ -57,7 +68,7 @@ For each item, record `READY`, `RECOVERING`, or `UNVERIFIED`, then retain the ev
 | Python imports | version/output block |  |  |
 | market-data retrieval | ticker, returned dates, row count |  |  |
 | chart/output | rendered figure or saved output |  |  |
-| AI Access no-purchase route + Week 1 dual-system packet | plain-text confirmation only |  |  |
+| AI Access required-subscription check + Week 1 dual-system packet | plain-text confirmation only |  |  |
 | Optional accessible free interface or `COURSE-RUN PROBE:` route | plain-text confirmation only |  |  |
 | GitHub repository workflow | repository created and accessible |  |  |
 | unlisted video/transcript workflow | logged-out link/transcript test or processing state |  |  |

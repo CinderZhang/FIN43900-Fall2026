@@ -9,7 +9,7 @@ Follow this numbered path in the same order the Start Here module displays it:
 4. Download **Lab Environment Requirements** and **Project Environment Requirements**, then use
    **Course Environment Quickstart — Get One Evidence-Producing Run**. Use only the one named
    QuantEcon recovery page matching a diagnosed blocker.
-5. Open **AI Access — No Purchase Required and No-Cost Comparison Route**; do not buy a tool. Then
+5. Open **AI Access — Required Subscriptions and the Fallback Routes**; confirm both required subscriptions work. Then
    inspect **Week 1 — Dual-System Output Packet** so the no-account route is real before class.
 6. Complete **Pre-Arrival Checklist**. Keep **AI, Data, and Credential Safety Card** and **Support
    and Communication Map** available throughout the course.

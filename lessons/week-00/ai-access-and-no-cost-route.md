@@ -1,23 +1,33 @@
-# AI Access — No Purchase Required and No-Cost Comparison Route
+# AI Access — Required Subscriptions and the Fallback Routes
 
-You are assessed on finance judgment, evidence, validation, and ownership—not on possession of a
-paid AI account or a capable personal computer. **Do not purchase an AI subscription for this
-course unless Purdue publishes a separate funded-access notice in Brightspace.** Until such a
-notice appears, the no-cost route below governs every graded comparison.
+## Required subscriptions
 
-## Choose the route that works today
+This course requires the two AI subscriptions named in the syllabus: an OpenAI subscription
+with **Codex access** and a Google subscription with **Gemini Pro model access**. The syllabus
+is the authoritative statement of the requirement. Before the first lab, sign in to each
+platform and confirm you can reach those two capabilities; tier names change periodically, and
+the capability — not the tier's current name — is what matters. Anything above the required
+tiers is your own call. The course assigns no textbook; these subscriptions are the course
+materials.
 
-1. **Accessible free account:** use an available free OpenAI or Google AI interface. Never enter
-   private student information, credentials, licensed data, or confidential company information.
-2. **No account, quota, device, or accessible-interface access:** use the published text packet,
-   `Week 1 — Dual-System Output Packet`, for the required two-system comparison. You do not need
-   to disclose why you are using this route.
-3. **Python or device blocker:** use the published Colab/offline starter and record the exact
-   symptom, fallback, owner, and next action. The instructional team will route loaner or campus-
-   lab support privately; do not represent a failed setup as working.
+Never enter private student information, credentials, licensed data, or confidential company
+information into any AI system.
 
-All routes use the same rubric and checkout fields. No criterion awards points for a model name,
-subscription tier, response length, computer ownership, or access mode.
+## Fallback routes — outages, quota limits, accessibility, and device failure
+
+A subscription does not guarantee a working session on a given day. When a platform is down,
+a quota is exhausted mid-lab, an interface is inaccessible to you, or your device fails, use
+the fallback that works today. You do not need to disclose why you are using a fallback route.
+
+1. **Published text packet:** use the published packet (for Week 1,
+   `Week 1 — Dual-System Output Packet`) for the required two-system comparison.
+2. **Python or device blocker:** use the published Colab/offline starter and record the exact
+   symptom, fallback, owner, and next action. The instructional team will route loaner or
+   campus-lab support privately; do not represent a failed setup as working.
+3. **Course-run probe queue:** described below, when neither platform is reachable.
+
+Fallback days use the same rubric and checkout fields as ordinary days. No criterion awards
+points for a model name, response length, or which access route a given day required.
 
 ## Student-authored follow-up probe
 
@@ -37,11 +47,10 @@ information and returns the full response in private Brightspace feedback by **W
 August 26 at 11:59 p.m. ET**. Bring that response to Lab 02. If the response is late, use the
 published packet and mark the result `pending staff return`; you receive no access penalty.
 
-The same rule continues after Week 1. When a later lab names Codex/Gemini or asks for two systems,
-that names the comparison role—not a purchase requirement. Use a **task-specific packet only when
-the current lab publishes one**; the Week 1 screening packet is not evidence for a later task.
-Otherwise use an accessible free interface, or begin the current lab's AI-use field with
-`COURSE-RUN PROBE:`. At the start of the AI-enabled phase, show the private checkout draft to the
+The same rule continues after Week 1. When a later lab names Codex/Gemini or asks for two
+systems, that names the comparison role. Use a **task-specific packet only when the current
+lab publishes one**; the Week 1 screening packet is not evidence for a later task. If your
+session is blocked that day, begin the current lab's AI-use field with `COURSE-RUN PROBE:`. At the start of the AI-enabled phase, show the private checkout draft to the
 instructor, Beckett, or Edward; staff either runs the probe during that phase or returns selectable
 text in private Brightspace feedback before the next dependent session or deadline, whichever is
 earlier. **If the current lab deliverable depends on the output, staff runs or supplies it during
@@ -58,7 +67,7 @@ course-side delay.
 The private feedback promises a response deadline. The student has 48 hours after any staff
 return to append the validation/result. If staff miss the promised deadline, the preserved human
 baseline and exact probe convert automatically to full process credit 48 hours later. A later
-return opens a no-cost optional 48-hour learning/regrade window and cannot lower that credit.
+return opens an optional 48-hour learning/regrade window and cannot lower that credit.
 
 ## What to retain
 

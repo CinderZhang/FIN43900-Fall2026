@@ -5,10 +5,10 @@
 Before Tuesday, complete the Brightspace **Start Here** onboarding module; watch the 31:07
 [published DRIVER video](https://youtu.be/gUepTIp11Og); take the five-minute ungraded practice quiz; and spend about ten minutes
 writing one investor question plus two provisional screening criteria without AI. Bring a
-laptop/charger and Purdue/GitHub sign-ins when available, then open **AI Access — No Purchase
-Required and No-Cost Comparison Route**. Use the published dual-system packet by default; an
-accessible free interface or a formally announced funded Purdue route is optional. Do not buy an
-AI subscription for this course.
+laptop/charger and Purdue/GitHub sign-ins when available, then open **AI Access — Required
+Subscriptions and the Fallback Routes**. Confirm both required subscriptions reach Codex and
+Gemini Pro before the first lab; use the published dual-system packet as the fallback if a
+platform fails on the day.
 Do not pre-complete the live readiness evidence. The **academic Week 1 prework** is **45–55
 minutes**: the 31:07 DRIVER video, five-minute practice quiz, ten-minute human screen, and a short
 transition/access check. Complete the separate **Start Here onboarding** before this work. Allow

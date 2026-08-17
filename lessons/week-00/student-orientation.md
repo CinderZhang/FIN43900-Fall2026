@@ -20,7 +20,7 @@ generative-AI research or coding. **Edition B** is the final, evidence-traceable
 permitted AI assistance, testing, and revision. The two editions show how the analysis changed;
 they are not two separate graded projects.
 
-No paid AI purchase is required. Open **AI Access — No Purchase Required and No-Cost Comparison
+Two AI subscriptions are required; the syllabus names them. Open **AI Access — Required Subscriptions and the Fallback
 Route** in Start Here. If you cannot use an accessible free interface or the current task's
 published packet, put `COURSE-RUN PROBE:` plus your exact question and prediction in the private
 Brightspace response named by the activity; the instructional team runs it without using your

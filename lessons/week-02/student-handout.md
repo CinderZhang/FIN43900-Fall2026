@@ -1,5 +1,16 @@
 # Week 2 Student Handout — Valuation Contract and Evidence Ledger
 
+## Why this week matters
+
+Before anyone trusts your valuation, they check whether they can trust your *numbers* — where
+each one came from, what it means, and what you did to it. That discipline has a desk name:
+data integrity, and it is the first thing a senior analyst audits in a junior's model, because
+it is where models actually fail. This week you set the contract for your Project 1 target —
+what exactly is being valued, in what unit, from which sources — and you capture your own
+before-AI baseline, which is the evidence that the judgment in this project is yours. None of
+this is busywork: it is the difference between a model someone will put money behind and a
+spreadsheet with confident formatting.
+
 ## Start with the object being valued
 
 | Output | Meaning | Common error |
@@ -25,6 +36,24 @@ One common operating formulation is:
 This is an architecture, not permission to copy standardized fields. Verify sign, period,
 currency, units, tax convention, operating/non-operating classification, and whether each input
 is reported, normalized, forecast, or calculated.
+
+**Worked once, with digits** — the Week 2 mini case (`starter/mini_case.csv`), which your
+starter validates:
+
+> FCFF = 150 × (1 − 0.25) + 40 − 60 − 15 = 112.5 + 40 − 60 − 15 = **77.5** ($M)
+
+Read the economics off the arithmetic: the business earned 112.5 after tax on operations,
+non-cash depreciation of 40 comes back, and then real money left the building — 60 reinvested
+in equipment and 15 tied up funding growth in receivables and inventory. FCFF is what remained
+for *all* capital providers. Now the bridge, same case:
+
+> Equity value = 1,000 + 100 − 250 − 20 − 10 = **820** → 820 / 100 diluted shares = **$8.20**
+
+Each subtraction is a claim that stands in line ahead of you: debt (250), the minority owners
+of a consolidated subsidiary (20), the unfunded pension promise (10). The 100 of non-operating
+cash is added because the enterprise value of 1,000 never counted it. Five rows here; on your
+real target every row must carry a source and an as-of date in the evidence ledger below —
+that is the entire point of this week.
 
 ## Source hierarchy
 

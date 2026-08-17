@@ -1,5 +1,19 @@
 # Week 3 Student Handout — DCF as a Range and a Test
 
+## Why this week matters
+
+This is the week you build the artifact the whole first half of the course points at. Every
+buy-side and sell-side shop runs on someone who can construct a DCF, say which two or three
+assumptions the value hinges on, and defend them under questioning — and interviews for those
+seats test exactly that, usually in the first ten minutes. AI can assemble the spreadsheet;
+the seat belongs to the person who can say *why the number is believable and what would change
+it*. By Thursday you will have built, validated, and stress-tested a complete engine and
+pointed it at your own target company.
+
+**Before class, work through [The Training-Case DCF, Worked End to
+End](teach-dcf-worked-example.md).** It walks every number below with digits; the lab assumes
+you have seen it.
+
 ## Training-case convention
 
 - annual FCFF in USD millions;
