@@ -1,6 +1,6 @@
 # Formative Studio — Fixed-Income Committee Decision
 
-This studio creates no grade item after Lab 24.
+This studio creates no grade item after Lab 20.
 
 ## Required sequence
 

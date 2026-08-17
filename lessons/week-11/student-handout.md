@@ -85,5 +85,5 @@ only the displayed result. Tag bull/bear AI claims as `output`, `source`, `assum
 
 State action, permitted pilot size/range if any, economic mechanism, gross/net and capacity
 assumptions, most consequential failure, monitoring metric/frequency/owner, kill rule, and evidence
-required to reopen a failed decision. Lab 20 records the frozen holdout result; Lab 21 records the
+required to reopen a failed decision. Lab 18 records the frozen holdout result; Lab 19 records the
 merit decision. Submit individually, disclose AI use, attest truthfully, and verify the receipt.

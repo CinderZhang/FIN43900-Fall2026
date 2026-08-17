@@ -60,7 +60,7 @@ the cutoff or revision policy once and predict the effect first.
 - unsupported AI claim and disposition;
 - most consequential limitation and missing evidence;
 - monitoring/recheck trigger and reversal condition;
-- Lab 18/19 individual fields, AI disclosure, truth attestation, and receipt verified.
+- Lab 16/19 individual fields, AI disclosure, truth attestation, and receipt verified.
 
 If code or network access fails, the row-level table and plain-language rule provide the
 equivalent evidence. Do not paste licensed, personal, or nonpublic data into an AI system.

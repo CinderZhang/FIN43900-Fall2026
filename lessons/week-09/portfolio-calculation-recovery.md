@@ -3,12 +3,12 @@
 Use this route if Python, NumPy, or a solver is unavailable. It produces the same required finance
 evidence as the code route; it does not waive baselines, constraints, or validation.
 
-Switch during the same Lab 16/17 session, show the paper/accessible-spreadsheet evidence at
+Switch during the same Lab 14/17 session, show the paper/accessible-spreadsheet evidence at
 checkout for visual initials, and keep it. This is an equivalent route to the existing lab, not a
 separate submission, deadline, grade item, or extra point. Calculate and freeze your own numbers
 first. AI may then check them, but is optional: record any disagreement, source verification, and
 which number you kept and why.
-The published Lab 16/17 checkout deadlines and ordinary absence/drop rule still apply; this route
+The published Lab 14/17 checkout deadlines and ordinary absence/drop rule still apply; this route
 is not a makeup.
 
 1. Copy expected return and volatility from `asset_statistics.csv` and the labeled correlations
@@ -42,5 +42,5 @@ periodic and annualized return/volatility for that extension; never mix them.
 
 Use the handout tables for results and limitations. Mark solver-only output `not executed`; do not
 copy a weight vector from AI. A staff-initialed calculation sheet or accessible spreadsheet is
-acceptable evidence for Lab 16. Lab 17 still requires one predicted changed input, actual result,
+acceptable evidence for Lab 14. Lab 15 still requires one predicted changed input, actual result,
 mandate effect, and disposition.

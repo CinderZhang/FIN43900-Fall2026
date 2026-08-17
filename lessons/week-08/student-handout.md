@@ -6,7 +6,7 @@ You are a portfolio analyst converting an ambiguous CIO request into a decision 
 a complete mandate, two AI interpretation dispositions, precommitted validation plan, and one
 question that must be escalated before optimization.
 
-Use only **Week 8 Common CIO Case — Meridian Foundation Reserve** for the Lab 15 comparison. Its
+Use only **Week 8 Common CIO Case — Meridian Foundation Reserve** for the Lab 13 comparison. Its
 dated facts and exact common prompt keep the two sections comparable. The optional Mandate
 Collision challenge is a different transfer case and must not be merged into this record.
 
@@ -46,10 +46,10 @@ and escalate the decision rather than silently choosing one.
 | liquidity/turnover |  |  |  |
 | leverage/shorting/concentration/suitability |  |  |  |
 
-Keep the mandate and AI dispositions for Lab 15 and Project 2 Edition A.
+Keep the mandate and AI dispositions for Lab 13 and Project 2 Edition A.
 
 The Project 2 Edition A checkpoint must be submitted before generative-AI work on that project.
-Lab 15's two-AI interpretation comparison uses the assigned common case and therefore does not
+Lab 13's two-AI interpretation comparison uses the assigned common case and therefore does not
 violate that boundary. Do not give either model the student's own proposed securities, strategy,
 data, or code until the first successful **Project 2 — Investment Management Application —
 Edition A checkpoint** receipt is recorded. Follow the uniform project

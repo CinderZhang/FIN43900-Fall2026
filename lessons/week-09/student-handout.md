@@ -12,7 +12,7 @@ future returns is outside the evidence supplied here.
 The CIO case does not authorize one optimization objective. If that ambiguity remains material,
 record `DEFERRED_NO_ADOPTABLE_CANDIDATE`, name the ambiguity and escalation owner, and construct
 one transparent mechanics-only feasible allocation under an explicitly labeled provisional
-classroom objective. It practices the model mechanics but cannot support adoption. Lab 16 still
+classroom objective. It practices the model mechanics but cannot support adoption. Lab 14 still
 requires both baselines, mechanical checks, the exact CIO question, and evidence needed to resume.
 
 ## Role and deliverable
@@ -128,7 +128,7 @@ Then close AI and decide a small changed case without it.
 
 ## Submission checklist
 
-Lab 16 requires the mandate, conventions, baselines, candidate, mechanical checks, known answer,
-AI disclosure, and receipt. Lab 17 requires the precommitted stability evidence, cost-aware
+Lab 14 requires the mandate, conventions, baselines, candidate, mechanical checks, known answer,
+AI disclosure, and receipt. Lab 15 requires the precommitted stability evidence, cost-aware
 comparison, committee decision, and transfer explanation. Submit only for yourself. Teammates
 may be named, but their names do not establish your evidence. Artifact links are optional.

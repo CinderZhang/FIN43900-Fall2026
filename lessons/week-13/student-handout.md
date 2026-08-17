@@ -19,7 +19,7 @@ changed-input result. Freeze remaining must-fix actions; do not open new project
 | validation, holdout, costs, capacity, kill rule |  |  |  |
 | Videos 1–3 and corrected transcripts |  |  |  |
 
-Lab 24 records current evidence and gaps; it does not extend the project deadline or create a
+Lab 20 records current evidence and gaps; it does not extend the project deadline or create a
 makeup. If dropped, the project evidence remains required.
 
 ## Thursday — role and finance reference

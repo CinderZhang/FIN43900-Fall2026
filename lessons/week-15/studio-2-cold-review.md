@@ -1,6 +1,6 @@
 # Studio 2 — Failure Budget and Cold Review
 
-**Formative:** no grade item after Lab 24.
+**Formative:** no grade item after Lab 20.
 
 ## Required work
 

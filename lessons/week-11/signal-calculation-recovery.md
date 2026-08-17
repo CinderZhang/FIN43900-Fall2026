@@ -3,13 +3,13 @@
 Use this calculator/spreadsheet route if the starter cannot run. It preserves the frozen-rule and
 holdout boundaries; staff release the holdout rows only after the design is recorded.
 
-Switch during the same Lab 20/21 session. Show the frozen design to staff; staff then releases the
+Switch during the same Lab 18/21 session. Show the frozen design to staff; staff then releases the
 sealed holdout rows once. Calculate them once, show the paper/accessible-spreadsheet result for
 visual initials, and keep it. This is an equivalent route to the existing lab, not a separate
 submission, deadline, grade item, or extra point. Calculate and freeze your own numbers first. AI
 may then check them, but is optional: record any disagreement, source verification, and which
 number you kept and why.
-The published Lab 20/21 checkout deadlines and ordinary absence/drop rule still apply; this route
+The published Lab 18/21 checkout deadlines and ordinary absence/drop rule still apply; this route
 is not a makeup.
 
 For each available row:

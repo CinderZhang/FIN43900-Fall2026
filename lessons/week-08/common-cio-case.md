@@ -1,6 +1,6 @@
 # Week 8 Common CIO Case — Meridian Foundation Reserve
 
-This fictional, course-authored case is the only case used for the Lab 15 two-system comparison.
+This fictional, course-authored case is the only case used for the Lab 13 two-system comparison.
 It is course practice, not evidence about your own Project 2. Do not add facts that are not stated.
 
 ## Decision request and dated facts
@@ -51,4 +51,4 @@ resolve the CIO's missing preference. If an interface is unavailable, use the pu
 
 The later **Open-Ended Challenge — Mandate Collision** changes the return, loss, liquidity, and
 government-security facts. It is a separate transfer case. Never merge its facts into this common
-case or treat its AI output as Lab 15 evidence.
+case or treat its AI output as Lab 13 evidence.

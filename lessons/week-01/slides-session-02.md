@@ -1,0 +1,49 @@
+# Session 2 — Numbers That Lie With a Straight Face
+### Week 1 · Thursday · Lab 02: Screen Validation and Research Admission
+
+---
+
+## The lesson of the week (5 min)
+
+Two providers can both report a "PEG ratio" — and differ by **6×**,
+because one uses trailing growth and one uses forward estimates.
+
+**Shared labels can hide different measurements.**
+Today you learn to catch that before it costs money.
+
+---
+
+## Warm-up probes (10 min)
+
+- A stock shows 400 insider "buy" events this quarter. Bullish?
+  → Most insider events are compensation mechanics, not conviction.
+- Your screen ranks a company #1 on "value." Which definition of value?
+- What single fact would disqualify your provisional target?
+
+---
+
+## Validate your admission (30 min)
+
+1. Take your Session-1 target and policy
+2. Trace each screening input: **which provider, which definition, which period**
+3. Reconcile one input against the primary source (filing or authoritative series)
+4. Run the changed-input test your policy names
+5. Decision: **admit for research · replace · conditionally admit**
+
+---
+
+## The oral gate (15 min)
+
+Explain your workflow aloud with the evidence visible.
+Explanation is ownership evidence — silent familiarity hides gaps.
+
+---
+
+## Checkout (10 min)
+
+Lab Date · teammates/learning partners · admission decision + evidence ·
+definition reconciliation · changed-input result · AI access paths ·
+in-person attendance declaration · truth attestation · receipt.
+
+**Weekend:** confirm both required AI subscriptions reach Codex and Gemini Pro.
+Week 2 opens the valuation arc — watch the three-lens video (23 min) first.
