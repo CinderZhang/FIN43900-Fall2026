@@ -1,5 +1,5 @@
 # Session 7 — Comparable Means Defensible
-### Week 4 · Tuesday · Lab 07: Comparable-Company Policy and Implied Range
+**Week 4 · Tuesday · Lab 07: Comparable-Company Policy and Implied Range**
 
 ---
 

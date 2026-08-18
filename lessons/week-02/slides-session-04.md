@@ -1,5 +1,5 @@
 # Session 4 — FCFF and the Bridge, With Real Digits
-### Week 2 · Thursday · Lab 04: Evidence Ledger and Enterprise-to-Equity Bridge
+**Week 2 · Thursday · Lab 04: Evidence Ledger and Enterprise-to-Equity Bridge**
 
 ---
 

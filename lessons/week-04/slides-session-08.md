@@ -1,5 +1,5 @@
 # Session 8 — Three Answers, One Analyst
-### Week 4 · Thursday · Lab 08: Deal Evidence and Valuation Triangulation
+**Week 4 · Thursday · Lab 08: Deal Evidence and Valuation Triangulation**
 
 ---
 

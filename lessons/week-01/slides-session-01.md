@@ -1,5 +1,5 @@
 # Session 1 — DRIVER and Your First Professional Judgment
-### Week 1 · Tuesday · Lab 01: DRIVER Target Selection
+**Week 1 · Tuesday · Lab 01: DRIVER Target Selection**
 
 ---
 

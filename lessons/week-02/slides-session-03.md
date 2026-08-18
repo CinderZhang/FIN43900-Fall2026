@@ -1,5 +1,5 @@
 # Session 3 — The Valuation Contract
-### Week 2 · Tuesday · Lab 03: Project 1 Valuation Edition A
+**Week 2 · Tuesday · Lab 03: Project 1 Valuation Edition A**
 
 ---
 

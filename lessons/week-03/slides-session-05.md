@@ -1,5 +1,5 @@
 # Session 5 — Build the Engine
-### Week 3 · Tuesday · Lab 05: Build and Validate an FCFF DCF
+**Week 3 · Tuesday · Lab 05: Build and Validate an FCFF DCF**
 
 ---
 

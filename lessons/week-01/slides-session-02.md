@@ -1,5 +1,5 @@
 # Session 2 — Numbers That Lie With a Straight Face
-### Week 1 · Thursday · Lab 02: Screen Validation and Research Admission
+**Week 1 · Thursday · Lab 02: Screen Validation and Research Admission**
 
 ---
 

@@ -1,5 +1,5 @@
 # Session 6 — Attack the DCF
-### Week 3 · Thursday · Lab 06: Sensitivity, Reverse DCF, and Conditional Recommendation
+**Week 3 · Thursday · Lab 06: Sensitivity, Reverse DCF, and Conditional Recommendation**
 
 ---
 
