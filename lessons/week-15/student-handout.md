@@ -5,7 +5,7 @@
 You are the lead analyst. Recommend both (1) the current finance/investment action and conditions
 and (2) whether the committee should approve, revise, defer, or reject the system for decision
 use. Leave Week 15 with a complete evidence graph, interface-risk finding, end-to-end test, top-
-three failure budget, cold-run record, consistent seven-part bundle, and board-ready ask.
+three failure budget, cold-run record, consistent submission bundle, and committee ask.
 
 ## Prework
 
@@ -91,7 +91,7 @@ Give a reviewer only the README. Record environment, command, elapsed time, firs
 and visible-output location. Reconcile numbers/as-of dates across output, memo/deck, validation
 record, and all videos. Preserve Edition A and explain supported change or stability in Edition B.
 
-## Board-ready evidence
+## Three-video evidence
 
 - Video 1: research evolution, attribution of change, one tested AI output, and why the conclusion changed or held.
 - Video 2: code/data architecture, finance logic, and highest-risk changed-input result.
@@ -101,12 +101,12 @@ Practice a no-AI answer to one skeptical data, finance, validation, mandate, or 
 question. AI may improve structure only after every accepted edit is tagged and rechecked.
 
 Retain as **formative capstone cold-review evidence**: cold-run log, failure budget, A/B
-reconciliation, and board-ready ask. It creates no separate points but belongs in the final
+reconciliation, and committee ask. It creates no separate points but belongs in the final
 validation evidence.
 
 ## Common submission-integrity checkpoint
 
-Complete this in Week 15 regardless of the later board or recorded-defense mode:
+Complete this in Week 15, before the Week 16 consultation studios:
 
 - repository and visible output open from a logged-out browser or second account;
 - README-only cold run reaches the named visible output;
@@ -117,30 +117,19 @@ Complete this in Week 15 regardless of the later board or recorded-defense mode:
 - no credentials, private prompts/data, student records, or licensed data are exposed; and
 - disposition is `GO`, `GO WITH NAMED LIMITATION`, or `NO-GO/CLAIM WITHDRAWN`.
 
-## Capstone delivery status and fail-safe
+## Capstone delivery — recorded submission and consultation studios
 
-The board operating gate closes **Friday, Nov. 20 at 11:59 PM ET**. If boards were not selected or
-every roster, room, staffing, six-minute schedule, capacity, access, accommodation-equivalence,
-and norming field is not `PASS` then, the already prepared recorded-Video-3 path governs the full
-cohort automatically. This is the common learner-visible rule; it applies even before the detailed
-fallback handout appears. No action is due during that interval: continue preparing the Video 3 and
-frozen capstone bundle already required in either mode, to the unchanged common deadline.
+There is no live board and no scheduled defense. The capstone is delivered as the recorded
+submission bundle defined on the Capstone assignment page: repository, problem statement then
+and now (Editions A/B), three face-on-camera YouTube videos with transcripts enabled, and the
+launch-post draft. The Week 15–16 class meetings are consultation studios — formative working
+sessions where the teaching team pressure-tests your evidence and submission mechanics. Studios
+create no points and no penalties; only the final submitted bundle is graded, to the common
+deadline on the assignment header.
 
-The instructional team must make the verified fallback handout visible by **Saturday, Nov. 21 at
-12:00 PM ET**. If fallback has activated and its handout is still absent then, you remain entitled to the recorded-Video-3 path, have no
-board-attendance obligation, and cannot be penalized. You may report the missing page privately
-through Course Questions, but reporting is not required for that protection. A late post cannot
-revive boards or change the deadline.
-
-The same roster, capacity, room/audio/network, staffing, schedule, access/accommodation, and
-norming conditions must remain valid through the boards. A failure after the Friday cutoff but
-before the first Wave A moves the full cohort to fallback. After Wave A begins, a local failure
-moves the affected section/wave; a course-wide failure moves the full cohort. The team sends both a Brightspace announcement and course email. A delayed
-notice cannot create an attendance, rescheduling, submission, or grade obligation.
-
-Preserve the results in the final validation evidence. In Week 16, every student repeats only the
-credential-free link and Brightspace-receipt confirmation; the full checkpoint is not reassigned.
-That confirmation does not create a new graded requirement or a mode-specific repair opportunity.
+In Week 16, every student repeats only the credential-free link and Brightspace-receipt
+confirmation; the full checkpoint is not reassigned, and that confirmation creates no new
+graded requirement.
 
 ### Equivalent-access route
 

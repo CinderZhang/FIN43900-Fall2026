@@ -170,9 +170,10 @@ student's ownership and defense of the final judgment; it does not repeat the de
 the code walkthrough. AI may assist preparation when disclosed, but the student owns every
 claim, recommendation, and response presented.
 
-All three videos use separate, descriptively titled **Unlisted** YouTube links or an approved
-Purdue-hosted equivalent. They must remain viewable by the instructional team through the
-grade-appeal window. Captions/transcripts are required; students review and correct finance
+All three videos use separate, descriptively titled YouTube links — **Unlisted or Public, the
+student's choice; never Private** — or an approved Purdue-hosted equivalent. Public visibility
+is a personal portfolio decision and is never graded in either direction. Links must remain
+viewable by the instructional team through the grade-appeal window. Captions/transcripts are required; students review and correct finance
 terms, tickers, names, and material numerical errors before submission. Each corrected
 transcript is also submitted as a plain-text file so the grading and appeal record cannot
 change with the hosting platform. Platform-generated captions or an automated transcript may
@@ -201,6 +202,19 @@ self-contained. The manifest records each video's provider, stable video ID or U
 duration; the submitted recording may not be replaced or edited after the deadline. The
 instructional-team GitHub access identity and filename prefix for each project are published on
 the assignment page before the Edition A checkpoint opens.
+
+### Capstone-only extensions
+
+The capstone brief extends this shared architecture without changing it for Projects 1–2:
+
+- **Durations:** capstone videos run longer — Video 1 max 6:00, Video 2 max 10:00, Video 3
+  max 8:00. Projects 1–2 keep the durations above.
+- **Two additional manifest rows** (14 total): the **launch-post draft** (a Substack-ready
+  written product story; the draft is required, publishing it is optional and never graded)
+  and the **AI-component pointer** (the file/function where the required generative-AI
+  component lives, with its validation evidence location).
+- The capstone brief defines the required AI component and its access route; its validation
+  evidence lives in the standing `Validation-and-AI-Use.pdf` record, not a new surface.
 
 ## Project-specific professional role
 

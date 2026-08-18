@@ -24,3 +24,4 @@ bug worth reporting.
 - [Week 11 — Alternative Data & Market Analysis](lessons/week-11/)
 - [Week 12 — Project 2 Studio](lessons/week-12/)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
+- [Week 16 — Capstone Submission & Consultation](lessons/week-16/)
