@@ -3,6 +3,20 @@
 
 ---
 
+## Today's run of show
+
+| When | What we do |
+|---|---|
+| 0–7 | Mission: a model contract another analyst can audit |
+| 7–18 | Worked FCFF + bridge mini case — predict, then look |
+| 18–28 | Source hierarchy + find the poisoned row |
+| 28–45 | Two-AI architecture proposals (ChatGPT architect · Gemini checker) — **start your quiz attempt (45-min clock)** |
+| 45–58 | Your company: evidence ledger + starter |
+| 58–67 | Unit and share-count attack |
+| 67–75 | Committee readiness statement, then **submit — receipt on screen** |
+
+---
+
 ## Launch: the worked mini case (12 min, follow along)
 
 EBIT 150 · tax 25% · D&A 40 · capex 60 · ΔNWC 15

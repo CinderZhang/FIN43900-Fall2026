@@ -3,6 +3,20 @@
 
 ---
 
+## Today's run of show
+
+| When | What we do |
+|---|---|
+| 0–8 | The committee mission and the valuation contract |
+| 8–20 | Filing scavenger: seven reported facts from a real 10-K |
+| 20–28 | Enterprise → equity → per-share bridge drill (known answer) |
+| 28–50 | **Edition A, AI closed** — your before-AI baseline; **start your quiz attempt (45-min clock)** |
+| 50–60 | Silent source audit: label every claim |
+| 60–68 | Partner falsification question |
+| 68–75 | **Two receipts on screen**: Edition A checkpoint + Lab 03 checkout |
+
+---
+
 ## Why data integrity is the first audit (5 min)
 
 Before anyone trusts your valuation, they check your *numbers* —

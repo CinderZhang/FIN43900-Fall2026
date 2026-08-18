@@ -10,6 +10,11 @@ the capability — not the tier's current name — is what matters. Anything abo
 tiers is your own call. The course assigns no textbook; these subscriptions are the course
 materials.
 
+**How the two systems are used:** ChatGPT (with Codex for coding work) is the course's main
+working tool all semester. Gemini is the second opinion and the checker — when a lab asks for
+two systems, you send the same request to both and treat disagreement as information. Neither
+system's answer is ever evidence by itself.
+
 Never enter private student information, credentials, licensed data, or confidential company
 information into any AI system.
 

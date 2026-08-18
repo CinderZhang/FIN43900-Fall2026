@@ -3,6 +3,22 @@
 
 ---
 
+## Today's run of show
+
+| When | What we do |
+|---|---|
+| 0–4 | The frame: GitHub for content, Brightspace for grades |
+| 4–10 | **Meet your desk** — know 2 classmates; they are your learning partners |
+| 10–24 | **Tech gate** — preflight check, partner-verified, TA-confirmed |
+| 24–31 | **Syllabus sprint** — 5-min read, then pair Q&A with AI (ChatGPT main · Gemini checker) |
+| 31–37 | DRIVER retrieval from the prework video |
+| 37–49 | AI off, solo: write your screening policy — **start your quiz attempt (45-min clock)** |
+| 49–57 | AI on, pair-split: ChatGPT vs Gemini on the same policy |
+| 57–68 | Apply · validate · evolve |
+| 68–75 | Reflect, then **submit — receipt on screen before you leave** |
+
+---
+
 ## Why you are here (5 min)
 
 Every research career starts with one unglamorous decision:
