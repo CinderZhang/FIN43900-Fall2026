@@ -23,7 +23,4 @@ bug worth reporting.
 - [Week 10 — Alternative Data & Market Analysis](lessons/week-10/)
 - [Week 11 — Alternative Data & Market Analysis](lessons/week-11/)
 - [Week 12 — Project 2 Studio](lessons/week-12/)
-- [Week 13 — Project 2 Due & Applied Decision Systems](lessons/week-13/)
-- [Week 14 — Applied Financial Decision Systems](lessons/week-14/)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
-- [Week 16 — Capstone Defense & Release](lessons/week-16/)

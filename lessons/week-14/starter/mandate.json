@@ -1,1 +1,0 @@
-{"duration_min":2.5,"duration_max":4.0,"max_issuer_weight":0.4,"max_sector_weight":0.5,"max_abs_spread_scenario_loss":0.03,"min_liquid_weight":0.2,"liquid_max_stale_days":3,"liquid_min_trade_count_20d":10,"no_add_if_stale_days_above":10}
