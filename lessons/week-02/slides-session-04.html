@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 04</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;height:100vh;overflow:auto;padding:6vh 8vw;font-size:1.9vw}.slide.active{display:block}h1{font-size:3.4vw;margin-top:0}h2{font-size:2.8vw;margin-top:0;color:#8a6d00}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:.45em .7em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;margin-left:0;padding-left:1em;color:#444}#pos{position:fixed;bottom:1.2vh;right:1.6vw;font-size:1.2vw;color:#999}@media (max-width:800px){.slide{font-size:4vw;padding:4vh 6vw}h1{font-size:6.5vw}h2{font-size:5.5vw}#pos{font-size:3vw}}</style></head><body><section class="slide active"><h1>Session 4 — FCFF and the Bridge, With Real Digits</h1>
+<p><strong>Week 2 · Thursday · Lab 04: Evidence Ledger and Enterprise-to-Equity Bridge</strong></p>
+</section>
+<section class="slide">
+<h2>Today's run of show</h2>
+<ol>
+<li>Mission: a model contract another analyst can audit</li>
+<li>Worked FCFF + bridge mini case — predict, then look</li>
+<li>Source hierarchy + find the poisoned row</li>
+<li>Two-AI architecture proposals (ChatGPT architect · Gemini checker) — <strong>start your quiz attempt when told</strong></li>
+<li>Your company: evidence ledger + starter</li>
+<li>Unit and share-count attack</li>
+<li>Committee readiness statement, then <strong>submit — receipt on screen</strong></li>
+</ol>
+</section>
+<section class="slide">
+<h2>Launch: the worked mini case (12 min, follow along)</h2>
+<p>EBIT 150 · tax 25% · D&amp;A 40 · capex 60 · ΔNWC 15</p>
+<blockquote>
+<p>FCFF = 150 × 0.75 + 40 − 60 − 15 = <strong>77.5</strong></p>
+</blockquote>
+<p>The business earned 112.5 after tax; non-cash D&amp;A comes back;
+real money left for equipment (60) and working capital (15).</p>
+</section>
+<section class="slide">
+<h2>The bridge, same case (in the launch)</h2>
+<blockquote>
+<p>Equity = EV 1,000 + cash 100 − debt 250 − NCI 20 − pension 10 = <strong>820</strong>
+Per share = 820 / 100 = <strong>$8.20</strong></p>
+</blockquote>
+<p>Every subtraction is a claim standing in line ahead of you.
+On your real company, every row needs a <strong>source and an as-of date</strong>.</p>
+</section>
+<section class="slide">
+<h2>Your company now (40 min)</h2>
+<ul>
+<li>Locate the current primary filing</li>
+<li>Transfer your 3–5 pre-staged inputs into the evidence ledger:
+item · classification (fact / normalization / forecast / output) ·
+value + unit · period · source · rationale · check · failure mode</li>
+<li>Two sources sharing a label may measure different things —
+never average a discrepancy before explaining it</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Source hierarchy (reference)</h2>
+<p>Filed statements &gt; reconciled disclosures &gt; authoritative series &gt;
+provider fields (reconciled) &gt; AI summaries (leads only).</p>
+</section>
+<section class="slide">
+<h2>Checkout (10 min)</h2>
+<p>Lab Date · teammates/learning partners · ledger rows with sources ·
+one reconciled discrepancy · unresolved item · AI access paths ·
+in-person attendance declaration · truth attestation · receipt.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>go(e.clientX>innerWidth/2?i+1:i-1));go(0);</script></body></html>

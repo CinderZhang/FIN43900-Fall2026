@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 05</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;height:100vh;overflow:auto;padding:6vh 8vw;font-size:1.9vw}.slide.active{display:block}h1{font-size:3.4vw;margin-top:0}h2{font-size:2.8vw;margin-top:0;color:#8a6d00}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:.45em .7em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;margin-left:0;padding-left:1em;color:#444}#pos{position:fixed;bottom:1.2vh;right:1.6vw;font-size:1.2vw;color:#999}@media (max-width:800px){.slide{font-size:4vw;padding:4vh 6vw}h1{font-size:6.5vw}h2{font-size:5.5vw}#pos{font-size:3vw}}</style></head><body><section class="slide active"><h1>Session 5 — Build the Engine</h1>
+<p><strong>Week 3 · Tuesday · Lab 05: Build and Validate an FCFF DCF</strong></p>
+</section>
+<section class="slide">
+<h2>The week the course points at (7 min)</h2>
+<p>Interviews for analyst seats test one thing in the first ten minutes:
+can you build a DCF and say <strong>which assumptions the value hinges on</strong>?
+AI assembles spreadsheets. The seat belongs to whoever explains them.</p>
+<p>You did the prework walk. Every number today is that training case.</p>
+</section>
+<section class="slide">
+<h2>The known answer, on the board (10 min)</h2>
+<p>FCFF₀ = 100, growth 8/6/5/4/3%, WACC 10%, g 3%, cash 50, debt 300, 50M shares</p>
+<blockquote>
+<p>FCFF₁ = 100 × 1.08 = <strong>108.00</strong> · PV = 108/1.10 = <strong>98.18</strong>
+ΣPV(5yr) = <strong>448.44</strong> · TV₅ = 132.63/0.07 = <strong>1,894.65</strong> → PV <strong>1,176.43</strong>
+EV = <strong>1,624.87</strong> → equity <strong>1,374.87</strong> → <strong>$27.50/share</strong> · TV share <strong>72.4%</strong></p>
+</blockquote>
+<p>Your engine must reproduce every one of these within tolerance.</p>
+</section>
+<section class="slide">
+<h2>AI off, then on (10 + 20 min)</h2>
+<ol>
+<li>Draw the architecture from memory: FCFF → discount → TV → bridge → per-share</li>
+<li>Hand-calculate Year-1 FCFF and its PV (the checkout asks for these)</li>
+<li>AI on: implement the STUDENT_WORK functions; reproduce <code>dcf_expected_output.csv</code></li>
+</ol>
+</section>
+<section class="slide">
+<h2>Validate every line (11 min)</h2>
+<ul>
+<li>Boundary: reject g ≥ WACC, missing shares, mixed units</li>
+<li>Shape: growing cash flows must have <strong>shrinking</strong> PVs</li>
+<li>Concentration: report TV share — 72.4% is normal; know why</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Transfer + checkout (10 + 7 min)</h2>
+<p>Move your target's reconciled Week-2 inputs into the input table —
+label every forecast assumption; never let AI silently complete one.</p>
+<p><strong>Checkout:</strong> convention · hand-calculated FCFF₁ and PV · synthetic EV /
+equity / per-share / TV share · one passed test + one fixed failure ·
+target rows + one unresolved assumption · AI paths · in-person attendance
+declaration · truth attestation · receipt.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>go(e.clientX>innerWidth/2?i+1:i-1));go(0);</script></body></html>

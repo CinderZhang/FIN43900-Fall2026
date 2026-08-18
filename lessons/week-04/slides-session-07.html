@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 07</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;height:100vh;overflow:auto;padding:6vh 8vw;font-size:1.9vw}.slide.active{display:block}h1{font-size:3.4vw;margin-top:0}h2{font-size:2.8vw;margin-top:0;color:#8a6d00}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:.45em .7em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;margin-left:0;padding-left:1em;color:#444}#pos{position:fixed;bottom:1.2vh;right:1.6vw;font-size:1.2vw;color:#999}@media (max-width:800px){.slide{font-size:4vw;padding:4vh 6vw}h1{font-size:6.5vw}h2{font-size:5.5vw}#pos{font-size:3vw}}</style></head><body><section class="slide active"><h1>Session 7 — Comparable Means Defensible</h1>
+<p><strong>Week 4 · Tuesday · Lab 07: Comparable-Company Policy and Implied Range</strong></p>
+</section>
+<section class="slide">
+<h2>When your DCF says $27 and the market says $19 (7 min)</h2>
+<p>Somebody is wrong. Multiples are how you find out who — the prices real
+buyers pay for similar businesses, right now.
+But "similar" is a judgment hiding inside a word.</p>
+<p><strong>Policy before peers</strong> — commit to criteria before you see who passes.</p>
+</section>
+<section class="slide">
+<h2>The worked case, one peer by hand (10 min)</h2>
+<blockquote>
+<p>Alpha EV/EBITDA = 1,200 / 120 = <strong>10.0×</strong></p>
+</blockquote>
+<div class="table-wrap" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">The worked case, one peer by hand (10 min)</caption>
+<thead>
+<tr>
+<th scope="col">Peer</th>
+<th scope="col">EV/EBITDA</th>
+<th scope="col">P/E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alpha</td>
+<td>10.0×</td>
+<td>12.0×</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>16.0×</td>
+<td>20.0×</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>9.0×</td>
+<td>15.0×</td>
+</tr>
+<tr>
+<td>Delta</td>
+<td>16.0×</td>
+<td>15.0×</td>
+</tr>
+</tbody></table></div>
+<p>9× to 16× for "comparable" companies — the dispersion IS information.</p>
+</section>
+<section class="slide">
+<h2>Apply — and the trap (10 min)</h2>
+<blockquote>
+<p>Median EV/EBITDA 13× → EV 1,040 → <strong>bridge</strong> → 790 → <strong>$15.80</strong>
+Median P/E 15× → equity 600 directly → <strong>$12.00</strong></p>
+</blockquote>
+<p><strong>Enterprise multiples need the bridge; equity multiples already crossed it.</strong>
+Bridging a P/E answer double-counts the capital structure.</p>
+</section>
+<section class="slide">
+<h2>Your company (35 min)</h2>
+<p>AI off: write the policy. AI on: two independent candidate lists;
+audit every suggestion (public? operating? model match? data current?);
+justified dispositions; selected multiple → implied range; changed-peer test.</p>
+</section>
+<section class="slide">
+<h2>Checkout (8 min)</h2>
+<p>Policy · peer dispositions with reasons · implied range · changed-peer
+result · limitation · AI paths · in-person attendance declaration ·
+truth attestation · receipt.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>go(e.clientX>innerWidth/2?i+1:i-1));go(0);</script></body></html>

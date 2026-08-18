@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 06</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;height:100vh;overflow:auto;padding:6vh 8vw;font-size:1.9vw}.slide.active{display:block}h1{font-size:3.4vw;margin-top:0}h2{font-size:2.8vw;margin-top:0;color:#8a6d00}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:.45em .7em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;margin-left:0;padding-left:1em;color:#444}#pos{position:fixed;bottom:1.2vh;right:1.6vw;font-size:1.2vw;color:#999}@media (max-width:800px){.slide{font-size:4vw;padding:4vh 6vw}h1{font-size:6.5vw}h2{font-size:5.5vw}#pos{font-size:3vw}}</style></head><body><section class="slide active"><h1>Session 6 — Attack the DCF</h1>
+<p><strong>Week 3 · Thursday · Lab 06: Sensitivity, Reverse DCF, and Conditional Recommendation</strong></p>
+</section>
+<section class="slide">
+<h2>Launch (12 min, instructor-led)</h2>
+<p>Prework Step 6 asked you to predict WACC 10% → 11% <strong>before</strong> running it.</p>
+<blockquote>
+<p>Answer: $27.50 → <strong>$23.41</strong> — a 15% drop from one point.</p>
+</blockquote>
+<p>Direction right but size shocking? That <em>is</em> the lesson: this conclusion
+is hostage to the discount rate. The committee hears that as a range.</p>
+<p>Watch one sensitivity cell built live; then it's your engine.</p>
+</section>
+<section class="slide">
+<h2>Scenario design is causal, not cosmetic (10 min)</h2>
+<p>A scenario is a coherent story: higher growth usually needs higher
+reinvestment; higher risk moves cash flows <em>and</em> the rate.
+Never combine mutually inconsistent "best" assumptions.</p>
+</section>
+<section class="slide">
+<h2>Your target, under attack (35 min)</h2>
+<ul>
+<li>WACC/g grid + one operating sensitivity, with monotonicity checks</li>
+<li>Reverse DCF: what growth does today's price imply? Is it plausible?</li>
+<li>AI bull/bear challenge: have each system attack your thesis; verify one claim</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Temperature check (5 min, anonymous, ungraded)</h2>
+<p>Three questions, no names: what's working · what's confusing ·
+one change you'd make. Answers get addressed openly next Tuesday.</p>
+</section>
+<section class="slide">
+<h2>Defend + checkout (8 + 5 min)</h2>
+<blockquote>
+<p>"My range is [low–high] vs price [P] as of [date]. Most sensitive to
+[driver]. I recommend [action] only if [condition]; revisit if [trigger]."</p>
+</blockquote>
+<p><strong>Checkout:</strong> prediction vs actual · grid + monotonicity · reverse-DCF
+implied assumption · defended range and action · AI paths · in-person
+attendance declaration · truth attestation · receipt.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>go(e.clientX>innerWidth/2?i+1:i-1));go(0);</script></body></html>

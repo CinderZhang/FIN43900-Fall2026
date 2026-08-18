@@ -5,16 +5,14 @@
 
 ## Today's run of show
 
-| When | What we do |
-|---|---|
-| 0–7 | Parking-lot answers, then rebuild Tuesday from evidence |
-| 7–17 | AI off: audit your own screening policy |
-| 17–29 | Pair red team — attack criteria, exclusions, the disqualifier |
-| 29–44 | AI on: implement in `screening_starter.py` — **start your quiz attempt (45-min clock)** |
-| 44–58 | AI off: independent validation + ranking-stability test |
-| 58–66 | Missing-data / provider-disagreement attack |
-| 66–72 | 45-second hostile-committee defenses |
-| 72–75 | **Submit — receipt on screen before you leave** |
+1. Parking-lot answers, then rebuild Tuesday from evidence
+2. AI off: audit your own screening policy
+3. Pair red team — attack criteria, exclusions, the disqualifier
+4. AI on: implement in `screening_starter.py` — **start your quiz attempt when told**
+5. AI off: independent validation + ranking-stability test
+6. Missing-data / provider-disagreement attack
+7. Hostile-committee defenses
+8. **Submit — receipt on screen before you leave**
 
 ---
 
