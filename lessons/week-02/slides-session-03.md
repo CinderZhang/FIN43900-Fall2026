@@ -35,11 +35,16 @@ Submit to the Edition A assignment; record your receipt in the Lab 03 checkout.
 
 ---
 
-## After the receipt: architecture comparison (20 min)
+## After the receipt: audit your own baseline (18 min)
 
-Give Codex and Gemini identical requirements.
-Ask for an **architecture and evidence schema — not a valuation**.
-Record disagreements; arbitrate with filings and finance logic.
+Silent source audit — label every Edition A claim:
+**reported fact · normalization · forecast assumption · calculated output**
+
+Then your partner asks one falsification question — no answers proposed:
+*what evidence, if it existed, would kill this thesis?*
+The question goes in your checkout.
+
+(The two-AI architecture comparison is Thursday's opening act.)
 
 ---
 
