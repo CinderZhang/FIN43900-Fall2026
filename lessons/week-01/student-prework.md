@@ -24,5 +24,6 @@ work. **Combined arrival budget: 90–130 minutes.** Stop at the published suppo
 rather than spending more; nothing technical is graded before Tuesday's guided setup.
 When a starter fails, use the shared **Starter Help Ladder** from Level 0 upward; do not ask AI
 for a completed file or repository.
-Before Thursday, bring the Tuesday target, evidence record, and a working environment or named
-remediation path — the environment you will have because Tuesday's class builds it with you.
+Before Thursday, bring a working environment or your named remediation path — the environment
+you will have because Tuesday's class builds it with you. Your Tuesday work is already in your
+Lab 01 checkout; Thursday identifies your valuation target from it.

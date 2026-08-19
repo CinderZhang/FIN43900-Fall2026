@@ -153,8 +153,9 @@ for you alone. What can you do now that you couldn't 75 minutes ago?*
 
 1. Watch the assigned [DRIVER video (31:07)](https://youtu.be/gUepTIp11Og) if you
    have not — Thursday's cases come from it (readable backup: the handout's DRIVER section)
-2. Bring your provisional target and its evidence record (sources + as-of dates)
-3. Bring a working environment — or the exact error message and your named fix
+2. Bring a working environment — or the exact error message and your named fix
 
-**Lab 02 preview:** confirm your valuation target — **admit, replace, or hold** your
-Lab 01 company, on finance logic, judgment, and data.
+*(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.)*
+
+**Lab 02 preview:** identify your valuation target — **admit, replace, or hold**
+Tuesday's candidate — on finance logic, judgment, and data.
