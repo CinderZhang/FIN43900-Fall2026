@@ -15,7 +15,7 @@
 
 ---
 
-## Why data integrity is the first audit (5 min)
+## Why data integrity is the first audit
 
 Before anyone trusts your valuation, they check your *numbers* —
 where each came from, what it means, what you did to it.
@@ -23,7 +23,7 @@ That is where models actually fail.
 
 ---
 
-## Three outputs, never confused (10 min)
+## Three outputs, never confused
 
 | Output | Meaning | Classic error |
 |---|---|---|
@@ -36,7 +36,7 @@ one honest range — that is Project 1's shape.
 
 ---
 
-## Edition A — your before-AI baseline (30 min, AI closed)
+## Edition A — your before-AI baseline (AI closed)
 
 Write, without generative AI: decision & user · company & valuation date ·
 initial thesis (initiate / watch-defer / do not initiate) · known evidence
@@ -47,7 +47,7 @@ Submit to the Edition A assignment; record your receipt in the Lab 03 checkout.
 
 ---
 
-## After the receipt: audit your own baseline (18 min)
+## After the receipt: audit your own baseline
 
 Silent source audit — label every Edition A claim:
 **reported fact · normalization · forecast assumption · calculated output**
@@ -60,7 +60,7 @@ The question goes in your checkout.
 
 ---
 
-## Checkout (10 min)
+## Checkout
 
 Lab Date · teammates/learning partners · Edition A receipt ID ·
 falsification question · non-AI sources used · in-person attendance

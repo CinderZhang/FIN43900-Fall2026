@@ -16,7 +16,7 @@
 
 ---
 
-## The lesson of the week (5 min)
+## The lesson of the week
 
 Two providers can both report a "PEG ratio" — and differ by **6×**,
 because one uses trailing growth and one uses forward estimates.
@@ -26,7 +26,7 @@ Today you learn to catch that before it costs money.
 
 ---
 
-## Warm-up probes (10 min)
+## Warm-up probes
 
 - A stock shows 400 insider "buy" events this quarter. Bullish?
   → Most insider events are compensation mechanics, not conviction.
@@ -35,7 +35,7 @@ Today you learn to catch that before it costs money.
 
 ---
 
-## Validate your admission (30 min)
+## Validate your admission
 
 1. Take your Session-1 target and policy
 2. Trace each screening input: **which provider, which definition, which period**
@@ -45,14 +45,14 @@ Today you learn to catch that before it costs money.
 
 ---
 
-## The oral gate (15 min)
+## The oral gate
 
 Explain your workflow aloud with the evidence visible.
 Explanation is ownership evidence — silent familiarity hides gaps.
 
 ---
 
-## Checkout (10 min)
+## Checkout
 
 Lab Date · teammates/learning partners · admission decision + evidence ·
 definition reconciliation · changed-input result · AI access paths ·

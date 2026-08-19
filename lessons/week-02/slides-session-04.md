@@ -15,7 +15,7 @@
 
 ---
 
-## Launch: the worked mini case (12 min, follow along)
+## Launch: the worked mini case (follow along)
 
 EBIT 150 · tax 25% · D&A 40 · capex 60 · ΔNWC 15
 
@@ -36,7 +36,7 @@ On your real company, every row needs a **source and an as-of date**.
 
 ---
 
-## Your company now (40 min)
+## Your company now
 
 - Locate the current primary filing
 - Transfer your 3–5 pre-staged inputs into the evidence ledger:
@@ -54,7 +54,7 @@ provider fields (reconciled) > AI summaries (leads only).
 
 ---
 
-## Checkout (10 min)
+## Checkout
 
 Lab Date · teammates/learning partners · ledger rows with sources ·
 one reconciled discrepancy · unresolved item · AI access paths ·

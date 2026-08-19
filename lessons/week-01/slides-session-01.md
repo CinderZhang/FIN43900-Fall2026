@@ -17,7 +17,7 @@
 
 ---
 
-## Why you are here (5 min)
+## Why you are here
 
 Every research career starts with one unglamorous decision:
 **which company deserves your next hundred hours?**
@@ -29,7 +29,7 @@ Every research career starts with one unglamorous decision:
 
 ---
 
-## The DRIVER cycle — your operating system (10 min)
+## The DRIVER cycle — your operating system
 
 | Stage | The human question |
 |---|---|
@@ -44,7 +44,7 @@ A screen can *admit* a company for research. It cannot prove an investment.
 
 ---
 
-## Before AI: write your screening policy (15 min, solo)
+## Before AI: write your screening policy (solo)
 
 Decision user · decision · universe · exclusions · criteria · definitions ·
 thresholds/weights · success test · **disqualifier**
@@ -54,7 +54,7 @@ thresholds/weights · success test · **disqualifier**
 
 ---
 
-## AI on: run and interrogate the screen (25 min)
+## AI on: run and interrogate the screen
 
 - Run or adapt the supplied screen — no silent definition changes
 - Verify **one load-bearing definition** against the named source
@@ -63,7 +63,7 @@ thresholds/weights · success test · **disqualifier**
 
 ---
 
-## Defend and check out (15 min)
+## Defend and check out
 
 Two-sentence defense to your partner: target, reason, disqualifier, next evidence.
 
