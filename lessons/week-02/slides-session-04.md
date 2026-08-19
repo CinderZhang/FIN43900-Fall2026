@@ -57,6 +57,8 @@ provider fields (reconciled) > AI summaries (leads only).
 
 ## Checkout
 
+Session token on the board · growth note (ungraded, yours) before submit.
+
 Lab Date · teammates/learning partners · ledger rows with sources ·
 one reconciled discrepancy · unresolved item · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.

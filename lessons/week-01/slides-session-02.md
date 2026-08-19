@@ -57,6 +57,8 @@ Explanation is ownership evidence — silent familiarity hides gaps.
 
 ## Checkout
 
+Session token on the board · growth note (ungraded, yours) before submit.
+
 Lab Date · teammates/learning partners · admission decision + evidence ·
 definition reconciliation · changed-input result · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.

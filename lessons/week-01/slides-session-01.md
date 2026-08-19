@@ -102,7 +102,10 @@ thresholds/weights · success test · **disqualifier**
 Two-sentence defense to your partner: target, reason, disqualifier, next evidence.
 
 **Checkout:** Lab Date · teammates/learning partners · decision & policy ·
-contribution · stability test · evidence · in-person attendance declaration ·
-truth attestation · receipt.
+contribution · stability test · evidence · **session token (on the board)** ·
+in-person attendance declaration · truth attestation · receipt.
+
+*Last thing before submit: your **growth note** — 2–3 sentences, ungraded,
+for you alone. What can you do now that you couldn't 75 minutes ago?*
 
 *No receipt on screen = not submitted.*

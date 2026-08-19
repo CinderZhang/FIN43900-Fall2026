@@ -63,5 +63,8 @@ The question goes in your checkout.
 ## Checkout
 
 Lab Date · teammates/learning partners · Edition A receipt ID ·
-falsification question · non-AI sources used · in-person attendance
-declaration · truth attestation · receipt.
+falsification question · non-AI sources used · **session token (on the board)** ·
+in-person attendance declaration · truth attestation · receipt.
+
+*Before submit: your ungraded **growth note** — what can you value-bridge
+today that you couldn't last week?*
