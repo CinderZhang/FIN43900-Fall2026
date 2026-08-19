@@ -72,7 +72,10 @@ in-person attendance declaration · truth attestation · receipt.
 *Before submit: your ungraded **growth note** — what can you value-bridge
 today that you couldn't last week?*
 
-**Before Thursday:** move 3–5 of your company's model inputs — each with its
-source and as-of date — into the evidence-ledger format. Thursday builds your
-company's full ledger from those rows; arriving without them means spending lab
-time hunting filings instead of doing the graded judgment work.
+**Before Thursday — do these** *(short prep; the week page has the ledger template)*:
+
+1. Pick 3–5 model inputs for your company (e.g., revenue, EBIT, D&A, capex, diluted shares)
+2. For each, record value + unit, period, source, and as-of date in the ledger format
+
+**Lab 04 preview:** build your company's full nine-row evidence ledger and its
+enterprise-to-equity bridge — and catch one contamination before it reaches your DCF.

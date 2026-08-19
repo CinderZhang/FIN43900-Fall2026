@@ -73,9 +73,14 @@ definition reconciliation · changed-input result · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.
 
 **The company you admitted today is your Project 1 company.**
-Week 2 writes its valuation contract.
 
-**Before Tuesday:** watch the [three-lens video (23 min)](https://youtu.be/LlmBzbQbNwQ) —
-it is the template for everything you build in Weeks 2–4 — and arrive with your
-admitted company, its latest primary filing, and a one-sentence valuation decision.
-Also confirm both required AI subscriptions reach Codex and Gemini Pro.
+**Before Tuesday — do these:**
+
+1. Watch the assigned [three-lens video (23 min)](https://youtu.be/LlmBzbQbNwQ) —
+   the template for everything you build in Weeks 2–4
+2. Save your company's latest primary filing (10-K or 10-Q) where you can open it in class
+3. Write one sentence: the decision this valuation will support, and for whom
+4. Confirm both required subscriptions reach Codex and Gemini Pro
+
+**Lab 03 preview:** write your before-AI valuation baseline — Project 1 **Edition A**,
+the frozen proof that the judgment in this project is yours.

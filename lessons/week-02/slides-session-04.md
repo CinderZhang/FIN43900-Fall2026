@@ -63,6 +63,11 @@ Lab Date · teammates/learning partners · ledger rows with sources ·
 one reconciled discrepancy · unresolved item · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.
 
-**Week 3: this ledger becomes your DCF** — same company, new filing questions.
-The Week 3 prework (a fully worked DCF with real digits, plus checkpoints) is
-the heaviest of the month — start it early.
+**Before Tuesday — do these:**
+
+1. Do the Week 3 prework: the fully worked DCF page with its hand checkpoints —
+   the heaviest prework of the month; start early
+2. Bring your Lab 04 evidence ledger, corrected rows included — Week 3 builds on it
+
+**Lab 05 preview:** build and validate a five-year FCFF DCF — the training case
+by hand first, then your own company.
