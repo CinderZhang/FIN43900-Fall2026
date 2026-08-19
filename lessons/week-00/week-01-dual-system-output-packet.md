@@ -1,8 +1,8 @@
 # Week 1 — Dual-System Output Packet
 
-**Purpose:** no-cost, accessible evidence for the Week 1 two-system comparison. This is a
-synthetic training case, not current market evidence, a valuation, or an investment
-recommendation. The prompt and complete response text were captured on August 15, 2026. Model
+**Purpose:** fallback evidence for the Week 1 two-system comparison when a platform, quota,
+device, or accessible interface fails. This is a synthetic training case, not current market
+evidence, a valuation, or an investment recommendation. The prompt and complete response text were captured on August 15, 2026. Model
 outputs can be wrong; your job is to audit them.
 
 The OpenAI response was captured through Codex CLI 0.146.0; `gpt-5.6-sol` is the model identifier

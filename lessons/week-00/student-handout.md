@@ -6,9 +6,10 @@ Follow this numbered path in the same order the Start Here module displays it:
 2. Optionally run the private **Orientation Audit** with its **Orientation Template**; it creates
    no grade or transmitted completion record.
 3. Complete the ungraded **Entry Diagnostic and Recovery Router** with AI closed.
-4. Download **Lab Environment Requirements** and **Project Environment Requirements**, then use
-   **Course Environment Quickstart — Get One Evidence-Producing Run**. Use only the one named
-   QuantEcon recovery page matching a diagnosed blocker.
+4. Download **Lab Environment Requirements** and **Project Environment Requirements**. All
+   technical setup happens together in Tuesday's Week 1 class; if you want an optional head
+   start, use **Course Environment Quickstart — Optional Head Start and Recovery Reference**,
+   and use only the one named QuantEcon recovery page matching a diagnosed blocker.
 5. Open **AI Access — Required Subscriptions and the Fallback Routes**; confirm both required subscriptions work. Then
    inspect **Week 1 — Dual-System Output Packet** so the no-account route is real before class.
 6. Complete **Pre-Arrival Checklist**. Keep **AI, Data, and Credential Safety Card** and **Support

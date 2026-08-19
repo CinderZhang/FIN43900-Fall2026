@@ -1,14 +1,38 @@
-# Course Environment Quickstart — Get One Evidence-Producing Run
+# Course Environment Quickstart — Optional Head Start and Recovery Reference
 
-Use the smallest supported path that works. Week 1 verifies readiness live; this page helps you
-arrive with either a successful run or an exact error the course can diagnose. Do not buy a tool
-or paste credentials into a command, notebook, repository, or AI system.
+**Nothing on this page is required before class.** All technical setup — Colab, ChatGPT,
+Gemini, the readiness check — happens **together, step by step, in Tuesday's Week 1 class**,
+with the instructor projecting every click and TAs walking the rows. Nothing technical is
+graded before that guided setup. Use this page only if you *want* a head start, or later in
+the term as the recovery reference when an environment breaks. Do not buy a tool or paste
+credentials into a command, notebook, repository, or AI system.
 
-## Path A — Local Python for labs
+## Path A — Colab, the course path (no install)
 
-1. Install Python 3.11–3.14 from an approved source and confirm `python --version`.
-2. Download `requirements-course.txt` from this Start Here module into your working folder.
-3. In PowerShell on Windows, run:
+1. Open [colab.research.google.com](https://colab.research.google.com) and sign in with
+   Google. Click **New notebook**.
+2. Download `requirements-course.txt` from this Start Here module.
+3. In the notebook, click the **folder icon** (left sidebar) → **upload** icon → select
+   `requirements-course.txt`. Then paste this into the first cell and press **Run** (▶):
+
+```text
+!python -m pip install -r requirements-course.txt
+```
+
+4. Optionally, upload and run the Week 1 **Preflight Check** file (`preflight_check.py`) from
+   the **Week 1 — Technology Readiness, DRIVER & Company Screening** card the same way. A green
+   diagnostic block means READY.
+5. If anything fails, preserve the exact first error message — that is useful evidence, not a
+   problem. Tuesday's class diagnoses it with you.
+
+Colab is a supported lab route all semester; the major projects still require a locally
+runnable repository/application or an approved equivalent path, taught when the projects need it.
+
+## Path B — Local Python (optional, later; never required for labs)
+
+Skip this before Week 1 unless you already work in a local Python setup and want one. Install
+Python 3.11–3.14 from an approved source, confirm `python --version`, then in PowerShell on
+Windows run:
 
 ```text
 python -m venv .venv
@@ -16,22 +40,9 @@ python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements-course.txt
 ```
 
-On macOS/Linux, replace `.venv\Scripts\python` with `.venv/bin/python`.
-
-4. Open the **Week 1 — Technology Readiness, DRIVER & Company Screening** card, download the
-   **Preflight Check** file (`preflight_check.py`), and run it with the same environment Python.
-5. Preserve the command, first error or success output, Python version, and operating system.
-
-## Path B — Colab no-install route
-
-Open a fresh Colab notebook, upload `requirements-course.txt`, and run this in the first cell:
-
-```text
-!python -m pip install -r requirements-course.txt
-```
-
-Upload and run the Week 1 preflight in that notebook. Colab is a supported lab route; the major
-projects still require a locally runnable repository/application or an approved equivalent path.
+On macOS/Linux, replace `.venv\Scripts\python` with `.venv/bin/python`. Run the Week 1
+preflight with the same environment Python. Preserve the command, first error or success
+output, Python version, and operating system.
 
 ## Project-only addition
 
@@ -39,7 +50,7 @@ Do not install the project stack for ordinary labs. When a project requires Stre
 separate `requirements-project.txt` instructions and freeze the versions actually tested in the
 submitted repository.
 
-## If the run fails
+## If a run fails
 
 Stop after one documented attempt. Use the Starter Help Ladder only at the level permitted by the
 current task's AI Boundary Card. Bring the Python version, command, complete first error, and one
