@@ -64,4 +64,5 @@ definition reconciliation · changed-input result · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.
 
 **Weekend:** confirm both required AI subscriptions reach Codex and Gemini Pro.
-Week 2 opens the valuation arc — watch the three-lens video (23 min) first.
+Week 2 opens the valuation arc — watch the
+[three-lens video (23 min)](https://youtu.be/LlmBzbQbNwQ) first.

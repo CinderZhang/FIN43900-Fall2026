@@ -4,10 +4,10 @@
 <section class="slide">
 <h2>Today's run of show</h2>
 <ol>
-<li>The frame: GitHub for content, Brightspace for grades</li>
+<li>The frame: <a href="https://github.com/CinderZhang/FIN43900-Fall2026" target="_blank" rel="noopener">GitHub for content</a>, <a href="https://purdue.brightspace.com/d2l/home/1636012" target="_blank" rel="noopener">Brightspace for grades</a></li>
 <li><strong>Meet your desk</strong> — introduce yourself left and right; know at least 2 classmates</li>
 <li><strong>Tech gate</strong> — preflight check, partner-verified, TA-confirmed</li>
-<li><strong>Syllabus sprint</strong> — read on Brightspace, then pair Q&amp;A with AI (ChatGPT main · Gemini checker)</li>
+<li><strong>Syllabus sprint</strong> — download the PDF, read fast, quiz your partner, confirm with AI (ChatGPT main · Gemini checker)</li>
 <li>DRIVER retrieval from the prework video</li>
 <li>AI off, solo: write your screening policy — <strong>start your quiz attempt when told</strong></li>
 <li>AI on, in pairs: ChatGPT vs Gemini on the same policy</li>
@@ -19,15 +19,30 @@
 <h2>Tech setup — we do this together, right now</h2>
 <p>Nobody sets up alone. Follow the projector, step by step:</p>
 <ol>
-<li>Open <strong>colab.research.google.com</strong> → sign in with Google → New notebook</li>
-<li>Open <strong>chat.openai.com</strong> → sign in (your ChatGPT Plus account)</li>
-<li>Open <strong>gemini.google.com</strong> → sign in (your Google AI account)</li>
-<li>We load <code>preflight_check.py</code> in Colab together and press <strong>Run</strong></li>
+<li>Open <strong><a href="https://colab.research.google.com" target="_blank" rel="noopener">colab.research.google.com</a></strong> → sign in with Google → New notebook</li>
+<li>Open <strong><a href="https://chat.openai.com" target="_blank" rel="noopener">chat.openai.com</a></strong> → sign in (your ChatGPT Plus account)</li>
+<li>Open <strong><a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></strong> → sign in (your Google AI account)</li>
+<li>We load <code>preflight_check.py</code> (from the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01" target="_blank" rel="noopener">Week 1 page</a>) in Colab together and press <strong>Run</strong></li>
 <li>Green diagnostic block = READY · anything else = raise a hand, a TA comes to you</li>
 </ol>
 <p><em>ChatGPT (OpenAI) is the main tool — "Codex" is its coding interface.
 Gemini (Google) is the second opinion and checker. Local Python install:
 optional, later, never required for a grade.</em></p>
+</section>
+<section class="slide">
+<h2>Syllabus sprint — your first AI practice</h2>
+<p><em>(<a href="https://purdue.brightspace.com/d2l/home/1636012" target="_blank" rel="noopener">Brightspace</a> → Syllabus tab · pairs of two)</em></p>
+<ol>
+<li><strong>Download</strong> the syllabus PDF from the Brightspace Syllabus tab</li>
+<li><strong>Read fast</strong> — five minutes, silent</li>
+<li><strong>Ask your partner</strong> one real question about the course</li>
+<li><strong>Confirm with AI</strong> — check the answer (or find it) with ChatGPT or Gemini,
+then point to the syllabus line that settles it</li>
+</ol>
+<blockquote>
+<p>An AI answer counts only when the syllabus line backs it up.
+Unanswered questions go to the <strong>parking lot</strong> — answered Thursday at the open.</p>
+</blockquote>
 </section>
 <section class="slide">
 <h2>Why you are here</h2>
@@ -49,31 +64,38 @@ AI still fetches for you at the edges.</p>
 <thead>
 <tr>
 <th scope="col">Stage</th>
+<th scope="col">In plain terms</th>
 <th scope="col">Iron Law</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><strong>D</strong>efine &amp; Discover <em>(~80% you)</em></td>
+<td>Own the question; inventory what you don't know</td>
 <td>No building without research first</td>
 </tr>
 <tr>
 <td><strong>R</strong>epresent</td>
+<td><strong>Plan the solution together with AI</strong></td>
 <td>Don't reinvent what already exists</td>
 </tr>
 <tr>
 <td><strong>I</strong>mplement</td>
+<td>Build it with AI as co-pilot</td>
 <td>Show, don't tell</td>
 </tr>
 <tr>
 <td><strong>V</strong>alidate</td>
+<td>Check it against sources and known answers</td>
 <td>Trust but verify — especially with AI</td>
 </tr>
 <tr>
 <td><strong>E</strong>volve</td>
+<td>Make the next cycle better</td>
 <td>Every cycle improves the next</td>
 </tr>
 <tr>
 <td><strong>R</strong>eflect <em>(~80% you)</em></td>
+<td>Explain it in your own voice</td>
 <td><strong>If you can't explain it on camera, you don't understand it</strong></td>
 </tr>
 </tbody></table></div>
@@ -116,4 +138,4 @@ in-person attendance declaration · truth attestation · receipt.</p>
 for you alone. What can you do now that you couldn't 75 minutes ago?</em></p>
 <p><em>No receipt on screen = not submitted.</em></p>
 
-</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>go(e.clientX>innerWidth/2?i+1:i-1));go(0);</script></body></html>
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>
