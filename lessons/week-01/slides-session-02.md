@@ -48,9 +48,18 @@ run the cell. Edit only the marked `STUDENT_WORK` lines. Stuck = hand up.*
 
 ---
 
-## The oral gate
+## The oral gate — your 45-second defense
 
-Explain your workflow aloud with the evidence visible.
+Six parts, in order: **target · two dated facts · most sensitive assumption ·
+remaining unknown · decision (admit / replace / hold) · reversal trigger**
+
+> Training-case example — the *shape*, not your answer:
+> "Admit MSFT for research: it passed my screen on the August training data and
+> its latest 10-K is on file. The ranking hinges on my three-year window — I have
+> not tested five — so I admit it, and I reverse if the longer window drops it
+> below my return bar."
+
+Explain it aloud with the evidence visible.
 Explanation is ownership evidence — silent familiarity hides gaps.
 
 ---

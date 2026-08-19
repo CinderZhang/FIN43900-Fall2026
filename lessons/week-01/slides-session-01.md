@@ -121,14 +121,24 @@ which company earns your next hundred hours, **not making a buy/sell call**.
 
 - Run or adapt the supplied screen — no silent definition changes
 - Verify **one load-bearing definition** against the named source
+  *(example: does this provider's "return" include dividends, or price only?)*
 - Run **one ranking-stability change** — does your target survive?
+  *(example: lookback three years → five years — is the top company still on top?)*
 - AI agreement is not validation
 
 ---
 
 ## Defend and check out
 
-Two-sentence defense to your partner: target, reason, disqualifier, next evidence.
+Two-sentence defense to your partner — four parts:
+**target** (the company) · **reason** (your two strongest facts) ·
+**disqualifier** (the fact that would kill the pick) ·
+**next evidence** (the first thing you would check before trusting it)
+
+> Training-case example — the *shape*, not your answer:
+> "Investigate MSFT: it cleared every bar in my screen with zero missing data and
+> a current filing on record. It comes off my list if volatility crosses my 0.25
+> ceiling — and the next evidence I check is the actual 10-K."
 
 **Checkout:** Lab Date · teammates/learning partners · decision & policy ·
 contribution · stability test · evidence · **session token (on the board)** ·
