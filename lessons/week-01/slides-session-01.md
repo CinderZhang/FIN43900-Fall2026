@@ -22,14 +22,15 @@
 Nobody sets up alone. Follow the projector, step by step:
 
 1. Open **[colab.research.google.com](https://colab.research.google.com)** → sign in with Google → New notebook
-2. Open **[chat.openai.com](https://chat.openai.com)** → sign in (your ChatGPT Plus account)
+2. Open **[chat.openai.com](https://chat.openai.com)** → sign in → then open **[Codex](https://chatgpt.com/codex)**, the coding editor inside your ChatGPT subscription — leave the tab open
 3. Open **[gemini.google.com](https://gemini.google.com)** → sign in (your Google AI account)
-4. We load `preflight_check.py` (from the [Week 1 page](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01)) in Colab together and press **Run**
-5. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
+4. Download **[agy — Google Antigravity](https://antigravity.google)**, Gemini's coding editor → start the installer **now**; it finishes on its own while we work
+5. We load `preflight_check.py` (from the [Week 1 page](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01)) in Colab together and press **Run**
+6. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
 
-*ChatGPT (OpenAI) is the main tool — "Codex" is its coding interface.
-Gemini (Google) is the second opinion and checker. Local Python install:
-optional, later, never required for a grade.*
+*ChatGPT (OpenAI) is the main tool — **Codex** is its coding editor.
+Gemini (Google) is the second opinion and checker — **agy (Antigravity)** is its
+editor. Local Python install: optional, later, never required for a grade.*
 
 ---
 
@@ -93,9 +94,22 @@ A screen can *admit* a company for research. It cannot prove an investment.
 
 ## Before AI: write your screening policy (solo)
 
-Decision user · decision · universe · exclusions · criteria · definitions ·
-thresholds/weights · success test · **disqualifier**
+**Nine written lines.** This is a research-admission decision — you are choosing
+which company earns your next hundred hours, **not making a buy/sell call**.
 
+| Write one line for each | Example of a real answer |
+|---|---|
+| **Decision user** — who acts on this screen? | a junior analyst proposing a coverage add |
+| **Decision** — what does it select? | one company admitted for valuation research |
+| **Universe** — which companies can enter? | US-listed public operating companies |
+| **Exclusions** — who is out, and why? | banks, insurers, REITs, funds — no FCFF fit |
+| **Criteria** (two) — which observable measures? | annualized return; annualized volatility |
+| **Definitions** — measured how, over what period? | three years of daily adjusted prices |
+| **Thresholds / weights** — pass lines or ranking? | return ≥ 8%, volatility ≤ 25%; lower volatility ranks first |
+| **Success test** — what would prove it useful? | survivors still look sound against the filing |
+| **Disqualifier** — what overrides a high score? | missing data > 1% or no current filing |
+
+> The example column is the *shape* of an answer — copy nothing from it.
 > If you cannot name the fact that would kick your top-ranked company off
 > the list, you do not have a policy — you have a mood.
 

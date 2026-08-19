@@ -79,6 +79,8 @@ For each item, record `READY`, `RECOVERING`, or `UNVERIFIED`, then retain the ev
 | market-data retrieval | ticker, returned dates, row count |  |  |
 | chart/output | rendered figure or saved output |  |  |
 | AI Access required-subscription check + Week 1 dual-system packet | plain-text confirmation only |  |  |
+| Codex coding editor (chatgpt.com/codex) opens in the browser | plain-text confirmation only |  |  |
+| agy (Google Antigravity) editor installed and opens | plain-text note; `install in progress` is a valid RECOVERING state |  |  |
 | Optional accessible free interface or `COURSE-RUN PROBE:` route | plain-text confirmation only |  |  |
 | GitHub repository workflow | repository created and accessible |  |  |
 | unlisted video/transcript workflow | logged-out link/transcript test or processing state |  |  |
