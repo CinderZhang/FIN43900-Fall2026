@@ -37,6 +37,9 @@ Today you learn to catch that before it costs money.
 
 ## Validate your admission
 
+*Open `screening_starter.py` in Colab: colab → File → Upload notebook/file →
+run the cell. Edit only the marked `STUDENT_WORK` lines. Stuck = hand up.*
+
 1. Take your Session-1 target and policy
 2. Trace each screening input: **which provider, which definition, which period**
 3. Reconcile one input against the primary source (filing or authoritative series)

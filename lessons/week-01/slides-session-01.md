@@ -17,6 +17,22 @@
 
 ---
 
+## Tech setup — we do this together, right now
+
+Nobody sets up alone. Follow the projector, step by step:
+
+1. Open **colab.research.google.com** → sign in with Google → New notebook
+2. Open **chat.openai.com** → sign in (your ChatGPT Plus account)
+3. Open **gemini.google.com** → sign in (your Google AI account)
+4. We load `preflight_check.py` in Colab together and press **Run**
+5. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
+
+*ChatGPT (OpenAI) is the main tool — "Codex" is its coding interface.
+Gemini (Google) is the second opinion and checker. Local Python install:
+optional, later, never required for a grade.*
+
+---
+
 ## Why you are here
 
 Every research career starts with one unglamorous decision:
@@ -29,16 +45,32 @@ Every research career starts with one unglamorous decision:
 
 ---
 
-## The DRIVER cycle — your operating system
+## DRIVER — your operating system
 
-| Stage | The human question |
+**D · [ R · I · V · E ] · R** — you dominate the edges, AI dominates the middle.
+**80/20 at every stage** — never 100/0: you stay on the loop in the middle;
+AI still fetches for you at the edges.
+
+| Stage | Iron Law |
 |---|---|
-| **D**efine & Discover | Who needs what decision, under which constraints? |
-| **R**epresent | How are facts, assumptions, and uncertainty structured? |
-| **I**mplement | What reproducible workflow expresses that? |
-| **V**alidate | What could prove this result unreliable? |
-| **E**volve | What gets repaired, qualified, or removed? |
-| **R**eflect | What do I know now, and what would reverse my action? |
+| **D**efine & Discover *(~80% you)* | No building without research first |
+| **R**epresent | Don't reinvent what already exists |
+| **I**mplement | Show, don't tell |
+| **V**alidate | Trust but verify — especially with AI |
+| **E**volve | Every cycle improves the next |
+| **R**eflect *(~80% you)* | **If you can't explain it on camera, you don't understand it** |
+
+---
+
+## Reflect is how you are graded here
+
+**Validate the human, not just the machine.**
+
+Every project ends with *you*, on camera, explaining what you built,
+where AI contributed vs. where your judgment intervened, and what
+surprised you.
+
+The artifact proves the AI worked. **The explanation proves you did.**
 
 A screen can *admit* a company for research. It cannot prove an investment.
 
@@ -55,6 +87,8 @@ thresholds/weights · success test · **disqualifier**
 ---
 
 ## AI on: run and interrogate the screen
+
+*(ChatGPT = main · Gemini = checker — same as every week)*
 
 - Run or adapt the supplied screen — no silent definition changes
 - Verify **one load-bearing definition** against the named source

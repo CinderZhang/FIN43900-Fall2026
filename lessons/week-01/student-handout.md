@@ -23,13 +23,23 @@ investment advice.
 Use this section when you prefer text or the video/player/captions are inaccessible. It is a
 course-authored equivalent for the assessed objectives, not a verbatim video transcript.
 
+The shape of the framework is a bracket: **D · [ R · I · V · E ] · R**. You dominate the two
+edges (Define & Discover, Reflect — roughly 80% you); AI dominates the four middle stages
+(roughly 80% AI). Neither share ever reaches 100%: in the middle you stay on the loop —
+choosing among options, catching wrong-but-plausible output, calling stop — and at the edges
+AI still does the lookup work while you own the judgment. Each stage carries an **Iron Law**:
+no building without research first (D); don't reinvent what already exists (R); show, don't
+tell (I); trust but verify, especially with AI (V); every cycle improves the next (E); and
+for Reflect — **if you can't explain it on camera, you don't understand it**. Reflect is how
+this course grades you: the artifact proves the AI worked; your explanation proves you did.
+
 | Stage | Human-owned question | Week 1 observable action |
 |---|---|---|
 | **D — Define & Discover** | Who needs what decision, under which constraints, and what evidence could matter? | Define the user, deeper-research decision, eligible universe, evidence needs, and disqualifier. |
 | **R — Represent** | How will facts, assumptions, definitions, and uncertainty be structured? | Freeze criteria, periods, units, missingness rules, thresholds/weights, and evidence fields before ranking. |
 | **I — Implement** | What reproducible calculation or workflow expresses that representation? | Run or adapt the supplied screen without silently changing definitions or substituting unavailable data. |
 | **V — Validate** | Which source, known answer, invariant, or changed input could prove the result unreliable? | Verify one load-bearing definition/fact and run one ranking-stability change. AI agreement is not validation. |
-| **E — Evolve** | What should be repaired, qualified, removed, or escalated after the test? | Update the policy or quarantine the result; preserve the before/after decision and reason. |
+| **E — Evolve** | What sharpens the next cycle — repairs, extracted patterns, a better process, a new domain for the same idea? | Update the policy or quarantine the result; preserve the before/after decision and reason; name one pattern you would reuse. |
 | **R — Reflect** | What do I now know, what remains uncertain, and what would reverse my action? | Defend a provisional target, limitation, evidence request, and observable reversal condition in your own words. |
 
 The central case is simple: a composite screen can identify a company worth investigating, but it

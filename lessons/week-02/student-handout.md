@@ -37,8 +37,9 @@ This is an architecture, not permission to copy standardized fields. Verify sign
 currency, units, tax convention, operating/non-operating classification, and whether each input
 is reported, normalized, forecast, or calculated.
 
-**Worked once, with digits** — the Week 2 mini case (`starter/mini_case.csv`), which your
-starter validates:
+**Worked once, with digits** — the Week 2 mini case (`starter/mini_case.csv`), which
+`starter/valuation_foundations_starter.py` validates when you run it (in Colab: upload both
+files, press Run; the checks print PASS or the first failing line):
 
 > FCFF = 150 × (1 − 0.25) + 40 − 60 − 15 = 112.5 + 40 − 60 − 15 = **77.5** ($M)
 

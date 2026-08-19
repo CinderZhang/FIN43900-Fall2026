@@ -39,7 +39,8 @@ On your real company, every row needs a **source and an as-of date**.
 ## Your company now
 
 - Locate the current primary filing
-- Transfer your 3–5 pre-staged inputs into the evidence ledger:
+- Transfer your 3–5 pre-staged inputs into the evidence ledger, then extend to
+  the **nine minimum rows** the Lab 04 checkout requires:
   item · classification (fact / normalization / forecast / output) ·
   value + unit · period · source · rationale · check · failure mode
 - Two sources sharing a label may measure different things —

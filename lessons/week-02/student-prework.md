@@ -23,8 +23,10 @@ enterprise and bridge explanation in the student handout; no video-specific deta
 Use the linked source directly; do not copy its slides/transcript into an AI system.
 
 Use the handout as a searchable reference rather than rereading it linearly. Without generative AI,
-draft the valuation object, user, date, currency/units, initial thesis/range logic, and three evidence
-needs for the Edition A checkpoint. Budget 55–60 minutes total, including both videos or
+draft rough notes for the same fields the Edition A checkpoint records: the decision and
+intended user, company and valuation date, initial thesis, known evidence with sources,
+consequential assumptions, unknowns, and a research plan. Notes are enough — the formal
+Edition A is written in class Tuesday. Budget 55–60 minutes total, including both videos or
 their alternatives;
 do not begin valuation-specific AI work before the first successful Edition A receipt. Use the shared
 **AI Boundary Card — Use This All Semester** for ordinary tools, integrated AI, the exact end event, and the honest
