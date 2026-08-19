@@ -16,7 +16,7 @@
 
 ---
 
-## The lesson of the week
+## The lesson of the week *(from your prework video)*
 
 Two providers can both report a "PEG ratio" — and differ by **6×**,
 because one uses trailing growth and one uses forward estimates.
@@ -72,6 +72,10 @@ Lab Date · teammates/learning partners · admission decision + evidence ·
 definition reconciliation · changed-input result · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.
 
-**Weekend:** confirm both required AI subscriptions reach Codex and Gemini Pro.
-Week 2 opens the valuation arc — watch the
-[three-lens video (23 min)](https://youtu.be/LlmBzbQbNwQ) first.
+**The company you admitted today is your Project 1 company.**
+Week 2 writes its valuation contract.
+
+**Before Tuesday:** watch the [three-lens video (23 min)](https://youtu.be/LlmBzbQbNwQ) —
+it is the template for everything you build in Weeks 2–4 — and arrive with your
+admitted company, its latest primary filing, and a one-sentence valuation decision.
+Also confirm both required AI subscriptions reach Codex and Gemini Pro.

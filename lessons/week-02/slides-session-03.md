@@ -13,6 +13,9 @@
 6. Partner falsification question
 7. **Two receipts on screen**: Edition A checkpoint + Lab 03 checkout
 
+*You arrived with (from prework): your admitted Week 1 company · its latest
+primary filing · a one-sentence valuation decision · the three-lens video watched.*
+
 ---
 
 ## Why data integrity is the first audit
@@ -68,3 +71,8 @@ in-person attendance declaration · truth attestation · receipt.
 
 *Before submit: your ungraded **growth note** — what can you value-bridge
 today that you couldn't last week?*
+
+**Before Thursday:** move 3–5 of your company's model inputs — each with its
+source and as-of date — into the evidence-ledger format. Thursday builds your
+company's full ledger from those rows; arriving without them means spending lab
+time hunting filings instead of doing the graded judgment work.

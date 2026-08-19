@@ -62,3 +62,7 @@ Session token on the board · growth note (ungraded, yours) before submit.
 Lab Date · teammates/learning partners · ledger rows with sources ·
 one reconciled discrepancy · unresolved item · AI access paths ·
 in-person attendance declaration · truth attestation · receipt.
+
+**Week 3: this ledger becomes your DCF** — same company, new filing questions.
+The Week 3 prework (a fully worked DCF with real digits, plus checkpoints) is
+the heaviest of the month — start it early.

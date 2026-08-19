@@ -148,3 +148,8 @@ in-person attendance declaration · truth attestation · receipt.
 for you alone. What can you do now that you couldn't 75 minutes ago?*
 
 *No receipt on screen = not submitted.*
+
+**Before Thursday:** bring today's provisional target, your evidence record, and a
+working environment (or its named fix). Thursday puts *your* screen on trial —
+Lab 02 admits, replaces, or holds *your* company. Its warm-up cases come straight
+from the DRIVER prework video — shaky on it? Reread the handout's DRIVER section tonight.
