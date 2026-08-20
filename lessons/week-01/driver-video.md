@@ -1,10 +1,13 @@
 # Watch — DRIVER Framework and Provisional Target Company
 
-Watch the published 31:07 video: [Learn the DRIVER Framework and Identify a Target
-Company](https://youtu.be/gUepTIp11Og).
+Watch the published 31:07 video **in your own time, before Thursday's Lab 02**: [Learn the
+DRIVER Framework and Identify a Target Company](https://youtu.be/gUepTIp11Og). Just watch —
+nothing to write, nothing to submit. Thursday's lab is the do time, and its cases come from
+this video.
 
 Its purpose is to establish the first human/AI cycle and show why a screening score begins an
-investigation rather than proving an investment conclusion. Before class, answer without AI:
+investigation rather than proving an investment conclusion. As you watch, three things worth
+noticing (nothing to hand in):
 
 1. Which DRIVER stage keeps the target question from collapsing into a ticker screen?
 2. What evidence could disqualify a high-scoring company?

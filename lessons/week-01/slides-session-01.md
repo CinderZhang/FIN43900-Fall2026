@@ -151,11 +151,13 @@ for you alone. What can you do now that you couldn't 75 minutes ago?*
 
 **Before Thursday — do these:**
 
-1. Watch the assigned [DRIVER video (31:07)](https://youtu.be/gUepTIp11Og) if you
-   have not — Thursday's cases come from it (readable backup: the handout's DRIVER section)
+1. Watch the [DRIVER video (31:07)](https://youtu.be/gUepTIp11Og) — **your only
+   homework**: own time, just watch, nothing to submit. Thursday's cases come from it
+   (optional self-check: the 5-minute practice quiz; readable backup: the handout)
 2. Bring a working environment — or the exact error message and your named fix
 
-*(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.)*
+*(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.
+Thursday is the do time.)*
 
 **Lab 02 preview:** identify your valuation target — **admit, replace, or hold**
 Tuesday's candidate — on finance logic, judgment, and data.
