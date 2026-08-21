@@ -82,6 +82,17 @@ For each item, record `READY`, `RECOVERING`, or `UNVERIFIED`, then retain the ev
 | Codex coding editor (chatgpt.com/codex) opens in the browser | plain-text confirmation only |  |  |
 | agy (Google Antigravity) editor installed and opens | plain-text note; `install in progress` is a valid RECOVERING state |  |  |
 | Optional accessible free interface or `COURSE-RUN PROBE:` route | plain-text confirmation only |  |  |
+
+*(The shape, not your answer: "market-data retrieval — READY — AAPL, 756 rows returned,
+2023-08-26 → 2026-08-25.")*
+
+### Later-course capabilities — no Week 1 lab collects these
+
+Check these when the course first uses them (projects and recorded work, later modules);
+nothing in this table is Week 1 prep:
+
+| Capability | Evidence | Status or exact blocker | Next action and owner |
+|---|---|---|---|
 | GitHub repository workflow | repository created and accessible |  |  |
 | unlisted video/transcript workflow | logged-out link/transcript test or processing state |  |  |
 | recording/upload path | Kaltura Capture, Zoom, or approved equivalent; microphone/camera/screen check |  |  |
@@ -90,10 +101,10 @@ Never submit or display a password, API key, token, account number, billing page
 account screenshot. A documented failure plus a viable remediation action is better evidence
 than a hidden or fabricated pass.
 
-## Optional debugging clinic — not a Lab 01 requirement
+## Optional debugging clinic — not a Week 1 lab requirement
 
 Use this clinic if your environment is ready early or the instructor assigns it as a targeted
-diagnostic. It is not required evidence for Lab 01. Run the deliberately broken metrics case,
+diagnostic. It is not required evidence for any Week 1 lab. Run the deliberately broken metrics case,
 ask two accessible course-supported systems separately to diagnose it. The published Week 1
 screening packet does not diagnose this debug file. Use `COURSE-RUN PROBE:` for this exact debug
 prompt when either required comparison output is inaccessible, and do not show one system the
@@ -108,9 +119,11 @@ other system's answer.
 Then close both systems and explain why the correct Sharpe numerator and denominator must use
 compatible annual units.
 
-## Part B — screening policy before AI
+## Part B — screening policy before AI (your Thursday worksheet)
 
-Write this individually before asking AI for criteria or weights.
+Write this individually in Thursday's Lab 02, before asking AI for criteria or weights —
+draft your nine lines here during the AI-off silence, then transcribe them into your
+checkout once your attempt is open. Nothing here is written before Thursday.
 
 This is a deliberate no-generative-AI baseline for the first Define & Discover edge and the
 initial representation—not a claim that canonical DRIVER excludes AI from Represent,
@@ -179,7 +192,7 @@ correlated criteria, incomparable definitions, stale observations, or a disquali
    universe, constraints, definitions, and desired
    output format.
 2. Preserve each proposed criterion and its rationale.
-3. Mark `accept`, `modify`, or `reject` for every material suggestion.
+3. Mark one material suggestion `accept`, `modify`, `reject`, or `unresolved`.
 4. Implement only the policy you can explain.
 5. Do not use agreement between two systems as validation; use data, documentation, finance
    logic, and changed-input tests.
@@ -191,8 +204,12 @@ If live market retrieval fails, download **Offline Screening Case** and use the 
 public companies but **synthetic training metrics, not market evidence**. You may use it to
 complete the DRIVER cycle and name a provisional class target, but you must independently
 replace or verify every load-bearing metric before carrying the company into Week 2. Record the
-exact `SYNTHETIC_TRAINING_CASE_NOT_MARKET_EVIDENCE` label in the checkout. Lab 01 applies the
-policy to the table; Lab 02 implements the rule in code and performs the robustness tests.
+exact `SYNTHETIC_TRAINING_CASE_NOT_MARKET_EVIDENCE` label in the checkout. Lab 02 applies the
+policy — in `screening_starter.py` when the toolchain cooperates, on this table when it does
+not — and performs the robustness tests either way. If your Thursday target came from the
+offline case, still save its latest primary filing before Tuesday: verifying the load-bearing
+metrics against that filing is exactly Week 2's first step, and until then you carry the
+company as unverified, not as market evidence.
 
 ## Minimum validation evidence
 

@@ -1,5 +1,5 @@
-# Session 1 — DRIVER and Your First Professional Judgment
-**Week 1 · Tuesday · Lab 01: DRIVER Target Selection**
+# Session 1 — Meet the Course, Meet Your Tools
+**Week 1 · Tuesday · Lab 01: Meet the Course**
 
 ---
 
@@ -7,13 +7,12 @@
 
 1. The frame: [GitHub for content](https://github.com/CinderZhang/FIN43900-Fall2026), [Brightspace for grades](https://purdue.brightspace.com/d2l/home/1636012)
 2. **Meet your desk** — introduce yourself left and right; know at least 2 classmates
-3. **Tech gate** — preflight check, partner-verified, TA-confirmed
+3. **Tech gate** — Colab · ChatGPT + Codex · Gemini · agy · preflight check, partner-verified, TA-confirmed
 4. **Syllabus sprint** — download the PDF, read fast, quiz your partner, confirm with AI (ChatGPT main · Gemini checker)
-5. DRIVER retrieval from the prework video
-6. AI off, solo: write your screening policy — **start your quiz attempt when told**
-7. AI on, in pairs: ChatGPT vs Gemini on the same policy
-8. Apply · validate · evolve
-9. Reflect, then **submit — receipt on screen before you leave**
+5. **DRIVER first contact** — the six stages in plain terms (the video deepens this before Thursday)
+6. **Your Lab 01 checkout** — **start your quiz attempt when told**; record as you work
+7. **One company you are curious about** — Thursday turns curiosity into a defended choice
+8. Growth note, then **submit — receipt on screen before you leave**
 
 ---
 
@@ -24,13 +23,14 @@ Nobody sets up alone. Follow the projector, step by step:
 1. Open **[colab.research.google.com](https://colab.research.google.com)** → sign in with Google → New notebook
 2. Open **[chat.openai.com](https://chat.openai.com)** → sign in → then open **[Codex](https://chatgpt.com/codex)**, the coding editor inside your ChatGPT subscription — leave the tab open
 3. Open **[gemini.google.com](https://gemini.google.com)** → sign in (your Google AI account)
-4. Download **[agy — Google Antigravity](https://antigravity.google)**, Gemini's coding editor → start the installer **now**; it finishes on its own while we work
+4. Download **[agy — Google Antigravity](https://antigravity.google)**, Gemini's coding editor → start the installer **now**; it finishes on its own while we work *(the only real install of the semester — you'll live in it in later weeks)*
 5. We load `preflight_check.py` (from the [Week 1 page](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01)) in Colab together and press **Run**
 6. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
 
 *ChatGPT (OpenAI) is the main tool — **Codex** is its coding editor.
 Gemini (Google) is the second opinion and checker — **agy (Antigravity)** is its
-editor. Local Python install: optional, later, never required for a grade.*
+editor. Local Python install: optional, later, never required for a grade.
+A failure today is a support record, never a grade.*
 
 ---
 
@@ -56,8 +56,9 @@ Every research career starts with one unglamorous decision:
 
 - Screening is how professionals ration attention
 - AI will happily rank companies on definitions nobody checked
-- Today you make your first *defended* judgment: a provisional target
-  with a named disqualifier
+- **Thursday** you make that call — your first *defended* judgment
+- **Today** you get your bearings: the tools, the course, DRIVER,
+  and one company you are curious about
 
 ---
 
@@ -88,66 +89,61 @@ surprised you.
 
 The artifact proves the AI worked. **The explanation proves you did.**
 
-A screen can *admit* a company for research. It cannot prove an investment.
+A screen can *identify* a company worth your research. It cannot prove an investment.
 
 ---
 
-## Before AI: write your screening policy (solo)
+## Your Lab 01 checkout — record as you work
 
-**Nine written lines.** This is a research-admission decision — you are choosing
-which company earns your next hundred hours, **not making a buy/sell call**.
+**Start your quiz attempt when told.** Everything you record today comes from
+work you have already done in this room:
 
-| Write one line for each | Example of a real answer |
-|---|---|
-| **Decision user** — who acts on this screen? | a junior analyst proposing a coverage add |
-| **Decision** — what does it select? | one company admitted for valuation research |
-| **Universe** — which companies can enter? | US-listed public operating companies |
-| **Exclusions** — who is out, and why? | banks, insurers, REITs, funds — no FCFF fit |
-| **Criteria** (two) — which observable measures? | annualized return; annualized volatility |
-| **Definitions** — measured how, over what period? | three years of daily adjusted prices |
-| **Thresholds / weights** — pass lines or ranking? | return ≥ 8%, volatility ≤ 25%; lower volatility ranks first |
-| **Success test** — what would prove it useful? | survivors still look sound against the filing |
-| **Disqualifier** — what overrides a high score? | missing data > 1% or no current filing |
+1. **Lab Date** · **teammates / learning partners**
+2. **Readiness record** — `READY` with your preflight evidence, or `RECOVERING`
+   with the exact error and your named next step; include Codex tab open yes/no
+   and agy installed / installing / blocked
+   *(the shape, not your answer: "READY — preflight green in Colab, 126 rows AAPL,
+   chart saved. Codex tab open. agy finished installing at 2:10.")*
+3. **Syllabus practice** — your partner's question, the answer, and the syllabus
+   line that settles it
+   *(the shape, not your answer: "Q: can we drop a lab? A: yes — best-8-of-10 per
+   category, syllabus 'Lab checkouts' paragraph.")*
+4. **DRIVER in your own words** — one or two sentences: what belongs to you,
+   what the AI accelerates
+   *(the shape, not your answer: "I own the question and the final explanation;
+   AI drafts, codes, and checks the middle — and I stay on the loop.")*
 
-> The example column is the *shape* of an answer — copy nothing from it.
-> If you cannot name the fact that would kick your top-ranked company off
-> the list, you do not have a policy — you have a mood.
-
----
-
-## AI on: run and interrogate the screen
-
-*(ChatGPT = main · Gemini = checker — same as every week)*
-
-- Run or adapt the supplied screen — no silent definition changes
-- Verify **one load-bearing definition** against the named source
-  *(example: does this provider's "return" include dividends, or price only?)*
-- Run **one ranking-stability change** — does your target survive?
-  *(example: lookback three years → five years — is the top company still on top?)*
-- AI agreement is not validation
+> A documented failure with a named next step is full credit on the readiness
+> field. Technology failure is never a finance-skill deficit here.
 
 ---
 
-## Defend and check out
+## One company you are curious about
 
-Two-sentence defense to your partner — four parts:
-**target** (the company) · **reason** (your two strongest facts) ·
-**disqualifier** (the fact that would kill the pick) ·
-**next evidence** (the first thing you would check before trusting it)
+Write **one public company** you would enjoy spending a semester
+understanding, and **one sentence** on why.
 
-> Training-case example — the *shape*, not your answer:
-> "Investigate MSFT: it cleared every bar in my screen with zero missing data and
-> a current filing on record. It comes off my list if volatility crosses my 0.25
-> ceiling — and the next evidence I check is the actual 10-K."
+> The shape, not your answer: "Costco — I shop there every week and I still
+> don't understand how they make money on a $1.50 hot dog."
 
-**Checkout:** Lab Date · teammates/learning partners · decision & policy ·
-contribution · stability test · evidence · **session token (on the board)** ·
-in-person attendance declaration · truth attestation · receipt.
+- Curiosity, not analysis — nobody defends anything today
+- **Thursday turns curiosity into a defended choice**: your screen decides,
+  and the survivor becomes your Project 1 company
+- Not graded for the choice — Asbury Automotive (`ABG`) is the instructor's
+  demo and is off limits
+
+Tell your partner your company and your sentence.
+**This goes in your checkout as field 6**, right under your DRIVER sentence.
+
+---
+
+## Submit and check out
+
+**Session token (on the board)** · truth and in-person attendance attestation ·
+submit, then **open your receipt — no receipt on screen = not submitted.**
 
 *Last thing before submit: your **growth note** — 2–3 sentences, ungraded,
 for you alone. What can you do now that you couldn't 75 minutes ago?*
-
-*No receipt on screen = not submitted.*
 
 **Before Thursday — do these:**
 
@@ -159,5 +155,5 @@ for you alone. What can you do now that you couldn't 75 minutes ago?*
 *(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.
 Thursday is the do time.)*
 
-**Lab 02 preview:** identify your valuation target — **admit, replace, or hold**
-Tuesday's candidate — on finance logic, judgment, and data.
+**Lab 02 preview:** identify your valuation target — on finance logic,
+judgment, and data.

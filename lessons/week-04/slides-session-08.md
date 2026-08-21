@@ -50,4 +50,5 @@ Method comparison + explained disagreement · qualified deal evidence ·
 45-second recommendation content · AI paths · in-person attendance
 declaration · truth attestation · receipt.
 
-**Next week:** credit risk — the lender's eyes on the same company.
+**Next week:** the pro-forma build — the next five years of your company's
+financial statements, one defended driver at a time. Bring your evidence ledger.

@@ -2,6 +2,10 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the
+> course schedule). The prework below belongs to the previous curriculum and will be
+> replaced in full before this week begins — **do not prepare from this page yet.**
+
 Read only [OpenStax Principles of Finance §6.4](https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios)
 **“Think It Through: Financing a Business Expansion”** and **“Times Interest Earned Ratio”**
 (8–10 minutes). Do not paste or ingest OpenStax text into Codex, Gemini, or another AI system;

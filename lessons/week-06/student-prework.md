@@ -2,6 +2,10 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling II** (see the
+> course schedule). The prework below belongs to the previous curriculum and will be
+> replaced in full before this week begins — **do not prepare from this page yet.**
+
 Read only the SEC/Investor.gov bulletin [“What Are High-yield Corporate Bonds?”](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/what-are-0)
 sections **“What are some key risks?”**, **“Covenant protections”**, and **“Payment terms”**
 (6–8 minutes). Ask: **What fact distinguishes a model flag, covenant breach, payment default, and

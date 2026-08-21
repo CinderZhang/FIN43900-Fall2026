@@ -20,7 +20,10 @@ watch the 31:07 [published DRIVER video](https://youtu.be/gUepTIp11Og). Just wat
 to write, nothing to submit. **Thursday's lab is the do time**, and its cases come straight
 from the video. The five-minute ungraded practice quiz is an optional self-check after
 watching. Also bring to Thursday a working environment or your named remediation path — the
-environment you will have because Tuesday's class builds it with you; your Tuesday work is
-already in your Lab 01 checkout, and Thursday identifies your valuation target from it.
-When a starter fails, use the shared **Starter Help Ladder** from Level 0 upward; do not ask
-AI for a completed file or repository.
+environment you will have because Tuesday's class builds it with you. Your Tuesday work is
+already in your Lab 01 checkout; Thursday you write your screening policy AI-off, test it
+with two AI systems and your own validation, and identify your valuation target — the
+curiosity company you named Tuesday is a seed for it, not a commitment.
+When a starter fails, use the shared **Starter Help Ladder** (the course's step-by-step help
+protocol, published in Start Here) from Level 0 upward; do not ask AI for a completed file or
+repository.

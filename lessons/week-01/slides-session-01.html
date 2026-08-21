@@ -1,18 +1,17 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 01</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 1 — DRIVER and Your First Professional Judgment</h1>
-<p><strong>Week 1 · Tuesday · Lab 01: DRIVER Target Selection</strong></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 01</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 1 — Meet the Course, Meet Your Tools</h1>
+<p><strong>Week 1 · Tuesday · Lab 01: Meet the Course</strong></p>
 </section>
 <section class="slide">
 <h2>Today's run of show</h2>
 <ol>
 <li>The frame: <a href="https://github.com/CinderZhang/FIN43900-Fall2026" target="_blank" rel="noopener">GitHub for content</a>, <a href="https://purdue.brightspace.com/d2l/home/1636012" target="_blank" rel="noopener">Brightspace for grades</a></li>
 <li><strong>Meet your desk</strong> — introduce yourself left and right; know at least 2 classmates</li>
-<li><strong>Tech gate</strong> — preflight check, partner-verified, TA-confirmed</li>
+<li><strong>Tech gate</strong> — Colab · ChatGPT + Codex · Gemini · agy · preflight check, partner-verified, TA-confirmed</li>
 <li><strong>Syllabus sprint</strong> — download the PDF, read fast, quiz your partner, confirm with AI (ChatGPT main · Gemini checker)</li>
-<li>DRIVER retrieval from the prework video</li>
-<li>AI off, solo: write your screening policy — <strong>start your quiz attempt when told</strong></li>
-<li>AI on, in pairs: ChatGPT vs Gemini on the same policy</li>
-<li>Apply · validate · evolve</li>
-<li>Reflect, then <strong>submit — receipt on screen before you leave</strong></li>
+<li><strong>DRIVER first contact</strong> — the six stages in plain terms (the video deepens this before Thursday)</li>
+<li><strong>Your Lab 01 checkout</strong> — <strong>start your quiz attempt when told</strong>; record as you work</li>
+<li><strong>One company you are curious about</strong> — Thursday turns curiosity into a defended choice</li>
+<li>Growth note, then <strong>submit — receipt on screen before you leave</strong></li>
 </ol>
 </section>
 <section class="slide">
@@ -22,13 +21,14 @@
 <li>Open <strong><a href="https://colab.research.google.com" target="_blank" rel="noopener">colab.research.google.com</a></strong> → sign in with Google → New notebook</li>
 <li>Open <strong><a href="https://chat.openai.com" target="_blank" rel="noopener">chat.openai.com</a></strong> → sign in → then open <strong><a href="https://chatgpt.com/codex" target="_blank" rel="noopener">Codex</a></strong>, the coding editor inside your ChatGPT subscription — leave the tab open</li>
 <li>Open <strong><a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></strong> → sign in (your Google AI account)</li>
-<li>Download <strong><a href="https://antigravity.google" target="_blank" rel="noopener">agy — Google Antigravity</a></strong>, Gemini's coding editor → start the installer <strong>now</strong>; it finishes on its own while we work</li>
+<li>Download <strong><a href="https://antigravity.google" target="_blank" rel="noopener">agy — Google Antigravity</a></strong>, Gemini's coding editor → start the installer <strong>now</strong>; it finishes on its own while we work <em>(the only real install of the semester — you'll live in it in later weeks)</em></li>
 <li>We load <code>preflight_check.py</code> (from the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01" target="_blank" rel="noopener">Week 1 page</a>) in Colab together and press <strong>Run</strong></li>
 <li>Green diagnostic block = READY · anything else = raise a hand, a TA comes to you</li>
 </ol>
 <p><em>ChatGPT (OpenAI) is the main tool — <strong>Codex</strong> is its coding editor.
 Gemini (Google) is the second opinion and checker — <strong>agy (Antigravity)</strong> is its
-editor. Local Python install: optional, later, never required for a grade.</em></p>
+editor. Local Python install: optional, later, never required for a grade.
+A failure today is a support record, never a grade.</em></p>
 </section>
 <section class="slide">
 <h2>Syllabus sprint — your first AI practice</h2>
@@ -52,8 +52,9 @@ Unanswered questions go to the <strong>parking lot</strong> — answered Thursda
 <ul>
 <li>Screening is how professionals ration attention</li>
 <li>AI will happily rank companies on definitions nobody checked</li>
-<li>Today you make your first <em>defended</em> judgment: a provisional target
-with a named disqualifier</li>
+<li><strong>Thursday</strong> you make that call — your first <em>defended</em> judgment</li>
+<li><strong>Today</strong> you get your bearings: the tools, the course, DRIVER,
+and one company you are curious about</li>
 </ul>
 </section>
 <section class="slide">
@@ -108,92 +109,57 @@ AI still fetches for you at the edges.</p>
 where AI contributed vs. where your judgment intervened, and what
 surprised you.</p>
 <p>The artifact proves the AI worked. <strong>The explanation proves you did.</strong></p>
-<p>A screen can <em>admit</em> a company for research. It cannot prove an investment.</p>
+<p>A screen can <em>identify</em> a company worth your research. It cannot prove an investment.</p>
 </section>
 <section class="slide">
-<h2>Before AI: write your screening policy (solo)</h2>
-<p><strong>Nine written lines.</strong> This is a research-admission decision — you are choosing
-which company earns your next hundred hours, <strong>not making a buy/sell call</strong>.</p>
-<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Before AI: write your screening policy (solo) (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Before AI: write your screening policy (solo)</caption>
-<thead>
-<tr>
-<th scope="col">Write one line for each</th>
-<th scope="col">Example of a real answer</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Decision user</strong> — who acts on this screen?</td>
-<td>a junior analyst proposing a coverage add</td>
-</tr>
-<tr>
-<td><strong>Decision</strong> — what does it select?</td>
-<td>one company admitted for valuation research</td>
-</tr>
-<tr>
-<td><strong>Universe</strong> — which companies can enter?</td>
-<td>US-listed public operating companies</td>
-</tr>
-<tr>
-<td><strong>Exclusions</strong> — who is out, and why?</td>
-<td>banks, insurers, REITs, funds — no FCFF fit</td>
-</tr>
-<tr>
-<td><strong>Criteria</strong> (two) — which observable measures?</td>
-<td>annualized return; annualized volatility</td>
-</tr>
-<tr>
-<td><strong>Definitions</strong> — measured how, over what period?</td>
-<td>three years of daily adjusted prices</td>
-</tr>
-<tr>
-<td><strong>Thresholds / weights</strong> — pass lines or ranking?</td>
-<td>return ≥ 8%, volatility ≤ 25%; lower volatility ranks first</td>
-</tr>
-<tr>
-<td><strong>Success test</strong> — what would prove it useful?</td>
-<td>survivors still look sound against the filing</td>
-</tr>
-<tr>
-<td><strong>Disqualifier</strong> — what overrides a high score?</td>
-<td>missing data &gt; 1% or no current filing</td>
-</tr>
-</tbody></table></div>
+<h2>Your Lab 01 checkout — record as you work</h2>
+<p><strong>Start your quiz attempt when told.</strong> Everything you record today comes from
+work you have already done in this room:</p>
+<ol>
+<li><strong>Lab Date</strong> · <strong>teammates / learning partners</strong></li>
+<li><strong>Readiness record</strong> — <code>READY</code> with your preflight evidence, or <code>RECOVERING</code>
+with the exact error and your named next step; include Codex tab open yes/no
+and agy installed / installing / blocked
+<em>(the shape, not your answer: "READY — preflight green in Colab, 126 rows AAPL,
+chart saved. Codex tab open. agy finished installing at 2:10.")</em></li>
+<li><strong>Syllabus practice</strong> — your partner's question, the answer, and the syllabus
+line that settles it
+<em>(the shape, not your answer: "Q: can we drop a lab? A: yes — best-8-of-10 per
+category, syllabus 'Lab checkouts' paragraph.")</em></li>
+<li><strong>DRIVER in your own words</strong> — one or two sentences: what belongs to you,
+what the AI accelerates
+<em>(the shape, not your answer: "I own the question and the final explanation;
+AI drafts, codes, and checks the middle — and I stay on the loop.")</em></li>
+</ol>
 <blockquote>
-<p>The example column is the <em>shape</em> of an answer — copy nothing from it.
-If you cannot name the fact that would kick your top-ranked company off
-the list, you do not have a policy — you have a mood.</p>
+<p>A documented failure with a named next step is full credit on the readiness
+field. Technology failure is never a finance-skill deficit here.</p>
 </blockquote>
 </section>
 <section class="slide">
-<h2>AI on: run and interrogate the screen</h2>
-<p><em>(ChatGPT = main · Gemini = checker — same as every week)</em></p>
+<h2>One company you are curious about</h2>
+<p>Write <strong>one public company</strong> you would enjoy spending a semester
+understanding, and <strong>one sentence</strong> on why.</p>
+<blockquote>
+<p>The shape, not your answer: "Costco — I shop there every week and I still
+don't understand how they make money on a $1.50 hot dog."</p>
+</blockquote>
 <ul>
-<li>Run or adapt the supplied screen — no silent definition changes</li>
-<li>Verify <strong>one load-bearing definition</strong> against the named source
-<em>(example: does this provider's "return" include dividends, or price only?)</em></li>
-<li>Run <strong>one ranking-stability change</strong> — does your target survive?
-<em>(example: lookback three years → five years — is the top company still on top?)</em></li>
-<li>AI agreement is not validation</li>
+<li>Curiosity, not analysis — nobody defends anything today</li>
+<li><strong>Thursday turns curiosity into a defended choice</strong>: your screen decides,
+and the survivor becomes your Project 1 company</li>
+<li>Not graded for the choice — Asbury Automotive (<code>ABG</code>) is the instructor's
+demo and is off limits</li>
 </ul>
+<p>Tell your partner your company and your sentence.
+<strong>This goes in your checkout as field 6</strong>, right under your DRIVER sentence.</p>
 </section>
 <section class="slide">
-<h2>Defend and check out</h2>
-<p>Two-sentence defense to your partner — four parts:
-<strong>target</strong> (the company) · <strong>reason</strong> (your two strongest facts) ·
-<strong>disqualifier</strong> (the fact that would kill the pick) ·
-<strong>next evidence</strong> (the first thing you would check before trusting it)</p>
-<blockquote>
-<p>Training-case example — the <em>shape</em>, not your answer:
-"Investigate MSFT: it cleared every bar in my screen with zero missing data and
-a current filing on record. It comes off my list if volatility crosses my 0.25
-ceiling — and the next evidence I check is the actual 10-K."</p>
-</blockquote>
-<p><strong>Checkout:</strong> Lab Date · teammates/learning partners · decision &amp; policy ·
-contribution · stability test · evidence · <strong>session token (on the board)</strong> ·
-in-person attendance declaration · truth attestation · receipt.</p>
+<h2>Submit and check out</h2>
+<p><strong>Session token (on the board)</strong> · truth and in-person attendance attestation ·
+submit, then <strong>open your receipt — no receipt on screen = not submitted.</strong></p>
 <p><em>Last thing before submit: your <strong>growth note</strong> — 2–3 sentences, ungraded,
 for you alone. What can you do now that you couldn't 75 minutes ago?</em></p>
-<p><em>No receipt on screen = not submitted.</em></p>
 <p><strong>Before Thursday — do these:</strong></p>
 <ol>
 <li>Watch the <a href="https://youtu.be/gUepTIp11Og" target="_blank" rel="noopener">DRIVER video (31:07)</a> — <strong>your only
@@ -203,7 +169,7 @@ homework</strong>: own time, just watch, nothing to submit. Thursday's cases com
 </ol>
 <p><em>(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.
 Thursday is the do time.)</em></p>
-<p><strong>Lab 02 preview:</strong> identify your valuation target — <strong>admit, replace, or hold</strong>
-Tuesday's candidate — on finance logic, judgment, and data.</p>
+<p><strong>Lab 02 preview:</strong> identify your valuation target — on finance logic,
+judgment, and data.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

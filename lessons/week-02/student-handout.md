@@ -69,6 +69,73 @@ Use the most authoritative evidence available for the claim:
 Two sources can share a label and measure different objects. Do not average a discrepancy
 before explaining it.
 
+## The contamination catalog — know what poisons a number
+
+A **contamination** is any input that would silently make your valuation wrong if you carried
+it forward as a clean fact. Lab 04 asks you to find and correct one plausible contamination in
+your own ledger before Week 3 turns these inputs into a DCF. Contaminations come in two
+kinds, and professionals hunt both.
+
+### Mechanical contamination — wrong numbers that look right
+
+Nothing unusual happened at the company; the defect is in your pipeline. Units and scale
+(thousands vs millions), period (fiscal year vs trailing-twelve-months vs calendar), currency,
+basic vs diluted share counts, a provider's label measuring something different from the
+filing's definition (Week 1's PEG lesson), or missing data silently filled. Thursday's
+injected-defect exercise is mechanical-contamination practice: the code runs perfectly, the
+number is plausible, and the model is wrong. **Remedy: correct it at the source** — there is
+a right answer.
+
+### Economic contamination — honest numbers that poison a forecast
+
+Nothing is misreported: the filing is correct, audited, and public. The number still cannot
+enter your forecast unlabeled. This is exactly what your ledger's `normalization`
+classification exists for, and it splits into two groups with different remedies. Every case
+below is real; every link is a public filing or primary source you can open.
+
+#### One-time items — the event will not repeat
+
+| Contamination | What it looks like | A real, public case | If you carry it in unlabeled |
+|---|---|---|---|
+| **One-time expense** | impairment or write-down, restructuring charge, litigation settlement | Kraft Heinz took a combined **$15.4B impairment of goodwill and the Kraft and Oscar Mayer trademarks** in Q4 2018 — the quarter swung to a $12.6B loss ([earnings release](https://www.sec.gov/Archives/edgar/data/1637459/000163745919000010/ex991-erq42018.htm) · [FY2018 10-K](https://www.sec.gov/Archives/edgar/data/1637459/000163745919000049/form10-k2018.htm)) | your base-year EBIT starts in a hole that will not repeat; every margin and growth rate built off that base is fiction |
+| **One-time income** | gain on selling a business or marking an investment to a higher price; a tax valuation-allowance release *(a valuation allowance is a reserve saying "we may never get to use our accumulated tax losses"; releasing it books those future savings as one large non-cash gain, all at once)* | Tesla's FY2023 net income includes a **$5.9B one-time non-cash tax benefit** from releasing its valuation allowance ([FY2023 10-K](https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm)). Ford's Q4 2021 net income includes an **$8.2B fair-value gain on its Rivian shares** after Rivian's IPO — equity stakes like this are re-marked through net income, and Rivian's share-price decline produced large fair-value losses in 2022 ([FY2021 10-K](https://www.sec.gov/Archives/edgar/data/37996/000003799622000013/f-20211231.htm)) | net income looks like a step-change in earning power; an effective tax rate or margin estimated on that year inherits a never-again event |
+
+**The one-time-item test:** *will this item, at roughly this size, be in next year's number?*
+If not, take it out of your base year with a labeled `normalization` row — or keep it and
+explicitly qualify the row — and cite the **filing note**, not the summary income-statement
+line. Record the direction: did the item flatter income or punish it? Both happen, and both
+mislead.
+
+#### Basis changes — the measuring stick changed, and future numbers stay on the new basis
+
+| Contamination | What it looks like | A real, public case | If you carry it in unlabeled |
+|---|---|---|---|
+| **Change in accounting estimate** | useful lives lengthened or shortened: depreciation shifts, prospectively (no restatement), because management revised how fast the asset's value is consumed | Amazon lengthened server lives 5→6 years effective 2024 (**depreciation −$3.2B**), then shortened a subset back 6→5 effective 2025 because AI-era hardware ages faster (**operating income −$0.7B**) ([FY2024 10-K](https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm)). Microsoft's 4→6 change added **$3.7B to FY2023 operating income** ([FY2023 10-K](https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/msft-20230630.htm)) | EBIT and margins move in either direction without any current-period operating event, and this year's margin is no longer comparable to last year's; a forecast that silently mixes the two bases mis-reads both |
+| **Change in accounting principle** | switching methods — e.g., last-in-first-out (**LIFO**) to first-in-first-out (**FIFO**) or average-cost inventory costing; generally applied retrospectively (prior periods recast when practicable) | Arconic switched inventory costing from LIFO to average cost in Q3 2020; its auditor's formal concurrence that the new method is preferable is filed publicly as [Exhibit 18](https://www.sec.gov/Archives/edgar/data/1790982/000179098220000163/arnc20200930exhibit18.htm) (a "preferability letter") | numbers you pulled from older filings or providers may sit on the old basis while current ones sit on the new — margins shift with no economics behind them |
+| **Standards change (hits everyone at once)** | a new accounting rule moves items for every company on the same date — e.g., leases ([ASC Topic 842](https://storage.fasb.org/ASU%202016-02_Section%20A.pdf); ASC = the FASB's Accounting Standards Codification, US GAAP's rulebook) put operating-lease right-of-use assets and lease liabilities on the balance sheet starting in 2019 | every 10-K straddling 2019 | balance-sheet and leverage comparisons break across the boundary year; and if you treat lease liabilities as debt-like in your bridge, your FCFF must treat lease payments consistently — pick one lease policy and label it |
+| **Classification and "adjusted" games** | recurring costs excluded from "adjusted EBITDA"; ordinary operating expense presented as "special items" | the SEC polices exactly this — read its [non-GAAP Compliance & Disclosure Interpretations](https://www.sec.gov/divisions/corpfin/guidance/nongaapinterp.htm) | you value earnings the company never actually produces |
+
+**The basis-change test:** *is this year measured on the same basis as the years I am
+comparing it to or forecasting from?* If not, do **not** simply delete the change — the new
+basis is often management's best current estimate (Amazon's shortening reflects real AI-era
+hardware consumption). Instead: reconcile the two bases in a `normalization` row, choose
+which basis your forecast uses, and say why. The sin is silently mixing bases across years.
+
+**And one rarer case: error correction / restatement.** Here the original filing *was*
+wrong — Kraft Heinz also restated FY2016–2017 after SEC subpoenas (same
+[FY2018 10-K](https://www.sec.gov/Archives/edgar/data/1637459/000163745919000049/form10-k2018.htm)).
+If any number in your ledger came from a filing that was later restated, it was never a fact:
+rebuild the row from the restated filing and note the swap.
+
+### Where professionals learn this
+
+The CFA Program tests this material directly, and these sources are publicly readable:
+
+- CFA Institute, [Financial Reporting Quality](https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/financial-reporting-quality) (Level I refresher reading) — the taxonomy above, formalized: conservative vs aggressive choices, non-recurring items, classification shifting.
+- CFA Institute, [Evaluating Quality of Financial Reports](https://www.cfainstitute.org/en/membership/professional-development/refresher-readings/evaluating-quality-financial-reports) (Level II refresher reading) — the quality-assessment workflow an analyst runs on a real filing.
+- Damodaran, [*Measuring Earnings*](https://pages.stern.nyu.edu/~adamodar/pdfiles/valn2ed/ch9.pdf) (Investment Valuation, ch. 9, free PDF) — normalization specifically for valuation, the use we make of it this week.
+- SEC Division of Corporation Finance, [non-GAAP C&DIs](https://www.sec.gov/divisions/corpfin/guidance/nongaapinterp.htm) — where "adjusted" presentation crosses the line.
+
 ## This week's working steps
 
 ### Evidence ledger fields

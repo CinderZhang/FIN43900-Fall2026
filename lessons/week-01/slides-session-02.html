@@ -1,22 +1,25 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 02</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 2 — Numbers That Lie With a Straight Face</h1>
-<p><strong>Week 1 · Thursday · Lab 02: Screen Validation and Research Admission</strong></p>
+<p><strong>Week 1 · Thursday · Lab 02: Identify Your Target</strong></p>
 </section>
 <section class="slide">
 <h2>Today's run of show</h2>
+<p><strong>You arrive with:</strong> a working toolchain · one company you are curious about
+(it's in your Lab 01 checkout) · the DRIVER video watched.
+<strong>Today you identify your valuation target.</strong></p>
 <ol>
-<li>Parking-lot answers, then rebuild Tuesday from evidence</li>
-<li>AI off: audit your own screening policy</li>
-<li>Pair red team — attack criteria, exclusions, the disqualifier</li>
-<li>AI on: implement in <code>screening_starter.py</code> — <strong>start your quiz attempt when told</strong></li>
-<li>AI off: independent validation + ranking-stability test</li>
-<li>Missing-data / provider-disagreement attack</li>
-<li>Hostile-committee defenses</li>
+<li>Parking-lot answers + warm-up cases from the video</li>
+<li><strong>AI off, solo:</strong> write your nine-line screening policy (handout Part B)</li>
+<li><strong>AI on, pairs:</strong> ChatGPT vs Gemini on the same policy</li>
+<li><strong>Apply it</strong> in <code>screening_starter.py</code> — <strong>start your quiz attempt when told</strong></li>
+<li><strong>AI off:</strong> validate — one definition check + one stability change</li>
+<li><strong>Identify your target</strong> — the 45-second defense</li>
 <li><strong>Submit — receipt on screen before you leave</strong></li>
 </ol>
 </section>
 <section class="slide">
 <h2>The lesson of the week <em>(from your prework video)</em></h2>
-<p>Two providers can both report a "PEG ratio" — and differ by <strong>6×</strong>,
+<p>Two providers can both report a "PEG ratio" (price/earnings-to-growth —
+a popular value-for-growth shortcut) — and differ by <strong>6×</strong>,
 because one uses trailing growth and one uses forward estimates.</p>
 <p><strong>Shared labels can hide different measurements.</strong>
 Today you learn to catch that before it costs money.</p>
@@ -26,50 +29,142 @@ Today you learn to catch that before it costs money.</p>
 <ul>
 <li>A stock shows 400 insider "buy" events this quarter. Bullish?
 → Most insider events are compensation mechanics, not conviction.</li>
-<li>Your screen ranks a company #1 on "value." Which definition of value?</li>
-<li>What single fact would disqualify your provisional target?</li>
+<li>A screen ranks a company #1 on "value." Which definition of value?</li>
+<li>Your curiosity company from Tuesday: what single fact would make
+you drop it? <em>(If you can answer that by the end of today, you have a policy.)</em></li>
 </ul>
 </section>
 <section class="slide">
-<h2>Validate your admission</h2>
-<p><em>Open <code>screening_starter.py</code> in Colab: colab → File → Upload notebook/file →
-run the cell. Edit only the marked <code>STUDENT_WORK</code> lines. Stuck = hand up.</em></p>
+<h2>Before AI: write your screening policy (solo)</h2>
+<p><strong>Nine written lines — draft them on Part B of the Week 1 handout</strong>
+<em>(printed copies in the room; also on the Week 1 page)</em>. This is a research
+decision: which company earns your next hundred hours, <strong>not a buy/sell call</strong>.</p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Before AI: write your screening policy (solo) (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Before AI: write your screening policy (solo)</caption>
+<thead>
+<tr>
+<th scope="col">Write one line for each</th>
+<th scope="col">Example of a real answer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Decision user</strong> — who acts on this screen?</td>
+<td>a junior analyst proposing a coverage add</td>
+</tr>
+<tr>
+<td><strong>Decision</strong> — what does it select?</td>
+<td>one company admitted for valuation research</td>
+</tr>
+<tr>
+<td><strong>Universe</strong> — which companies can enter?</td>
+<td>US-listed public operating companies</td>
+</tr>
+<tr>
+<td><strong>Exclusions</strong> — who is out, and why?</td>
+<td>banks, insurers, REITs, funds — no FCFF fit</td>
+</tr>
+<tr>
+<td><strong>Criteria</strong> (two) — which observable measures?</td>
+<td>annualized return; annualized volatility</td>
+</tr>
+<tr>
+<td><strong>Definitions</strong> — measured how, over what period?</td>
+<td>three years of daily adjusted prices</td>
+</tr>
+<tr>
+<td><strong>Thresholds / weights</strong> — pass lines or ranking?</td>
+<td>return ≥ 8%, volatility ≤ 25%; lower volatility ranks first</td>
+</tr>
+<tr>
+<td><strong>Success test</strong> — what would prove it useful?</td>
+<td>survivors still look sound against the filing</td>
+</tr>
+<tr>
+<td><strong>Disqualifier</strong> — what overrides a high score?</td>
+<td>missing data &gt; 1% or no current filing</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>The example column is the <em>shape</em> of an answer — copy nothing from it.
+If you cannot name the fact that would kick your top-ranked company off
+the list, you do not have a policy — you have a mood.</p>
+</blockquote>
+<p><em>FCFF = free cash flow to the firm — for now it just means "an operating
+business we can value"; Week 2 teaches it with digits. REITs = real-estate
+investment trusts.</em></p>
+</section>
+<section class="slide">
+<h2>AI on: the two-AI comparison</h2>
+<p><em>(pairs — one partner sends the policy to ChatGPT, the other to Gemini)</em></p>
 <ol>
-<li>Take your Session-1 target and policy</li>
-<li>Trace each screening input: <strong>which provider, which definition, which period</strong></li>
-<li>Reconcile one input against the primary source (filing or authoritative series)</li>
-<li>Run the changed-input test your policy names</li>
-<li>Decision: <strong>admit for research · replace · conditionally admit</strong></li>
+<li><strong>Same policy to both systems</strong> — word for word
+<em>(fallback: the <strong>Week 1 — Dual-System Output Packet</strong> in Start Here, or the
+<code>COURSE-RUN PROBE:</code> route from Start Here's <strong>AI Access</strong> page)</em></li>
+<li><strong>Author one follow-up probe</strong> — write your predicted answer <em>first</em>
+<em>(the shape, not your answer: "Probe: which criterion is most sensitive to the
+three-year lookback? I predict volatility.")</em></li>
+<li><strong>Mark one material suggestion</strong> <code>accept</code> · <code>modify</code> · <code>reject</code> · <code>unresolved</code></li>
 </ol>
+<blockquote>
+<p>Two AIs agreeing is a coincidence of training data,
+not a fact about the world.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>Apply, then validate</h2>
+<p><em>Open <code>screening_starter.py</code> in Colab: colab → File → Upload → run the cell.
+Edit only the marked <code>STUDENT_WORK</code> lines. Stuck = hand up.</em></p>
+<p><strong>Apply (AI on):</strong></p>
+<ol>
+<li>Implement your transparent rule — no silent definition changes</li>
+<li>Network or provider down? Live instructor diagnostics or
+<code>offline-screening-case.csv</code> — <em>same finance either way</em></li>
+</ol>
+<p><strong>Validate (AI off):</strong>
+3. Check <strong>one load-bearing definition</strong> against the pre-staged provider/filing capture
+   <em>(example: does this provider's "return" include dividends, or price only?)</em>
+4. Run <strong>one ranking-stability change</strong> — one threshold, weight, lookback, or exclusion —
+   and compare candidate order
+   <em>(example: lookback three years → five years — is the top company still on top?)</em></p>
+<blockquote>
+<p><code>No material change</code> is a valid result when the test is genuine.
+AI agreement is not validation.</p>
+</blockquote>
 </section>
 <section class="slide">
 <h2>The oral gate — your 45-second defense</h2>
 <p>Six parts, in order: <strong>target · two dated facts · most sensitive assumption ·
-remaining unknown · decision (admit / replace / hold) · reversal trigger</strong></p>
+remaining unknown · decision · reversal trigger</strong></p>
 <blockquote>
 <p>Training-case example — the <em>shape</em>, not your answer:
-"Admit MSFT for research: it passed my screen on the August training data and
-its latest 10-K is on file. The ranking hinges on my three-year window — I have
-not tested five — so I admit it, and I reverse if the longer window drops it
-below my return bar."</p>
+"My target is MSFT: it passed my screen on the August training data and its
+latest 10-K is on file. The ranking hinges on my three-year window — I have
+not tested five — so that is my open unknown. I take it as my target, and I
+reverse if volatility crosses my 0.25 ceiling on the longer window."</p>
 </blockquote>
+<p><em>(Mapped: target → MSFT · facts → screen pass + 10-K on file · assumption →
+the three-year window · unknown → five years untested · decision → take it ·
+reversal → the 0.25 ceiling.)</em></p>
+<p>A defensible <strong><code>no admissible target yet</code></strong> with a named next candidate
+is a strong outcome.</p>
 <p>Explain it aloud with the evidence visible.
 Explanation is ownership evidence — silent familiarity hides gaps.</p>
 </section>
 <section class="slide">
 <h2>Checkout</h2>
 <p>Session token on the board · growth note (ungraded, yours) before submit.</p>
-<p>Lab Date · teammates/learning partners · admission decision + evidence ·
-definition reconciliation · changed-input result · AI access paths ·
-in-person attendance declaration · truth attestation · receipt.</p>
-<p><strong>The company you admitted today is your Project 1 company.</strong></p>
+<p>Lab Date · teammates + contribution · problem and decision · your nine-line
+policy · AI-use record · data and evidence · independent validation ·
+stability test · <strong>your target</strong> (company · unknown · reversal trigger) ·
+optional artifact link · <strong>session token</strong> · in-person attendance
+attestation · receipt.</p>
+<p><strong>The company that survives your screen is your Project 1 company.</strong></p>
 <p><strong>Before Tuesday — do these:</strong></p>
 <ol>
 <li>Watch the assigned <a href="https://youtu.be/LlmBzbQbNwQ" target="_blank" rel="noopener">three-lens video (23 min)</a> —
 the template for everything you build in Weeks 2–4</li>
-<li>Save your company's latest primary filing (10-K or 10-Q) where you can open it in class</li>
+<li>Save your target's latest primary filing — the 10-K (annual) or 10-Q
+(quarterly) report it files with the SEC — where you can open it in class</li>
 <li>Write one sentence: the decision this valuation will support, and for whom</li>
-<li>Confirm both required subscriptions reach Codex and Gemini Pro</li>
 </ol>
 <p><strong>Lab 03 preview:</strong> write your before-AI valuation baseline — Project 1 <strong>Edition A</strong>,
 the frozen proof that the judgment in this project is yours.</p>

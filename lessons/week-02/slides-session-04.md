@@ -7,7 +7,7 @@
 
 1. Mission: a model contract another analyst can audit
 2. Worked FCFF + bridge mini case — predict, then look
-3. Source hierarchy + find the poisoned row
+3. Source hierarchy · the contamination catalog · find the poisoned row
 4. Two-AI architecture proposals (ChatGPT architect · Gemini checker) — **start your quiz attempt when told**
 5. Your company: evidence ledger + starter
 6. Unit and share-count attack
@@ -52,6 +52,44 @@ On your real company, every row needs a **source and an as-of date**.
 
 Filed statements > reconciled disclosures > authoritative series >
 provider fields (reconciled) > AI summaries (leads only).
+
+---
+
+## The contamination catalog
+
+**Mechanical — wrong numbers that look right** *(you just met one)*
+units · period · currency · share count · provider label ≠ filing definition
+→ **correct at the source**
+
+**Economic — honest numbers that poison a forecast** *(the filing is correct)*
+
+*One-time items — the event won't repeat:*
+- **One-time expense** — Kraft Heinz: $15.4B goodwill + trademark
+  impairment, Q4 2018
+- **One-time income** — Tesla FY2023: $5.9B one-time tax benefit ·
+  Ford Q4 2021: $8.2B Rivian fair-value gain (fair-value losses followed in 2022)
+
+> Test: **will it be in next year's number, at this size?**
+> If not: normalize it out of the base year — or keep it and say so —
+> label the row, cite the filing note.
+
+*Basis changes — the measuring stick changed:*
+- **Estimate change** — Amazon: server lives 5→6 years (depreciation −$3.2B)…
+  then a subset back 6→5 for AI hardware (operating income −$0.7B)
+- **Principle / standards change** — LIFO → average cost; leases moving
+  on-balance-sheet in 2019
+- **"Adjusted" games** — recurring costs excluded from adjusted EBITDA
+
+> Test: **same basis as the years you compare against?**
+> If not: reconcile both bases, choose your forecast basis, say why.
+> The sin is silently mixing bases.
+
+*The shape, not your answer: "Row: D&A. My target extended server lives last
+year (10-K note) — this year's margin isn't comparable to last year's. My
+normalization row reconciles both bases; I forecast on the new life, since
+it's management's current estimate, and labeled the choice."*
+
+Full table with the filing links: **Week 2 handout → The contamination catalog.**
 
 ---
 

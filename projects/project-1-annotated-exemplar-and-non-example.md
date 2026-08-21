@@ -13,8 +13,10 @@ a complete project. Scores still follow the Major Project Analytic Rubric.
 > enterprise-to-equity bridge that reconciles net debt and diluted shares to the cited filing.
 > The low case uses a 180 bp margin decline and raises WACC 75 bp; value falls to $38. A dated peer
 > policy excludes one firm before results because its revenue mix and fiscal period are not
-> comparable. **Credit/downside check:** a frozen 20% EBITDA decline reduces EBIT coverage from
-> 4.1x to 2.6x and narrows, but does not reverse, the action. **Reversal:** initiate only if two
+> comparable. **Downside scenario on the pro-forma:** a frozen recession case (revenue −8%,
+> 120 bp of margin compression, run through the linked statements) cuts year-two free cash
+> flow by half, draws the modeled revolver, and reduces EBIT coverage from
+> 4.1x to 2.6x — it narrows, but does not reverse, the action. **Reversal:** initiate only if two
 > reported quarters support the margin path and coverage remains above 3.0x; reject if coverage
 > falls below 2.5x or the bridge no longer reconciles. **Source form:** ExampleCo **(FICTIONAL —
 > FIN 43900 TEACHING DATA)** Form 10-K, fictional accession `0000000000-00-000000`, filed
@@ -29,7 +31,8 @@ Why it is useful:
 - it names a decision user/action, range, date, and condition rather than a decorative valuation;
 - assumptions are causal and the changed-input result affects claim strength;
 - the bridge, peer policy, and source boundary are inspectable;
-- the credit test is connected to the equity action without pretending to be a full default model;
+- the downside scenario runs through the linked pro-forma statements and is connected to the
+  equity action without pretending to be a full default model;
 - the visibly fictional citation demonstrates form without pretending to provide usable evidence;
 - AI proposes an item, but a precommitted human rule and independent evidence own the disposition;
 - the reversal rule has a metric, threshold, and evidence window.
