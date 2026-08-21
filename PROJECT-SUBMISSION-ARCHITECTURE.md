@@ -162,7 +162,10 @@ presents the decision through an investment-committee simulation.
 
 ### 7. Video 3 — Buy-side investment-committee presentation
 
-**Maximum duration: 5:00. Graders stop at 5:00.** Present as the assigned analyst to a
+**Maximum duration: 5:00. Graders stop at 5:00.** A project brief may require a specific
+opening segment inside this window — Project 1 requires a live product demonstration as
+the video's main delivery — and that requirement is stated in the project's own brief.
+Present as the assigned analyst to a
 buy-side investment committee. Lead with the decision, not the build process. Defend the
 recommendation, range, evidence, material assumptions, risks, and explicit conditions or
 triggers. End with a clear committee ask. This video's unique function is to demonstrate the
