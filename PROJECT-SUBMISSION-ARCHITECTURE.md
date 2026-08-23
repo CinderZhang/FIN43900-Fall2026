@@ -308,14 +308,3 @@ never stores, substitutes for, or determines whether the Edition A baseline exis
 The final assignment states that an inaccessible required link at grading time is missing
 evidence. Before release, choose and publish one uniform short cure process for access-setting
 mistakes; it may restore access but may not replace or revise the underlying work.
-
-Do not copy the Spring 2026 public Substack packaging, dates, grade associations, or student
-submissions. Rebuild these objects from the Fall contract.
-
-## Release gates still open
-
-- Complete the current-term Purdue policy-mail sweep before student release.
-- Publish the instructional-team GitHub access identity, standard filenames, link-cure process,
-  and accessible video alternative on each assignment page.
-- If an in-class Capstone Q&A is retained, treat it as formative and ungraded in this version;
-  do not create an additional graded component unless course points are formally revised.

@@ -1,5 +1,9 @@
 # Week 6 Student Handout — Stress Is a Causal Story
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling II** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 ## Covenant sheet
 
 For each covenant record numerator, denominator, permitted adjustments, period, test date,

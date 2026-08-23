@@ -1,5 +1,9 @@
 # Lab 09 — Human Credit Baseline Switch Sheet
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 Use this accessible printable sheet only when a timestamped local file is unavailable. Complete
 it with AI closed. Show the completed sheet to the instructor, Beckett, or Edward at the announced
 switch time and obtain initials. This is a witnessed **switch artifact**; it is not a Brightspace

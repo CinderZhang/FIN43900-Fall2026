@@ -1,5 +1,9 @@
 # Week 5 Student Handout — Credit Is a Downside Decision
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 ## Decision frame
 
 State borrower/transaction, exposure, horizon, decision user, available actions, loss if an

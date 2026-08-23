@@ -1,5 +1,9 @@
 # Week 5 Calculation Recovery and Project 1 Credit Transfer
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 Use this page if Python is unavailable **or** after the synthetic screen to transfer the credit
 logic to your Project 1 company. The no-code path and code path are judged on the same finance
 evidence. Label any result you could not execute; do not invent a value.

@@ -39,6 +39,6 @@ mark each missing field; this is the equivalent route and creates no extra grade
 The memo/deck and repository must stand alone. Videos demonstrate ownership; they do not
 replace the work. Use the exact bundle and duration rules in the project architecture.
 
-If this checkout does not count among your best eight, the cold-run and validation evidence are
-still required in Project 1. Use the ungraded readiness-feedback path before the published
+Even if a lab checkout does not count among your best eight, the cold-run and validation
+evidence are still required in Project 1. Use the ungraded readiness-feedback path before the published
 cutoff for a mechanical gap report and one instructional-team risk probe.

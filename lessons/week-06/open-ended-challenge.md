@@ -1,5 +1,9 @@
 # Optional Open-Ended Challenge — Covenant Pass, Economic Fail
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling II** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 Design a plausible case in which the borrower still passes every stated covenant but the
 economic credit has materially deteriorated. Then design the reverse: a technical covenant
 breach with limited near-term loss risk. For each, show the mechanism, missing metric, committee

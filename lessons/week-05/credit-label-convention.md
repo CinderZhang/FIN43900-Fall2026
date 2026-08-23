@@ -1,5 +1,9 @@
 # Week 5 Synthetic Outcome-Label Convention
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 The `adverse_outcome_next_12m` field is a **synthetic, fully observed teaching label** measured
 from the stated underwriting decision date `t0` through `t0 + 12 months`:
 

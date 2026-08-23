@@ -1,5 +1,9 @@
 # Week 6 Calculation Recovery and Project 1 Stress Transfer
 
+> **This module is being rebuilt as Pro-Forma Financial Modeling II** (see the course
+> schedule). The page below is the previous curriculum and will be replaced in full
+> before this week begins — do not prepare from it.
+
 Use this page when code is unavailable and to convert the synthetic stress logic into one bounded
 Project 1 downside test. The no-code and code routes require the same prediction, arithmetic,
 limitations, and decision consequence.
