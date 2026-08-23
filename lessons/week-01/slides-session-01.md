@@ -7,7 +7,7 @@
 
 1. The frame: [GitHub for content](https://github.com/CinderZhang/FIN43900-Fall2026), [Brightspace for grades](https://purdue.brightspace.com/d2l/home/1636012)
 2. **Meet your desk** — introduce yourself left and right; know at least 2 classmates
-3. **Tech gate** — Colab · ChatGPT + Codex · Gemini · agy · preflight check, partner-verified, TA-confirmed
+3. **Tech gate** — Colab · ChatGPT app + Codex · Gemini · agy · Codex CLI · preflight, partner-verified, TA-confirmed
 4. **Syllabus sprint** — download the PDF, read fast, quiz your partner, confirm with AI (ChatGPT main · Gemini checker)
 5. **DRIVER first contact** — the six stages in plain terms (the video deepens this before Thursday)
 6. **Your Lab 01 checkout** — **start your quiz attempt when told**; record as you work
@@ -21,15 +21,20 @@
 Nobody sets up alone. Follow the projector, step by step:
 
 1. Open **[colab.research.google.com](https://colab.research.google.com)** → sign in with Google → New notebook
-2. Open **[chat.openai.com](https://chat.openai.com)** → sign in → then open **[Codex](https://chatgpt.com/codex)**, the coding editor inside your ChatGPT subscription — leave the tab open
+2. Download the **[ChatGPT desktop app](https://chatgpt.com/download)** → sign in → **start the installer now**; it finishes on its own while we keep moving. **Codex**, your coding agent, lives inside this app
 3. Open **[gemini.google.com](https://gemini.google.com)** → sign in (your Google AI account)
-4. Download **[agy — Google Antigravity](https://antigravity.google)**, Gemini's coding editor → start the installer **now**; it finishes on its own while we work *(the only real install of the semester — you'll live in it in later weeks)*
-5. We load `preflight_check.py` (from the [Week 1 page](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01)) in Colab together and press **Run**
-6. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
+4. Download **[agy — Google Antigravity](https://antigravity.google)**, Gemini's coding editor → **start that installer now** too; it also finishes on its own
+5. **Codex CLI** — open your terminal *(Windows: Start → type `PowerShell` · Mac: ⌘-Space → type `Terminal`)*, **copy the one-line command from your [Week 1 handout](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-01/student-handout.md)** and paste it. Then type `codex` and choose **Sign in with ChatGPT**
+6. We load `preflight_check.py` (same [Week 1 page](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01)) in Colab together and press **Run**
+7. Green diagnostic block = READY · anything else = raise a hand, a TA comes to you
 
-*ChatGPT (OpenAI) is the main tool — **Codex** is its coding editor.
-Gemini (Google) is the second opinion and checker — **agy (Antigravity)** is its
-editor. Local Python install: optional, later, never required for a grade.
+> **Copy the command — never retype it.** It is in your [Week 1 handout](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-01/student-handout.md).
+
+*ChatGPT (OpenAI) is the main tool — **Codex** is its coding agent. You get Codex two
+ways, and you set up both today: inside the **ChatGPT desktop app**, and in your terminal
+as the **Codex CLI**. Gemini (Google) is the second opinion and checker — **agy
+(Antigravity)** is its editor. Three installers start today and finish on their own.
+Local Python install: optional, later, never required for a grade.
 A failure today is a support record, never a grade.*
 
 ---
@@ -100,10 +105,11 @@ work you have already done in this room:
 
 1. **Lab Date** · **teammates / learning partners**
 2. **Readiness record** — `READY` with your preflight evidence, or `RECOVERING`
-   with the exact error and your named next step; include Codex tab open yes/no
-   and agy installed / installing / blocked
+   with the exact error and your named next step; include ChatGPT app signed in yes/no,
+   `codex` runs in the terminal yes/no, and agy installed / installing / blocked
    *(the shape, not your answer: "READY — preflight green in Colab, 126 rows AAPL,
-   chart saved. Codex tab open. agy finished installing at 2:10.")*
+   chart saved. ChatGPT app signed in, Codex visible. `codex` runs, signed in. agy
+   finished installing at 2:10.")*
 3. **Syllabus practice** — your partner's question, the answer, and the syllabus
    line that settles it
    *(the shape, not your answer: "Q: can we drop a lab? A: yes — best-8-of-10 per

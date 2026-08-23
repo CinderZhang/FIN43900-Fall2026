@@ -79,12 +79,40 @@ For each item, record `READY`, `RECOVERING`, or `UNVERIFIED`, then retain the ev
 | market-data retrieval | ticker, returned dates, row count |  |  |
 | chart/output | rendered figure or saved output |  |  |
 | AI Access required-subscription check + Week 1 dual-system packet | plain-text confirmation only |  |  |
-| Codex coding editor (chatgpt.com/codex) opens in the browser | plain-text confirmation only |  |  |
+| ChatGPT desktop app installed, signed in, Codex visible in it | plain-text note; `install in progress` is a valid RECOVERING state |  |  |
+| Codex CLI installed — `codex` runs and is signed in with ChatGPT | plain-text note of what the terminal printed |  |  |
 | agy (Google Antigravity) editor installed and opens | plain-text note; `install in progress` is a valid RECOVERING state |  |  |
 | Optional accessible free interface or `COURSE-RUN PROBE:` route | plain-text confirmation only |  |  |
 
 *(The shape, not your answer: "market-data retrieval — READY — AAPL, 756 rows returned,
 2023-08-26 → 2026-08-25.")*
+
+### Codex CLI — the one line to copy
+
+Open your terminal — **Windows:** Start → type `PowerShell` · **Mac:** ⌘-Space → type
+`Terminal`. **Copy** the line for your machine and paste it. Do not retype it.
+
+Windows:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+Mac:
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+Then type `codex`, press Enter, and choose **Sign in with ChatGPT** — the same account you
+already pay for. No API key, no credit card, nothing else to buy.
+
+*(The shape, not your answer: "Codex CLI — READY — installed 0.149.0, `codex` opened and
+signed in as my Purdue ChatGPT account.")*
+
+If the terminal refuses the line, that is a **RECOVERING** row, not a failure: write down
+the exact message, raise your hand, and a TA picks it up. Nothing in Lab 01 or Lab 02
+depends on the CLI.
 
 ### Later-course capabilities — no Week 1 lab collects these
 

@@ -11,7 +11,9 @@ tiers is your own call. The course assigns no textbook; these subscriptions are 
 materials.
 
 **How the two systems are used:** ChatGPT (with Codex for coding work) is the course's main
-working tool all semester. Gemini is the second opinion and the checker — when a lab asks for
+working tool all semester. You reach Codex two ways, both set up together in Tuesday's Week 1
+class and both covered by the same subscription — inside the **ChatGPT desktop app**, and in
+your terminal as the **Codex CLI**. There is no additional purchase and no API key. Gemini is the second opinion and the checker — when a lab asks for
 two systems, you send the same request to both and treat disagreement as information. Neither
 system's answer is ever evidence by itself.
 

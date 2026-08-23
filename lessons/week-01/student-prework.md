@@ -9,11 +9,37 @@ Fallback Routes** signed in on your phone or laptop browser (sign-up help is als
 in class — arriving without them costs you nothing but a few minutes of class time). That
 is the entire Tuesday ask.
 
-**You do not set up any software before class.** All technical setup — Colab, ChatGPT and
-Codex, Gemini, the agy editor, the readiness check — happens **together, step by step, in
-Tuesday's class**, with the instructor projecting every click and TAs walking the rows. If
-you *want* a head start you may try the setup at home, but it is optional, never assumed,
-and no grade ever depends on it working before you arrive.
+**You do not set up any software before class.** All technical setup — Colab, the ChatGPT
+desktop app (Codex lives inside it), Gemini, the agy editor, the Codex CLI, the readiness
+check — happens **together, step by step, in Tuesday's class**, with the instructor
+projecting every click and TAs walking the rows. If you *want* a head start you may try the
+setup at home, but it is optional, never assumed, and no grade ever depends on it working
+before you arrive.
+
+**Codex CLI — the line you copy in Tuesday's class.**
+
+We do this together in class; it is here — and in your Week 1 handout — so you can **copy**
+it instead of retyping it from the projector. Open your terminal — **Windows:** Start → type `PowerShell` · **Mac:**
+⌘-Space → type `Terminal` — then paste the line for your machine:
+
+Windows:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+Mac:
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+Then type `codex`, press Enter, and choose **Sign in with ChatGPT** — the subscription you
+already have. There is nothing further to buy, and no API key to paste.
+
+Codex reaches you two ways and you set up both: inside the **ChatGPT desktop app**
+(download at [chatgpt.com/download](https://chatgpt.com/download)) and in the terminal as
+the **Codex CLI**. Same Codex, same account, two doors.
 
 The **academic Week 1 prework** is one item, on your own time, **before Thursday's Lab 02**:
 watch the 31:07 [published DRIVER video](https://youtu.be/gUepTIp11Og). Just watch — nothing

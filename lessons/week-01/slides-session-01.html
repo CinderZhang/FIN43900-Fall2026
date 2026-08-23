@@ -6,7 +6,7 @@
 <ol>
 <li>The frame: <a href="https://github.com/CinderZhang/FIN43900-Fall2026" target="_blank" rel="noopener">GitHub for content</a>, <a href="https://purdue.brightspace.com/d2l/home/1636012" target="_blank" rel="noopener">Brightspace for grades</a></li>
 <li><strong>Meet your desk</strong> — introduce yourself left and right; know at least 2 classmates</li>
-<li><strong>Tech gate</strong> — Colab · ChatGPT + Codex · Gemini · agy · preflight check, partner-verified, TA-confirmed</li>
+<li><strong>Tech gate</strong> — Colab · ChatGPT app + Codex · Gemini · agy · Codex CLI · preflight, partner-verified, TA-confirmed</li>
 <li><strong>Syllabus sprint</strong> — download the PDF, read fast, quiz your partner, confirm with AI (ChatGPT main · Gemini checker)</li>
 <li><strong>DRIVER first contact</strong> — the six stages in plain terms (the video deepens this before Thursday)</li>
 <li><strong>Your Lab 01 checkout</strong> — <strong>start your quiz attempt when told</strong>; record as you work</li>
@@ -19,15 +19,21 @@
 <p>Nobody sets up alone. Follow the projector, step by step:</p>
 <ol>
 <li>Open <strong><a href="https://colab.research.google.com" target="_blank" rel="noopener">colab.research.google.com</a></strong> → sign in with Google → New notebook</li>
-<li>Open <strong><a href="https://chat.openai.com" target="_blank" rel="noopener">chat.openai.com</a></strong> → sign in → then open <strong><a href="https://chatgpt.com/codex" target="_blank" rel="noopener">Codex</a></strong>, the coding editor inside your ChatGPT subscription — leave the tab open</li>
+<li>Download the <strong><a href="https://chatgpt.com/download" target="_blank" rel="noopener">ChatGPT desktop app</a></strong> → sign in → <strong>start the installer now</strong>; it finishes on its own while we keep moving. <strong>Codex</strong>, your coding agent, lives inside this app</li>
 <li>Open <strong><a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></strong> → sign in (your Google AI account)</li>
-<li>Download <strong><a href="https://antigravity.google" target="_blank" rel="noopener">agy — Google Antigravity</a></strong>, Gemini's coding editor → start the installer <strong>now</strong>; it finishes on its own while we work <em>(the only real install of the semester — you'll live in it in later weeks)</em></li>
-<li>We load <code>preflight_check.py</code> (from the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01" target="_blank" rel="noopener">Week 1 page</a>) in Colab together and press <strong>Run</strong></li>
+<li>Download <strong><a href="https://antigravity.google" target="_blank" rel="noopener">agy — Google Antigravity</a></strong>, Gemini's coding editor → <strong>start that installer now</strong> too; it also finishes on its own</li>
+<li><strong>Codex CLI</strong> — open your terminal <em>(Windows: Start → type <code>PowerShell</code> · Mac: ⌘-Space → type <code>Terminal</code>)</em>, <strong>copy the one-line command from your <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-01/student-handout.md" target="_blank" rel="noopener">Week 1 handout</a></strong> and paste it. Then type <code>codex</code> and choose <strong>Sign in with ChatGPT</strong></li>
+<li>We load <code>preflight_check.py</code> (same <a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-01" target="_blank" rel="noopener">Week 1 page</a>) in Colab together and press <strong>Run</strong></li>
 <li>Green diagnostic block = READY · anything else = raise a hand, a TA comes to you</li>
 </ol>
-<p><em>ChatGPT (OpenAI) is the main tool — <strong>Codex</strong> is its coding editor.
-Gemini (Google) is the second opinion and checker — <strong>agy (Antigravity)</strong> is its
-editor. Local Python install: optional, later, never required for a grade.
+<blockquote>
+<p><strong>Copy the command — never retype it.</strong> It is in your <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-01/student-handout.md" target="_blank" rel="noopener">Week 1 handout</a>.</p>
+</blockquote>
+<p><em>ChatGPT (OpenAI) is the main tool — <strong>Codex</strong> is its coding agent. You get Codex two
+ways, and you set up both today: inside the <strong>ChatGPT desktop app</strong>, and in your terminal
+as the <strong>Codex CLI</strong>. Gemini (Google) is the second opinion and checker — <strong>agy
+(Antigravity)</strong> is its editor. Three installers start today and finish on their own.
+Local Python install: optional, later, never required for a grade.
 A failure today is a support record, never a grade.</em></p>
 </section>
 <section class="slide">
@@ -118,10 +124,11 @@ work you have already done in this room:</p>
 <ol>
 <li><strong>Lab Date</strong> · <strong>teammates / learning partners</strong></li>
 <li><strong>Readiness record</strong> — <code>READY</code> with your preflight evidence, or <code>RECOVERING</code>
-with the exact error and your named next step; include Codex tab open yes/no
-and agy installed / installing / blocked
+with the exact error and your named next step; include ChatGPT app signed in yes/no,
+<code>codex</code> runs in the terminal yes/no, and agy installed / installing / blocked
 <em>(the shape, not your answer: "READY — preflight green in Colab, 126 rows AAPL,
-chart saved. Codex tab open. agy finished installing at 2:10.")</em></li>
+chart saved. ChatGPT app signed in, Codex visible. <code>codex</code> runs, signed in. agy
+finished installing at 2:10.")</em></li>
 <li><strong>Syllabus practice</strong> — your partner's question, the answer, and the syllabus
 line that settles it
 <em>(the shape, not your answer: "Q: can we drop a lab? A: yes — best-8-of-10 per
