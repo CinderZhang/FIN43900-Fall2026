@@ -44,8 +44,8 @@ the **Codex CLI**. Same Codex, same account, two doors.
 The **academic Week 1 prework** is one item, on your own time, **before Thursday's Lab 02**:
 watch the 31:07 [published DRIVER video](https://youtu.be/gUepTIp11Og). Just watch — nothing
 to write, nothing to submit. **Thursday's lab is the do time**, and its cases come straight
-from the video. The five-minute ungraded practice quiz is an optional self-check after
-watching. Also bring to Thursday a working environment or your named remediation path — the
+from the video. The handout states the video's five key ideas as a readable self-check
+after watching. Also bring to Thursday a working environment or your named remediation path — the
 environment you will have because Tuesday's class builds it with you. Your Tuesday work is
 already in your Lab 01 checkout; Thursday you write your screening policy AI-off, test it
 with two AI systems and your own validation, and identify your valuation target — the

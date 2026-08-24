@@ -49,9 +49,9 @@ business form. Therefore the deliverable is a **provisional research admission d
 source check and stability test—not a buy/sell conclusion. Answer the video's three pre-class
 questions from this table and the screening-policy worksheet below.
 
-### Complete readable reference for the practice quiz
+### The five key ideas from the DRIVER video
 
-The Week 1 practice quiz checks these five ideas. They are stated here so that watching the video
+These five ideas anchor Week 1. They are stated here so that watching the video
 is never the only way to answer an assessed question.
 
 1. **Begin with the task and decision.** In Discover and Define, ask, “What task do I want to

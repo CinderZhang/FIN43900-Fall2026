@@ -155,7 +155,7 @@ for you alone. What can you do now that you couldn't 75 minutes ago?*
 
 1. Watch the [DRIVER video (31:07)](https://youtu.be/gUepTIp11Og) — **your only
    homework**: own time, just watch, nothing to submit. Thursday's cases come from it
-   (optional self-check: the 5-minute practice quiz; readable backup: the handout)
+   (readable backup: the handout's five key ideas)
 2. Bring a working environment — or the exact error message and your named fix
 
 *(Your Tuesday work is already in your Lab 01 checkout — nothing else to prepare.

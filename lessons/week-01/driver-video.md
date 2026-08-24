@@ -16,7 +16,7 @@ noticing (nothing to hand in):
 If the player or automatic captions do not work, use the **Readable DRIVER alternative** in the
 Week 1 student handout. It contains the six-stage reference and the complete assessed screening
 exercise; it is not represented as a verbatim transcript. No assessed detail depends exclusively
-on the video: the handout includes every concept checked by the practice quiz. This is a Week 1
+on the video: the handout states every key concept from the video. This is a Week 1
 instructional object and is not part of the syllabus.
 
 You will learn and practice the DRIVER cycle explicitly in Week 1. Lab 01 is graded under the
