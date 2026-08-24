@@ -23,8 +23,19 @@ bug worth reporting.
 - [Week 10 — Alternative Data & Market Analysis](lessons/week-10/)
 - [Week 11 — Alternative Data & Market Analysis](lessons/week-11/)
 - [Week 12 — Project 2 Studio](lessons/week-12/)
+- [Week 13 — Project 2 Due & Applied Decision Systems](lessons/week-13/) — projected slides: [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-13/slides-session-25.html)
+- [Week 14 — Applied Financial Decision Systems](lessons/week-14/) — projected slides: [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-14/slides-session-26.html)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
 - [Week 16 — Capstone Submission & Consultation](lessons/week-16/)
 
 The `.html` slide files do not render inside the GitHub file browser —
 use the projected-slides links above (arrow keys or click to advance).
+
+## Weeks 13–14 — choose your track
+
+Two complete tracks are published; class sessions run **fixed income**
+([lessons/week-13](lessons/week-13/) and [lessons/week-14](lessons/week-14/)),
+and the **robo-advisory** track
+([tracks/robo-advisory](tracks/robo-advisory/)) is equally complete for
+self-study or as your capstone direction — projected slides: [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-13/slides-session-25.html) · [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-14/slides-session-26.html).
+Both replicate real open-source research with AI — the equipment, not the fish.

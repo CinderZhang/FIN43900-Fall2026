@@ -1,0 +1,120 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 26</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 26 — Replicate the Research</h1>
+<p><strong>Week 14 · Tuesday · Fixed Income II: the replication build</strong></p>
+</section>
+<section class="slide">
+<h2>Today's run of show</h2>
+<p><strong>You arrive with:</strong> Project 2 submitted · your Capstone Edition A receipt · the OSBAP
+monthly panel downloaded (with its download date noted) · one column question.
+<strong>Today has no checkout.</strong> You build, you verify, you keep what you build.</p>
+<ol>
+<li>What a replication claims — and what it cannot</li>
+<li><strong>The build (AI on, you drive):</strong> load the panel, reconcile the conventions</li>
+<li><strong>Validate against their published numbers</strong> — the known-answer gate, at research scale</li>
+<li>Divergence clinic: version, changelog, or error?</li>
+<li>Credit, citation, and where this goes next</li>
+</ol>
+</section>
+<section class="slide">
+<h2>What you are doing today <em>(and what it proves)</em></h2>
+<p>Replication asks one question: <strong>starting from the same inputs and stated methods,
+do I get their numbers?</strong></p>
+<ul>
+<li>If <strong>yes</strong>: their result survives <em>your</em> independent look — that is evidence.</li>
+<li>If <strong>no</strong>: you have found a version difference, a method ambiguity, or an error —
+and every one of those is a finding worth writing down.</li>
+</ul>
+<p>Precisely: today is <strong>computational reproduction</strong> — recomputing published numbers from
+the authors' own processed data. Full <strong>replication</strong> rebuilds from raw inputs; <strong>original
+research</strong> asks new questions. Three rungs; own which one you are standing on.</p>
+<p>What today is <strong>not</strong>: proof a strategy works, an endorsement, or your own research.
+Own the difference between <em>checking</em> work and <em>originating</em> it.</p>
+</section>
+<section class="slide">
+<h2>The build — you drive, AI implements <em>(30 minutes)</em></h2>
+<p>Open a Colab notebook. Your inputs: the OSBAP parquet you downloaded, their data
+dictionary, and the AI of your choice. <strong>The deck gives you targets, not code.</strong></p>
+<p><strong>Before any code, state in your notebook:</strong> the fields you will use, their units and
+frequency (per-100 par? percent or decimal?), your eligible rows, and your tolerance —
+the Week 13 policy-before-computation discipline, one line each.</p>
+<p><strong>Target 1 — conventions reconciliation.</strong> From the data dictionary, pin down each floor
+column's units and frequency. Then design <strong>one cross-field check the documentation says
+must hold</strong> — the Week 13 microcase pattern (3.00 · 90/180 → accrued 1.50 never exceeds
+one coupon period) — and verify it on a sample within your stated tolerance. A check that
+cannot fail is not a check: don't recompute a column from its own definition.</p>
+<p><strong>Target 2 — reproduce a published statistic.</strong> OSBAP's Data tab publishes detailed data
+reports. Pick one reported number for the <strong>monthly</strong> panel, <strong>transcribe its exact
+definition first</strong> — units, filters, frequency, report page — then compute and compare.</p>
+<p><em>(The shape, not your answer: "Report Table X: average bonds per month in 2015 under
+filter set F. My file: 3,912 for 2015-06 with the same filters — matched; residual gap
+logged as post-publication data revision.")</em></p>
+</section>
+<section class="slide">
+<h2>Validate — the known-answer gate at research scale</h2>
+<p>In Week 3 you validated a DCF against a known answer. Same discipline, real stakes:</p>
+<ol>
+<li><strong>Match?</strong> State the number, the source page of their report, and your computed value</li>
+<li><strong>No match?</strong> Do not declare an error yet. Check, in order:<ul>
+<li><strong>Version</strong> — the paper behind the data (<em>The Corporate Bond Factor Replication
+Crisis</em>) is under journal revision and the data updates with it; is your
+download date after their report date?</li>
+<li><strong>Changelog</strong> — the GitHub changelog documents every data change. Read it first.</li>
+<li><strong>Method</strong> — did you apply the same filters the report states?</li>
+</ul>
+</li>
+<li>Only after all three: "possible error" — which, at OSBAP, is a <strong>contribution</strong>
+(they credit people who find issues; that is how open research works)</li>
+</ol>
+<blockquote>
+<p>An unexplained mismatch is a documented discrepancy — it becomes a finding only
+after the ladder. An unchecked match is a guess.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>AI discipline in the build <em>(same rules as Week 1, lighter hands)</em></h2>
+<ul>
+<li>AI writes the loading and computation code — <strong>you</strong> state the target, the filters,
+and the tolerance <em>before</em> asking</li>
+<li>Every AI claim about the data ("this column is winsorized") gets checked against
+the dictionary or report — <strong>documentation governs</strong></li>
+<li>Record accept / modify / reject on the one suggestion that mattered most</li>
+</ul>
+<p>No training wheels today: no starter file, no field-by-field checklist. Twelve weeks
+built the instincts; this is where they run on their own.</p>
+</section>
+<section class="slide">
+<h2>Credit and citation <em>(the professional close)</em></h2>
+<p>Your notebook's first cell, from today onward:</p>
+<blockquote>
+<p>Data: Open Source Bond Asset Pricing (openbondassetpricing.com), Dickerson,
+Mueller &amp; Robotti — <em>Priced Risk in Corporate Bonds</em>, J. Financial Economics (2023).
+Downloaded YYYY-MM-DD. This notebook replicates their published data report;
+the underlying research is theirs.</p>
+</blockquote>
+<p>Uncredited replication is plagiarism with extra steps. Credited replication is how
+careers in research start.</p>
+</section>
+<section class="slide">
+<h2>Where this goes <em>(optional, yours)</em></h2>
+<ul>
+<li>Your replication notebook is a legitimate <strong>capstone seed</strong>: extend it — a screening
+rule on real bonds, a factor comparison, a data-quality audit — and it becomes an
+integrated-system component with real data provenance</li>
+<li>The full OSBAP pipeline (their <code>trace-data-pipeline</code> repo) regenerates everything
+from raw TRACE — that requires WRDS access (Wharton Research Data Services, the
+subscription platform for raw research data) and is <strong>optional archaeology</strong>, never
+required and never graded</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Before Week 15 — do these:</h2>
+<ol>
+<li>Enjoy Thanksgiving — Thursday is no class</li>
+<li>Keep your replication notebook where you can open it — Week 15's capstone
+integration work begins from what you already have</li>
+<li>Read the Week 15 prework page before Week 15's first session (it is short;
+the capstone consultation studios are where the remaining time goes)</li>
+</ol>
+<p><strong>Week 15 preview:</strong> assemble your capstone's integration skeleton from components
+you have already built — including, if you choose fixed income, today's notebook.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

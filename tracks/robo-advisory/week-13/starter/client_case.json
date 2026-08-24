@@ -1,0 +1,21 @@
+{
+  "case_label": "SYNTHETIC_TRAINING_CASE_NOT_CLIENT_ADVICE",
+  "decision_user": "fictional household client and fiduciary review committee",
+  "decision": "select one model portfolio for deeper review, not final advice",
+  "investable_assets_usd": 1000000,
+  "outside_emergency_reserve_usd": 80000,
+  "annual_withdrawal_usd": 40000,
+  "horizon_years": 12,
+  "target_net_return_pct": 5.5,
+  "max_one_year_loss_pct": 18.0,
+  "max_equity_pct": 60.0,
+  "min_cash_pct": 5.0,
+  "max_illiquid_pct": 10.0,
+  "max_fee_pct": 0.6,
+  "unknowns_requiring_escalation": [
+    "tax status and account location",
+    "pension and Social Security timing",
+    "health and long-term-care liabilities",
+    "legal restrictions and beneficiary needs"
+  ]
+}

@@ -1,0 +1,147 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 25</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 25 — The Price You See Is Not the Price You Pay</h1>
+<p><strong>Week 13 · Thursday · Fixed Income I: conventions, and the research you will replicate</strong></p>
+</section>
+<section class="slide">
+<h2>Today's run of show</h2>
+<p><strong>You arrive with:</strong> your Lab 20 readiness audit done Tuesday · a frozen Project 2
+completion plan · Project 2 due before Tuesday's session (the Brightspace assignment
+header is the clock).
+<strong>Today has no checkout.</strong> The 20-lab sequence is complete; from here the work is yours.</p>
+<ol>
+<li>Why bonds broke a published paper — the story behind this module</li>
+<li><strong>Floor, with digits:</strong> clean vs dirty price, accrued interest, yield vs coupon, duration</li>
+<li>Meet the researchers: Open Source Bond Asset Pricing</li>
+<li><strong>AI off, then on:</strong> open their real data dictionary and map it to today's floor</li>
+<li>The mission for Tuesday: replicate one published number</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Why I'm handing you the rod <em>(read this once)</em></h2>
+<p>It is not that I don't want to teach you this.</p>
+<p>Twelve weeks ago you needed the fish. All semester I've been handing you the
+<strong>fishing equipment</strong> instead — DRIVER, the AI toolchain, the validation
+discipline. By Week 13 you're supposed to be on your own feet, and these two
+weeks are where we find out the equipment works.</p>
+<p>The anchors are on the slides, the fallback pages exist, and I'm in the room —
+but the rod is in your hands. <strong>That was the plan from day one.</strong></p>
+</section>
+<section class="slide">
+<h2>Why this module exists <em>(the professional stakes)</em></h2>
+<p>A few years ago a PhD student tried to replicate a seminal corporate-bond factor
+paper — and could not. His detective work exposed data errors serious enough that a
+top finance journal issued a <strong>retraction</strong> — a first in its history.</p>
+<p>Out of that came <strong>Open Source Bond Asset Pricing</strong>: researchers who rebuilt the
+bond data correctly, published every step, and put the data and code where anyone
+can check them.</p>
+<p>That is what replication is. Not homework — <strong>the quality control of the entire
+research industry.</strong> Next Tuesday, you do it.</p>
+</section>
+<section class="slide">
+<h2>The people whose work you are replicating</h2>
+<p><strong>Open Source Bond Asset Pricing (openbondassetpricing.com)</strong> — built and maintained by
+<strong>Alexander Dickerson</strong> (UNSW), <strong>Philippe Mueller</strong> (Warwick), and <strong>Cesare Robotti</strong>
+(Warwick), with collaborators.</p>
+<ul>
+<li>Anchor paper: <em>Priced Risk in Corporate Bonds</em>, <strong>Journal of Financial Economics</strong> (2023)</li>
+<li>The data: TRACE corporate-bond panels — cleaned, documented, free to download, no account</li>
+<li>The code: the <code>trace-data-pipeline</code> repository on GitHub — every cleaning choice visible</li>
+</ul>
+<p><strong>This is their research, not ours.</strong> When you use their data — in class, in a capstone,
+anywhere — you cite them. That is the first professional convention of the module.</p>
+</section>
+<section class="slide">
+<h2>Floor 1 — clean price, accrued interest, dirty price <em>(digits)</em></h2>
+<p>A bond's quoted price is the <strong>clean price</strong>. The buyer pays the <strong>dirty price</strong>:
+clean <strong>plus the coupon interest accrued</strong> since the last payment.</p>
+<p><strong>Worked microcase</strong> <em>(synthetic; 30/360 day count, supplied)</em> —
+semiannual coupon <strong>3.00</strong> per period · <strong>90 of 180</strong> days since the last coupon:</p>
+<div class="table-wrap" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Floor 1 — clean price, accrued interest, dirty price (digits)</caption>
+<thead>
+<tr>
+<th scope="col">Step</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Accrued interest = 3.00 × 90/180</td>
+<td><strong>1.50</strong></td>
+</tr>
+<tr>
+<td>Quoted clean price</td>
+<td><strong>98.25</strong></td>
+</tr>
+<tr>
+<td>Dirty (invoice) price = 98.25 + 1.50</td>
+<td><strong>99.75</strong></td>
+</tr>
+</tbody></table></div>
+<p>You see 98.25 on the screen. <strong>99.75 leaves your account.</strong>
+The full walk-through lives on the Week 13 <em>Bond Price Reconciliation</em> page.</p>
+</section>
+<section class="slide">
+<h2>Floor 2 — yield vs coupon, and duration <em>(digits on the K1 anchor)</em></h2>
+<ul>
+<li><strong>Coupon</strong> is a promise printed on the bond. <strong>Yield to maturity</strong> is the discount
+rate that makes the promised cash flows worth today's dirty price — always under
+stated day-count, coupon-frequency, and settlement conventions. Price falls →
+yield rises. The coupon never moves.</li>
+<li><strong>Macaulay duration</strong> — the PV-weighted average wait for your cash flows, in years.
+<strong>Modified duration</strong> = Macaulay ÷ (1 + y) under K1's annual-pay convention — for a
+bond paying m times a year, divide by (1 + y/m). It is the % price change for a
+1-point yield change.</li>
+</ul>
+<p>The Week 13 conventions page carries the full <strong>K1 known-answer case</strong> — a bond that
+settles exactly on a coupon date, so accrued is zero and the mechanics stand alone.
+You will meet these same quantities on <strong>real data</strong> Tuesday: OSBAP publishes daily
+and monthly panels carrying <code>clean price</code>, <code>accrued interest</code>, <code>yield</code>, <code>duration</code>,
+<code>convexity</code> — <strong>your download is the monthly panel.</strong></p>
+</section>
+<section class="slide">
+<h2>Why "corrected" data matters <em>(the audit instinct)</em></h2>
+<p>Real bond data lies with a straight face:</p>
+<ul>
+<li>One major vendor <strong>silently caps monthly bond returns at +100%</strong> — only the upside.
+Documented in OSBAP's own data README, not in the vendor's marketing.</li>
+<li>Raw <strong>TRACE</strong> trades — TRACE is FINRA's Trade Reporting and Compliance Engine, the
+tape every US corporate-bond trade reports to — carry fat-finger price jumps that
+bounce back a day later; naïve filters either miss them or throw away good data
+with the bad.</li>
+</ul>
+<p>The OSBAP pipeline exists because <strong>the data is guilty until proven innocent</strong> — the
+same discipline you practiced on synthetic data in Weeks 10–11, now at research scale.</p>
+</section>
+<section class="slide">
+<h2>AI off: read the real schema <em>(10 minutes, pairs)</em></h2>
+<p>Open the OSBAP <strong>Data</strong> page (linked on the Week 13 page) and its data dictionary
+on GitHub. No AI yet — the timing matters: form your own picture first.</p>
+<ol>
+<li>Find the columns that carry today's floor: clean price · accrued interest · yield ·
+duration · convexity</li>
+<li>Pick <strong>one column you cannot explain</strong> and write one sentence saying what you
+<em>think</em> it is <em>(the shape, not your answer: "<code>t_spread</code> — I think this is the
+spread to a same-maturity Treasury, but I don't know which curve they use.")</em></li>
+</ol>
+<p><strong>AI on:</strong> ask it to explain your column — then check its answer against the
+dictionary and the data report. Where they disagree, <strong>the documentation governs.</strong></p>
+</section>
+<section class="slide">
+<h2>Tuesday's mission <em>(one sentence)</em></h2>
+<p><strong>Download their data, reproduce one of their published numbers, and explain any
+difference you find.</strong> You drive the AI; the deck will give you validation anchors,
+not code. Your notebook is yours to keep — it can seed a fixed-income capstone.</p>
+</section>
+<section class="slide">
+<h2>Before Tuesday — do these:</h2>
+<ol>
+<li><strong>Submit Project 2</strong> — Monday night; the Brightspace assignment header is the clock</li>
+<li><strong>Capstone Edition A</strong> — the window sits between this session and Tuesday's class;
+exact times on the Brightspace checkpoint page. ~20 minutes, <strong>before</strong> any
+capstone-specific AI work</li>
+<li><strong>Download the OSBAP monthly bond panel</strong> (openbondassetpricing.com → Data; zipped
+parquet, no account needed) and note the download date in your notes</li>
+<li>Skim their data README (~10 min) and bring your one-column question from today</li>
+</ol>
+<p><strong>Session 26 preview:</strong> replicate one published statistic from real TRACE data and
+defend the difference — the analyst's version of checking someone else's work.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>
