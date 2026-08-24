@@ -32,6 +32,21 @@ but the rod is in your hands. **That was the plan from day one.**
 
 ---
 
+## Two rods on the rack — you pick one *(your decision, this week)*
+
+Class sessions walk **fixed income** — this deck, replicating the Open Source Bond
+Asset Pricing team's published data work.
+
+The second rod is **robo-advisory** — replicating PyPortfolioOpt's documented example,
+then holding the "optimal" portfolio to a client mandate. Equally complete, decks and all:
+[tracks/robo-advisory](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/tracks/robo-advisory)
+
+**You decide which one you dig deep on for these two weeks.** Either counts; either can
+seed your capstone. Choosing robo still means coming to class — the sessions model the
+replication moves both tracks share.
+
+---
+
 ## Why this module exists *(the professional stakes)*
 
 A few years ago a PhD student tried to replicate a seminal corporate-bond factor

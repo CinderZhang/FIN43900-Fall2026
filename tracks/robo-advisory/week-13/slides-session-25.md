@@ -32,6 +32,21 @@ but the rod is in your hands. **That was the plan from day one.**
 
 ---
 
+## Two rods on the rack — you pick one *(your decision, this week)*
+
+This deck is the **robo-advisory** rod — replicating PyPortfolioOpt's documented example,
+then holding the "optimal" portfolio to a client mandate.
+
+The other rod is **fixed income** — replicating the Open Source Bond Asset Pricing team's
+published data work. Class sessions walk that one:
+[lessons/week-13](https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-13)
+
+**You decide which one you dig deep on for these two weeks.** Either counts; either can
+seed your capstone. Choosing robo still means coming to class — the sessions model the
+replication moves both tracks share.
+
+---
+
 ## Why this module exists *(the professional stakes)*
 
 Every robo-advisor is two machines bolted together: an **optimizer** that turns prices

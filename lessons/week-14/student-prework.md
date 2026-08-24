@@ -2,6 +2,8 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
+Digging deep on the robo-advisory track? Your prework is that track's
+`week-14/prework.md`; the OSBAP download below is for fixed-income choosers.
 Before Tuesday: **download the OSBAP monthly bond panel** from
 [openbondassetpricing.com](https://openbondassetpricing.com) → Data (zipped parquet; no
 account, no WRDS) and **note your download date** — the data updates under an active paper

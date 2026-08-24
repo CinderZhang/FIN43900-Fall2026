@@ -1,7 +1,8 @@
 # Student Handout — Bond Portfolio Mandate Stress
 
-> **Published course track (owner release 2026-08-24), identical for both sections.** The
-> robo-advisory alternative at `tracks/robo-advisory/` is equally complete for self-study.
+> **Published (owner release 2026-08-24), identical for both sections. Two complete tracks
+> — your decision.** Class walks this fixed-income build; the robo-advisory track at
+> `tracks/robo-advisory/` is just as complete, and you choose which one you dig deep on.
 
 The Capstone Edition A window closes before Tuesday's class — the exact window is on the
 Brightspace checkpoint page and in `MASTER-SCHEDULE.md`. Budget **20 minutes** and submit

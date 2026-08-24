@@ -1,7 +1,8 @@
 # Student Handout — Project 2 Close and Bond Screening
 
-> **Published course track (owner release 2026-08-24), identical for both sections.** The
-> robo-advisory alternative at `tracks/robo-advisory/` is equally complete for self-study.
+> **Published (owner release 2026-08-24), identical for both sections. Two complete tracks
+> — your decision.** Class walks this fixed-income build; the robo-advisory track at
+> `tracks/robo-advisory/` is just as complete, and you choose which one you dig deep on.
 
 ## The research this module replicates
 

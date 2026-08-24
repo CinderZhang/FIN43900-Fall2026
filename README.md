@@ -31,11 +31,11 @@ bug worth reporting.
 The `.html` slide files do not render inside the GitHub file browser —
 use the projected-slides links above (arrow keys or click to advance).
 
-## Weeks 13–14 — choose your track
+## Weeks 13–14 — two complete tracks, your decision
 
-Two complete tracks are published; class sessions run **fixed income**
-([lessons/week-13](lessons/week-13/) and [lessons/week-14](lessons/week-14/)),
-and the **robo-advisory** track
-([tracks/robo-advisory](tracks/robo-advisory/)) is equally complete for
-self-study or as your capstone direction — projected slides: [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-13/slides-session-25.html) · [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-14/slides-session-26.html).
-Both replicate real open-source research with AI — the equipment, not the fish.
+Two complete two-week builds are published, and **you choose which one you dig
+deep on**: **fixed income** ([lessons/week-13](lessons/week-13/) and
+[lessons/week-14](lessons/week-14/) — class sessions walk this one) or
+**robo-advisory** ([tracks/robo-advisory](tracks/robo-advisory/)) — projected slides: [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-13/slides-session-25.html) · [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-14/slides-session-26.html).
+Either track counts, and either can seed your capstone. Both replicate real
+open-source research with AI — the equipment, not the fish.

@@ -2,6 +2,13 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
+- **First, decide your track (10 minutes, before Thursday).** Two complete two-week builds
+  are published: **fixed income** (this folder — class sessions walk it) and
+  **robo-advisory** (`tracks/robo-advisory/` in this repository). Skim both Week 13
+  mission paragraphs, then commit to the one you will dig deep on. If you choose robo,
+  your Thursday prework is that track's `week-13/prework.md` instead of the FINRA reading
+  below — and class attendance still pays either way, because the sessions model the
+  replication moves both tracks share.
 - Tuesday: run the 12-row Project 2 audit, verify access/visible output/transcripts, and bring
   only remaining must-fix evidence.
 - Thursday: read only the FINRA [Bonds](https://www.finra.org/investors/investing/investment-products/bonds)
