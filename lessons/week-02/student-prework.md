@@ -36,4 +36,5 @@ recovery route after accidental use.
 three to five candidate model inputs, each with its source and as-of date, transferred into the
 evidence-ledger format. Thursday's lab opens with a short guided launch on the training case,
 then your real-company work uses these rows — arriving without them means spending lab time on
-filing hunting instead of graded judgment work.
+filing hunting instead of graded judgment work. Bring the gap list you write in Tuesday's
+session as well: Thursday's opening block turns each "not yet" into your own learning prompt.
