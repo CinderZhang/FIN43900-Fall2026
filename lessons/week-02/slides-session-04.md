@@ -210,7 +210,8 @@ never average a discrepancy before explaining it.
 In your open Lab 04 attempt *(Brightspace → Quizzes → Lab 04)*:
 session token on the board · growth note (ungraded, yours) before submit.
 
-Lab Date · teammates/learning partners · decision, object, valuation date, unit ·
+Lab Date · teammates/learning partners + your contribution ·
+decision, object, valuation date, currency/unit, intended output ·
 synthetic FCFF + per-share results · **four representative ledger rows** (including the
 reconciled/contaminated one) · AI access paths + accept/modify/reject evidence ·
 one independent source reconciliation · **Ready / Unsafe / Next test** ·

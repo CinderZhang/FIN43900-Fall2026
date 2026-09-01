@@ -1,15 +1,65 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 05</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 5 — Build the Engine</h1>
 <p><strong>Week 3 · Tuesday · Lab 05: Build and Validate an FCFF DCF</strong></p>
-</section>
-<section class="slide">
-<h2>The week the course points at (7 min)</h2>
+<blockquote>
 <p>Interviews for analyst seats test one thing in the first ten minutes:
 can you build a DCF and say <strong>which assumptions the value hinges on</strong>?
 AI assembles spreadsheets. The seat belongs to whoever explains them.</p>
-<p>You did the prework walk. Every number today is that training case.</p>
+</blockquote>
 </section>
 <section class="slide">
-<h2>The known answer, on the board (10 min)</h2>
+<h2>Today's run of show</h2>
+<ol>
+<li>The mission: build the engine, then say what it hinges on</li>
+<li><strong>Opener</strong> — tools alive, artifacts out <em>(nothing typed into AI yet)</em></li>
+<li><strong>Paired checkpoint defense</strong> — walk your own hand arithmetic</li>
+<li>Concept <strong>gap check</strong> → your written gap list</li>
+<li>The known answer, on the board</li>
+<li><strong>AI off</strong> — the architecture from memory, and two numbers by hand</li>
+<li><strong>Two tracks at once</strong> — research to Codex and Gemini, learning to your gap list;
+<strong>start your quiz attempt when told</strong></li>
+<li>Validate — <strong>your</strong> judgment, not the AI's</li>
+<li>Transfer to your own company</li>
+<li><strong>Submit — receipt on screen before you leave</strong></li>
+</ol>
+<p><em>You arrived with: the worked example done, with its <strong>three hand checkpoints</strong> ·
+the five-part architecture <strong>drawn from memory</strong> · your <strong>WACC-vs-g prediction</strong> ·
+your <strong>Week 2 evidence ledger</strong>.</em></p>
+</section>
+<section class="slide">
+<h2>Opener — tools alive, artifacts out</h2>
+<p>Follow the projector. Four steps, then stop.</p>
+<ol>
+<li><strong>Open Codex</strong> — ChatGPT's coding agent. The CLI (terminal version) if yours works: open your
+terminal <em>(Windows: Start → type <code>PowerShell</code> · Mac: ⌘-Space → type <code>Terminal</code>)</em>, type <code>codex</code>.
+No working CLI? <strong>ChatGPT desktop app → Codex.</strong> Confirm it launches — a prompt you could
+type into is enough. Thumbs up. <strong>Type nothing yet:</strong> AI opens in the build block, not here.</li>
+<li><strong>Artifacts out:</strong> your Week 2 evidence ledger · your three prework checkpoints ·
+your architecture sketch.</li>
+<li><strong>Paired, 2 minutes each way:</strong> defend <strong>one</strong> hand checkpoint. Walk your partner through
+<em>how</em> you got <strong>114.48</strong> or <strong>90.31</strong> — step by step, without notes if you can.</li>
+<li><strong>Solo, 2 minutes:</strong> mark this week's four concepts — <strong>FCFF forecasting · discounting and
+present value · terminal value · terminal-value concentration</strong> — "can explain with an
+example" or "not yet." <strong>Every "not yet" goes on your written gap list.</strong></li>
+</ol>
+<blockquote>
+<p>The shape, not your answer <em>(step 3)</em>: "<strong>114.48.</strong> FCFF₁ is 100 grown once at 8% — 108.00.
+Year 2 grows <em>that</em> number, not the original 100, at 6%: 108.00 × 1.06 = 114.48. Growth
+compounds on last year's cash flow, which is why a <em>fading</em> growth rate still produces a
+<em>rising</em> number."</p>
+</blockquote>
+<blockquote>
+<p>The shape, not your answer <em>(step 4)</em>: "<strong>Terminal-value concentration — not yet.</strong> I can
+compute the share, but I can't say whether 72% means the model is fine or broken."</p>
+</blockquote>
+<blockquote>
+<p><code>codex</code> will not run? Put your name on a <strong>parking-lot card</strong> — a TA installs it with you
+during the next block. Nothing today is blocked: <strong>ChatGPT desktop app → Codex</strong> and
+<strong>Gemini in the browser</strong> both work without the CLI.</p>
+</blockquote>
+<p><em>No gap list, no learning track. That list is the whole point of the next hour.</em></p>
+</section>
+<section class="slide">
+<h2>The known answer, on the board</h2>
 <p>FCFF₀ = 100, growth 8/6/5/4/3%, WACC 10%, g 3%, cash 50, debt 300, 50M shares</p>
 <blockquote>
 <p>FCFF₁ = 100 × 1.08 = <strong>108.00</strong> · PV = 108/1.10 = <strong>98.18</strong>
@@ -19,28 +69,169 @@ EV = <strong>1,624.87</strong> → equity <strong>1,374.87</strong> → <strong>
 <p>Your engine must reproduce every one of these within tolerance.</p>
 </section>
 <section class="slide">
-<h2>AI off, then on (10 + 20 min)</h2>
+<h2>AI off — architecture from memory, two numbers by hand</h2>
+<p>AI closed. Paper only. You drew this in prework; this is the redo that shows what stuck.</p>
 <ol>
-<li>Draw the architecture from memory: FCFF → discount → TV → bridge → per-share</li>
-<li>Hand-calculate Year-1 FCFF and its PV (the checkout asks for these)</li>
-<li>AI on: implement the STUDENT_WORK functions; reproduce <code>dcf_expected_output.csv</code></li>
+<li><strong>Draw the five parts, in order:</strong> FCFF forecast → discount each year →
+terminal value at Year 5 → bridge to equity → per diluted share.</li>
+<li><strong>Hand-calculate Year-1 FCFF and its present value.</strong> These are checkout fields.
+Commit on paper <em>before</em> you look at the board.</li>
+<li><strong>Predict, then look:</strong> which is larger, the PV of Year 1 or the PV of Year 5?
+Write the answer down, then check the board and see whether you were right <em>for the
+right reason</em>.</li>
 </ol>
+<blockquote>
+<p>The shape, not your answer <em>(one part, said properly)</em>: "<strong>Part 3 — terminal value.</strong> It is
+measured at the <em>end of Year 5</em>, using Year-5 cash flow grown once by g. That makes it a
+Year-5 amount, so it travels back <strong>five</strong> years, not six."</p>
+</blockquote>
+<p><em>A part you can draw but cannot say out loud is a part you do not own yet — mark it on the
+gap list now.</em></p>
 </section>
 <section class="slide">
-<h2>Validate every line (11 min)</h2>
-<ul>
-<li>Boundary: reject g ≥ WACC, missing shares, mixed units</li>
-<li>Shape: growing cash flows must have <strong>shrinking</strong> PVs</li>
-<li>Concentration: report TV share — 72.4% is normal; know why</li>
-</ul>
+<h2>Two tracks at once — 1. Fire the research track</h2>
+<p><em>(~4 minutes. Send, then walk away from it.)</em></p>
+<ol>
+<li><strong>Get the three files:</strong> the
+<a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-03" target="_blank" rel="noopener">Week 3 page on GitHub</a>
+→ <code>starter/</code> → download <code>dcf_starter.py</code>, <code>dcf_case.csv</code>, <code>dcf_expected_output.csv</code>.</li>
+<li><strong>Colab, the course path:</strong> <a href="https://colab.research.google.com" target="_blank" rel="noopener">colab.research.google.com</a>
+→ <strong>New notebook</strong> → <strong>folder icon</strong> (left sidebar) → <strong>upload</strong> icon → select all three
+files. Then, in the notebook cell, type <code>!python dcf_starter.py</code> and press <strong>Run</strong> (▶).
+Output <em>and</em> the first error both appear <strong>under the cell</strong>.</li>
+<li><strong>Same requirements to both systems</strong>, word for word:
+<strong>Codex (in ChatGPT) builds · Gemini checks.</strong></li>
+<li><strong>Send both, then leave them generating.</strong> Do not sit and watch tokens arrive.</li>
+</ol>
+<blockquote>
+<p>The shape, not your answer: "Here are <code>dcf_starter.py</code>, <code>dcf_case.csv</code>, and
+<code>dcf_expected_output.csv</code>. Implement the four <code>STUDENT_WORK</code> functions — <code>project_fcff</code>,
+<code>value_dcf</code>, <code>sensitivity_table</code>, <code>reverse_dcf_for_growth</code> — and leave <code>load_named_values</code>
+and <code>validate_case</code> exactly as they are. Convention: annual end-of-year FCFF in USD
+millions, five explicit years, Gordon-growth terminal value at the end of Year 5, then the
+enterprise-to-equity bridge in the case file. Your code must reproduce <strong>every row</strong> of
+<code>dcf_expected_output.csv</code> within its stated tolerance — <strong>0.01</strong> on the cash and per-share
+rows, <strong>0.0002</strong> on <code>terminal_value_share</code> — and print the comparison row by row.
+<strong>Invent no assumptions:</strong> every number you use comes from <code>dcf_case.csv</code>. Where you think
+an input is missing, stop and name the input you need — do not choose one for me."</p>
+</blockquote>
+<p><em>You are hiring an intern engineer, not an oracle. The known answer is the interview.</em></p>
+<p><em>(Both systems down? <strong>Week 1 — Dual-System Output Packet</strong> in Start Here, or the
+<code>COURSE-RUN PROBE:</code> route from Start Here's <strong>AI Access</strong> page. Python, Colab, or network
+down? <strong>Week 3 Offline/No-Code Fallback — DCF and Sensitivity</strong> — same finance, by hand.)</em></p>
 </section>
 <section class="slide">
-<h2>Transfer + checkout (10 + 7 min)</h2>
-<p>Move your target's reconciled Week-2 inputs into the input table —
-label every forecast assumption; never let AI silently complete one.</p>
-<p><strong>Checkout:</strong> convention · hand-calculated FCFF₁ and PV · synthetic EV /
-equity / per-share / TV share · one passed test + one fixed failure ·
-target rows + one unresolved assumption · AI paths · in-person attendance
-declaration · truth attestation · receipt.</p>
+<h2>Two tracks at once — 2. The learning track</h2>
+<p><em>(~6 minutes, while the code generates.)</em></p>
+<blockquote>
+<p>On one screen the machine works <strong>for</strong> you.
+On the other, you put it to work <strong>on</strong> you. That is the whole pattern.</p>
+</blockquote>
+<ol>
+<li><strong>Gap list out.</strong> Pick your <strong>#1 "not yet"</strong> from the opener.</li>
+<li>Open your other system — Gemini in the browser, or a fresh ChatGPT thread — and run the
+tutor prompt below.</li>
+<li><strong>Commit to an answer before you are told.</strong> A wrong answer you committed to is what makes
+the correction stick; a skipped one teaches nothing.</li>
+<li><strong>Ungraded, never collected, yours.</strong> No checkout field, no screenshot. Nobody reads it.</li>
+</ol>
+<blockquote>
+<p>The shape, not your answer: "Quiz me on <strong>why the terminal value is discounted by (1.10)⁵ and
+not (1.10)⁶</strong>, even though it is built from Year-6 cash flow — one question at a time. Don't
+give me the answer until I commit to one. Then correct me in two lines and ask the next.
+Keep going until I get three right in a row."</p>
+</blockquote>
+<p><em>This is what the opener's gap list was for.</em></p>
+</section>
+<section class="slide">
+<h2>Two tracks at once — 3. Validate — your judgment, not the AI's</h2>
+<p><em>(~12 minutes. Your code finished while you were learning.)</em></p>
+<p>Run the checks <strong>in this order</strong>. A later check means nothing if an earlier one failed.</p>
+<ol>
+<li><strong>Known answer</strong> — every row of <code>dcf_expected_output.csv</code> reproduced within tolerance.
+A row that is off is a bug, not a rounding opinion.</li>
+<li><strong>Boundary</strong> — feed it <code>g ≥ WACC</code>, then missing shares, then mixed units.
+It must <strong>refuse</strong>, not return a number.</li>
+<li><strong>Shape</strong> — the cash flows grow every year; their present values must <strong>shrink</strong> every
+year. If the PV column does not shrink, the discounting is wrong — stop reading the rest.</li>
+<li><strong>Concentration</strong> — report the TV share. <strong>72.4% is normal.</strong> Say <em>why</em> out loud: a going
+concern's value mostly lives past any five-year window, so defending this valuation is
+mostly defending g and WACC.</li>
+</ol>
+<p><strong>Record one test that passed and one failure you corrected</strong> — both are checkout fields.</p>
+<blockquote>
+<p>The shape, not your answer <em>(a failure record)</em>: "<strong>Failure:</strong> <code>terminal_value_year_5</code> came
+back <strong>1,839.46</strong> instead of <strong>1,894.65</strong>. <strong>Diagnosis:</strong> the numerator used FCFF₅ without
+growing it once — 128.76/0.07 rather than 128.76 × 1.03/0.07. <strong>Fix:</strong> multiplied the
+numerator by (1 + g). <strong>Re-test:</strong> 1,894.65, and enterprise value landed back on 1,624.87."</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>Transfer to your own company</h2>
+<ol>
+<li>Open your <strong>Week 2 evidence ledger</strong> and your target's filing.</li>
+<li>Move the reconciled rows into the input table: starting FCFF · the five growth rates ·
+WACC · terminal growth · non-operating cash · debt · diluted shares.</li>
+<li><strong>Label every forecast assumption</strong> where it sits —
+<code>reported fact · normalization · forecast assumption · calculated output</code>.</li>
+<li><strong>Never let AI silently complete a row.</strong> A missing input is a <strong>named gap</strong>, not a number
+the model picked for you while you weren't looking.</li>
+</ol>
+<blockquote>
+<p>The shape, not your answer <em>(one labeled row)</em>: "<code>growth_year_1 = 0.06</code> — <strong>forecast
+assumption.</strong> Basis: management guided FY2026 revenue growth of 5–7% in the Q4 earnings
+release; I took the midpoint. FCFF is assumed to grow with revenue because I am holding
+margin and reinvestment flat. This is <strong>not</strong> a reported fact, and it is the first row I
+revisit if margin compresses."</p>
+</blockquote>
+<blockquote>
+<p>And one you leave open: "<code>wacc</code> — <strong>unresolved.</strong> I have a cost of equity; I do not have a
+defensible cost of debt. The row stays blank and goes in my checkout as the unresolved
+assumption."</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>The floor, honestly — and your readiness sentence</h2>
+<blockquote>
+<p><strong>Lab 05's own words:</strong> a failed implementation satisfies the completion requirement only
+when the <strong>known-answer worksheet, the exact error, the attempted test, and a viable next
+action</strong> are all present.</p>
+</blockquote>
+<p>A working engine is the goal. <strong>An honest record of a broken one is the floor</strong> — a real
+floor, not a consolation prize.</p>
+<ol>
+<li>Code runs and reconciles? Validate it, then transfer.</li>
+<li>It doesn't? <strong>Stop debugging at the wall.</strong> Write the exact error text, the test you
+attempted, the hand worksheet you already have, and the one next action you would take.</li>
+<li>Either way, <strong>one readiness sentence</strong>: what is ready · what is unsafe · what is next.</li>
+</ol>
+<blockquote>
+<p>The shape, not your answer: "<strong>Ready</strong> — the synthetic engine reconciles every row and the
+boundary check refuses g ≥ WACC. <strong>Unsafe</strong> — my target's WACC; I have a cost of equity and
+no defensible cost of debt. <strong>Next</strong> — pull the debt footnote and its weighted average rate
+before Thursday's grid."</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>Checkout</h2>
+<p>In your open Lab 05 attempt <em>(Brightspace → Quizzes → Lab 05)</em>:</p>
+<p>Lab Date · teammates/learning partners + personal contribution · stated DCF convention and
+output unit · hand-calculated Year-1 FCFF and PV · synthetic EV / equity / per-share /
+TV share · <strong>one passed known-answer or boundary test + one failure you corrected</strong> · target rows from the Week 2
+ledger + <strong>one unresolved assumption</strong> · AI-use disclosure naming each access path and its
+role · <strong>session token (on the board)</strong> · optional artifact link · in-person attendance
+declaration · truth attestation · receipt confirmation.</p>
+<p><em>Before submit: your ungraded <strong>growth note</strong> — what can you build today that you couldn't
+last week, and what still feels shaky?</em></p>
+<p><strong>Before Thursday — do these:</strong></p>
+<ol>
+<li>Watch the terminal-value video segment named on the Week 3 page and answer its question</li>
+<li>Reread the worked example's <strong>Step 6</strong> and bring your <strong>written WACC-change prediction</strong> —
+Lab 06 grades the predict-before-run habit</li>
+<li>Bring today's target input table, unresolved rows included</li>
+</ol>
+<p><strong>Lab 06 preview:</strong> attack your own DCF — a WACC/terminal-growth grid, a <strong>reverse DCF</strong>
+<em>(what growth does today's price imply?)</em>, and two AI systems trying to break your thesis
+while you check their sources.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>
