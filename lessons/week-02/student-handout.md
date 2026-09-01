@@ -167,6 +167,27 @@ model architecture and evidence schema—not a valuation conclusion.
 Agreement is not validation. Arbitrate with the filing, definitions, finance logic, and known
 answers.
 
+### The learning track — your gap list
+
+The comparison above takes a few minutes to generate, and you do not spend them watching.
+While one AI track works *for* you on your company, a second works *on* you: you take the gap
+list you wrote in Session 3 — every concept you marked "not yet" — and make an AI tutor you
+until the gap closes. Running both at once is the working pattern of this course, not a
+Week 2 exercise; every later module assumes you do it.
+
+Pick your single biggest "not yet," open your other system, and ask for a quiz rather than an
+explanation. The difference matters: an explanation you read feels like learning, while a
+question you have to answer finds out whether it was.
+
+> The shape, not your answer: "Quiz me on **why capex comes out of FCFF while D&A goes back
+> in** — one question at a time. Don't give me the answer until I commit to one. Then correct
+> me in two lines and ask the next. Keep going until I get three right in a row."
+
+Commit to an answer before you are told, even when you expect it to be wrong — a correction
+only sticks to an answer you actually committed to. This track is **ungraded and never
+collected**: no checkout field, no screenshot, nobody reads it. Its only record is what you
+can now explain with an example, which is the point.
+
 ### Readiness statement
 
 End the week with three sentences:

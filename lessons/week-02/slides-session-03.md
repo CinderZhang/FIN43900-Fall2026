@@ -35,7 +35,7 @@ That is where models actually fail.
 
 Follow the projector. Four steps, then stop.
 
-1. **Open Codex** — ChatGPT's coding agent. CLI if yours works: open your terminal
+1. **Open Codex** — ChatGPT's coding agent. The CLI (terminal version) if yours works: open your terminal
    *(Windows: Start → type `PowerShell` · Mac: ⌘-Space → type `Terminal`)*, type `codex`.
    No working CLI? **ChatGPT desktop app → Codex.**
 2. **Confirm it launches** — a prompt you could type into is enough. Thumbs up.
@@ -118,6 +118,9 @@ Submit to the Edition A assignment; record your receipt in the Lab 03 checkout.
 Silent source audit — label every Edition A claim:
 **reported fact · normalization · forecast assumption · calculated output**
 
+> The shape: "FY2025 revenue, from the 10-K" → **reported fact** ·
+> "I assume growth holds at 8%" → **forecast assumption**
+
 Then your partner asks one falsification question — no answers proposed:
 *what evidence, if it existed, would kill this thesis?*
 The question goes in your checkout.
@@ -128,6 +131,8 @@ gap list gets its AI answer in the same block.)
 ---
 
 ## Checkout
+
+In your open Lab 03 attempt *(Brightspace → Quizzes → Lab 03)*:
 
 Lab Date · teammates/learning partners · Edition A receipt ID ·
 falsification question · non-AI sources used · **session token (on the board)** ·
