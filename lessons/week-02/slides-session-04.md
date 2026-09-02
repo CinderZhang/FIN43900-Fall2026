@@ -33,7 +33,8 @@ Follow the projector. Three steps, then stop.
    open it. Working in Codex inside the ChatGPT app? Same list, same rule.
    *Context compounds. It already knows your company, your thesis, and what you told it
    Tuesday. A fresh chat throws all of that away.*
-2. **Artifacts out:** your Lab 03 `.md` report · your downloaded filing · your gap list.
+2. **Artifacts out:** your Lab 03 `.md` report · your downloaded filing. (Have your gap
+   list? Keep it safe — Week 3 uses it; today does not.)
 3. **Paired, 1 minute each way:** one thing you remember about your company **from your
    filing** — from memory, nothing open. Then swap.
 
@@ -163,7 +164,7 @@ you used.** A source you cannot cite where you used it is not a source.
 > It wrote *'we recommend accumulating'* — my call is watch-defer, so I rewrote the ending
 > in my own words."
 
-**The rewrite is the machine's. The report is yours.** In twenty minutes you paste a
+**The rewrite is the machine's. The report is yours.** In a few minutes you paste a
 footer that says exactly that — and it has to be true.
 
 ---

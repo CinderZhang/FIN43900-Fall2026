@@ -20,7 +20,8 @@ chat, resumed — the context you built Tuesday is the point.
 3. **Rewrite your report with AI — resume your Lab 03 chat.** Widen the sources beyond one
    filing: two or three prior 10-Ks (same EDGAR page), recent news, a CEO interview or
    earnings call. Every claim keeps its source. End the report with your current call —
-   **initiate / watch-defer / do not initiate** — and one sentence on what would change it.
+   **initiate (buy) / watch-defer (wait for more information) / do not initiate (do not
+   buy)** — and one sentence on what would change it.
 4. **Organize your files — done together, projected.** One company = one folder, clear
    names with dates. The shape, not your answer:
    `AAPL-research/` → `Apple_2026-09-03_report.md` · `sources.md` · anything else you made.

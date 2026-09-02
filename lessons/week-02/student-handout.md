@@ -72,9 +72,9 @@ before explaining it.
 ## The contamination catalog — know what poisons a number
 
 A **contamination** is any input that would silently make your valuation wrong if you carried
-it forward as a clean fact. Lab 04 asks you to find and correct one plausible contamination in
-your own ledger before Week 3 turns these inputs into a DCF. Contaminations come in two
-kinds, and professionals hunt both.
+it forward as a clean fact. Week 3 will ask you to find and correct one plausible
+contamination before your inputs enter a DCF — this catalog is the toolkit for that hunt.
+Contaminations come in two kinds, and professionals hunt both.
 
 ### Mechanical contamination — wrong numbers that look right
 
