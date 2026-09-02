@@ -141,11 +141,15 @@ in-person attendance declaration · truth attestation · receipt.
 *Before submit: your ungraded **growth note** — what can you value-bridge
 today that you couldn't last week?*
 
-**Before Thursday — do these** *(short prep; the week page has the ledger template)*:
+**Before Thursday — do these:**
 
-1. Pick 3–5 model inputs for your company (e.g., revenue, EBIT, D&A, capex, diluted shares)
-2. For each, record value + unit, period, source, and as-of date in the ledger format
-3. Bring your gap list from today — Thursday it becomes your AI learning prompt
+1. Have your Lab 03 `.md` and your downloaded filing where you can open them
+2. Confirm you can reopen Tuesday's AI chat — Thursday resumes it, not a new one
+3. Bring your gap list from today
 
-**Lab 04 preview:** build your company's full nine-row evidence ledger and its
-enterprise-to-equity bridge — and catch one contamination before it reaches your DCF.
+*(Your 3–5 staged inputs stay useful — Thursday they become the report's
+performance-vs-history evidence.)*
+
+**Lab 04 preview:** *Know Your Company* — read your filing deeply (MD&A), tell your
+partner the company's story, rewrite your report with AI from wider sources, and publish
+it with an honest footer.

@@ -1,213 +1,218 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 04</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 4 — FCFF and the Bridge, With Real Digits</h1>
-<p><strong>Week 2 · Thursday · Lab 04: Evidence Ledger and Enterprise-to-Equity Bridge</strong></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 04</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 4 — Know Your Company</h1>
+<p><strong>Week 2 · Thursday · Lab 04: Deep Read and First Report</strong></p>
 </section>
 <section class="slide">
 <h2>Today's run of show</h2>
 <ol>
-<li>The mission: a model contract another analyst could audit</li>
-<li><strong>Opener</strong> — tools alive, inputs out <em>(still nothing typed into AI)</em></li>
-<li>Worked FCFF + bridge mini case — predict, then look</li>
-<li>Source hierarchy · find the poisoned row · the contamination catalog</li>
-<li><strong>Two tracks at once</strong> — research to Codex and Gemini, learning to your gap list;
-<strong>start your quiz attempt when told</strong></li>
-<li>Your company: evidence ledger + starter</li>
-<li>Unit and share-count attack</li>
-<li>Committee readiness statement</li>
-<li><strong>Submit — receipt on screen before you leave</strong></li>
+<li>The mission: today you actually know this company — and you say so in public</li>
+<li><strong>Opener</strong> — resume Tuesday's chat, artifacts out, paired</li>
+<li><strong>The deep read</strong> — MD&amp;A, silent, fifteen minutes</li>
+<li>Tell your partner the company; <strong>start your quiz attempt when told</strong></li>
+<li><strong>The rewrite</strong> — fire it, gather sources while it drafts, then merge and verify</li>
+<li>Organize your files — together, on the projector</li>
+<li><strong>Publish</strong> — with the report footer</li>
+<li>Checkout, and what Tuesday needs</li>
 </ol>
-<p><em>You arrived with: your <strong>gap list</strong> from Tuesday · <strong>3–5 pre-staged model inputs</strong>
-in ledger format · your target's current primary filing.</em></p>
+<p><em>You arrived with: your Lab 03 <code>.md</code> file · your downloaded 10-K/10-Q · your Lab 03 AI
+chat, resumed — the context you built Tuesday is the point.</em></p>
+<p>Everything the lab requires lives on one page:
+<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-02/lab-04-evidence-and-bridge.md" target="_blank" rel="noopener">Lab 04 — Know Your Company</a>.
+These slides carry the click-paths and the shapes.</p>
 </section>
 <section class="slide">
-<h2>Opener — tools alive, inputs out</h2>
-<p>Follow the projector. Four steps, then stop.</p>
+<h2>Opener — resume Tuesday's chat</h2>
+<p>Follow the projector. Three steps, then stop.</p>
 <ol>
-<li><strong>Open Codex</strong> — ChatGPT's coding agent. The CLI (terminal version) if yours works: open your terminal
-<em>(Windows: Start → type <code>PowerShell</code> · Mac: ⌘-Space → type <code>Terminal</code>)</em>, type <code>codex</code>.
-No working CLI? <strong>ChatGPT desktop app → Codex.</strong></li>
-<li><strong>Confirm it launches</strong> — a prompt you could type into is enough. Thumbs up.
-<strong>Type nothing yet.</strong> Today AI opens for real — in the launch block, not here.</li>
-<li><strong>Inputs out:</strong> your gap list from Tuesday, and your 3–5 pre-staged rows.</li>
-<li><strong>Paired, 2 minutes each way:</strong> walk your partner through <strong>one</strong> of your input rows —
-value + unit, period, source, as-of date — and <strong>why you trust that source for that row</strong>.</li>
+<li><strong>Reopen your Lab 03 chat — the same conversation, not a new one.</strong>
+<strong>ChatGPT desktop app</strong> (or <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a>) → the <strong>conversation
+list</strong> on the left → find Tuesday's chat (type your ticker in the sidebar search) →
+open it. Working in Codex inside the ChatGPT app? Same list, same rule.
+<em>Context compounds. It already knows your company, your thesis, and what you told it
+Tuesday. A fresh chat throws all of that away.</em></li>
+<li><strong>Artifacts out:</strong> your Lab 03 <code>.md</code> report · your downloaded filing · your gap list.</li>
+<li><strong>Paired, 1 minute each way:</strong> one thing you remember about your company <strong>from your
+filing</strong> — from memory, nothing open. Then swap.</li>
 </ol>
 <blockquote>
-<p>The shape, not your answer <em>(training case)</em>: "Row: <strong>diluted shares, 100.4 million</strong> —
-weighted average for FY2024, from the per-share section of the income statement in the
-10-K filed 2025-02-03. I trust it for this row because it is the company's own audited
-count over the same period as the EBIT I am using. The provider page gave me a <em>current</em>
-share count — that is a different object, on a different date."</p>
+<p>The shape, not your answer <em>(training case)</em>: "Three customers are half of its revenue,
+and it says so itself in the risk factors. I remember that one because it changed how I
+read the growth number."</p>
 </blockquote>
 <blockquote>
-<p><code>codex</code> still won't run? <strong>Parking-lot card</strong> — a TA installs it with you during the next
-two blocks. Nothing today is blocked: the ChatGPT desktop app and Gemini in the browser
-both work without the CLI.</p>
+<p>Chat won't load, login dead, laptop refusing? <strong>Parking-lot card</strong> with your name — a TA
+comes to you during the next block. <strong>Nothing today depends on the CLI:</strong> the deep read
+is you and the filing, and the rewrite runs in the ChatGPT app or the browser.</p>
 </blockquote>
-<p><em>No gap list? Write it now: name the four Tuesday concepts and mark each one.</em></p>
 </section>
 <section class="slide">
-<h2>The worked mini case (follow along)</h2>
-<p>EBIT 150 · tax 25% · D&amp;A 40 · capex 60 · ΔNWC 15</p>
-<blockquote>
-<p>FCFF = 150 × 0.75 + 40 − 60 − 15 = <strong>77.5</strong></p>
-</blockquote>
-<p>The business earned 112.5 after tax; non-cash D&amp;A comes back;
-real money left for equipment (60) and working capital (15).</p>
-</section>
-<section class="slide">
-<h2>The bridge, same case</h2>
-<blockquote>
-<p>Equity = EV 1,000 + cash 100 − debt 250 − NCI 20 − pension 10 = <strong>820</strong>
-Per share = 820 / 100 = <strong>$8.20</strong></p>
-</blockquote>
-<p>Every subtraction is a claim standing in line ahead of you.
-On your real company, every row needs a <strong>source and an as-of date</strong>.</p>
-</section>
-<section class="slide">
-<h2>Source hierarchy · the contamination catalog</h2>
-<p>Filed statements &gt; reconciled disclosures &gt; authoritative series &gt;
-provider fields (reconciled) &gt; AI summaries (leads only).</p>
-<p><strong>Mechanical — wrong numbers that look right</strong> <em>(you just met one)</em>
-units · period · currency · share count · provider label ≠ filing definition
-→ <strong>correct at the source</strong></p>
-<p><strong>Economic — honest numbers that poison a forecast</strong> <em>(the filing is correct)</em></p>
-<p><em>One-time items — the event won't repeat:</em></p>
+<h2>The deep read — MD&amp;A first</h2>
+<p><em>Fifteen minutes. Silent. This is the longest quiet block of the course so far.</em></p>
+<p><strong>MD&amp;A = Management's Discussion and Analysis</strong> — management explaining its own numbers in
+plain English, in its own words. It is the fastest way to actually know a company.</p>
+<p><strong>Where it is:</strong></p>
 <ul>
-<li><strong>One-time expense</strong> — Kraft Heinz: $15.4B goodwill + trademark
-impairment, Q4 2018</li>
-<li><strong>One-time income</strong> — Tesla FY2023: $5.9B one-time tax benefit ·
-Ford Q4 2021: $8.2B Rivian fair-value gain (fair-value losses followed in 2022)</li>
+<li><strong>10-K → Item 7</strong> — "Management's Discussion and Analysis of Financial Condition and
+Results of Operations"</li>
+<li><strong>10-Q → Item 2</strong> — the same thing, shorter</li>
+<li><strong>Lost your file?</strong> <a href="https://www.sec.gov/edgar/search/" target="_blank" rel="noopener">SEC EDGAR full-text search</a> →
+type your ticker → form type <code>10-K</code> → open the newest one.</li>
 </ul>
+<p>Read for three things: <strong>what the business actually sells · what management says changed
+and why · what they warn you about.</strong></p>
+<p>Take notes in your own words — in your <code>.md</code> or on paper. <strong>Every note gets a locator.</strong></p>
 <blockquote>
-<p>Test: <strong>will it be in next year's number, at this size?</strong>
-If not: normalize it out of the base year — or keep it and say so —
-label the row, cite the filing note.</p>
+<p>The shape, not your answer <em>(training case)</em>: "MD&amp;A, FY2024 10-K, Item 7: management
+explains the margin drop as freight and input costs, and says both eased in Q4.
+<strong>My note:</strong> the margin story is <em>cost</em>, not price — they never claim they lost pricing
+power. <strong>What I want to check:</strong> did freight actually ease, or is that guidance dressed
+up as fact?"</p>
 </blockquote>
-<p><em>Basis changes — the measuring stick changed:</em></p>
-<ul>
-<li><strong>Estimate change</strong> — Amazon: server lives 5→6 years (depreciation −$3.2B)…
-then a subset back 6→5 for AI hardware (operating income −$0.7B)</li>
-<li><strong>Principle / standards change</strong> — LIFO → average cost; leases moving
-on-balance-sheet in 2019</li>
-<li><strong>"Adjusted" games</strong> — recurring costs excluded from adjusted EBITDA</li>
-</ul>
-<blockquote>
-<p>Test: <strong>same basis as the years you compare against?</strong>
-If not: reconcile both bases, choose your forecast basis, say why.
-The sin is silently mixing bases.</p>
-</blockquote>
-<p><em>The shape, not your answer: "Row: D&amp;A. My target extended server lives last
-year (10-K note) — this year's margin isn't comparable to last year's. My
-normalization row reconciles both bases; I forecast on the new life, since
-it's management's current estimate, and labeled the choice."</em></p>
-<p>Full table with the filing links: <strong>Week 2 handout → The contamination catalog.</strong></p>
+<p><em>Read it yourself. In fifteen minutes you will know something about this company that no
+summary was ever going to give you.</em></p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 1. Fire the research track</h2>
-<p><em>(~3 minutes. Send, then walk away from it.)</em></p>
+<h2>Tell your partner the company</h2>
+<p><em>3 minutes each way, then swap. From your reading — screens down.</em></p>
 <ol>
-<li><strong>Same requirements to both systems</strong>, word for word:
-<strong>Codex (in ChatGPT) as architect · Gemini as checker.</strong></li>
-<li>Ask for a <strong>model architecture + evidence schema</strong> for <em>your</em> company, including a
-<strong>KISS reverse-DCF skeleton</strong>.
-<em>KISS = keep it simple: the smallest model that can answer your decision.
-Reverse DCF = what growth does today's price imply?</em></li>
-<li><strong>Architecture and schema — not a valuation.</strong> No numbers accepted. If it hands you a
-price target, the ask was wrong.</li>
-<li><strong>Send both, then leave them generating.</strong> Do not sit and watch the tokens arrive.</li>
+<li><strong>What it is</strong> — how it actually makes money</li>
+<li><strong>What is good, and what is bad</strong></li>
+<li><strong>Challenges, risks, advantages</strong></li>
+<li><strong>Recent performance against its own history</strong></li>
+<li><strong>The outlook</strong>, if management gives one</li>
+</ol>
+<p><strong>Listener, your job:</strong> ask <strong>one question the story didn't answer.</strong> That question is
+worth putting in the report.</p>
+<blockquote>
+<p>The shape, not your answer <em>(training case)</em>: "It's a mid-size industrial distributor —
+it buys parts from manufacturers and sells them to contractors, so it earns a spread on
+service and delivery speed, not on making anything. <strong>Good:</strong> it's taken share three
+years running and owns its branches. <strong>Bad:</strong> half of revenue is construction, so it
+moves with housing starts. <strong>Risk:</strong> one supplier is a fifth of purchases. <strong>Against its
+own history:</strong> margins are a point better than 2022, but the growth rate has halved.
+<strong>Outlook:</strong> management guides to low-single-digit growth and says destocking is over —
+which is exactly the claim I'd test first."</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>The rewrite — 1. Fire it, then walk away</h2>
+<p><em>(~4 minutes. Send it, then leave it. Do not watch it write.)</em></p>
+<ol>
+<li><strong>In the resumed chat</strong> — not a new one.</li>
+<li><strong>Paste or attach your Lab 03 <code>.md</code>.</strong></li>
+<li>Ask for a rewrite that <strong>keeps your judgments</strong>, <strong>marks every claim's source</strong>, and
+<strong>ends with your call</strong> — initiate-buy / watch-defer / do-not-initiate — plus one
+sentence on what would change it.</li>
+<li><strong>Send it. Then go to the next slide's work while it drafts.</strong></li>
 </ol>
 <blockquote>
-<p>The shape, not your answer: "You are helping me <em>design</em> a valuation, not run one.
-Company: [ticker]. I am valuing <strong>one diluted common share</strong> as of [date], in USD
-millions. Give me (a) a model architecture — the inputs, the order they are computed,
-and where each one lives in a 10-K; (b) an evidence-schema table, one row per input:
-item · classification · value + unit · period · source · check · failure mode;
-(c) the smallest reverse-DCF skeleton that could tell me what revenue growth today's
-price implies. <strong>Produce no valuation, no price target, and no estimated numbers</strong> —
-where you would need a number, name the filing line instead."</p>
+<p>The shape, not your answer: "Here is the report I wrote in our last session [paste or
+attach your <code>.md</code>]. Rewrite it as a company research report for a reader who has not
+read the filing. <strong>Keep my judgments — do not replace them with yours.</strong> Mark every
+claim with its source (filing item and page · outlet and date · call date); where I gave
+you no source, write <code>UNSOURCED</code> instead of filling the gap yourself. End with my call —
+<strong>watch-defer</strong> — and one sentence naming what would change it. No price target."</p>
 </blockquote>
-<p><em>You are hiring an intern architect, not an oracle.</em></p>
-<p><em>(Both systems down? <strong>Week 1 — Dual-System Output Packet</strong> in Start Here, or the
-<code>COURSE-RUN PROBE:</code> route from Start Here's <strong>AI Access</strong> page.)</em></p>
+<p><em>A gap you can see is worth more than a gap it quietly filled for you.</em></p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 2. The learning track</h2>
-<p><em>(~7 minutes, while the proposals generate.)</em></p>
-<blockquote>
-<p>On one screen the machine works <strong>for</strong> you.
-On the other, you put it to work <strong>on</strong> you. That is the whole pattern.</p>
-</blockquote>
+<h2>The rewrite — 2. Work while it drafts</h2>
+<p><em>(~9 minutes. Two or three sources beyond your one filing.)</em></p>
 <ol>
-<li><strong>Gap list out.</strong> Pick your <strong>#1 "not yet."</strong></li>
-<li>Open your other system — Gemini in the browser, or a fresh ChatGPT thread — and run
-the tutor prompt below.</li>
-<li><strong>Commit to an answer before you are told.</strong> A wrong answer you committed to is what
-makes the correction stick; a skipped one teaches nothing.</li>
-<li><strong>Ungraded, never collected, yours.</strong> Nobody reads this but you.</li>
+<li><strong>Prior 10-Ks — the same company page.</strong>
+<a href="https://www.sec.gov/edgar/search/" target="_blank" rel="noopener">SEC EDGAR full-text search</a> → your ticker → form
+type <code>10-K</code> → open the <strong>two years before</strong> the one you already have. What did
+management promise then, and did it happen?</li>
+<li><strong>Recent news — from the company itself.</strong>
+Web-search <code>[company name] investor relations</code> → <strong>News</strong> or <strong>Press releases</strong>.
+Dated, attributable, easy to cite.</li>
+<li><strong>A CEO interview or the earnings call.</strong>
+Same investor-relations page → <strong>Events</strong> or <strong>Quarterly results</strong> → the call replay or
+transcript. Or search YouTube for <code>[company name] CEO interview</code>.</li>
+</ol>
+<p><strong>The standard for a source:</strong> dated · attributable · <strong>and you can point at the sentence
+you used.</strong> A source you cannot cite where you used it is not a source.</p>
+<blockquote>
+<p>Keep a running <code>sources.md</code> as you go — link, date, and the one line you took from it.
+You will need that list twice today: in the report, and in the checkout.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>The rewrite — 3. Merge and verify</h2>
+<p><em>(~7 minutes. Your draft finished while you were reading. Now you are the editor.)</em></p>
+<ol>
+<li><strong>Every claim keeps its source.</strong> Anything marked <code>UNSOURCED</code> gets a source or gets cut.</li>
+<li><strong>Your added sources go where you used them</strong> — not in a pile at the end.</li>
+<li><strong>The judgments are yours.</strong> Any sentence stating an opinion you do not hold gets
+rewritten in your words or deleted.</li>
+<li><strong>Your call is at the end</strong>, with the one sentence that would change it.</li>
 </ol>
 <blockquote>
-<p>The shape, not your answer: "Quiz me on <strong>why capex comes out of FCFF while D&amp;A goes
-back in</strong> — one question at a time. Don't give me the answer until I commit to one.
-Then correct me in two lines and ask the next. Keep going until I get three right in
-a row."</p>
+<p>The shape, not your answer: "It wrote <em>'the company is well positioned in a growing
+market'</em> — I don't know that and neither does it. Cut. It wrote <em>'services revenue grew
+13%'</em> with no source — I added <code>(10-K, Item 7, p. 31)</code>, because that's where I read it.
+It wrote <em>'we recommend accumulating'</em> — my call is watch-defer, so I rewrote the ending
+in my own words."</p>
 </blockquote>
-<p><em>This is what Tuesday's gap list was for.</em></p>
+<p><strong>The rewrite is the machine's. The report is yours.</strong> In twenty minutes you paste a
+footer that says exactly that — and it has to be true.</p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 3. Back to the proposals</h2>
-<p><em>(~7 minutes. The research track finished while you were learning.)</em></p>
-<ol>
-<li>Read both proposals <strong>side by side</strong>. Where do they disagree?</li>
-<li>Mark each material suggestion <code>accept</code> · <code>modify</code> · <code>reject</code> — <strong>with a finance
-reason</strong>, never a preference.</li>
-<li><strong>At least one of each, when the actual outputs support it.</strong> Do not manufacture
-disagreement.</li>
-<li>The grid is the handout's comparison table: valuation object · FCFF construction ·
-normalization · enterprise-equity bridge · validation tests.</li>
-</ol>
+<h2>Organize your files — together</h2>
+<p><em>Watch the projector, then do it to your own folder.</em></p>
+<p><strong>One company = one folder. Clear names, with dates.</strong></p>
 <blockquote>
-<p>The shape, not your answer: "<strong>Bridge — modify.</strong> Codex bridged with total debt off the
-balance sheet; Gemini added operating-lease liabilities as debt-like. I take Gemini's
-row, because my FCFF treats lease payments as financing rather than operating — but I
-label the lease policy in the ledger so both halves stay on one convention."</p>
+<p>The shape, not your answer:
+<code>AAPL-research/</code> → <code>Apple_2026-09-03_report.md</code> · <code>sources.md</code> · anything else you made.
+(Your company, today's date.)</p>
 </blockquote>
-<blockquote>
-<p><strong>Disagreement between the two systems is information</strong> — it names the design decision
-that is actually contested. Agreement is not validation: arbitrate with the filing, the
-definitions, and this morning's known answers.</p>
-</blockquote>
+<p><strong>No</strong> <code>final_v2_REAL.md</code>. <strong>No</strong> <code>Untitled(3).md</code>. <strong>No</strong> report that exists only inside a
+chat window.</p>
+<p><em>Why this earns real minutes: your Project 1 package gets assembled out of these files by
+someone who is not you today — and that someone is future you, who will not remember what
+<code>Untitled(3)</code> was.</em></p>
 </section>
 <section class="slide">
-<h2>Your company: the evidence ledger</h2>
-<p><strong>All nine rows are Lab 04's required work.</strong> In the room, work them <strong>in this order</strong>:</p>
-<p><code>revenue → EBIT → tax → D&amp;A → capex → NWC → cash/non-operating → debt/debt-like → diluted shares</code></p>
-<p>The checkout asks for <strong>four representative rows, including the reconciled/contaminated
-one</strong>. <strong>Write those four completely and well before you widen.</strong></p>
+<h2>Publish — with the footer</h2>
+<p><strong>1. The footer goes on first.</strong> Copy the three lines from the
+<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-02/lab-04-evidence-and-bridge.md" target="_blank" rel="noopener">lab page</a>,
+paste them at the bottom of your report, and fill in the brackets.</p>
 <blockquote>
-<p>A complete, sourced partial ledger with its gaps named beats nine unsourced rows.</p>
+<p>The shape, filled in <em>(training case)</em>:
+<em>This report was written for FIN 43900 (AI Finance Applications, Purdue) as a learning
+exercise. It is not investment research and it is not financial advice.</em>
+<em>AI assistance: drafted with ChatGPT/Codex, resumed from my Lab 03 session; sources
+gathered and verified by me; the judgments are mine.</em>
+<em>Any remaining errors are my own.</em></p>
 </blockquote>
-<p>Each row carries: item · classification (fact / normalization / forecast / output) ·
-value + unit · period · source · rationale · check · failure mode.</p>
-<p>Two sources sharing a label may measure different things —
-never average a discrepancy before explaining it.</p>
+<p><strong>2. GitHub</strong> — <a href="https://github.com" target="_blank" rel="noopener">github.com</a> → <strong>+</strong> (top right) → <strong>New repository</strong> →
+name it <code>TICKER-research</code> → <strong>Create repository</strong> → <strong>Add file → Upload files</strong> → drag your
+folder in → <strong>Commit changes</strong>. Copy the URL from the address bar.</p>
+<p><strong>3. Substack</strong> — <a href="https://substack.com" target="_blank" rel="noopener">substack.com</a> → <strong>Dashboard</strong> → <strong>New post</strong> →
+paste your report → <strong>Publish</strong>.</p>
+<blockquote>
+<p><em>Publishing visibility is always your choice: submitting the same report file in the
+checkout earns identical credit.</em>
+No GitHub or Substack account yet? <strong>Submit the report file in the checkout</strong> — identical
+credit — and set the accounts up after class. Nobody here is graded on being public.</p>
+</blockquote>
 </section>
 <section class="slide">
 <h2>Checkout</h2>
-<p>In your open Lab 04 attempt <em>(Brightspace → Quizzes → Lab 04)</em>:
-session token on the board · growth note (ungraded, yours) before submit.</p>
-<p>Lab Date · teammates/learning partners + your contribution ·
-decision, object, valuation date, currency/unit, intended output ·
-synthetic FCFF + per-share results · <strong>four representative ledger rows</strong> (including the
-reconciled/contaminated one) · AI access paths + accept/modify/reject evidence ·
-one independent source reconciliation · <strong>Ready / Unsafe / Next test</strong> ·
-in-person attendance declaration · truth attestation · receipt.</p>
+<p>In your open Lab 04 attempt <em>(Brightspace → Quizzes → Lab 04)</em>. The <strong>session token</strong> is
+its own separate question — it is on the board.</p>
+<p>Lab Date · partner and your contribution · <strong>link to your published report on GitHub</strong> (or
+the <code>Company_name_Date_report.md</code> file itself) · your decision call · the sources you added
+beyond the filing, listed · the AI-use disclaimer confirmed present · in-person attendance
+declaration and truth attestation · submit.</p>
+<p><em>You did a lot today and you submit a little. That is deliberate.</em></p>
+<p><em>Before you submit: the <strong>growth note</strong> — two or three sentences, ungraded, yours alone.</em></p>
 <p><strong>Before Tuesday — do these:</strong></p>
 <ol>
-<li>Do the Week 3 prework: the fully worked DCF page with its hand checkpoints —
-the heaviest prework of the month; start early</li>
-<li>Bring your Lab 04 evidence ledger, corrected rows included — Week 3 builds on it</li>
+<li>Do the Week 3 prework: the fully worked DCF page with its hand checkpoints — the
+heaviest prework of the month; start it early, not Monday night</li>
+<li>Bring your published report and your filing — Tuesday turns them into your DCF inputs</li>
 </ol>
-<p><strong>Lab 05 preview:</strong> build and validate a five-year FCFF DCF — the training case
-by hand first, then your own company.</p>
+<p><strong>Lab 05 preview:</strong> build and validate a five-year FCFF DCF — the training case by hand
+first, then your own company.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

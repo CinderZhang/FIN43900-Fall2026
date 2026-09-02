@@ -32,9 +32,13 @@ do not begin valuation-specific AI work before the first successful Edition A re
 **AI Boundary Card — Use This All Semester** for ordinary tools, integrated AI, the exact end event, and the honest
 recovery route after accidental use.
 
-**Before Thursday** (15–20 minutes): bring your target's current primary filing reference and
-three to five candidate model inputs, each with its source and as-of date, transferred into the
-evidence-ledger format. Thursday's lab opens with a short guided launch on the training case,
-then your real-company work uses these rows — arriving without them means spending lab time on
-filing hunting instead of graded judgment work. Bring the gap list you write in Tuesday's
-session as well: Thursday's opening block turns each "not yet" into your own learning prompt.
+**Before Thursday** (15–20 minutes): bring four things — the `.md` report you wrote in Lab 03,
+the 10-K or 10-Q you downloaded, the gap list you wrote in Tuesday's session, and your Lab 03
+AI chat, **reopened**. Check tonight that you can find that conversation again (in ChatGPT, the
+conversation list on the left; search the sidebar for your ticker): Thursday's rewrite resumes
+the same chat rather than starting a new one, because the context you built Tuesday is the
+point. The three to five model inputs you staged with their sources and as-of dates stay
+useful — they are the evidence behind your report's performance-against-its-own-history
+section. Thursday you deep-read your filing, tell a partner what the company actually is, and
+rewrite the report with wider sources; arriving without the filing and the report means
+spending lab time re-downloading instead of reading.
