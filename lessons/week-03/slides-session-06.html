@@ -1,221 +1,173 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 06</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 6 — Attack the DCF</h1>
-<p><strong>Week 3 · Thursday · Lab 06: Sensitivity, Reverse DCF, and Conditional Recommendation</strong></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 06</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 6 — What Has to Be True</h1>
 <blockquote>
-<p>A model nobody has tried to break is a model you cannot defend.
-Today you break your own, on purpose, before a committee does it for you.</p>
+<p><strong>One thing today: your company through the model — what it is worth, and what the price
+already assumes.</strong></p>
 </blockquote>
 </section>
 <section class="slide">
 <h2>Today's run of show</h2>
 <ol>
-<li>The prediction reveal — what one point of WACC actually does</li>
-<li><strong>Opener</strong> — tools alive, artifacts out <em>(nothing typed into AI yet)</em></li>
-<li><strong>Paired prediction defense</strong> — direction <em>and</em> size, and why</li>
-<li>Scenario design is causal, not cosmetic</li>
-<li><strong>Two tracks at once, inverted</strong> — the AI attacks while <strong>you</strong> compute;
-<strong>start your quiz attempt when told</strong></li>
-<li>Your grid, your reverse DCF</li>
-<li>Source-check the challenges; disposition each one</li>
-<li>Temperature check <em>(anonymous, ungraded)</em></li>
-<li>Defend your range aloud</li>
-<li><strong>Submit — receipt on screen before you leave</strong></li>
+<li>Reopen, rerun</li>
+<li><strong>R</strong> five sourced rows</li>
+<li><strong>I</strong> your numbers in; <strong>quiz when told</strong></li>
+<li><strong>V</strong> reasonableness</li>
+<li><strong>E</strong> grid + reverse DCF</li>
+<li>Conditional call; floor</li>
+<li>Temperature check</li>
+<li>Checkout — GitHub</li>
 </ol>
-<p><em>You arrived with: your <strong>Lab 05 target input table</strong>, unresolved rows included ·
-your <strong>written WACC prediction</strong> from the worked example's Step 6 · your <strong>gap list</strong>.</em></p>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-03/lab-06-sensitivity-and-reverse-dcf.md" target="_blank" rel="noopener">Lab 06</a></p>
 </section>
 <section class="slide">
-<h2>The prediction reveal</h2>
-<p>Prework Step 6 asked you to predict WACC 10% → 11% <strong>before</strong> running it.</p>
-<blockquote>
-<p>$27.50 → <strong>$23.41</strong> — a <strong>15% drop</strong> from one percentage point.</p>
-</blockquote>
-<p>Direction right but size shocking? That <em>is</em> the lesson: this conclusion is <strong>hostage to the
-discount rate</strong>. A committee hears that as a <strong>range</strong>, never as a point.</p>
-<p>Nothing about the business changed. Only what you charge for waiting.</p>
-</section>
-<section class="slide">
-<h2>Opener — tools alive, artifacts out</h2>
-<p>Follow the projector. Four steps, then stop.</p>
+<h2>Reopen and rerun</h2>
 <ol>
-<li><strong>Open both systems.</strong> Codex — ChatGPT's coding agent. The CLI (terminal version) if yours
-works: open your terminal <em>(Windows: Start → type <code>PowerShell</code> · Mac: ⌘-Space → type
-<code>Terminal</code>)</em>, type <code>codex</code>. No working CLI? <strong>ChatGPT desktop app → Codex.</strong> Then open
-<strong>Gemini</strong> in a browser tab — today both systems work for you. <strong>Type nothing yet.</strong></li>
-<li><strong>Artifacts out:</strong> your Lab 05 target input table, and your written WACC prediction.</li>
-<li><strong>Paired, 2 minutes each way:</strong> defend your prediction — <strong>direction and size</strong> — and say
-<em>why</em> you expected the size you wrote.</li>
-<li><strong>Solo, 1 minute:</strong> re-mark the four concepts. Anything still "not yet" goes back on the
-gap list, and it is what your learning track gets pointed at next week.</li>
+<li><strong>VS Code → File → Open Recent</strong> → your Course/Work Folder.</li>
+<li><strong>Terminal → New Terminal.</strong></li>
+<li><code>python dcf.py</code>. <strong>Expect:</strong> Tuesday's twelve numbers; debug until they match.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(step 3)</em>: "I predicted value falls, maybe 5%. It fell 15%. I had
-the direction right from the discounting formula, but I only counted the five explicit years.
-I forgot the terminal denominator widens from 0.07 to 0.08 — and nearly three-quarters of
-the value lives in that one fraction. <strong>The size lives in the terminal, not in the years I
-could see.</strong>"</p>
-</blockquote>
-<blockquote>
-<p><code>codex</code> still won't run? <strong>Parking-lot card</strong> — a TA installs it with you during the attack
-block. Nothing today is blocked: the ChatGPT desktop app and Gemini in the browser both work
-without the CLI.</p>
-</blockquote>
+<p>Resume Tuesday's chat. 90 seconds each way: the input hardest to find.</p>
 </section>
 <section class="slide">
-<h2>Scenario design is causal, not cosmetic</h2>
-<p>A scenario is a coherent story about a business — not three arbitrary growth rates.</p>
-<ul>
-<li>Higher growth usually needs <strong>higher reinvestment</strong>: capex and working capital move with it.</li>
-<li>Higher risk moves <strong>the cash flows and the rate</strong>, not the rate alone.</li>
-<li>Never combine mutually inconsistent "best" assumptions. High growth + low capex + low WACC
-is not a bull case; it is an arithmetic error with a story stapled to it.</li>
-</ul>
-<blockquote>
-<p>The shape, not your answer <em>(one coherent bear case)</em>: "<strong>The story:</strong> a second supplier
-qualifies a competing part and my target loses its price premium. <strong>What moves together, and
-why:</strong> operating margin down ~150bp — that premium <em>is</em> the margin; so FCFF₁–FCFF₅ all fall.
-Growth fades one year faster, because the volume was won on that premium. WACC up 40bp,
-because customer concentration rises as the smaller accounts leave first. Terminal growth
-<strong>unchanged at 2.5%</strong> — a lost premium is a level effect, not a claim about the long-run
-economy. Four inputs, one story, and I can say why each one moved."</p>
-</blockquote>
-<p><em>Test your own case out loud: if you cannot name the mechanism that ties two moved inputs
-together, one of them is decoration.</em></p>
+<h2>R — five rows, each sourced</h2>
+<p><a href="https://www.sec.gov/edgar/search/" target="_blank" rel="noopener">SEC EDGAR</a> → the company → latest <strong>10-K</strong> → <code>Ctrl+F</code> the
+phrases below. <strong>Expect:</strong> the statement or note heading on screen.</p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — five rows, each sourced (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — five rows, each sourced</caption>
+<thead>
+<tr>
+<th scope="col">Input</th>
+<th scope="col">Training value</th>
+<th scope="col">Where yours comes from</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Starting FCFF</td>
+<td>100</td>
+<td><strong>Cash Flow Statement</strong>: operating cash flow + after-tax interest − capex</td>
+</tr>
+<tr>
+<td>Growth, Years 1–5</td>
+<td>8%, 6%, 5%, 4%, 3%</td>
+<td><strong>Item 7, MD&amp;A</strong> plus recent history; a forecast</td>
+</tr>
+<tr>
+<td>WACC</td>
+<td>10% — never copy it</td>
+<td>a brief <code>estimate</code>, below — or <code>unresolved</code></td>
+</tr>
+<tr>
+<td>Terminal growth</td>
+<td>3%</td>
+<td>the long-run economy, not the company</td>
+</tr>
+<tr>
+<td>Cash · debt · shares</td>
+<td>50 · 300 · 50</td>
+<td>balance sheet; debt note; EPS note's <strong>diluted weighted-average shares</strong></td>
+</tr>
+</tbody></table></div>
+<p>Every row: value, unit, as-of date, locator. Plus <strong>today's price with date and time</strong> — the
+reverse DCF's target. Unsourced stays <code>unresolved</code>.</p>
+<p><strong>WACC once:</strong> 4.5% + 1.3 × 5% = 11% equity; 6% × (1 − 0.25) = 4.5% debt; 85/15 → about <strong>10%</strong>.</p>
+<p><strong>Negative FCFF?</strong> Growth on a loss grows the loss — use an explicit five-year path.</p>
 </section>
 <section class="slide">
-<h2>Two tracks at once, inverted — 1. Fire the AI bull/bear challenge</h2>
-<blockquote>
-<p>Tuesday the AI built while you learned.
-Today <strong>the AI attacks while you compute.</strong>
-Both directions are the same skill: staying on the loop of two tracks at once.</p>
-</blockquote>
-<p><em>(~4 minutes. Send both, then go do your own arithmetic.)</em></p>
+<h2>I — your company through the model</h2>
 <ol>
-<li><strong>Both systems, same ask, word for word</strong> — <strong>Codex (in ChatGPT)</strong> and <strong>Gemini</strong>. Each
-returns a <strong>bull</strong> case <em>and</em> a <strong>bear</strong> case, aimed at <strong>your Lab 05 base output</strong>.</li>
-<li>Give each one your base per-share value, your input table, and your stated convention.</li>
-<li><strong>Send, then leave them generating.</strong> Your grid does not wait for them.</li>
+<li><strong>New File</strong> → any name ending in <code>.md</code>. Put your table and the price in it.</li>
+<li>Your numbers into <code>dcf.py</code>'s inputs block; an unresolved row keeps the training value, marked
+<code>placeholder</code>. Save.</li>
+<li><code>python dcf.py</code>. <strong>Expect:</strong> twelve lines for your company.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer: "Here is my base DCF for [ticker]: <strong>[per-share value]</strong> per
-diluted share as of <strong>[valuation date]</strong>; annual end-of-year FCFF in USD millions, five
-explicit years, Gordon-growth terminal value at Year 5. Here are my inputs: [paste the input
-table]. Build the strongest <strong>bull</strong> case <em>and</em> the strongest <strong>bear</strong> case against this
-valuation — attack the <strong>assumptions</strong>, not the arithmetic. For <strong>every claim, name the checkable source</strong> — filing and section,
-dated release, or published series — <strong>or mark it UNVERIFIABLE</strong>. Give me no price target.
-I am going to source-check one of your load-bearing claims, so do not hand me anything you
-cannot cite."</p>
-</blockquote>
-<blockquote>
-<p>Tell it you will check. It changes what comes back.</p>
-</blockquote>
-<p><em>(Both systems down? <strong>Week 1 — Dual-System Output Packet</strong> in Start Here, or the
-<code>COURSE-RUN PROBE:</code> route from Start Here's <strong>AI Access</strong> page. Code or network down?
-<strong>Week 3 Offline/No-Code Fallback — DCF and Sensitivity</strong> — the same grid, by hand.)</em></p>
 </section>
 <section class="slide">
-<h2>Two tracks at once, inverted — 2. While they generate: your grid</h2>
-<p><em>(~14 minutes. The longest block of the day — protect it.)</em></p>
-<ol>
-<li><strong>WACC / terminal-growth grid:</strong> <code>sensitivity_table(inputs, wacc_values, terminal_growth_values)</code> — WACC across, g down, per-share value in every cell.</li>
-<li><strong>Predict before you read a single cell.</strong> Write it: as WACC rises, value should <strong>fall</strong>;
-as g rises, value should <strong>rise</strong>.</li>
-<li><strong>Monotonicity check.</strong> Walk every row and every column. A cell that breaks the direction is
-an implementation bug — find it <em>before</em> you interpret anything.</li>
-<li><strong>Blank any cell where <code>g ≥ WACC</code>.</strong> At g = WACC the formula divides by zero; above it, the
-math claims infinite value. A blank cell is the honest output.</li>
-<li><strong>One operating sensitivity</strong> — the driver <em>your</em> thesis actually rests on: margin, the
-growth fade, or capex intensity. Predict its direction first, too.</li>
-<li><strong>Reverse DCF:</strong> <code>reverse_dcf_for_growth(inputs, observed_price, lower, upper)</code>, with today's
-price and its as-of source. It answers exactly one question: <strong>what growth does today's
-price imply?</strong> Then judge it — is that growth plausible for this business, against its own
-history and its industry? Reverse DCF names an expectation; it never proves the market wrong.</li>
-<li><strong>Terminal-value share, base case and one stress case.</strong> Report both, and say what changed.</li>
-</ol>
-<blockquote>
-<p>The shape, not your answer <em>(a reverse-DCF reading)</em>: "Holding my margin, WACC 9.2%, and
-terminal growth 2.5% fixed, today's price implies <strong>7.1%</strong> five-year FCFF growth. The company
-has compounded 4–5% through the last cycle and guides to 5–7%. So the price is paying for the
-top of guidance holding for five years — plausible, not free. That is what I have to believe
-to call it fairly valued."</p>
-</blockquote>
+<h2>V — reasonableness</h2>
+<p>Your value per share beside today's price. Inside 0.5×–2×: say so. Outside: adjust nothing; name
+the input you distrust most, and why.</p>
 </section>
 <section class="slide">
-<h2>Two tracks at once, inverted — 3. Back to the challenges</h2>
-<p><em>(~8 minutes. They finished while you were computing.)</em></p>
+<h2>E — grid and reverse DCF, one message</h2>
+<p><em>Training case, $/share:</em></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="E — grid and reverse DCF, one message (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">E — grid and reverse DCF, one message</caption>
+<thead>
+<tr>
+<th scope="col">WACC \ terminal growth</th>
+<th align="right" scope="col">2%</th>
+<th align="right" scope="col">3%</th>
+<th align="right" scope="col">4%</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>9%</strong></td>
+<td align="right">28.60</td>
+<td align="right">32.94</td>
+<td align="right">39.02</td>
+</tr>
+<tr>
+<td><strong>10%</strong></td>
+<td align="right">24.36</td>
+<td align="right"><strong>27.50</strong></td>
+<td align="right">31.69</td>
+</tr>
+<tr>
+<td><strong>11%</strong></td>
+<td align="right">21.06</td>
+<td align="right">23.41</td>
+<td align="right">26.44</td>
+</tr>
+</tbody></table></div>
+<p>Base case centre; falls down, rises right; read the corners. Reverse DCF at $30.00: about
+<strong>+1.78 points</strong> on every growth rate.</p>
+<p>Send this, then predict your grid's furthest corner:</p>
+<blockquote>
+<p>In my <code>dcf.py</code>, keep the inputs block and the twelve printed lines exactly as they are —
+they must still match the known answer afterwards. Add a sensitivity grid: value per diluted
+share for every combination of the WACC values and terminal-growth values I list in two
+editable lists at the top (start with WACC 0.09, 0.10, 0.11 and terminal growth 0.02, 0.03,
+0.04), holding every other input fixed; mark any cell where terminal growth is greater than
+or equal to WACC as invalid rather than valuing it. Print the grid as a table I can read in
+the terminal, underneath the twelve lines. Then add a reverse DCF: given a target share price
+I set at the top, solve for one number I name — start with a uniform shift added to all five
+explicit growth rates — that makes value per share equal that price, holding everything else
+fixed, and print the solved number with the list of inputs held fixed. One file, one command
+— <code>python dcf.py</code> prints all three blocks. Do not create a second script.</p>
+</blockquote>
+<blockquote>
+<p>For the reverse DCF, search by bisection between the lower and upper bounds I set at the top
+(start with −5 and +10 percentage points); refuse any bracket that pushes an annual growth
+rate to −100% or below. If the target price cannot be reached inside those bounds, report no
+solution in that bracket — never return a bound as if it were the answer. Print the solved
+shift, the target price, and the list of inputs held fixed, so one command still shows me
+everything.</p>
+</blockquote>
+<p>Paste only the code over <code>dcf.py</code>, save, run.</p>
 <ol>
-<li>Read both cases <strong>side by side</strong>. Where do they disagree about <em>your</em> company?</li>
-<li><strong>Pick one load-bearing claim from each system</strong> — one whose failure would move your range.
-Not a decoration.</li>
-<li><strong>Source-check those two.</strong> Go to the filing, the dated release, or the published series.
-An AI citation is a <strong>lead</strong>, not evidence.</li>
-<li><strong>Disposition each:</strong> <code>accept</code> · <code>qualify</code> · <code>correct</code> · <code>reject</code> — <strong>with the source named.</strong></li>
+<li><strong>Training first:</strong> training inputs, target <code>30.00</code>. <strong>Expect:</strong> grid matches above, shift
+about +1.78.</li>
+<li><strong>Your company:</strong> your inputs, target = today's price. <strong>Expect:</strong> your grid and shift.
+Unresolved? Label the training result training.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(one disposition)</em>: "<strong>Gemini, bear case — 'gross margin has
-declined four consecutive quarters.' → CORRECT.</strong> The segment tables in the last 10-Q show
-three consecutive declines and a fourth quarter flat at 41.2%, not down. The <em>direction</em> of
-the argument survives; the 'four consecutive' framing does not. I keep the margin-pressure
-driver, sourced to that 10-Q, and drop the streak claim — it mattered, because the streak was
-the entire reason the case pushed a fifth year of compression."</p>
-</blockquote>
-<blockquote>
-<p>Two systems agreeing is not validation. It is two models trained on overlapping text.</p>
-</blockquote>
+<p>Report the shift with what you held fixed — not proof of mispricing.</p>
+</section>
+<section class="slide">
+<h2>Conditional call — and the floor</h2>
+<p>"Initiate if …; otherwise …", plus one thing to monitor.</p>
+<p><em>Example:</em> "Watch-defer. Initiate if the growth the price demands drops below my forecast path —
+a price below about $27.50, or a sourced reason to raise my growth path two points. Monitor:
+operating margin next quarter."</p>
+<p><strong>Floor:</strong> your inputs, sourced; your company's value; the grid and the growth the price
+assumes; your conditional call.</p>
+<p>Depth after class:
+<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-03/open-ended-challenge.md" target="_blank" rel="noopener">open challenge page</a>.</p>
 </section>
 <section class="slide">
 <h2>Temperature check</h2>
-<p><strong>Anonymous. Ungraded. No names.</strong> Three questions:</p>
-<ol>
-<li>What is working?</li>
-<li>What is confusing?</li>
-<li>One change you would make.</li>
-</ol>
-<p><em>Answers get addressed openly next Tuesday — in both sections, out loud, including
-"no change, and here is why."</em></p>
+<p>Anonymous, ungraded: what works, what confuses, one change.</p>
 </section>
 <section class="slide">
-<h2>Defend your range</h2>
-<blockquote>
-<p>"My range is <strong>[low–high]</strong> vs price <strong>[P] as of [date]</strong>. Most sensitive to <strong>[driver]</strong>.
-I recommend <strong>[action]</strong> only if <strong>[condition]</strong>; revisit if <strong>[trigger]</strong>."</p>
-</blockquote>
-<p><em>(The handout carries the fuller version, which also states your terminal-value share.)</em></p>
-<blockquote>
-<p>The shape, not your answer: "My range is <strong>$41.10–$57.80</strong> per diluted share versus a price of
-<strong>$47.30</strong>, taken from the exchange's own quote page at my stated valuation date. Most
-sensitive to <strong>terminal growth</strong> — moving it 2.5% → 3.0% carries the range past the price on
-its own. For a committee with no position I recommend <strong>watch-defer</strong>, and I would move to
-initiate only if <strong>the guided margin recovery shows up in two consecutive quarters</strong>. I
-revisit immediately if <strong>the second supplier is qualified</strong>, because that single event is
-what my whole bear case is built on."</p>
-</blockquote>
-<p><em>A range you cannot say aloud in four sentences is not a conclusion yet.</em></p>
-</section>
-<section class="slide">
-<h2>Merit checkout</h2>
-<p>In your open Lab 06 attempt <em>(Brightspace → Quizzes → Lab 06)</em>:</p>
-<p>Lab Date · teammates/learning partners + personal contribution · decision and valuation
-convention · low/base/high values and <strong>the causal driver changed in each</strong> · WACC/g grid
-excerpt and monotonicity result · <strong>terminal-value shares (base and stress) and
-interpretation</strong> · reverse-DCF solved assumption and its economic interpretation · AI
-bull/bear claim checks <strong>with sources and dispositions</strong> · range, conditional recommendation,
-and reversal trigger · <strong>session token (on the board)</strong> · optional artifact link · in-person
-attendance declaration · truth attestation · receipt confirmation.</p>
-<p><em>Before submit: your ungraded <strong>growth note</strong> — what can you defend today that you couldn't
-on Tuesday, and what still feels shaky?</em></p>
-<p><strong>Before Tuesday — do these:</strong></p>
-<ol>
-<li>Watch the relative-valuation segment named on the Week 4 page and answer its question:
-what are the four steps before applying a multiple, and why can a seemingly consistent peer
-set still mislead?</li>
-<li><strong>Without AI</strong>, write your peer-selection policy and predict one reason a
-precedent-transaction multiple may exceed a trading multiple — <strong>freeze the policy before
-you ask any AI for a single peer name</strong></li>
-<li>Bring today's DCF range, your valuation date, your bridge conventions, and one candidate
-peer you can defend</li>
-</ol>
-<p><strong>Lab 07 preview:</strong> <em>Comparable-Company Policy and Implied Range</em> — your peer policy written
-before AI proposes a name, then converted into an implied per-share range you set beside
-today's DCF.</p>
+<h2>Checkout — on GitHub</h2>
+<p><strong>Brightspace → Quizzes → Lab 06.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p>Anchors on the lab page: grid · reverse DCF · sources · reasonableness · call.</p>
+<p><strong>Next week:</strong> peer selection — freeze your policy before you ask AI.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

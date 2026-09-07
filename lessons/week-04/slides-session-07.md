@@ -59,8 +59,8 @@ Follow the projector. Four steps, then stop.
 > The shape, not your answer *(step 4)*: "**Enterprise vs equity multiples — not yet.** I can
 > compute both. I cannot say, without stopping to check, which one still needs the bridge."
 
-> `codex` will not run? **Parking-lot card** with your name — a TA fixes it with you during
-> the worked case. Nothing today is blocked: the **ChatGPT desktop app** and **Gemini in the
+> `codex` will not run? Debug with your AI — the exact command and the exact error text. Nothing today
+> is blocked: the **ChatGPT desktop app** and **Gemini in the
 > browser** both work without the CLI, and today's AI work is text, not code.
 
 *No gap list, no learning track. That list is the whole point of the next hour.*
@@ -143,9 +143,7 @@ most common junior errors in existence, and one an interviewer can spot in four 
 criteria after it has seen the answers.*
 
 *(Both systems down? **Week 1 — Dual-System Output Packet** in Start Here, or the
-`COURSE-RUN PROBE:` route from Start Here's **AI Access** page. Network or data access down?
-**Week 4 Offline/No-Code Fallback — Comparable Policy and Triangulation** — the same finance,
-by hand, on the synthetic case.)*
+`COURSE-RUN PROBE:` route from Start Here's **AI Access** page.)*
 
 ---
 
@@ -217,9 +215,8 @@ than half of everything.
 3. **Changed-peer test** run, predicted first, and interpreted in a sentence.
 4. **Limitation named** — the one thing this peer set cannot tell the committee.
 
-> **Lab 07's own words**, if code, network, or deal-data access fails: open the **Week 4
-> Offline/No-Code Fallback** immediately — "complete its manual synthetic route, submit the
-> same checkout fields, and record the exact failure and synthetic-case label."
+> **Lab 07's own words**, if code or data access fails: "debug with your AI — the exact command
+> and the exact error text."
 
 This lab is scored on **completion**, so what protects you is being complete, not being
 polished. The fields that carry today are the ones already in your hands: **your frozen

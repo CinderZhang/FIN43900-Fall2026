@@ -73,8 +73,8 @@ Follow the projector. Four steps, then stop.
 > own forecast.** If I am right about the margin, the market is late. If I am wrong, my DCF is
 > the outlier — and I would rather say that myself than have a committee say it for me."
 
-> `codex` still broken? **Parking-lot card.** It blocks nothing today — nothing Lab 08
-> collects requires it.
+> `codex` still broken? Debug with your AI — the exact command and the exact error. It blocks nothing
+> today — nothing Lab 08 collects requires it.
 
 ---
 

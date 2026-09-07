@@ -2,36 +2,56 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
-Bring the unchanged Edition A receipt/file, Week 2 valuation contract/evidence ledger, and the
-training-case convention.
+**Before Tuesday — about 30 minutes.** If a step fails, come to class anyway and say which step.
 
-**Before Tuesday — this is the week's heaviest prework; budget 60–75 minutes.**
+**1. Install VS Code**
 
-1. **Work through [The Training-Case DCF, Worked End to End](teach-dcf-worked-example.md)**
-   with a calculator or blank spreadsheet (35–45 min). Lab 05 assumes you have seen every
-   number in it. Confirm three checkpoints by your own hand before class:
-   - FCFF₂ from FCFF₁ (you should get **114.48**);
-   - the present value of Year-3 FCFF (you should get **90.31**);
-   - one sentence on why the terminal value uses Year-5 cash flow grown once, yet is
-     discounted by (1.10)⁵.
-2. **Watch** [Damodaran, “Estimating Cash Flows”](https://youtu.be/8gYT3Xgs6NE),
-   **0:00–9:30 only** (10 min). Answer: **Which accounting number begins FCFF, and which
-   reinvestment or classification choice could make it misleading?**
-3. **Without AI**, draw the five-year FCFF → discounting → terminal value → bridge
-   architecture from memory and write one prediction: which change should raise value more,
-   WACC −1 point or terminal growth +1 point, and why (10 min).
+- Windows: [code.visualstudio.com](https://code.visualstudio.com) → **Download for Windows** →
+  run it, keep every default (including **Add to PATH**). *Expect:* VS Code opens with a welcome tab.
+- macOS: same page → macOS download → drag **Visual Studio Code** into **Applications** → open it.
+  If macOS warns, choose **Open**.
 
-**Before Thursday — budget 20–25 minutes.**
+**2. Install Python**
 
-4. **Watch** only **4:42–10:07** of [Damodaran, “Terminal Value”](https://youtu.be/83yR6EFEl5Y).
-   Answer: **Which stable-growth assumption is incompatible with the rest of the model, and
-   what direction should value move when it is repaired?**
-5. Reread the worked example's Step 6 and bring your written WACC-change prediction — Lab 06
-   grades the predict-before-run habit it teaches. Bring your target's reconciled input table
-   from Lab 05; Thursday opens with a short guided launch, then the graded work runs on your
-   own company.
+- Windows: [python.org/downloads](https://www.python.org/downloads/) → **Download Python 3.x** →
+  in the installer, **tick "Add python.exe to PATH"** first → **Install Now**. *Expect:* "Setup was
+  successful".
+- macOS: same page, run the installer with defaults. Your command is `python3`.
 
-If either media path fails, use the corresponding FCFF or terminal-value/sensitivity reference
-in the student handout and the worked example; no video-specific detail is assessed. Run the
-starter only far enough to expose unfinished functions.
+**3. Open your Course/Work Folder in VS Code**
+
+**File → Open Folder…** → your Course/Work Folder → trust the authors: **Yes**. No folder yet? See
+previous lab instructions. Nothing from the course goes into it.
+
+**4. Check Python from the terminal**
+
+**Terminal → New Terminal** → type `python --version`. *Expect:* `Python 3.1x`. Windows: if not
+found, `py --version`. macOS: `python3 --version`. The one that answers is your command.
+
+**5. Python extension**
+
+`Ctrl+Shift+X` (macOS `Cmd+Shift+X`) → search **Python** → install the one by **Microsoft**.
+
+**6. Optional — Gemini in the editor**
+
+Same Extensions view → search **Google Antigravity** → install the one by **Google** → click the
+**Antigravity** icon → sign in with a Google account (free plan). *Expect:* a panel you can type a
+question into. Any AI in a browser tab works too; nothing graded needs an extension or an account.
+
+**7. Ten minutes of finance**
+
+Skim [the worked example](teach-dcf-worked-example.md) and check one number by hand:
+**FCFF₂ = 114.48**.
+
+**Before Thursday — about 30 minutes**
+
+1. Reopen your folder in VS Code, new terminal, run `python dcf.py`.
+2. Open your 10-K to the **Consolidated Statements of Cash Flows**, the balance sheet and the
+   EPS note.
+3. Watch [Damodaran, "Estimating Cash Flows"](https://youtu.be/8gYT3Xgs6NE), **0:00–9:30**.
+   Answer: which number begins FCFF, and what could make it misleading?
+4. Watch [Damodaran, "Terminal Value"](https://youtu.be/83yR6EFEl5Y), **4:42–10:07**. Answer:
+   which stable-growth assumption is incompatible with the rest of the model?
+5. Predict, without AI: WACC up one point — does value per share rise or fall, and roughly how much?
+
 Use the linked sources directly; do not copy their slides or transcripts into an AI system.

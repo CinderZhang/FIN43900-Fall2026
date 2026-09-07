@@ -2,10 +2,8 @@
 
 **Category:** Thursday merit checkout, 0–25.
 
-**If code, network, or deal-data access fails:** open **Week 4 Offline/No-Code Fallback —
-Comparable Policy and Triangulation** immediately. Complete its manual synthetic route, submit
-the same checkout fields, and record the exact failure and synthetic-case label. A live deal
-claim still requires dated, verified evidence.
+**If code or data access fails:** debug with your AI — the exact command and the exact error text. A
+live deal claim still requires dated, verified evidence.
 
 ## Required work
 
