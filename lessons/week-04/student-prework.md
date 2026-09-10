@@ -2,20 +2,27 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
-Bring the Week 3 DCF range, valuation date, bridge conventions, and one candidate peer you can
-defend. Watch only **8:20–18:09** of [Damodaran, “Relative Valuation First
-Principles”](https://youtu.be/WDZwqSierZ4), or use the handout's multiple-consistency and peer-policy sections as the readable
-alternative. Its purpose is to expose the assumptions hidden by multiples. Before class, answer:
-**What are the four steps before applying a multiple, and why can a seemingly consistent peer set
-still mislead?** Without AI, spend about 10–12 additional minutes writing the peer-selection policy
-and predicting one reason a precedent-transaction multiple may exceed a trading multiple. Budget
-30–35 minutes total; do not ask AI for peers until the policy is frozen. No video-specific detail is
-assessed.
-Use the linked source directly; do not copy its slides/transcript into an AI system.
+**Before Tuesday — about 30 minutes.**
 
-**Before Thursday** (10–15 minutes): rewatch the multiples/sum-of-the-parts segment of the
-instructor's [three-lens valuation video](https://youtu.be/LlmBzbQbNwQ) from Week 2, reread
-the deal-evidence sections of the real-deal source packet, and bring your Week 3 DCF range
-next to your Lab 07 implied comps range. Thursday opens
-with a short guided launch, then the graded work is reconciling those two ranges against the
-deal evidence for your own target.
+1. Reopen your Week 3 work in **VS Code → File → Open Recent**. Keep your DCF and its source
+   table ready. Open your **Codex** and **Google Antigravity** extensions inside VS Code.
+   Use your established setup; any AI partner is acceptable and no grade depends on an
+   extension or account. Do not spend the prework installing another tool.
+2. Read [the worked case](teach-comps-worked-example.md) through **Compute one; then do the
+   next**. Use [Lab 07's Define/Discover questions](lab-07-comparable-policy.md)
+   to guide your reading: what P/E means, why to use it, and when it misleads. Work out
+   Group 1's P/E before looking at the checks.
+3. Watch **8:20–18:09** of [Damodaran, “Relative Valuation First Principles”](https://youtu.be/WDZwqSierZ4),
+   or use the worked case and [handout](student-handout.md) as the written alternative.
+   **Answer:** what must match before one company's multiple can value another?
+   Use the linked source directly; do not copy its slides/transcript into an AI system.
+4. Be ready to explain why the case companies are comparable and which differences matter.
+   No own-company peer research is required before Lab 07.
+
+**Before Thursday — about 10 minutes.**
+
+1. Reopen your working Lab 07 calculator and its checked case result.
+2. Bring your own Week 3 DCF, source table and valuation date. Locate the annual earnings
+   per share in your company's filing or earnings release.
+3. Read [Lab 08](lab-08-deal-triangulation.md). Think about which business economics a peer
+   should share. You will research and decide on candidates in class.

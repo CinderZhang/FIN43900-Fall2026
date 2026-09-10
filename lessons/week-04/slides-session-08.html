@@ -1,279 +1,124 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 08</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 8 — Three Answers, One Analyst</h1>
-<p><strong>Week 4 · Thursday · Lab 08: Deal Evidence and Valuation Triangulation</strong></p>
-<blockquote>
-<p>Three defensible methods. Three different answers. None of them broken.
-A committee is not paying you for the average of the three.
-It is paying you for the <strong>explanation of the gap</strong>.</p>
-</blockquote>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 08</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 8 — Your Company, Your Comparables</h1>
+<p><strong>One thing today: build and defend a peer comparison for your own company.</strong></p>
+<p>Bring your Lab 07 calculator, Week 3 DCF and sources, and the same AI chat.
+Today you make the peer decisions and supply the inputs.</p>
 </section>
 <section class="slide">
-<h2>Today's run of show</h2>
+<h2>Today's lab — apply the method</h2>
 <ol>
-<li>The worked trio — and why averaging it is malpractice</li>
-<li><strong>Opener</strong> — tools alive, both ranges out <em>(nothing typed into AI yet)</em></li>
-<li><strong>Paired range defense</strong> — why your two ranges differ, or agree</li>
-<li>Deal evidence has a <strong>timestamp</strong></li>
-<li>The synthetic precedent, reproduced by hand; <strong>start your quiz attempt when told</strong></li>
-<li><strong>Audit the deal</strong> — terms, dates, status, bridge, denominator, context</li>
-<li>The <strong>triangulation table</strong>, and one changed test you predict first</li>
-<li>The <strong>45-second recommendation</strong>, to a partner acting as committee</li>
-<li><strong>Submit — receipt on screen before you leave</strong></li>
+<li>Reopen and explain</li>
+<li><strong>Define/Discover</strong> — your company and research needs</li>
+<li><strong>Represent</strong> — policy, candidates and sources</li>
+<li><strong>Implement</strong> — your company in the calculator</li>
+<li><strong>Validate</strong> — arithmetic and peer removal</li>
+<li><strong>Evolve</strong> — compare with DCF; judge AI criticism</li>
+<li><strong>Reflect</strong> — defend your conclusion</li>
+<li>Checkout</li>
 </ol>
-<p><em>You arrived with: your <strong>Week 3 DCF range</strong> and your <strong>Lab 07 implied comps range</strong>, side by
-side · the <strong>real-deal source packet</strong>, read · your <strong>gap list</strong>.</em></p>
+<p>Open <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/lab-08-deal-triangulation.md" target="_blank" rel="noopener">Lab 08</a>.</p>
 </section>
 <section class="slide">
-<h2>The worked trio</h2>
-<p><strong>EV/EBITDA</strong> prices the whole operating business; <strong>P/E</strong> prices the shareholders' claim.
-Same target, same day, three defensible routes:</p>
-<div class="table-wrap" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">The worked trio</caption>
-<thead>
-<tr>
-<th scope="col">Route</th>
-<th align="right" scope="col">Multiple</th>
-<th align="right" scope="col">Per share</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Trading EV/EBITDA</td>
-<td align="right">13×</td>
-<td align="right"><strong>$15.80</strong></td>
-</tr>
-<tr>
-<td>Trading P/E</td>
-<td align="right">15×</td>
-<td align="right"><strong>$12.00</strong></td>
-</tr>
-<tr>
-<td>Precedent deal</td>
-<td align="right">14×</td>
-<td align="right"><strong>$17.40</strong></td>
-</tr>
-</tbody></table></div>
-<p><strong>Why does the deal sit above trading?</strong> Because a buyer of the <em>whole company</em> pays for
-things a minority share never gets: <strong>control</strong>, <strong>expected synergies</strong>, a <strong>competitive
-auction</strong>, and a <strong>particular moment in time</strong>.</p>
-<p><strong>Why is averaging malpractice?</strong> Split the difference between the enterprise route and the
-deal and you get <strong>$16.60</strong>. Average all three and you get <strong>$15.07</strong>. Both are arithmetically
-fine and analytically empty — each one deletes the exact thing you were hired to explain, and
-the second one buries a control premium inside a decimal. <strong>The spread is the finding.</strong></p>
-<p><em>This training case is its own company, not Week 3's DCF target. Practice the moves here;
-triangulate only your own company's numbers.</em></p>
-</section>
-<section class="slide">
-<h2>Opener — tools alive, both ranges out</h2>
-<p>Follow the projector. Four steps, then stop.</p>
+<h2>Reopen · Define/Discover</h2>
 <ol>
-<li><strong>Tools alive, briefly.</strong> Codex — the CLI if yours works, otherwise <strong>ChatGPT desktop app →
-Codex</strong> — and <strong>Gemini</strong> in a browser tab. Confirm each launches, thumbs up, <strong>type nothing
-yet.</strong> Today you may not need them at all, and that is deliberate.</li>
-<li><strong>Artifacts out:</strong> your <strong>Week 3 DCF range</strong> and your <strong>Lab 07 comps range</strong>, physically
-<strong>side by side on one page</strong>, plus the <strong>real-deal source packet</strong> you read.</li>
-<li><strong>Paired, 2 minutes each way:</strong> explain to your partner <strong>why your two ranges differ — or
-why they agree.</strong> Not that they differ. <em>Why.</em> This is your first triangulation rep of the
-day, and you get it wrong here where it is free.</li>
-<li><strong>Solo, 1 minute:</strong> re-mark the four concepts from Tuesday. Anything still "not yet" goes
-back on the gap list.</li>
+<li><strong>VS Code → File → Open Recent</strong> → open your work.</li>
+<li><strong>Terminal → New Terminal</strong> → rerun your saved case calculation.</li>
+<li>Resume your AI chat in VS Code. Before AI, explain the P/E method to your partner.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(step 3)</em>: "My DCF says <strong>$24–$31</strong> a share. My comps say
-<strong>$17–$21</strong>. They do not overlap — three dollars of daylight between the top of one and the
-bottom of the other — and the reason is not arithmetic. <strong>My DCF is carrying five
-years of margin recovery that I forecast myself</strong>, and about <strong>70%</strong> of its value sits past
-Year 5. <strong>The comps carry no forecast at all</strong> — they are today's price for companies that
-already earn that margin, so the recovery is simply not in them. <strong>The gap is the size of my
-own forecast.</strong> If I am right about the margin, the market is late. If I am wrong, my DCF is
-the outlier — and I would rather say that myself than have a committee say it for me."</p>
-</blockquote>
-<blockquote>
-<p><code>codex</code> still broken? Debug with your AI — the exact command and the exact error. It blocks nothing
-today — nothing Lab 08 collects requires it.</p>
-</blockquote>
+<p>Use your Week 3 sources: how does your company earn money? Which businesses share those
+economics? Are its annual reported earnings positive? Name what you need to research.</p>
+<p><strong>Question:</strong> what would your company's share be worth at defensible peer multiples,
+and how does that compare with your DCF?</p>
 </section>
 <section class="slide">
-<h2>Deal evidence has a timestamp</h2>
-<p>A <strong>precedent transaction</strong> is an announced or completed acquisition of a whole company, used
-as evidence of what a buyer paid for control of a similar business. <strong>LTM</strong> = last twelve
-months — the trailing period a denominator is measured over.</p>
-<p><strong>Use only what was knowable at announcement.</strong> Closing evidence answers <em>status</em>; it does not
-make announcement-date inputs retroactively knowable. <strong>Defend the deal's context, or set it
-aside.</strong></p>
+<h2>Represent — policy before names</h2>
+<p><strong>Before AI:</strong> write your peer policy. Send it with your company and Week 3 valuation date.
+Investigate <strong>two candidates</strong>; while AI searches, write rejection criteria.</p>
+<!-- generated:candidates:start -->
+<!-- Generated from lab-08-deal-triangulation.md by ../build_week04_views.py; edit the source. -->
 <blockquote>
-<p>The shape, not your answer <em>(from the packet's deal)</em>: "<strong>Knowable at announcement:</strong> the
-election terms — <strong>$142.50 in cash or 0.25200 Broadcom shares per VMware share</strong>, subject to
-<strong>50/50 aggregate proration</strong> — because they sit in the <strong>Form 8-K dated May 26, 2022</strong>.
-Valuing the stock leg needs a <em>price date</em>, and the release used Broadcom's <strong>May 25, 2022</strong>
-close to state <strong>$138.23</strong> per VMware share.
-<strong>Not knowable at announcement:</strong> that the deal would close, or when. The <strong>November 22,
-2023</strong> completion tells me the deal's <strong>status</strong> and nothing a May-2022 analyst could have
-used. Treating it as if it did is hindsight wearing a source."</p>
+<p>My target, comparison date and peer policy are below. Suggest at most two listed operating-company
+candidates. For each, give a primary-source link and section supporting its business model,
+one important difference from my target, and its latest annual reported diluted EPS public
+by my comparison date, with the fiscal period and publication date. Do not rank candidates or change my policy. Mark
+anything you cannot verify unresolved. I will open the sources and decide whether to use it.</p>
 </blockquote>
-<blockquote>
-<p><strong>And the denominator you must refuse.</strong> The announcement's approximately <strong>$8.5 billion</strong>
-is <em>projected combined contribution within three years after closing</em> — <strong>not VMware's LTM
-EBITDA at announcement</strong>. Dividing the <strong>$69 billion</strong> headline bridge (<strong>≈$61bn</strong> equity
-transaction value <strong>+ ≈$8bn</strong> assumed net debt) by it produces a multiple of nothing.</p>
-</blockquote>
+<!-- generated:candidates:end -->
+
+
 </section>
 <section class="slide">
-<h2>The synthetic precedent, by hand</h2>
-<p><strong>Predict first, then compute.</strong> The qualified precedent closed at <strong>14×</strong> against a trading
-median of <strong>13×</strong> — one extra turn. Before you touch a calculator: how much per share is one
-turn worth here? Commit to a number.</p>
-<blockquote>
-<p>EV = 14.0 × 80 = <strong>1,120</strong> → bridge: 1,120 + 50 − 300 = <strong>870</strong> → 870 / 50 = <strong>$17.40</strong></p>
-</blockquote>
-<p><strong>One turn of EBITDA = 80 of enterprise value = $1.60 per share</strong> on 50M shares — which is
-exactly the gap between $15.80 and $17.40. A precedent multiple is not a different kind of
-number. It is the same arithmetic, applied to evidence with <strong>control and a date baked into
-it</strong> — and that is the part you have to defend.</p>
-<p><strong>Start your Lab 08 attempt when told — and record as you work, not at the end.</strong></p>
-</section>
-<section class="slide">
-<h2>Audit the deal — full attention, one track</h2>
-<blockquote>
-<p>Three sessions running, you fired two AI tracks at once.
-<strong>Today you choose not to.</strong> The packet and the filings <em>are</em> the sources, and auditing
-evidence is full-attention work. <strong>Knowing when not to start a second track is the same
-skill as running two.</strong></p>
-</blockquote>
-<p><em>(AI stays open for anything you honestly disclose. Nothing in this block asks for it.)</em></p>
+<h2>Open sources and make your decisions</h2>
 <ol>
-<li><strong>Pick your deal:</strong> the <strong>Broadcom/VMware source packet</strong> —
-<a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-04" target="_blank" rel="noopener">Week 4 page on GitHub</a>
-→ <code>real-deal-source-packet.md</code>, whose three source links open straight to the filings — or a
-real deal of your own you can source to primary documents.</li>
-<li><strong>Record it in this order:</strong> <strong>terms · announcement and close dates · status · value bridge
-· denominator definition · control and synergy context · comparability to your target.</strong></li>
-<li><strong>Label every value</strong> as <strong>equity</strong>, <strong>debt</strong>, <strong>enterprise-like</strong>, or <strong>denominator.</strong>
-Headline numbers are not interchangeable, and most reporting treats them as if they were.</li>
-<li><strong>Decide: <code>use</code> · <code>qualify</code> · <code>exclude</code></strong> — and say which, out loud, rather than quietly
-leaving a deal out.</li>
+<li><a href="https://www.sec.gov/edgar/search/" target="_blank" rel="noopener">SEC company search</a> → company → <strong>10-K</strong> →
+<strong>Business</strong> and <strong>Earnings per share</strong>; or its investor-relations annual results.</li>
+<li><a href="https://www.nasdaq.com/market-activity/stocks" target="_blank" rel="noopener">Nasdaq market activity</a> → ticker → quote
+or historical data. Match the target and peers' trading dates.</li>
+<li>Record price, annual reported diluted earnings per share, fiscal year-end, publication
+date and source locator. Earnings must have been public by your valuation date.</li>
+<li>Decide <strong>use / qualify / exclude</strong>, with a business reason.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(one qualified deal reading)</em>: "<strong>Broadcom/VMware — QUALIFY as
-context, EXCLUDE from my range.</strong> Terms and dates are clean and sourced: announced <strong>May 26,
-2022</strong>, closed <strong>November 22, 2023</strong>; elections of <strong>$142.50</strong> cash or <strong>0.25200</strong> Broadcom
-shares at <strong>50/50</strong> proration. The bridge is roughly <strong>$61 billion</strong> equity transaction value
-plus about <strong>$8 billion</strong> assumed net debt — a <strong>$69 billion</strong> enterprise-like headline, and
-the release itself calls those figures <strong>rounded estimates</strong>. <strong>What I do not have is a
-date-aligned denominator.</strong> Without VMware's announcement-date LTM EBITDA on a stated
-reported-or-adjusted convention there is no defensible multiple, and the $8.5 billion
-projected contribution is a <strong>different object</strong>, so I refuse it. <strong>Consequence:</strong> the deal
-informs my <em>control</em> discussion; it does <strong>not</strong> enter my range — and I say so."</p>
-</blockquote>
+<p><strong>Expect:</strong> sources you opened and decisions you can explain. An AI list is only a lead.</p>
 </section>
 <section class="slide">
-<h2>Triangulate — then change one thing</h2>
-<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Triangulate — then change one thing (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Triangulate — then change one thing</caption>
-<thead>
-<tr>
-<th scope="col">Method</th>
-<th align="right" scope="col">Implied range</th>
-<th scope="col">What it measures well</th>
-<th scope="col">Main contamination</th>
-<th scope="col">Weight here</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DCF</td>
-<td align="right"></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Trading comparables</td>
-<td align="right"></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Precedent deals</td>
-<td align="right"></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table></div>
+<h2>Implement — your company, your inputs</h2>
+<p>Replace the Asbury inputs with your target and only <strong>use / qualify</strong> peers.
+Keep excluded candidates and their reasons in your <code>.md</code> source table.</p>
+<p><strong>Terminal → run your saved command.</strong> Record the range or single-peer reference.</p>
+<p>If annual earnings are zero or negative, cite the source and explain why P/E cannot support
+a valuation. Still investigate your peers. No alternative method is required for this lab.
+Missing data remains unresolved; identify what is missing.</p>
+<p><strong>Expect:</strong> your own sourced comparison or a specific, evidenced limitation.</p>
+</section>
+<section class="slide">
+<h2>Validate — check one peer decision</h2>
 <ol>
-<li><strong>Fill every row with your own numbers</strong>, including the weight you give it <em>for this
-committee's question</em>.</li>
-<li><strong>Explain each disagreement.</strong> Each method prices a different thing — name what each one is
-actually pricing before you say which you trust.</li>
-<li><strong>Do not average.</strong> Not unless you can state a specific weighting rule and defend why it
-fits this decision.</li>
-<li><strong>One changed test, predicted first:</strong> either <strong>changed inclusion</strong> (drop one peer or the
-deal) or <strong>changed normalization</strong> (restate one denominator on a consistent convention).
-<strong>Write what you expect to move, and roughly how much — then run it.</strong></li>
+<li>Check one admitted peer's price divided by earnings per share by hand.</li>
+<li>Predict the effect of removing one peer, then read that result from your calculator.</li>
+<li>Explain the price change and loss of information. Do not reject a peer to improve the answer.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(one explained disagreement)</em>: "<strong>My DCF range sits about $6 a
-share above my trading comps, and the two barely overlap.</strong> They disagree because they price
-different things. The DCF prices <strong>my forecast</strong> — margin recovering 120bp over three years,
-with most of the value past Year 5. The trading comps price <strong>today's opinion of companies
-that already earn that margin</strong>, so the recovery is not in them at all. The precedent sits
-above both because a buyer paid for <strong>control and expected synergies</strong> in a <strong>2022</strong> auction
-— not what a minority holder gets today. <strong>Weight, for this committee's question — initiate
-a position at today's price? — goes to the trading comps</strong>, because they are the only
-evidence measured on the <strong>same date and the same claim</strong> as the decision. The DCF is what I
-would have to be right about. The deal is a ceiling if the company is ever bought."</p>
-</blockquote>
-<p><strong>Consolidate now, in writing</strong> — into the open attempt, before the recommendation block: the
-<strong>table with a stated weight per row</strong>, the <strong>explained disagreement</strong>, and the <strong>changed test
-with what you predicted next to what actually moved.</strong></p>
+<p>One remaining peer gives a reference; removing your sole peer leaves no estimate.
+If your company's P/E is unusable, explain the sourced obstacle and what evidence would
+resolve it. No substitute case is required.</p>
 </section>
 <section class="slide">
-<h2>The 45-second recommendation</h2>
-<p>To a partner acting as your investment committee. Formal, standing, no notes if you can:</p>
+<h2>Evolve — compare; ask AI; judge</h2>
+<p>Put your DCF and peer result beside each other using <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/lab-08-deal-triangulation.md" target="_blank" rel="noopener">Lab 08's table</a>.
+Send the table and provisional call to your resumed chat:</p>
+<!-- generated:challenge:start -->
+<!-- Generated from lab-08-deal-triangulation.md by ../build_week04_views.py; edit the source. -->
 <blockquote>
-<p><strong>Action</strong> · <strong>range</strong> · <strong>which evidence best fits <em>this</em> question</strong> · <strong>condition</strong> ·
-<strong>reversal trigger.</strong> Then take <strong>one skeptical question.</strong></p>
+<p>Review my valuation comparison as a skeptical colleague. Identify the weakest supported
+assumption and any mismatch in company, date, valuation object or earnings definition.
+Do not invent a missing range or average the methods. Ask one question that could change
+my decision. I will check your criticism against my sources before revising my call.</p>
 </blockquote>
-<blockquote>
-<p>The shape, not your answer <em>(the training case, in 45 seconds)</em>: "<strong>Watch-defer</strong> for a
-committee with no current position. <strong>My range is $12.00 to $17.40 a share, and I am not
-averaging it.</strong> The two trading routes bracket <strong>$12.00 to $15.80</strong>; the precedent adds
-<strong>$17.40</strong> above them. <strong>The evidence that fits your question is the trading comparables</strong> —
-you asked what a minority stake is worth today, and only the trading routes are measured on
-today's date and today's claim. The <strong>$17.40</strong> is what one buyer paid for control and
-synergies in one auction: a <strong>ceiling</strong>, not a price. Inside the trading pair I lean to the
-<strong>$15.80</strong> enterprise route, because <strong>P/E</strong> carries this target's leverage — <strong>$300M</strong> of
-debt against <strong>$50M</strong> of cash — and you are asking about the business, not the balance sheet.
-<strong>Condition: I move to initiate below $12.00</strong>, the lowest route any of my evidence supports.
-<strong>Reversal trigger: the peer median moving a full turn.</strong> One turn is <strong>$1.60</strong> a share here,
-so a median sliding <strong>13× → 12×</strong> takes my enterprise route to <strong>$14.20</strong> and closes the gap
-to my P/E route by nearly half — at which point the two trading lenses are saying the same
-thing and my recommendation changes."</p>
-</blockquote>
-<p><em>The skeptical question you will get: <strong>"Why not just average them?"</strong> Have that answer ready
-in one sentence.</em></p>
+<!-- generated:challenge:end -->
+
+<p>While AI responds, write what could change your mind. Check its criticism against your sources;
+record <strong>accept / reject / unresolved</strong>, with a reason.</p>
 </section>
 <section class="slide">
-<h2>Merit checkout</h2>
-<p>In your open Lab 08 attempt <em>(Brightspace → Quizzes → Lab 08)</em>:</p>
-<p>Lab Date · teammates/learning partners + personal contribution · target / user / as-of /
-valuation object · synthetic known answer · <strong>verified deal — terms, source, context</strong> ·
-<strong>DCF/trading/deal triangulation table</strong> · changed-inclusion or normalization test · AI-use
-disclosure and candidate dispositions · <strong>range / action / condition / trigger</strong> · optional
-artifact link · <strong>session token (on the board)</strong> · in-person attendance declaration · truth
-attestation · receipt confirmation.</p>
-<p><em>This checkout takes real minutes. Start it when you are told, not when you are finished.</em></p>
-<p><em>Before submit: your ungraded <strong>growth note</strong> — what can you defend today that you couldn't on
-Tuesday, and what still feels shaky?</em></p>
+<h2>Reflect — defend your conclusion</h2>
+<p>Explain to your partner:</p>
+<ol>
+<li>Why your peers belong, including their differences.</li>
+<li>What their comparison adds to your DCF—or why P/E cannot support one.</li>
+<li>Your <strong>initiate / watch-defer / do not initiate</strong> decision and defensible range or limitation.</li>
+<li>What evidence would change your decision.</li>
+</ol>
+<p>Answer your partner's skeptical question. Keep the conclusion in your <code>.md</code>.
+Do not mechanically average the methods.</p>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Brightspace → Quizzes → Lab 08. Start the attempt when told.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
 <p><strong>Before Tuesday — do these:</strong></p>
 <ol>
-<li><strong>Nothing to prepare from the Week 5 page yet.</strong> That module is being rebuilt as
-<strong>Pro-Forma Financial Modeling I</strong>, and its page says so on its face. When the rebuilt page
-posts, <em>its</em> prework is the one that counts — not the version showing now.</li>
-<li><strong>Put your three ranges on one page</strong> — DCF, trading, precedent — each with the sentence
-that explains why it disagrees with the others. Project 1 needs that paragraph, and today
-is the day the reasoning is still fresh.</li>
-<li><strong>Bring your evidence ledger, current.</strong> Every source you dated this week goes into it. It
-has carried forward since Week 2 and it does not stop here.</li>
+<li>Keep your company comparison, sources and unresolved assumptions together.</li>
+<li>Follow the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-05" target="_blank" rel="noopener">Week 5 prework</a>
+when the rebuilt module is available.</li>
 </ol>
-<p><strong>Next up: Pro-Forma Financial Modeling I</strong> — you have now valued this company three ways;
-next you build the statements those three answers were arguing about.</p>
+<p><strong>Next lab:</strong> build the financial statements behind your forecast.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

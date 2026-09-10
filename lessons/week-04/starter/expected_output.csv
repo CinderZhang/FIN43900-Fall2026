@@ -1,6 +1,0 @@
-output,expected_value,unit
-median_ev_to_ebitda,13,turns
-median_price_to_earnings,15,turns
-trading_ev_to_ebitda_per_share,15.8,USD per share
-trading_price_to_earnings_per_share,12.0,USD per share
-precedent_transaction_per_share,17.4,USD per share

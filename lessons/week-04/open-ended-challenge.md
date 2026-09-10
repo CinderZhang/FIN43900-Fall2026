@@ -1,13 +1,13 @@
-# Optional Open-Ended Challenge — The Peer That Changes the Story
+# Optional Further Reading — Beyond P/E
 
-Identify one company that passes the industry screen but should be excluded or heavily
-qualified under your economic policy. Show:
+**Optional reading only.** These topics are outside the Week 4 labs. No exercise or submission
+is required, and they will not be demonstrated in class.
 
-1. why a database or AI includes it;
-2. the source-verified economic difference;
-3. the effect on at least two selected multiples and the target range;
-4. whether the issue is outlier removal, genuine non-comparability, or inconvenient evidence;
-5. a rule that would treat the same issue consistently when the outlier raises rather than
-   lowers value.
+- **Companies with negative earnings:** [Damodaran, Investment Valuation, Chapter 22](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/Inv3ed.htm).
+  The chapter's links discuss valuation when current earnings cannot support P/E.
+- **Revenue multiples:** [Damodaran, Chapter 20](https://pages.stern.nyu.edu/~adamodar/pdfiles/val3ed/c20.pdf).
+  Read if you want to understand why revenue comparisons still depend on profitability.
+- **Broader relative valuation:** [Damodaran's relative valuation materials](https://www.stern.nyu.edu/~adamodar/pdfiles/country/relval.pdf).
+  These go beyond the simple P/E comparison used in class.
 
-Close AI and defend the rule to a partner using only the evidence table.
+Your own-company task and its negative-earnings instruction are in [Lab 08](lab-08-deal-triangulation.md).

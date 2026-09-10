@@ -1,69 +1,48 @@
 # Week 4 Student Handout — Market Evidence Is a Selection Problem
 
-## Why this week matters
+## The question changes
 
-When your DCF says $27 and the market says $19, somebody is wrong — and comparables are how
-you find out who, using the prices real investors are paying for similar businesses right now.
-But "similar" is a judgment hiding inside a word: pick flattering peers and multiples will
-bless any conclusion you brought with you. That is why this week's rule is *policy before
-peers* — you commit to selection criteria before you see who passes them, the same discipline
-that separates research from advocacy. It is also the week you learn to read a live deal as
-evidence with a timestamp: what was knowable at announcement, not what hindsight added. Banker
-and analyst interviews test comps selection logic constantly, precisely because it cannot be
-automated away.
+A DCF asks what your company is worth under your forecast. Comparables ask what it would be
+worth at other companies' pricing multiples. A disagreement can come from your assumptions,
+your peers, their earnings definitions, or the market's expectations. Neither number proves
+the other wrong.
 
-**Before class, work through [The Training-Case Comps, Worked End to
-End](teach-comps-worked-example.md).** It computes every multiple below with digits — Labs 07
-and 08 assume you have seen it.
+Start with the [Asbury worked case](teach-comps-worked-example.md) in Lab 07. Apply the same
+method to your own company in Lab 08. Advanced topics are [optional reading](open-ended-challenge.md),
+not required practice or demonstrations.
 
-## Peer-selection policy
+## Terms you will use
 
-Define before using AI or a database:
+| Term | Plain meaning |
+|---|---|
+| Candidate / peer | A company worth investigating / a candidate you can defend using your policy |
+| P/E | Price per share divided by annual earnings per share; an equity multiple |
+| Diluted EPS | Earnings per share allowing for potential dilution under the reporting convention |
+| Reported / adjusted | Financial-statement earnings / earnings after management's specified adjustments |
+| LTM / NTM | Latest twelve months / next twelve months; historical and forecast are not interchangeable |
+| Triangulation | Comparing what the methods assume and support, then explaining which evidence you use |
 
-| Dimension | Inclusion logic | Exclusion/qualification logic |
-|---|---|---|
-| business model and revenue drivers |  |  |
-| geography/regulation |  |  |
-| scale and growth |  |  |
-| margins/capital intensity |  |  |
-| leverage/risk |  |  |
-| metric availability/definition |  |  |
-| market and reporting dates |  |  |
+## Before comparing
 
-Industry codes create candidates; they do not complete the comparability argument.
+Use the same trading date for prices. Name the earnings period and when the source became
+public. Use compatible currency, ordinary-share or ADR basis, stock-split adjustments and
+reported/adjusted definitions. Last annual earnings can be stale; label them annual rather
+than calling them LTM. A negative or zero EPS does not produce a meaningful positive P/E
+valuation. An extreme multiple on tiny positive earnings also needs explanation.
 
-## Multiple consistency
+A **qualify** decision means you keep a material difference visible and test its consequence.
+It does not mean a hidden haircut. Excluding a candidate needs a business or evidence reason,
+not a dislike of the resulting price. A two-peer range is a small comparison, not a confidence
+interval; one remaining peer supports only a reference estimate.
 
-- `EV / EBITDA` pairs enterprise value with a pre-interest operating denominator.
-- `EV / EBIT` pairs enterprise value with an operating denominator after D&A.
-- `P / E` or `Equity value / net income` pairs common-equity value with equity earnings.
-- `Price / share-based metric` requires the corresponding diluted/per-share convention.
+## DRIVER in this week's work
 
-State LTM, NTM, fiscal year, reported, adjusted, or normalized. A correct formula using
-inconsistent periods is still wrong.
+- **Define/Discover:** state the valuation question and what you still need to understand.
+- **Represent:** write the peer policy and plan the inputs, calculation and checks before AI builds.
+- **Implement:** build with AI in your existing VS Code workspace; run the calculation.
+- **Validate:** reproduce the worked answers, open the sources, and check definitions.
+- **Evolve:** investigate what the comparison adds to your DCF and judge AI criticism.
+- **Reflect:** explain what you believe, what limits it, and what would change your decision.
 
-## Deal evidence
-
-For every precedent transaction, record announcement/close date, status, buyer/target,
-consideration, enterprise/equity bridge, denominator period/definition, control context,
-expected synergies when available, and why the deal is comparable to the present decision.
-
-## AI peer/deal disposition
-
-| Candidate | AI rationale | Source-verified facts | Accept/qualify/reject | Consequence |
-|---|---|---|---|---|
-|  |  |  |  |  |
-
-AI disagreement is useful search evidence. It is not permission to choose whichever list gives
-the preferred valuation.
-
-## Triangulation table
-
-| Method | Implied range | What it measures well | Main contamination | Weight in this decision |
-|---|---:|---|---|---|
-| DCF |  |  |  |  |
-| trading comparables |  |  |  |  |
-| precedent deals |  |  |  |  |
-
-End with a supported range and explain the disagreement. Do not mechanically average unless a
-specific, defended weighting rule fits the decision.
+[Lab 07](lab-07-comparable-policy.md) and [Lab 08](lab-08-deal-triangulation.md) own the work and checkout requirements. Your private AI tutor can
+help with the gap you identified; that practice is ungraded and never collected.

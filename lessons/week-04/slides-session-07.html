@@ -1,284 +1,182 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 07</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 7 — Comparable Means Defensible</h1>
-<p><strong>Week 4 · Tuesday · Lab 07: Comparable-Company Policy and Implied Range</strong></p>
-<blockquote>
-<p>Your DCF says <strong>$27</strong>. The market says <strong>$19</strong>. Somebody is wrong.
-Multiples are how you find out who — the prices real buyers are paying,
-right now, for businesses like yours. But <strong>"similar" is a judgment
-hiding inside a word.</strong> So today: <strong>policy before peers.</strong></p>
-</blockquote>
-</section>
-<section class="slide">
-<h2>Today's run of show</h2>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 07</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 7 — Comparable Means Defensible</h1>
 <ol>
-<li>The mission: policy before peers — criteria committed before you see who passes</li>
-<li><strong>Opener</strong> — tools alive, artifacts out <em>(nothing typed into AI yet)</em></li>
-<li><strong>Paired peer defense</strong> — one candidate, against your own frozen policy</li>
-<li>Concept <strong>gap check</strong> → your written gap list</li>
-<li>The worked case: one peer by hand, and what the spread tells you</li>
-<li>Apply the medians — and the trap that eats junior analysts</li>
-<li><strong>Two tracks at once</strong> — candidates to both systems, learning to your gap list;
-<strong>start your quiz attempt when told</strong></li>
-<li>Audit → disposition → range → the changed-peer test</li>
-<li>Your readiness sentence, written down while it is fresh</li>
-<li><strong>Submit — receipt on screen before you leave</strong></li>
+<li>Reopen and explain</li>
+<li><strong>Define/Discover</strong> — the comparison question</li>
+<li><strong>Represent</strong> — policy before names</li>
+<li><strong>Implement</strong> — build the worked case</li>
+<li><strong>Validate</strong> — check the result</li>
+<li><strong>Evolve</strong> — change the case peer set</li>
+<li><strong>Reflect</strong> — defend what the comparison supports</li>
+<li>Checkout</li>
 </ol>
-<p><em>You arrived with: your <strong>Week 3 DCF range</strong>, its <strong>valuation date</strong>, and your <strong>bridge
-conventions</strong> · <strong>one candidate peer</strong> you can defend · your <strong>frozen no-AI peer policy</strong> ·
-your <strong>gap list</strong>.</em></p>
+<p>Open <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/lab-07-comparable-policy.md" target="_blank" rel="noopener">Lab 07</a>.</p>
 </section>
 <section class="slide">
-<h2>Opener — tools alive, artifacts out</h2>
-<p>Follow the projector. Four steps, then stop.</p>
+<h2>Reopen and explain</h2>
 <ol>
-<li><strong>Open both systems.</strong> Codex — ChatGPT's coding agent — the CLI if yours works
-<em>(Windows: Start → type <code>PowerShell</code> · Mac: ⌘-Space → type <code>Terminal</code>, then type <code>codex</code>)</em>;
-no working CLI, <strong>ChatGPT desktop app → Codex.</strong> Then <strong>Gemini</strong> in a browser tab.
-Confirm each one launches. <strong>Type nothing yet:</strong> AI opens in the candidate block, not here.</li>
-<li><strong>Artifacts out:</strong> your DCF range, valuation date, and bridge conventions · your <strong>frozen</strong>
-peer policy · your one candidate peer · your gap list.</li>
-<li><strong>Paired, 2 minutes each way:</strong> defend your <strong>one</strong> candidate peer <strong>against your own
-policy</strong> — name the criteria it passes, and the one criterion it comes <strong>closest to
-failing</strong>. Not whether you like the company. Whether your own written rules admit it.</li>
-<li><strong>Solo, 2 minutes:</strong> mark this week's four concepts — <strong>comparability policy · enterprise
-vs equity multiples and the bridge trap · trading multiples vs precedent transactions</strong>
-<em>(what a buyer paid for a whole company)</em> <strong>and their control context · dispersion as
-information</strong> — "can explain with an example" or "not yet." <strong>Every "not yet" goes on your
-written gap list.</strong></li>
+<li><strong>VS Code → File → Open Recent</strong> → your Course/Work Folder.</li>
+<li>Open your Week 3 analysis. <strong>Terminal → New Terminal</strong> → rerun your saved DCF.</li>
+<li>Open <strong>Codex</strong> and <strong>Google Antigravity</strong> inside VS Code; resume your Lab 06 chat.</li>
+<li>Before AI, explain to your partner what drives your DCF range. Write one thing you
+cannot yet explain about peer multiples.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer <em>(step 3, on the training peers)</em>: "<strong>Gamma stays in.</strong> My
-policy's first criterion is business model — same revenue model, same renewal economics —
-and it passes cleanly. Scale passes too: Gamma earns <strong>100</strong> of EBITDA against my target's
-<strong>80</strong>, the same order of magnitude. <strong>Closest to failing is growth profile:</strong> its last two
-10-Ks show revenue growing structurally slower than my target's — that is a fact from the
-filings, not from any price — and my policy says such a peer gets <em>qualified</em>, not
-accepted. So I keep it <strong>and I flag it</strong> — and if my range moves when I drop it, that flag
-is the reason I have to explain."</p>
-</blockquote>
-<blockquote>
-<p>The shape, not your answer <em>(step 4)</em>: "<strong>Enterprise vs equity multiples — not yet.</strong> I can
-compute both. I cannot say, without stopping to check, which one still needs the bridge."</p>
-</blockquote>
-<blockquote>
-<p><code>codex</code> will not run? Debug with your AI — the exact command and the exact error text. Nothing today
-is blocked: the <strong>ChatGPT desktop app</strong> and <strong>Gemini in the
-browser</strong> both work without the CLI, and today's AI work is text, not code.</p>
-</blockquote>
-<p><em>No gap list, no learning track. That list is the whole point of the next hour.</em></p>
+<p><strong>Expect:</strong> your prior result and a specific question to investigate. Any AI partner is acceptable.</p>
 </section>
 <section class="slide">
-<h2>The worked case — one peer, by hand</h2>
-<p><strong>EV/EBITDA</strong> — enterprise value ÷ earnings before interest, taxes, depreciation and
-amortization: what the <strong>whole operating business</strong> costs per dollar of operating earnings.
-<strong>P/E</strong> — equity value ÷ net income: what the <strong>shareholders' claim</strong> costs per dollar of
-profit <em>after</em> interest.</p>
-<blockquote>
-<p>Alpha EV/EBITDA = 1,200 / 120 = <strong>10.0×</strong> · Alpha P/E = 900 / 75 = <strong>12.0×</strong></p>
-</blockquote>
-<div class="table-wrap" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">The worked case — one peer, by hand</caption>
+<h2>Define/Discover — understand P/E first</h2>
+<!-- generated:discover:start -->
+<!-- Generated from lab-07-comparable-policy.md by ../build_week04_views.py; edit the source. -->
+<p><strong>Research and learn:</strong> start with <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/teach-comps-worked-example.md#why-use-another-companys-price" target="_blank" rel="noopener">Why use another company's price?</a>.</p>
+<ol>
+<li><strong>What is price-to-earnings (P/E)?</strong> What do price per share and earnings per share measure?
+What does a P/E multiple tell you?</li>
+<li><strong>Why use it?</strong> How does comparing earnings help you compare differently sized companies?
+What does this add to your discounted cash flow valuation?</li>
+<li><strong>When is it useful—or misleading?</strong> What must match between companies? What happens
+with negative earnings, unusual profits, or different growth prospects?</li>
+</ol>
+<p><strong>Explain to your partner:</strong> why a lower P/E does not automatically mean a better investment.
+Then ask: what would my company's share be worth at comparable companies' P/E multiples?</p>
+<!-- generated:discover:end -->
+
+</section>
+<section class="slide">
+<h2>Represent — understand the case peers</h2>
+<p>Use Asbury today. Read the business evidence in the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/teach-comps-worked-example.md" target="_blank" rel="noopener">worked case</a>.</p>
+<ol>
+<li>What business economics make AutoNation and Group 1 candidates?</li>
+<li>Which differences deserve a qualification?</li>
+<li>Decide <strong>use / qualify / exclude</strong> before seeing which price you prefer.</li>
+</ol>
+<p><strong>Expect:</strong> explain why a peer belongs; sharing an industry label is not enough.</p>
+</section>
+<section class="slide">
+<h2>The real case — value Asbury from two peers</h2>
+<!-- generated:case-inputs:start -->
+<!-- Generated from teach-comps-worked-example.md by ../build_week04_views.py; edit the source. -->
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="The real case — value Asbury from two peers (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">The real case — value Asbury from two peers</caption>
 <thead>
 <tr>
-<th scope="col">Peer</th>
-<th align="right" scope="col">EV/EBITDA</th>
-<th align="right" scope="col">P/E</th>
+<th scope="col">Company / role</th>
+<th align="right" scope="col">December 31, 2024 closing price</th>
+<th align="right" scope="col">FY2024 total GAAP diluted EPS</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Alpha</td>
-<td align="right">10.0×</td>
-<td align="right">12.0×</td>
+<td>Asbury Automotive (ABG), target</td>
+<td align="right">$243.03</td>
+<td align="right">$21.50</td>
 </tr>
 <tr>
-<td>Beta</td>
-<td align="right">16.0×</td>
-<td align="right">20.0×</td>
+<td>AutoNation (AN), candidate peer</td>
+<td align="right">$169.84</td>
+<td align="right">$16.92</td>
 </tr>
 <tr>
-<td>Gamma</td>
-<td align="right">9.0×</td>
-<td align="right">15.0×</td>
-</tr>
-<tr>
-<td>Delta</td>
-<td align="right">16.0×</td>
-<td align="right">15.0×</td>
+<td>Group 1 Automotive (GPI), qualified candidate peer</td>
+<td align="right">$421.48</td>
+<td align="right">$36.81</td>
 </tr>
 </tbody></table></div>
-<p><strong>Compute Beta's P/E yourself before you look at the row</strong> — equity value <strong>1,200</strong>, net
-income <strong>60</strong>. Never accept a multiple you did not compute — providers disagree on
-definitions, and Week 1 showed you how badly.</p>
-<p><strong>9× to 16×</strong> — nearly a factor of two, for companies <em>your own policy</em> called comparable.
-<strong>The dispersion IS information.</strong> Either the market is pricing real differences your policy
-ignored — growth, margins, risk — or a peer does not belong. Both answers are findings. The
-one thing the spread is <em>not</em> is noise to be averaged away.</p>
+<p><em>Retrospective training comparison: year-end prices paired with subsequently reported annual earnings. <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/teach-comps-worked-example.md" target="_blank" rel="noopener">Case sources and definitions</a>.</em></p>
+<!-- generated:case-inputs:end -->
+
+<p><strong>P/E = price per share ÷ annual earnings per share.</strong> Compute AutoNation together.
+Predict, then calculate Group 1. Asbury is the target, not a member of its own peer set.</p>
 </section>
 <section class="slide">
-<h2>Apply the medians — and the trap</h2>
-<p>Target: <strong>EBITDA 80 · net income 40 · cash 50 · debt 300 · 50M diluted shares.</strong></p>
+<h2>Implement — build from the case table</h2>
+<!-- generated:build:start -->
+<!-- Generated from lab-07-comparable-policy.md by ../build_week04_views.py; edit the source. -->
 <blockquote>
-<p><strong>Median EV/EBITDA</strong> = median(10.0, 16.0, 9.0, 16.0) = <strong>13.0×</strong>
-→ EV = 13.0 × 80 = <strong>1,040</strong> → bridge: 1,040 + 50 − 300 = <strong>790</strong> → 790 / 50 = <strong>$15.80</strong></p>
+<p>Write one standard-library Python file with editable target/peer inputs at the top.
+Deduplicate peers and exclude the target. Compute peer P/E = price / diluted EPS and
+median P/E. Multiply minimum, median and maximum peer P/E by target EPS for implied prices.
+Retain full precision; display multiples to six decimals, prices to cents. Missing or
+nonpositive prices or EPS: label affected calculations not meaningful. One valid peer:
+reference estimate, no range; none: no usable peers. For each peer removal, print the
+remaining median-implied price and dollar change from the full-peer estimate, using
+unrounded values; if none remain, no estimate. Never bridge P/E with cash/debt.
+Do not fetch data or install packages. Give the exact run command using my working Python command.</p>
 </blockquote>
-<p><strong>Predict before you read the second line:</strong> the P/E route uses a <em>higher</em> multiple, 15×.
-Does it land above or below $15.80? Commit out loud, then look.</p>
-<blockquote>
-<p><strong>Median P/E</strong> = median(12.0, 20.0, 15.0, 15.0) = <strong>15.0×</strong>
-→ equity = 15.0 × 40 = <strong>600</strong> → 600 / 50 = <strong>$12.00</strong> <em>(no bridge)</em></p>
-</blockquote>
-<p><strong>Enterprise multiples need the bridge; equity multiples already crossed it.</strong> Net income is
-what is left <em>after</em> the lenders are paid, so a P/E answer is already the shareholders'. Add
-cash and subtract debt to it and you have counted the capital structure <strong>twice</strong> — one of the
-most common junior errors in existence, and one an interviewer can spot in four seconds.</p>
+<!-- generated:build:end -->
+
+<p>While AI works, calculate one price. <strong>New File → save → Terminal → run.</strong></p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 1. Fire the research track</h2>
-<p><em>(~4 minutes. Send both, then walk away from them.)</em></p>
+<h2>Validate — the answer must reproduce</h2>
+<!-- generated:case-checks:start -->
+<!-- Generated from teach-comps-worked-example.md by ../build_week04_views.py; edit the source. -->
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Validate — the answer must reproduce (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Validate — the answer must reproduce</caption>
+<thead>
+<tr>
+<th scope="col">Check</th>
+<th align="right" scope="col">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AutoNation P/E</td>
+<td align="right">10.037825×</td>
+</tr>
+<tr>
+<td>Group 1 P/E</td>
+<td align="right">11.450149×</td>
+</tr>
+<tr>
+<td>Peer median P/E</td>
+<td align="right">10.743987×</td>
+</tr>
+<tr>
+<td>Asbury peer-implied range</td>
+<td align="right">$215.81–$246.18</td>
+</tr>
+<tr>
+<td>Asbury at peer median</td>
+<td align="right">$231.00</td>
+</tr>
+<tr>
+<td>Remove GPI: remaining AN estimate</td>
+<td align="right">$215.81</td>
+</tr>
+<tr>
+<td>Change from two-peer midpoint</td>
+<td align="right">−$15.18</td>
+</tr>
+</tbody></table></div>
+<!-- generated:case-checks:end -->
+
+<p>Removing a higher-multiple peer lowers the midpoint. With one peer remaining, you lose the range.
+If your result differs, check the inputs and calculation with AI. Keep unrounded multiples until display.</p>
+</section>
+<section class="slide">
+<h2>Evolve — change one peer</h2>
+<p>Use your Asbury calculation:</p>
 <ol>
-<li><strong>Copy your policy out of your prework, verbatim.</strong> No edits, no improvements, no
-"while I'm here." The order is the whole lesson: the policy was frozen before any machine
-proposed a name.</li>
-<li><strong>Both systems, independently</strong> — <strong>Codex (in ChatGPT)</strong> and <strong>Gemini</strong> in a browser tab.
-The <strong>same words</strong> to each. Two searches, not one search repeated.</li>
-<li><strong>Ask for candidates only</strong> — the fields your audit will need, and nothing that decides
-anything for you.</li>
-<li><strong>Send both, then leave them generating.</strong> Do not sit and watch tokens arrive.</li>
+<li>Predict what removing Group 1 will do.</li>
+<li>Read the leave-one-out result; explain the price change.</li>
+<li>Explain why one remaining peer gives a reference estimate rather than a range.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer: "Here is my peer-selection policy, exactly as I wrote it before
-seeing any candidate: <strong>[paste the policy]</strong>. My target is <strong>[company]</strong> — <strong>[one line on
-what it sells and how it earns]</strong> — valuation date <strong>[your date]</strong>. Propose <strong>5–8 candidate
-peers</strong> this policy would admit. For <strong>every</strong> candidate return: (a) is it <strong>publicly
-traded</strong> today; (b) is it an <strong>operating company</strong> today, or has it been acquired or taken
-private; (c) how its <strong>business model matches the economics my policy names</strong> — revenue
-model, growth, margin structure, capital intensity; (d) its <strong>scale and geography</strong> against
-my target; (e) the <strong>data as-of date and the source</strong> for every fact you give me.
-<strong>No rankings, no 'best peer' verdict, no multiples, and no valuation commentary.</strong> I audit
-every one of these against my own policy. A candidate you cannot source, mark <strong>UNSOURCED</strong>
-rather than describe."</p>
-</blockquote>
-<p><em>Candidates, not conclusions. The machine's job is to widen the search — never to reopen the
-criteria after it has seen the answers.</em></p>
-<p><em>(Both systems down? <strong>Week 1 — Dual-System Output Packet</strong> in Start Here, or the
-<code>COURSE-RUN PROBE:</code> route from Start Here's <strong>AI Access</strong> page.)</em></p>
+<p>Keep the original peer decision unless business evidence warrants changing it.</p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 2. The learning track</h2>
-<p><em>(~6 minutes, while both lists generate.)</em></p>
-<blockquote>
-<p>On one screen the machine works <strong>for</strong> you.
-On the other, you put it to work <strong>on</strong> you. That is the whole pattern.</p>
-</blockquote>
+<h2>Reflect — explain the method</h2>
+<p>Explain to your partner:</p>
 <ol>
-<li><strong>Gap list out.</strong> Pick your <strong>#1 "not yet"</strong> from the opener.</li>
-<li>Open your other system — Gemini in the browser, or a fresh ChatGPT thread — and run the
-tutor prompt below.</li>
-<li><strong>Commit to an answer before you are told.</strong> A wrong answer you committed to is what makes
-the correction stick; a skipped one teaches nothing.</li>
-<li><strong>Ungraded, never collected, yours.</strong> No checkout field, no screenshot. Nobody reads it.</li>
+<li>What P/E measures and why it helps compare companies.</li>
+<li>Why each case peer belongs or needs qualification.</li>
+<li>Why the peer-implied band does not prove Asbury is fairly valued.</li>
 </ol>
-<blockquote>
-<p>The shape, not your answer: "Quiz me on <strong>why applying a P/E multiple lands directly on
-equity value while applying an EV/EBITDA multiple lands on enterprise value</strong> — one question
-at a time. Don't give me the answer until I commit to one. Then correct me in two lines and
-ask the next. Keep going until I get three right in a row."</p>
-</blockquote>
-<p><em>This is what the opener's gap list was for.</em></p>
+<p><strong>Expect:</strong> you can explain the calculation and peer choice before applying them independently.</p>
 </section>
 <section class="slide">
-<h2>Two tracks at once — 3. Audit, disposition, price</h2>
-<p><em>(~16 minutes. Both lists came back while you were learning.)</em></p>
-<p>Run it <strong>in this order</strong>. A range computed before the audit is a range you cannot defend.</p>
-<ol>
-<li><strong>Merge both lists</strong> into one candidate table. Duplicates collapse into one row.
-<strong>Where the two systems disagree, keep both</strong> — disagreement is search evidence.</li>
-<li><strong>Audit every candidate against the frozen policy</strong> — still public? still an operating
-company? business model actually matching the economics your policy names? scale and
-geography? — and attach a <strong>dated source</strong> to every load-bearing fact. <strong>An AI-supplied
-fact is a lead, not evidence.</strong> Go to the filing.</li>
-<li><strong>Disposition each one: <code>accept</code> · <code>qualify</code> · <code>reject</code></strong> — with the source named and the
-consequence stated.</li>
-<li><strong>Compute your own multiples</strong> for every peer that survives. Then take the median, and know
-why it is the median: with a handful of peers, one outlier drags a mean wherever it likes.</li>
-<li><strong>Price it — at least one enterprise multiple <em>and</em> at least one equity multiple</strong>, into an
-implied per-share range. <strong>The bridge goes on the enterprise route only.</strong></li>
-<li><strong>The changed-peer test:</strong> remove or qualify one <strong>borderline</strong> peer, predict what the range
-does, then run it and interpret the move. Lab 07's own guard: <strong>"Do not manufacture a
-rejection when no candidate is borderline."</strong> <code>No rejected candidate</code> is a real result.</li>
-</ol>
-<blockquote>
-<p>The shape, not your answer <em>(one disposition)</em>: "<strong>Codex proposed Meridian Corp — 'same
-subscription model, similar scale.' → QUALIFY.</strong> Verified against Meridian's <strong>FY2025 Form
-10-K, filed February 18, 2026</strong>: still public, still operating, subscription revenue <strong>71%</strong>
-of total — the model does match. What my policy actually catches is <strong>scale</strong>: Meridian's
-revenue is roughly <strong>half</strong> my target's, and my policy qualifies rather than accepts a peer
-below two-thirds of target scale. <strong>Consequence:</strong> Meridian stays in the median, but it is
-the first peer I drop in the changed-peer test. <strong>Source: the 10-K segment table — not the
-model's summary of it.</strong>"</p>
-</blockquote>
-</section>
-<section class="slide">
-<h2>Finish the range — and the floor, honestly</h2>
-<p>Finish <strong>in this order</strong>, so that whatever the clock does, what you have is complete rather
-than half of everything.</p>
-<ol>
-<li><strong>Dispositions complete</strong> — every candidate <code>accept</code>/<code>qualify</code>/<code>reject</code>, each with its
-dated source.</li>
-<li><strong>Range computed</strong> — one enterprise multiple, one equity multiple, bridge on the enterprise
-route only.</li>
-<li><strong>Changed-peer test</strong> run, predicted first, and interpreted in a sentence.</li>
-<li><strong>Limitation named</strong> — the one thing this peer set cannot tell the committee.</li>
-</ol>
-<blockquote>
-<p><strong>Lab 07's own words</strong>, if code or data access fails: "debug with your AI — the exact command
-and the exact error text."</p>
-</blockquote>
-<p>This lab is scored on <strong>completion</strong>, so what protects you is being complete, not being
-polished. The fields that carry today are the ones already in your hands: <strong>your frozen
-policy</strong>, <strong>the synthetic known answers you reproduced by hand</strong>, and <strong>every candidate
-dispositioned with a dated source.</strong> A range still in progress gets <strong>finished inside the open
-attempt</strong> — and where a number is missing, you <strong>name what is missing.</strong></p>
-<p><em>An invented peer or an unsourced multiple is worth less than a blank you labeled honestly.</em></p>
-</section>
-<section class="slide">
-<h2>Your readiness sentence — then write it down</h2>
-<p><strong>One sentence, to yourself:</strong> what is <strong>ready</strong> · what is <strong>unsafe</strong> · what is <strong>next.</strong></p>
-<blockquote>
-<p>The shape, not your answer: "<strong>Ready</strong> — the synthetic medians reproduce, and five of six
-candidates are dispositioned with a dated filing behind each one. <strong>Unsafe</strong> — my sixth
-candidate's EBITDA is adjusted on a convention I have not read yet, so its multiple is not
-comparable to the others and I have left it out of the median rather than guess. <strong>Next</strong> —
-read that definition in the 10-K footnote and decide <code>qualify</code> or <code>reject</code> before Thursday."</p>
-</blockquote>
-<p><strong>Now consolidate — into the open attempt, while the reasoning is still in your hands:</strong></p>
-<ol>
-<li>Your <strong>dispositions</strong>, each with the source you actually consulted.</li>
-<li>Your <strong>implied range</strong>, and <strong>which multiple produced each end of it.</strong></li>
-<li>Your <strong>changed-peer result</strong> — what you predicted, what moved, and what that tells you.</li>
-</ol>
-<p><em>You will not reconstruct this tonight. Write it now.</em></p>
-</section>
-<section class="slide">
-<h2>Checkout</h2>
-<p>In your open Lab 07 attempt <em>(Brightspace → Quizzes → Lab 07)</em>:</p>
-<p>Lab Date · teammates/learning partners + personal contribution · target / as-of / decision ·
-<strong>peer policy</strong> · synthetic known answers · <strong>AI candidate dispositions</strong> · verified peer table
-excerpt · <strong>implied range</strong> · changed-peer test · limitation · optional link · AI disclosure ·
-<strong>session token (on the board)</strong> · in-person attendance declaration · truth attestation ·
-receipt confirmation.</p>
-<p><em>Before submit: your ungraded <strong>growth note</strong> — what can you defend today that you couldn't
-last week, and what still feels shaky?</em></p>
+<h2>Checkout — on GitHub</h2>
+<p><strong>Brightspace → Quizzes → Lab 07. Start the attempt when told.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
 <p><strong>Before Thursday — do these:</strong></p>
 <ol>
-<li>Rewatch the <strong>multiples / sum-of-the-parts segment</strong> of the instructor's three-lens
-valuation video from Week 2 — the link is on the
-<a href="https://github.com/CinderZhang/FIN43900-Fall2026/tree/main/lessons/week-04" target="_blank" rel="noopener">Week 4 page on GitHub</a></li>
-<li>Reread the <strong>deal-evidence sections</strong> of <code>real-deal-source-packet.md</code>, on that same
-Week 4 page</li>
-<li>Bring your <strong>Week 3 DCF range</strong> and today's <strong>implied comps range</strong> — the two of them
-<strong>side by side on one page</strong>, not in two different notebooks</li>
+<li>Follow <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-04/student-prework.md" target="_blank" rel="noopener">Thursday prework</a>.</li>
+<li>Bring your working calculator and your own company’s DCF and sources.</li>
 </ol>
-<p><strong>Lab 08 preview:</strong> <em>Deal Evidence and Valuation Triangulation</em> — audit a real deal as
-evidence with a <strong>timestamp</strong>, then set three answers beside each other and explain <strong>why they
-disagree</strong>, because the spread is the finding.</p>
+<p><strong>Lab 08:</strong> find and defend peers for your own company, then compare with your DCF.</p>
 
 </section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

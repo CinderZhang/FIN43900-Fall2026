@@ -1,137 +1,142 @@
 # The Training-Case Comps, Worked End to End
 
-*This page teaches. Rules and submission requirements live in the Week 4 handout and Labs
-07–08. The figures below are the official Week 4 training case — the same numbers your Lab 07
-work must reproduce. This is a different synthetic company from Week 3's DCF case; do not mix
-their numbers.*
+**A real case: Asbury Automotive, with AutoNation and Group 1 Automotive**
 
-## Why a committee wants a second opinion
+*This page teaches the worked examples. Submission requirements live in the Week 4 handout
+and Labs 07–08. Tables copied into other course surfaces are generated from this page.*
 
-Your DCF is an argument about the future. Multiples are a report about the present: what real
-buyers are paying, right now, for businesses like yours. Neither settles the question alone —
-a DCF can be internally perfect and built on a fantasy, and multiples can dutifully copy the
-market's current mood. The craft is using each to interrogate the other. That starts with the
-most abused word in finance: *comparable*.
+## Why use another company's price?
 
-## The case
+Your discounted cash flow (DCF) model values a company from assumptions about its future cash
+flows. Comparable-company valuation asks a different question: **what value would your company
+have if investors priced its earnings like those of similar companies?** Disagreement with your
+DCF is a reason to investigate assumptions, peer selection, and market conditions.
 
-Your target earned **EBITDA of $80M** and **net income of $40M**. It holds **$50M cash**,
-owes **$300M debt**, and has **50M diluted shares**. Your policy passed four peers:
+A share price alone cannot answer this. One company may have many more shares than another.
+**Price-to-earnings (P/E)** divides price per share by earnings per share (EPS), putting the
+comparison on a common basis: dollars of share price per dollar of annual earnings.
 
-| Peer | EV ($M) | EBITDA ($M) | Equity value ($M) | Net income ($M) |
-|---|---:|---:|---:|---:|
-| Alpha | 1,200 | 120 | 900 | 75 |
-| Beta | 1,600 | 100 | 1,200 | 60 |
-| Gamma | 900 | 100 | 750 | 50 |
-| Delta | 2,000 | 125 | 1,500 | 100 |
+P/E is useful when positive earnings reasonably represent the business and peers have
+comparable economics and earnings definitions. Negative earnings do not support this positive
+multiple comparison. An unusual profit can inflate earnings and make P/E look deceptively low;
+unusually depressed earnings can make it look high. Growth prospects, risk and debt can also
+justify different multiples. **A lower P/E is a question to investigate, not an automatic bargain.**
 
-A qualified precedent transaction closed at **14× EV/EBITDA**.
+We will value Asbury Automotive, a vehicle retailer. You do not need to have bought a stock
+or read an entire annual report to follow this case. Start with how the businesses earn money.
 
-## Step 1 — Compute each peer's multiples yourself
+## Before seeing multiples: what makes a peer?
 
-Never accept a multiple you didn't compute — providers disagree on definitions, and Week 1
-showed you how badly. One by hand:
+A **candidate** is a company worth investigating. A **peer** is a candidate whose economics
+fit your stated comparison. Sharing an industry label does not settle that judgment.
 
-> Alpha EV/EBITDA = 1,200 / 120 = **10.0×**
+Here is the teaching policy, stated before the numeric comparison:
 
-| Peer | EV/EBITDA | P/E |
-|---|---:|---:|
-| Alpha | 10.0× | 900 / 75 = 12.0× |
-| Beta | 16.0× | 1,200 / 60 = 20.0× |
-| Gamma | 9.0× | 750 / 50 = 15.0× |
-| Delta | 16.0× | 1,500 / 100 = 15.0× |
+- Look for publicly traded franchised vehicle retailers with new and used vehicle sales and
+  meaningful parts/service operations.
+- Compare how they earn money, their scale, geography, and financing activities. Name material
+  differences instead of hiding them in an average.
+- For this P/E exercise, require positive annual earnings and a consistent earnings definition.
+- Qualify a candidate with a material business difference; reject one that does not fit the
+  business model or whose needed evidence cannot be verified.
 
-**Read the dispersion before any average.** EV/EBITDA runs from 9× to 16× — nearly a factor
-of two, for companies your own policy called comparable. That spread *is* information: either the market
-prices real differences your policy ignored (growth, margins, risk), or some peer doesn't
-belong. Investigate Beta and Delta versus Gamma before proceeding; "comparable" was doing
-heavy lifting.
+This is a worked policy, not a policy to paste over your own company's economics. A software
+company, bank, and car dealership need different comparisons.
 
-## Step 2 — Take the median, and know why
+## Read the business evidence first
 
-> Median EV/EBITDA = median(10.0, 16.0, 9.0, 16.0) = (10.0 + 16.0) / 2 = **13.0×**
-> Median P/E = median(12.0, 20.0, 15.0, 15.0) = **15.0×**
+Asbury sells vehicles and provides parts/service and finance/insurance products. AutoNation
+has similar revenue activities and also operates AutoNation Finance. Group 1 operates in both
+the U.S. and U.K.; its acquisition of 54 Inchcape dealerships during 2024 also affects the
+business being compared. See the companies' releases linked in the input table below:
+Asbury's company description, AutoNation's operational/segment discussion, and Group 1's
+U.K. discussion.
 
-Median, not mean, because with four peers a single outlier drags a mean wherever it likes.
-And notice what you just did: you replaced four market opinions with one number. The range
-(9–16×) rides along with your answer from here on — that is why Lab 07 asks for an implied
-*range*, not a point.
+**Pause:** which candidate fits the core business but deserves a qualification? Group 1's
+geography and acquisition history provide a concrete answer. That does not automatically
+make it unusable. AutoNation's finance business also deserves attention. Neither company is
+an exact copy of Asbury.
 
-## Step 3 — Apply the enterprise multiple (the bridge returns)
+Decide what those differences mean before seeing which inclusion produces the price you prefer.
 
-EV/EBITDA is an **enterprise** multiple: it prices the whole operating business. So applying
-it gives you enterprise value, and you must cross the same bridge you built in Weeks 2–3:
+## A frozen historical comparison
 
-> EV = 13.0 × 80 = 1,040
-> Equity = 1,040 + 50 − 300 = 790
-> Per share = 790 / 50 = **$15.80**
+**This is retrospective:** prices are the December 31, 2024 closes; earnings cover the year
+ended December 31, 2024 and were released afterward. It is not a claim about what an investor
+could have known or traded on December 31. A point-in-time analysis must use only information
+public by its valuation date.
 
-## Step 4 — Apply the equity multiple (no bridge — and that's the trap)
+Use **total GAAP diluted EPS**, meaning reported earnings per share including dilution, rather
+than management's adjusted EPS. Keep price and EPS on the **same stock-split basis**. A later
+split-adjusted price divided by the original unsplit EPS would produce a false multiple.
 
-P/E is an **equity** multiple: net income already belongs to shareholders alone, after
-interest. Applying it lands directly on equity value:
+<!-- case-inputs:start -->
+| Company / role | December 31, 2024 closing price | FY2024 total GAAP diluted EPS | Primary sources and locators |
+|---|---:|---:|---|
+| Asbury Automotive (ABG), target | $243.03 | $21.50 | [2025 proxy](https://www.sec.gov/Archives/edgar/data/1144980/000114498025000092/abg-20250402.htm): outstanding equity awards, footnote (2), search `243.03`. [January 30, 2025 release](https://www.sec.gov/Archives/edgar/data/1144980/000114498025000008/a2024q4ex991.htm): Full Year 2024 Results. |
+| AutoNation (AN), candidate peer | $169.84 | $16.92 | [2025 proxy](https://www.sec.gov/Archives/edgar/data/350698/000035069825000068/an-20250311.htm): outstanding equity awards, footnote (1), printed p. 30. [February 11, 2025 release](https://www.sec.gov/Archives/edgar/data/350698/000035069825000026/anearningsrelease123124ex9.htm): Full Year 2024, selected GAAP table. |
+| Group 1 Automotive (GPI), qualified candidate peer | $421.48 | $36.81 | [2025 proxy](https://www.sec.gov/Archives/edgar/data/1031203/000103120325000018/gpi-20250320.htm): Termination and Change in Control Tables, introduction, printed p. 59. [January 29, 2025 release](https://www.group1corp.com/2025-01-29-Group-1-Automotive-Reports-2024-Fourth-Quarter-Financial-Results-and-Record-Full-Year-Revenues-of-19-9-billion): annual consolidated statement of operations, total diluted EPS row. |
+<!-- case-inputs:end -->
 
-> Equity = 15.0 × 40 = 600 → 600 / 50 = **$12.00**
+Group 1's headline emphasizes continuing operations. Our table deliberately uses **total**
+diluted EPS. Read the row label, not just the first earnings number you find. Do not silently
+substitute adjusted EPS when reported earnings make a comparison inconvenient.
 
-Bridging a P/E answer — adding cash, subtracting debt — double-counts the capital structure
-and is one of the most common junior errors in existence. One sentence to keep: *enterprise
-multiples need the bridge; equity multiples already crossed it.*
+## Compute one; then do the next
 
-## Step 5 — The precedent transaction
+AutoNation's P/E = its price ÷ its annual diluted EPS. The units are dollars per share divided
+by dollars earned per share in a year. The result is a multiple, not dollars.
 
-> EV = 14.0 × 80 = 1,120 → 1,120 + 50 − 300 = 870 → **$17.40 per share**
+**Before reading the checks, calculate Group 1's P/E yourself.** Then apply each peer's
+multiple to **Asbury's** EPS. That converts the peer comparison into two prices for the same
+target. Asbury is not included in its own peer median.
 
-The deal multiple (14×) sits above the trading median (13×). Before using it, ask what a
-buyer of the *whole company* paid for that trading multiples don't include: control, expected
-synergies, a competitive auction, a different point in time. If you cannot defend the deal's
-context — Lab 08's whole subject — you qualify it or set it aside; you don't quietly average
-it in.
+For two peers, the median is halfway between their multiples. With only two observations,
+that midpoint is sensitive to both; the word “median” does not make a small sample reliable.
+Keep unrounded multiples in calculations and round final prices to cents.
 
-## Step 6 — Three answers, one analyst
+<!-- case-checks:start -->
+| Check | Calculation | Result |
+|---|---|---:|
+| AutoNation P/E | 169.84 ÷ 16.92 | 10.037825× |
+| Group 1 P/E | 421.48 ÷ 36.81 | 11.450149× |
+| Asbury observed P/E, for comparison only | 243.03 ÷ 21.50 | 11.303721× |
+| Peer median P/E | (AN P/E + GPI P/E) ÷ 2 | 10.743987× |
+| Asbury price using AN | (169.84 ÷ 16.92) × 21.50 | $215.81 |
+| Asbury price using GPI | (421.48 ÷ 36.81) × 21.50 | $246.18 |
+| Asbury peer-implied range | Lower to higher peer-implied price | $215.81–$246.18 |
+| Asbury at peer median | Peer median P/E × 21.50 | $231.00 |
+| Remove GPI: remaining AN estimate | AN P/E × 21.50 | $215.81 |
+| Change from two-peer midpoint | AN estimate − median estimate, before rounding | −$15.18 |
+<!-- case-checks:end -->
 
-| Route | Per share |
-|---|---:|
-| Trading EV/EBITDA (13×) | $15.80 |
-| Trading P/E (15×) | $12.00 |
-| Precedent transaction (14×) | $17.40 |
+The observed target price lies inside this range. That establishes neither fairness nor an
+investment recommendation: the range depends on these peers and this earnings convention.
 
-The spread from $12.00 to $17.40 is not a failure — it is the finding. Each method prices a
-different thing: P/E carries this target's leverage and below-the-line items; EV/EBITDA
-prices operations; the precedent embeds control and its moment in time. Your job — and
-Project 1's explicit requirement — is to *explain* the disagreement and say which evidence
-best fits the committee's question. Mechanically averaging the three numbers destroys
-exactly the information the spread contains.
+## Change one judgment and observe the consequence
 
-## Choosing peers before you meet them — the policy discipline
+**Predict first:** removing the higher-multiple qualified peer should lower the midpoint.
+The checks confirm that direction. Explain the removal using business evidence, not a desire
+for a lower answer. With only AutoNation left, you have **one reference estimate, not a range**.
 
-The peer table above didn't fall from the sky; a policy admitted it. Write the policy before
-you see any candidates (Lab 07 enforces this order), on dimensions like these:
+For your own-company work, the same route begins with two candidates and an audited P/E
+comparison where meaningful. If EPS is zero or negative, P/E is not a meaningful positive
+valuation reference. Name that limitation; do not invent earnings or automatically switch to
+adjusted EPS. The lab governs how incomplete evidence is recorded.
 
-| Dimension | Ask | Typical weight |
-|---|---|---|
-| Business model | same revenue model and economics? | high |
-| Growth profile | similar expected growth? | high |
-| Margins / capital intensity | comparable profitability structure? | medium |
-| Scale | same order of magnitude? | medium |
-| Geography / regulation | same markets and rules? | situational |
+## Compare with your own DCF in Lab 08
 
-Then audit every candidate — AI-suggested ones especially: still public? still operating
-(not acquired)? business model actually matches? current financials available? material
-differences named? You are validating a list, never accepting one.
+Your P/E comparison uses other companies' market prices. Your DCF uses your forecast.
+A disagreement should lead you to inspect the peers, earnings basis and forecast assumptions.
+It is not a reason to average the answers automatically.
 
-## Check yourself
+For Asbury, the observed price is inside the peer-implied band. A cautious explanation is:
+“The comparison alone does not establish an attractive purchase. I would watch-defer while
+checking whether the earnings and peer differences justify this band. I would reconsider if
+the price changed and the business evidence still supported the comparison.”
 
-1. Compute Beta's P/E from the table without looking at Step 1.
-2. A teammate applies the 13× EV/EBITDA multiple and reports 1,040 / 50 = $20.80 per share.
-   Name the error in one sentence.
-3. Why might Gamma trade at 9× while Beta trades at 16× — give two legitimate reasons and
-   one illegitimate one.
-4. The precedent implies $17.40 and trading implies $15.80. A colleague says "average them:
-   $16.60." What do you say?
+If AI tells you to subtract net debt from a P/E-derived equity value, reject that advice:
+this method already values shareholders' earnings. Point to the calculation rather than
+accepting technical-sounding wording.
 
-*Answers: (1) 1,200 / 60 = 20.0×. (2) They skipped the bridge — 1,040 is enterprise value,
-not equity; debt and cash must be netted first. (3) Legitimate: faster expected growth,
-structurally higher margins/lower risk; illegitimate: "the data provider said so" — a
-definition or period mismatch isn't a valuation reason. (4) The $1.60 gap is evidence about
-control value and deal context; averaging erases the question the committee is paying you to
-answer.*
+The [optional reading](open-ended-challenge.md) is available if you want to study other methods.
