@@ -1,58 +1,49 @@
-# Week 5 Student Handout — Credit Is a Downside Decision
+# Week 5 Student Handout — Build the Base Case
 
-> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the course
-> schedule). The page below is the previous curriculum and will be replaced in full
-> before this week begins — do not prepare from it.
+Last week: what do investors pay for similar companies? This week: what are five years of your
+company's statements worth, built from assumptions you can defend?
 
-## Decision frame
+## The two commands
 
-State borrower/transaction, exposure, horizon, decision user, available actions, loss if an
-unsafe case passes, and opportunity cost if a safe case is rejected.
+In the VS Code terminal (**Terminal → New Terminal**), with your own Python command in place of
+`python` (`python`, `py`, or `python3` — the one that answered):
 
-## 5-Cs evidence map
+| Command | Expect |
+|---|---|
+| `python dcf.py` | your Week 3 values still print |
+| `python proforma.py` | Tuesday: the ABG statements, the check block, $291.75. Thursday: your company's statements, the check block, one value per share |
 
-| C | Question | Observable evidence | Common AI/data failure |
-|---|---|---|---|
-| Character | Willingness/governance/record? | filings, payment/legal/governance evidence | narrative moral judgment without evidence |
-| Capacity | Can cash flow service obligations? | coverage, FCF, cyclicality, stress | EBITDA treated as cash |
-| Capital | How much loss-absorbing stake exists? | equity, leverage, sponsor support | book/market or entity mismatch |
-| Collateral | What supports recovery? | asset quality, lien, seniority, valuation | gross asset value treated as recoverable value |
-| Conditions | What external/contract terms matter? | cycle, rates, covenants, maturity, regulation | generic macro list without mechanism |
+Something breaks? Debug with your AI: the exact command and the exact error text.
 
-## Ratio convention sheet
+## The digits, once (ABG, the training case)
 
-`Debt / EBITDA` — define gross/net debt, leases, LTM/normalized EBITDA.
+| Step | Rule | ABG, FY2026E |
+|---|---|---|
+| Revenue | prior × (1 + growth) | 17,999.0 × 1.018 = 18,323.0 |
+| Gross profit | revenue × margin | 18,323.0 × 17.05% = 3,124.1 |
+| SG&A | gross profit × cost ratio | 3,124.1 × 66.5% = 2,077.5 |
+| Operating income | gross profit − SG&A − depreciation − impairment | 3,124.1 − 2,077.5 − 82.4 − 120.0 = 844.2 |
+| Net income | (operating income − interest) × (1 − tax) | (844.2 − 289.0) × 0.745 = 413.6 |
+| Cash flow to equity | net income + non-cash − capex − working capital + floor plan − repayment | 413.6 + 202.4 − 250.0 − 41.5 + 36.9 − 150.0 = 211.4 |
+| Cash | opening + cash flow to equity − buyback | 40.4 + 211.4 − 150.0 = 101.8 |
+| Check | assets − liabilities − equity | 0.0 |
+| Value per share | (PV of five years + PV of terminal) ÷ shares | (1,059.9 + 4,177.5) ÷ 17.951 = 291.75 |
 
-`EBIT / interest expense` — define operating profit and cash/accrual interest period.
+## The rules
 
-`Current assets / current liabilities` — inspect restricted cash and classification quality.
+- Every assumption carries a label — history, guidance, judgment — and every judgment a reason.
+- Cash is computed last. A balance sheet that does not balance is a bug, not a forecast.
+- The model refuses to value an unbalanced sheet. Yours must too.
+- Reported growth can be bought; carry the growth of the stores already owned.
+- Name the line that makes your company different, and treat it the same way everywhere.
 
-`(CFO − Capex) / debt` — state capex sign and whether the cash-flow measure is sustainable.
+## DRIVER, one line each
 
-Ratios do not share universal definitions. Document the convention before calculating.
+Define — the same question for everyone; your company is the only variable. Represent — the
+labelled assumption set. Implement — the engine from one request. Validate — the known answer,
+then the checks that stop the model. Evolve and Reflect — your company; your partner's fresh eyes.
 
-## Screening policy
+## The video
 
-For every factor record definition, threshold/weight, missingness rule, sector qualification,
-override condition, source, and error cost. A score must preserve factor-level reasons.
-
-## Validation
-
-Use **Week 5 Synthetic Outcome-Label Convention**: label `1` is a fully observed payment default, insolvency, or
-principal-impairing restructuring within 12 months; label `0` is none of those events. There are
-no censored cases. Map `review/reject` to the positive risk flag and `approve` to negative before
-interpreting false approvals and false rejections.
-
-- known-answer ratio reconciliation;
-- one source/definition check;
-- confusion matrix or labeled-case comparison;
-- false-positive and false-negative review;
-- one changed threshold or missingness rule; and
-- one case where qualitative evidence overrides the composite score.
-
-End with `approve`, `deeper review`, or `reject`, plus evidence needed to change the action.
-
-If code fails, follow **Week 5 Calculation Recovery and Project 1 Credit Transfer**; its paper or
-accessible-spreadsheet route requires the same ratios, reason codes, and error-cost logic. After
-the synthetic lab, complete its bounded target-company section inside your Project 1 repository.
-That transfer is project evidence, not an additional checkout.
+[Part 1 — Build the base case](https://youtu.be/O4PeC2PqwRY), 27 min. Slides with the spoken text:
+[the tutorial page](pro-forma-abg-tutorial.md). Learning demonstration — not investment advice.

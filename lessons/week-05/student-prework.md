@@ -2,23 +2,19 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
-> **This module is being rebuilt as Pro-Forma Financial Modeling I** (see the
-> course schedule). The prework below belongs to the previous curriculum and will be
-> replaced in full before this week begins — **do not prepare from this page yet.**
+**Before Tuesday — about 45 minutes.**
 
-Read only [OpenStax Principles of Finance §6.4](https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios)
-**“Think It Through: Financing a Business Expansion”** and **“Times Interest Earned Ratio”**
-(8–10 minutes). Do not paste or ingest OpenStax text into Codex, Gemini, or another AI system;
-the source's terms prohibit that use. Ask: **Which number or definition could turn an apparently
-safe ratio into a false approval?** The course handout's ratio/convention table is the readable
-alternative and remains authoritative for course definitions.
+1. Watch [Pro-Forma Valuation with AI, Part 1 — Build the base case](https://youtu.be/O4PeC2PqwRY)
+   (27 min). Open the [Part 1 slides](pro-forma-abg-tutorial.md) alongside; press **N** for the
+   spoken text under any slide you want to reread.
+2. **Answer:** which three judgments carry the ABG valuation, and why is cash the last line the
+   model computes? Write it in your own words; you will explain it to your partner first thing.
+3. Reopen your Course/Work Folder in **VS Code → File → Open Recent** and run `python dcf.py`.
+   *Expect:* your Week 3 values. If not, debug with your AI before class.
 
-Then inspect `credit_cases.csv`. Without AI, define one credit decision, state the loss of a false
-approval versus false rejection, and write exact numerator/denominator/period conventions for
-leverage and coverage. Run the starter only to load the cases. The external excerpt replaces the
-handout's generic ratio introduction; it does not add to it. **Prework-only budget: 25–30
-minutes**; leave
-material screening functions unfinished.
+**Before Thursday — about 30 minutes.**
 
-Within the separate 3–4 hour Project 1 planning band, reserve 35–45 minutes for the bounded
-target-company transfer on **Week 5 Calculation Recovery and Project 1 Credit Transfer**.
+1. Have your company's three most recent 10-Ks open, and find its same-store or organic growth
+   disclosure (MD&A) if it has one. Ask your AI where to look; read the page yourself.
+2. Write one sentence: what is the line that makes your company different from a manufacturer,
+   the way floor plan is for a car dealer? If you cannot find one, say so — that is an answer.
