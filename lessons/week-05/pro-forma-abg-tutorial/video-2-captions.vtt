@@ -1,0 +1,790 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.037
+Before we start. This is a learning demonstration, not investment advice. It values a real
+
+00:00:06.037 --> 00:00:12.074
+company, Asbury Automotive, for teaching only, from public filings, and nothing in it is a
+
+00:00:12.074 --> 00:00:18.112
+recommendation to buy or sell anything. The narration is my voice, synthesized with my consent.
+
+00:00:22.610 --> 00:00:28.276
+Last time we built the base case. Three filings, nineteen labelled assumptions, five years
+
+00:00:28.276 --> 00:00:33.941
+of statements that tie, and one answer: two hundred and ninety-two dollars a share
+
+00:00:33.941 --> 00:00:39.607
+for Asbury Automotive, the two ninety-one seventy-five we rounded, with eighty percent of that
+
+00:00:39.607 --> 00:00:45.273
+value sitting after 2030. The shares traded near one hundred and eighty-three in mid-September 2026.
+
+00:00:46.070 --> 00:00:50.590
+Nobody on a desk stops there, and neither will you. A single number is
+
+00:00:50.590 --> 00:00:55.110
+the start of the conversation, not the end. Today we take the base case
+
+00:00:55.110 --> 00:00:59.630
+apart. First the discount rate, which we admitted was a round number, and which
+
+00:00:59.630 --> 00:01:04.151
+we now measure. Then every operating assumption, one at a time and then together.
+
+00:01:04.151 --> 00:01:08.671
+Then the question that turns a model into an argument: what would have to be
+
+00:01:08.671 --> 00:01:13.191
+true for the market's price to be right? Then the pictures. And then the
+
+00:01:13.191 --> 00:01:17.711
+part nobody teaches: how you tell colleagues, how you answer them, and how you
+
+00:01:17.711 --> 00:01:22.231
+defend the work when someone senior pushes back. Learning demonstration, not investment advice. Same
+
+00:01:22.231 --> 00:01:26.751
+rule as before: every number comes from a filing or from arithmetic you can see.
+
+00:01:30.050 --> 00:01:35.983
+Ten percent was a placeholder. The honest number starts with beta: how much this stock
+
+00:01:35.983 --> 00:01:41.915
+moves when the whole market moves. We take sixty-one month-end prices for Asbury and for the
+
+00:01:41.915 --> 00:01:47.848
+S and P 500, August 2021 to August 2026, turn them into sixty monthly returns, and
+
+00:01:47.848 --> 00:01:53.781
+ask one question: when the market moved one percent, how much did Asbury move, on average?
+
+00:01:54.580 --> 00:01:59.340
+The answer is the slope of a line through sixty points, and it has
+
+00:01:59.340 --> 00:02:04.100
+a formula you should know by heart: beta equals the covariance of the two
+
+00:02:04.100 --> 00:02:08.860
+return series divided by the variance of the market's returns. Here it is zero
+
+00:02:08.860 --> 00:02:13.620
+point seven one. Read the rest of the grid, because the rest is where
+
+00:02:13.620 --> 00:02:18.380
+the judgment lives. Asbury's monthly volatility is ten point three percent against the market's
+
+00:02:18.380 --> 00:02:23.141
+four point six; the stock moves more than twice as much as the market.
+
+00:02:23.141 --> 00:02:27.901
+But the correlation is only zero point three two, so most of that movement
+
+00:02:27.901 --> 00:02:32.661
+is Asbury's own, not the market's. That is why the beta comes out below
+
+00:02:32.661 --> 00:02:37.421
+one despite the volatility. The next line: the standard error, the statistical uncertainty of
+
+00:02:37.421 --> 00:02:42.181
+that slope, is zero point two eight. The usual convention is two standard errors
+
+00:02:42.181 --> 00:02:46.941
+either side, which puts the true beta anywhere from about zero point two to
+
+00:02:46.941 --> 00:02:51.701
+one point three. And R-squared is zero point one zero: the market explains ten
+
+00:02:51.701 --> 00:02:56.461
+percent of Asbury's monthly moves. Ninety percent is company and industry. The last line
+
+00:02:56.461 --> 00:03:01.221
+is the industry's fix for exactly this problem. The Blume adjustment shrinks a measured
+
+00:03:01.221 --> 00:03:05.981
+beta toward one, two-thirds of the estimate plus one-third of one, which gives zero
+
+00:03:05.981 --> 00:03:10.741
+point eight one. Most data vendors quote you the adjusted number without saying so.
+
+00:03:11.540 --> 00:03:15.418
+Here is the picture. Every dot is one month. The red line
+
+00:03:15.418 --> 00:03:19.295
+is the beta. Look at how far the dots sit from the
+
+00:03:19.295 --> 00:03:23.173
+line. That scatter is the standard error, and you should carry it
+
+00:03:23.173 --> 00:03:27.051
+in your head every time someone quotes a beta to two decimal places.
+
+00:03:27.850 --> 00:03:32.933
+From beta to a discount rate is one line of arithmetic. The cost of
+
+00:03:32.933 --> 00:03:38.015
+equity is the risk-free rate plus beta times the equity risk premium: what investors
+
+00:03:38.015 --> 00:03:43.098
+demand over a government bond for holding an average stock. Ten-year Treasury, five percent.
+
+00:03:43.098 --> 00:03:48.180
+Equity risk premium, four point four two, the implied premium published in July. Observed
+
+00:03:48.180 --> 00:03:53.263
+beta, five plus zero point seven one times four point four two: eight point one
+
+00:03:53.263 --> 00:03:58.346
+five percent. Blume-adjusted, eight point five seven. A beta of one, the market itself,
+
+00:03:58.346 --> 00:04:03.428
+nine point four two. And the bottom line, highlighted: the ten percent we used
+
+00:04:03.428 --> 00:04:08.511
+in Video 1 quietly assumed a beta of one point one three, higher than
+
+00:04:08.511 --> 00:04:13.593
+every measurement on this screen. We were conservative. Now you can see by how much.
+
+00:04:14.390 --> 00:04:19.586
+One regression on one stock is noisy. The desk fix is to borrow
+
+00:04:19.586 --> 00:04:24.783
+information from the peers. Four public dealer groups: AutoNation, Lithia, Group 1, Penske. Their
+
+00:04:24.783 --> 00:04:29.979
+measured betas run from zero point seven one to one point two two. But
+
+00:04:29.979 --> 00:04:35.176
+each carries its own debt load, and leverage makes equity riskier, so before
+
+00:04:35.176 --> 00:04:40.372
+you average them you strip the leverage out. Unlevered beta is levered beta divided
+
+00:04:40.372 --> 00:04:45.568
+by one plus one minus the tax rate times debt over equity. Average the
+
+00:04:45.568 --> 00:04:50.765
+four unlevered betas: zero point five eight. That is the risk of running car
+
+00:04:50.765 --> 00:04:55.961
+dealerships, before anyone borrows. Then put Asbury's own leverage back: debt over equity
+
+00:04:55.961 --> 00:05:01.157
+of one point zero three, and the relevered beta is one point zero three.
+
+00:05:01.157 --> 00:05:06.354
+Cost of equity, nine point five four percent. Four noisy estimates averaged beat one
+
+00:05:06.354 --> 00:05:11.550
+noisy estimate; that is the whole point. Two rules on the way through, because
+
+00:05:11.550 --> 00:05:16.747
+people get both wrong. First: the discount rate always wants the levered beta,
+
+00:05:16.747 --> 00:05:21.943
+at the leverage you are forecasting. A regression beta is already levered. Unlevering is
+
+00:05:21.943 --> 00:05:27.139
+only the bridge that lets you move a beta between companies. Second, and specific
+
+00:05:27.139 --> 00:05:32.336
+to this industry: floor plan, the inventory loans from Video 1. We excluded it
+
+00:05:32.336 --> 00:05:37.532
+from debt for every one of these companies, because our model treats it
+
+00:05:37.532 --> 00:05:42.728
+as an operating liability everywhere else. Include it when you unlever and exclude it
+
+00:05:42.728 --> 00:05:47.925
+when you relever and you have manufactured a lower beta and a higher value
+
+00:05:47.925 --> 00:05:53.121
+out of an inconsistency. Same treatment on both legs, or the discount rate lies.
+
+00:05:53.920 --> 00:05:59.135
+Now the payoff. The five years of statements do not change. Only the rate
+
+00:05:59.135 --> 00:06:04.350
+does. At the observed beta, eight point one five percent, the value is three hundred
+
+00:06:04.350 --> 00:06:09.566
+and ninety-nine dollars, a hundred and seven more than the base. Blume-adjusted, three sixty-nine. Nine
+
+00:06:09.566 --> 00:06:14.781
+percent, three forty-two. Beta of one, three nineteen. The bottom-up peer beta, three thirteen.
+
+00:06:14.781 --> 00:06:19.996
+Our ten percent, two ninety-two. Eleven percent, two fifty-four. Read the after-2030 column too: at
+
+00:06:19.996 --> 00:06:25.211
+the lower rates, eighty-four percent of the value is terminal. The cheaper the money, the
+
+00:06:25.211 --> 00:06:30.426
+more of the answer sits in the far future. Notice that every one of
+
+00:06:30.426 --> 00:06:35.642
+those rates is defensible, and the spread between them is a hundred and forty-five dollars
+
+00:06:35.642 --> 00:06:40.857
+a share. That is larger than any operating disagreement you will have about this company.
+
+00:06:40.857 --> 00:06:46.072
+When someone asks you why the number moved, the first place to look is here.
+
+00:06:46.870 --> 00:06:51.960
+The rate has a partner: terminal growth. Nine rows, three rates by three growth
+
+00:06:51.960 --> 00:06:57.050
+rates. Down a column, half a point of terminal growth is worth about sixteen dollars
+
+00:06:57.050 --> 00:07:02.139
+at our ten percent, more at lower rates. Across a row, one point of discount
+
+00:07:02.139 --> 00:07:07.229
+rate is worth thirty-four to fifty-seven dollars, depending on where you stand. Both are judgments.
+
+00:07:07.229 --> 00:07:12.319
+Neither is in a filing. You show them as a grid, never as a point.
+
+00:07:13.120 --> 00:07:17.501
+One more screen on the terminal value, because eighty percent of the answer
+
+00:07:17.501 --> 00:07:21.882
+lives there and every line of it is a choice. Our base holds debt
+
+00:07:21.882 --> 00:07:26.262
+flat after 2030: the company refinances what matures, pays interest, and never repays
+
+00:07:26.262 --> 00:07:30.643
+principal. That is what going concerns do. It is also the conservative reading, because
+
+00:07:30.643 --> 00:07:35.024
+a company growing two and a half percent a year with a constant
+
+00:07:35.024 --> 00:07:39.405
+debt ratio would borrow a little more each year, and that borrowing is cash
+
+00:07:39.405 --> 00:07:43.786
+the owners do not have to put in. Borrow a third of each
+
+00:07:43.786 --> 00:07:48.167
+year's reinvestment, which is the Damodaran form: three sixteen. Let debt grow in step
+
+00:07:48.167 --> 00:07:52.547
+with the firm: three twenty-four. Both defensible. We stay flat, and we say so.
+
+00:07:53.350 --> 00:07:58.604
+The same screen shows the other direction, which for a car dealer is the
+
+00:07:58.604 --> 00:08:03.858
+one the market is thinking about. If the industry stops growing, terminal growth zero:
+
+00:08:03.858 --> 00:08:09.112
+two twenty-nine. If it shrinks one percent a year forever: two twelve. Hold that
+
+00:08:09.112 --> 00:08:14.366
+thought for the price-implied table in a moment. And one accounting convention, flagged by
+
+00:08:14.366 --> 00:08:19.620
+our reviewers: the model saves thirty-one million of tax a year on the impairment charge,
+
+00:08:19.620 --> 00:08:24.873
+a book write-down. In practice that is usually a deferred-tax item with no cash
+
+00:08:24.873 --> 00:08:30.127
+saving. Take it away and the value is two seventy-one. We keep the settled
+
+00:08:30.127 --> 00:08:35.381
+convention, and we put the twenty-one dollars on the screen so nobody has to
+
+00:08:35.381 --> 00:08:40.635
+take our word for it. A note on that reinvestment line, because it is
+
+00:08:40.635 --> 00:08:45.889
+the honest caveat about our own growth number. In 2030 the company reinvests one fifty-five
+
+00:08:45.889 --> 00:08:51.143
+out of five twenty-seven of net income, about twenty-nine percent, and we grow the
+
+00:08:51.143 --> 00:08:56.397
+cash flow at two and a half percent forever. That implies an eight and
+
+00:08:56.397 --> 00:09:01.651
+a half percent return on what it retains, below the ten percent cost of
+
+00:09:01.651 --> 00:09:06.905
+equity. In other words our terminal growth destroys a little value at the margin.
+
+00:09:06.905 --> 00:09:12.159
+That is conservative, and it is the kind of thing you disclose rather than hide.
+
+00:09:15.460 --> 00:09:20.166
+Now the business itself. Nine assumptions, each moved by a plausible amount
+
+00:09:20.166 --> 00:09:24.872
+in the bad direction and the good direction, everything else held at
+
+00:09:24.872 --> 00:09:29.578
+base, and the model rerun each time. Sorted by how much they matter.
+
+00:09:30.380 --> 00:09:36.074
+Gross margin, one point either way: two fifty-six to three twenty-seven, a seventy-one dollar
+
+00:09:36.074 --> 00:09:41.767
+swing. One point of gross margin on roughly eighteen billion of revenue is roughly
+
+00:09:41.767 --> 00:09:47.461
+a hundred and eighty million of gross profit; it is worth as much as
+
+00:09:47.461 --> 00:09:53.154
+a full point of discount rate. Capital spending, fifty million a year either way:
+
+00:09:53.154 --> 00:09:58.848
+sixty-seven dollars, because every dollar not spent is a dollar to the owners, every year,
+
+00:09:58.848 --> 00:10:04.541
+and then carried into the terminal value. Organic growth, one point: forty-four dollars. The
+
+00:10:04.541 --> 00:10:10.235
+cost ratio, SG and A over gross profit, one point along the whole path:
+
+00:10:10.235 --> 00:10:15.928
+thirty-four. The term-debt rate: thirty-one. The cost ratio after 2030 only: twenty-five. Floor-plan rate:
+
+00:10:15.928 --> 00:10:21.622
+twenty-two. Impairment, forty million either way: fourteen, and notice it runs backwards, because a
+
+00:10:21.622 --> 00:10:27.315
+bigger non-cash charge lowers taxes and raises cash flow. Inventory days, five either way: ten.
+
+00:10:28.120 --> 00:10:32.938
+The same table as a picture, which is how you will show it in
+
+00:10:32.938 --> 00:10:37.756
+a meeting. Red is the bad direction, green the good, the line is the
+
+00:10:37.756 --> 00:10:42.574
+base. The eye goes to the top two bars, and it should: margin and
+
+00:10:42.574 --> 00:10:47.393
+capital spending are where the operating argument lives. Everything below the fourth bar is detail.
+
+00:10:48.190 --> 00:10:53.311
+Growth deserves its own screen, because one point eight percent was the judgment call
+
+00:10:53.311 --> 00:10:58.432
+in Video 1 and you should see what the alternatives are worth. No organic
+
+00:10:58.432 --> 00:11:03.553
+growth at all, revenue flat at eighteen billion for five years: two fifty-three, thirty-eight
+
+00:11:03.553 --> 00:11:08.674
+dollars below base. The same-store rate the stores actually posted in 2025, one point
+
+00:11:08.674 --> 00:11:13.795
+one five percent: two seventy-eight, fourteen below. Our one point eight: two ninety-two. Three
+
+00:11:13.795 --> 00:11:18.916
+percent, roughly nominal growth in the economy: three nineteen, twenty-seven above. And the reported
+
+00:11:18.916 --> 00:11:24.037
+four point seven, the growth that was bought: three fifty-nine, sixty-seven above base, for
+
+00:11:24.037 --> 00:11:29.158
+revenue the company does not own yet. Each point of growth is worth about
+
+00:11:29.158 --> 00:11:34.279
+twenty-two dollars here, less than a point of margin, because floor plan funds most
+
+00:11:34.279 --> 00:11:39.401
+of the working capital that growth needs. So the growth judgment matters, but it
+
+00:11:39.401 --> 00:11:44.522
+is not where the valuation lives; it lives in margin, capital spending, and the rate.
+
+00:11:45.320 --> 00:11:49.667
+The two operating judgments together. Margin down a point and the cost ratio
+
+00:11:49.667 --> 00:11:54.014
+up a point: two hundred and forty. Both the other way: three forty-five.
+
+00:11:54.014 --> 00:11:58.360
+Over a hundred dollars from two one-point moves. This grid is what you
+
+00:11:58.360 --> 00:12:02.707
+hand to the colleague who says "I think margins are going lower and
+
+00:12:02.707 --> 00:12:07.054
+the integration is going worse"; you point to a cell instead of arguing.
+
+00:12:07.850 --> 00:12:13.028
+Single shocks are how you understand the model. Named cases are how you talk
+
+00:12:13.028 --> 00:12:18.206
+about the company. The bear case: the cost ratio never recovers, stuck at sixty-eight percent
+
+00:12:18.206 --> 00:12:23.384
+of gross profit. Two thirty-six. The bull case: the savings from combining the groups
+
+00:12:23.384 --> 00:12:28.562
+arrive fast, sixty-three percent. Three twenty-one. And a recession story: margin down a point, organic
+
+00:12:28.562 --> 00:12:33.740
+growth down a point, costs up a point, floor-plan rate up a point, all
+
+00:12:33.740 --> 00:12:38.918
+at once. Two hundred and ten. Read the two right-hand columns as well. Every case
+
+00:12:38.918 --> 00:12:44.096
+is a full rerun and every balance sheet balances. And the recession story is
+
+00:12:44.096 --> 00:12:49.274
+the first case in which cash hits the twenty-five million floor and the revolver is
+
+00:12:49.274 --> 00:12:54.452
+drawn, twelve million at the peak. That is the safety net from Video 1
+
+00:12:54.452 --> 00:12:59.630
+doing its job, and it is the kind of detail a stress case is for.
+
+00:13:00.430 --> 00:13:04.805
+Now read the last line, because it is the mistake I see most
+
+00:13:04.805 --> 00:13:09.179
+often. If you had added the four single shocks from the tornado, you would
+
+00:13:09.179 --> 00:13:13.554
+have written down two oh seven. The model says two ten. Shocks interact; lower
+
+00:13:13.554 --> 00:13:17.929
+margin means lower inventory means lower floor plan means lower interest, and so on
+
+00:13:17.929 --> 00:13:22.303
+through every link we built in Video 1. Never add sensitivities. Rerun the model.
+
+00:13:23.100 --> 00:13:27.297
+Finally, the discipline that separates an analyst from a cheerleader: write down, in
+
+00:13:27.297 --> 00:13:31.494
+advance, what would make you withdraw the case. Three triggers, each tied to
+
+00:13:31.494 --> 00:13:35.691
+a number the next quarterly report will either confirm or deny. Gross margin
+
+00:13:35.691 --> 00:13:39.888
+at or below sixteen point zero five: value falls to two fifty-six. The cost
+
+00:13:39.888 --> 00:13:44.085
+ratio a point higher than our path, ending at sixty-five and a half:
+
+00:13:44.085 --> 00:13:48.282
+two seventy-five. Capital spending at or above three hundred: two fifty-eight. If the
+
+00:13:48.282 --> 00:13:52.479
+next two quarters show any of these, the base case is not patched
+
+00:13:52.479 --> 00:13:56.676
+one number at a time. It is withdrawn and rebuilt as a combined case.
+
+00:13:59.980 --> 00:14:04.384
+Here is the question that turns a model into an argument. The market
+
+00:14:04.384 --> 00:14:08.788
+says one eighty-three. We say two ninety-two. Instead of asking who is right,
+
+00:14:08.788 --> 00:14:13.192
+ask: what would have to be true for one eighty-three to be exactly
+
+00:14:13.192 --> 00:14:17.596
+right? Take one assumption at a time, hold the other eighteen at base,
+
+00:14:17.596 --> 00:14:22.000
+and search for the value that makes the model equal the price. The
+
+00:14:22.000 --> 00:14:26.404
+search is a bisection: halve the interval until the model lands on one eighty-three.
+
+00:14:27.200 --> 00:14:31.115
+Cost of equity: thirteen point eight percent. Run that back through the formula and
+
+00:14:31.115 --> 00:14:35.030
+it is a beta of about two, when nothing we measured is above one
+
+00:14:35.030 --> 00:14:38.946
+point three. Terminal growth: minus three point three percent, a business shrinking forever. Gross margin:
+
+00:14:38.946 --> 00:14:42.861
+fourteen point one percent every year, three points below the lowest year in the
+
+00:14:42.861 --> 00:14:46.776
+history. The cost ratio: six point two points higher than our path, every year, worse
+
+00:14:46.776 --> 00:14:50.691
+than any year the company has posted. Capital spending: four hundred and seven million
+
+00:14:50.691 --> 00:14:54.607
+a year, against guidance of two-fifty. Read this the right way. None of these is
+
+00:14:54.607 --> 00:14:58.522
+a forecast, and the truth is probably several of them partly at once. What
+
+00:14:58.522 --> 00:15:02.437
+the table tells you is the size of the disagreement in operating language. The market
+
+00:15:02.437 --> 00:15:06.352
+is not pricing a slightly worse Asbury; it is pricing a dealer that either
+
+00:15:06.352 --> 00:15:10.268
+never recovers its cost ratio or has to spend far more than it says to
+
+00:15:10.268 --> 00:15:14.183
+stand still. That is a claim you can test with two quarters of filings.
+
+00:15:14.183 --> 00:15:18.098
+Which is exactly the posture this course takes: wait for proof of the operating recovery.
+
+00:15:21.400 --> 00:15:26.157
+Three pictures carry the whole story, and you have already seen one of
+
+00:15:26.157 --> 00:15:30.914
+them, the tornado. The second is the simplest picture in finance and the
+
+00:15:30.914 --> 00:15:35.670
+one most people forget to draw: one axis. Price, one eighty-three. Bear, two
+
+00:15:35.670 --> 00:15:40.427
+thirty-six. Base, two ninety-two. Bull, three twenty-one. And out on the right, three
+
+00:15:40.427 --> 00:15:45.184
+ninety-nine, what the observed beta alone would justify. Now anyone in the room
+
+00:15:45.184 --> 00:15:49.941
+can see in one second that the price sits below the bear case,
+
+00:15:49.941 --> 00:15:54.697
+and that the discount rate moves the answer further than the operating cases do.
+
+00:15:55.500 --> 00:15:59.922
+The third is the rate-and-growth grid as a heat map, wider than before: eight
+
+00:15:59.922 --> 00:16:04.344
+rates from eight point one five to twelve, five growth rates. Every cell is
+
+00:16:04.344 --> 00:16:08.766
+the same five years of statements. The base case is the bold cell. The
+
+00:16:08.766 --> 00:16:13.188
+darker the blue, the higher the value; the pattern runs diagonally, which tells you
+
+00:16:13.188 --> 00:16:17.611
+the two inputs trade off against each other. This is the picture for the
+
+00:16:17.611 --> 00:16:22.033
+colleague who says your terminal value is a guess. You agree, and you show
+
+00:16:22.033 --> 00:16:26.455
+them the whole surface instead of a point. Two rules for every picture. One
+
+00:16:26.455 --> 00:16:30.877
+number per picture, said in the title. And never a picture the model did
+
+00:16:30.877 --> 00:16:35.299
+not produce; every chart here is drawn from the same function that printed the grids.
+
+00:16:38.600 --> 00:16:43.239
+Now the part of the job that happens away from the model. Somebody senior
+
+00:16:43.239 --> 00:16:47.878
+is going to ask what you think about Asbury, and they will ask in a
+
+00:16:47.878 --> 00:16:52.516
+hallway, not a meeting. You need three versions of the answer, and you prepare
+
+00:16:52.516 --> 00:16:57.155
+all three before anyone asks. The two-line message. Base case two ninety-two on free cash
+
+00:16:57.155 --> 00:17:01.794
+flow to equity at ten and two and a half; shares near one eighty-three.
+
+00:17:01.794 --> 00:17:06.433
+The gap is the cost recovery and the discount rate; a point of margin or
+
+00:17:06.433 --> 00:17:11.072
+capex at three hundred takes thirty-three to thirty-six dollars off. Posture: wait for proof
+
+00:17:11.072 --> 00:17:15.711
+of the operating recovery in the next two quarters. That is it. Value, price, what
+
+00:17:15.711 --> 00:17:20.349
+drives the gap, what breaks it, where you stand. Anyone who wants more will ask.
+
+00:17:21.150 --> 00:17:26.096
+The one page you attach: the assumption grids with their labels, the five-year statements
+
+00:17:26.096 --> 00:17:31.042
+with the check block under them, the rate table, the tornado, the what-would-have-to-be-true table,
+
+00:17:31.042 --> 00:17:35.988
+the three triggers, and the disclaimer. Nothing you have not already seen today. If
+
+00:17:35.988 --> 00:17:40.933
+a colleague can reproduce your number from one page, you have done the work properly.
+
+00:17:41.730 --> 00:17:46.397
+And the fifteen-minute walk-through, in this order: posture first, then the answer and the price,
+
+00:17:46.397 --> 00:17:51.064
+then the three judgments that carry it, then what breaks it, then what you are watching
+
+00:17:51.064 --> 00:17:55.732
+for, then questions. Posture first, always. If people know where you stand before you show
+
+00:17:55.732 --> 00:18:00.399
+a number, they listen to the number. If they have to guess, they argue with it.
+
+00:18:03.700 --> 00:18:08.589
+You will get these eight questions. Have the number ready for each. Why ten
+
+00:18:08.589 --> 00:18:13.478
+percent? A starting convention; the measured beta is zero point seven one, the peer
+
+00:18:13.478 --> 00:18:18.367
+beta one point zero three; that range is worth three thirteen to three ninety-nine;
+
+00:18:18.367 --> 00:18:23.255
+ten percent is the conservative end. Eighty percent after 2030, isn't that a guess?
+
+00:18:23.255 --> 00:18:28.144
+It is true of every discounted cash flow of a company that keeps operating; that
+
+00:18:28.144 --> 00:18:33.033
+is why you showed the grid and tested the operating shocks separately. Reported growth
+
+00:18:33.033 --> 00:18:37.922
+is four point seven, why model one point eight? Because four point seven was
+
+00:18:37.922 --> 00:18:42.811
+bought; stores owned both years grew one point two; acquisitions get priced separately. Why
+
+00:18:42.811 --> 00:18:47.700
+is two billion of floor plan not debt? Because it is inventory funding from manufacturers'
+
+00:18:47.700 --> 00:18:52.589
+finance arms and banks that moves one-for-one with inventory; you treat it as operating
+
+00:18:52.589 --> 00:18:57.477
+everywhere, and you showed what happens if you remove the line: cash at minus
+
+00:18:57.477 --> 00:19:02.366
+one point one billion. What is the market saying? Hold everything else and one
+
+00:19:02.366 --> 00:19:07.255
+eighty-three implies a cost of equity near fourteen, or a margin near fourteen, or
+
+00:19:07.255 --> 00:19:12.144
+capex over four hundred, or shrinking forever. None is your base; each is a hypothesis
+
+00:19:12.144 --> 00:19:17.033
+to test. What would make you drop the case? The three triggers, with their
+
+00:19:17.033 --> 00:19:21.922
+values. Why cash flow to equity, not to the whole firm? Because a dealer's
+
+00:19:21.922 --> 00:19:26.811
+financing is inseparable from its operations; valuing the equity directly with a levered beta
+
+00:19:26.811 --> 00:19:31.699
+avoids valuing the whole firm and subtracting debt, which would force you to decide whether
+
+00:19:31.699 --> 00:19:36.588
+floor plan is debt. Why not just use the data vendor's numbers? Because its
+
+00:19:36.588 --> 00:19:41.477
+capital-spending field said nineteen million for 2025 and the filing says two hundred and
+
+00:19:41.477 --> 00:19:46.366
+five. Every load-bearing number gets checked. Notice that every answer is a number plus
+
+00:19:46.366 --> 00:19:51.255
+the reason for it. That is what professional sounds like. Not confidence. Numbers with reasons.
+
+00:19:54.550 --> 00:19:59.199
+If you are asked to present, six slides, in this order. Posture: wait
+
+00:19:59.199 --> 00:20:03.847
+for proof, not a recommendation. The answer and the price: two ninety-two base, two
+
+00:20:03.847 --> 00:20:08.496
+thirty-six to three twenty-one bear to bull, shares near one eighty-three. The three judgments
+
+00:20:08.496 --> 00:20:13.145
+that carry the valuation, in operating language, each with its evidence: organic growth of
+
+00:20:13.145 --> 00:20:17.793
+one point eight, the cost ratio recovering from sixty-six and a half to sixty-four
+
+00:20:17.793 --> 00:20:22.442
+and a half, and a ten percent cost of equity against a measured range
+
+00:20:22.442 --> 00:20:27.090
+of eight to nine and a half. What moves it: the tornado and the
+
+00:20:27.090 --> 00:20:31.739
+rate-growth grid. What the price is paying for: the implied table. And what you
+
+00:20:31.739 --> 00:20:36.388
+are watching: the three triggers and the next two quarterly reports. Six slides, fifteen
+
+00:20:36.388 --> 00:20:41.036
+minutes, and every number on them is on a screen you have seen today.
+
+00:20:41.840 --> 00:20:46.626
+You will be challenged twice, every time, and you should welcome both. "Your
+
+00:20:46.626 --> 00:20:51.412
+terminal value is the whole answer." Yes. Eighty percent. Here is the grid. And
+
+00:20:51.412 --> 00:20:56.199
+here is the operating case that has to hold for that terminal value
+
+00:20:56.199 --> 00:21:00.985
+to be earned: seventeen percent gross margin, a sixty-four and a half percent cost
+
+00:21:00.985 --> 00:21:05.771
+ratio, two hundred and fifty million of capital spending, nine hundred and seventy-one million
+
+00:21:05.771 --> 00:21:10.557
+of operating income in 2030. If those are reasonable for a company that,
+
+00:21:10.557 --> 00:21:15.343
+as you saw in Video 1, earned eight sixty-one in 2025, so is the
+
+00:21:15.343 --> 00:21:20.130
+terminal value. If they are not, say which one, and we will rerun it
+
+00:21:20.130 --> 00:21:24.916
+together. "The market disagrees with you by a hundred and eight dollars." The
+
+00:21:24.916 --> 00:21:29.702
+market is a price, not an argument. Here are the single-assumption explanations of that
+
+00:21:29.702 --> 00:21:34.488
+price. Here is the one we think is wrong, the cost recovery, and
+
+00:21:34.488 --> 00:21:39.275
+here is the evidence that would change our mind: two quarters of the cost
+
+00:21:39.275 --> 00:21:44.061
+ratio. That is the whole method. Build it from the filings, label every judgment,
+
+00:21:44.061 --> 00:21:48.847
+break it on purpose, measure the rate, shock everything, ask what the price
+
+00:21:48.847 --> 00:21:53.633
+is paying for, draw three pictures, and stand behind a posture with numbers and
+
+00:21:53.633 --> 00:21:58.419
+reasons. Learning demonstration, not investment advice. Now go do it for your own company.

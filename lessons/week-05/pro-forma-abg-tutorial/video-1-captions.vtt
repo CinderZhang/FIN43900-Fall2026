@@ -1,0 +1,934 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.207
+Before we start. This is a learning demonstration, not investment advice. It values a real
+
+00:00:06.207 --> 00:00:12.415
+company, Asbury Automotive, for teaching only, from public filings, and nothing in it is a
+
+00:00:12.415 --> 00:00:18.622
+recommendation to buy or sell anything. The narration is my voice, synthesized with my consent.
+
+00:00:20.620 --> 00:00:25.429
+We are going to value a company the way it is done on
+
+00:00:25.429 --> 00:00:30.239
+a desk. The company is Asbury Automotive Group, ticker ABG, a publicly traded franchised
+
+00:00:30.239 --> 00:00:35.048
+car dealer. Three annual reports, the 10-Ks for 2023, 2024 and 2025, one half-year
+
+00:00:35.048 --> 00:00:39.858
+update, and a share price for orientation at the end. That is the whole
+
+00:00:39.858 --> 00:00:44.667
+kit. Here is what you will be able to do when we are done.
+
+00:00:44.667 --> 00:00:49.477
+You will be able to take the history out of those filings, decide what
+
+00:00:49.477 --> 00:00:54.286
+it does and does not tell you, write down one set of assumptions with
+
+00:00:54.286 --> 00:00:59.095
+a label on each one saying where it came from, project five years of
+
+00:00:59.095 --> 00:01:03.905
+income statement, balance sheet and cash flow that tie to each other, prove they
+
+00:01:03.905 --> 00:01:08.714
+tie with checks that can fail, and turn the cash flows into a value
+
+00:01:08.714 --> 00:01:13.524
+per share. That is the base case. One assumption set, one answer. Everything that
+
+00:01:13.524 --> 00:01:18.333
+follows in the second video, the what-ifs, the charts, the presentation, hangs off this.
+
+00:01:18.333 --> 00:01:23.143
+One rule before we start. Every number you see today comes from a filing
+
+00:01:23.143 --> 00:01:27.952
+or from arithmetic on a filing that you can see on the screen. When
+
+00:01:27.952 --> 00:01:32.761
+I use a judgment, I will say the word judgment. And a disclaimer, because
+
+00:01:32.761 --> 00:01:37.571
+we are using a real company: this is a learning demonstration, not investment advice.
+
+00:01:40.870 --> 00:01:45.390
+Seven lines, three years. Four from the income statement: revenue, gross profit, selling
+
+00:01:45.390 --> 00:01:49.910
+general and administrative expense, which everyone calls SG and A, and net income. Three
+
+00:01:49.910 --> 00:01:54.430
+from the balance sheet: inventory, property and equipment, and shareholders' equity. All in millions
+
+00:01:54.430 --> 00:01:58.951
+of dollars. Read across the revenue line. Fourteen point eight billion, seventeen point two,
+
+00:01:58.951 --> 00:02:03.471
+eighteen point zero. Read the net income line. Six hundred and two million, four
+
+00:02:03.471 --> 00:02:07.991
+hundred and thirty, four hundred and ninety-two. Revenue up more than twenty percent over
+
+00:02:07.991 --> 00:02:12.511
+two years, profit down. Hold that thought. Nothing in this grid is an estimate.
+
+00:02:12.511 --> 00:02:17.031
+The three accession numbers under the title are the filings' serial numbers at the
+
+00:02:17.031 --> 00:02:21.551
+SEC. The numbers were pulled through a data provider and every one was checked
+
+00:02:21.551 --> 00:02:26.072
+back to the 10-K; in a minute you will see why that check matters.
+
+00:02:26.072 --> 00:02:30.592
+Notice what is not here. No forecasts, no growth rate, no target price. We
+
+00:02:30.592 --> 00:02:35.112
+start from what the company actually reported, and we earn every assumption from it.
+
+00:02:38.410 --> 00:02:44.099
+Start with the most abused number in any forecast: growth. Reported revenue grew sixteen
+
+00:02:44.099 --> 00:02:49.788
+percent in 2024 and four point seven percent in 2025. If you put four
+
+00:02:49.788 --> 00:02:55.477
+point seven percent into a model and compound it, you have already made your first
+
+00:02:55.477 --> 00:03:01.166
+mistake. Look at the second line. In December 2023 Asbury bought the Koons dealership
+
+00:03:01.166 --> 00:03:06.854
+group. Koons contributed two point eight billion of revenue in 2024. That is nineteen percent
+
+00:03:06.854 --> 00:03:12.543
+of the prior year's revenue, more than the entire growth rate. In July 2025
+
+00:03:12.543 --> 00:03:18.232
+Asbury bought Herb Chambers, which contributed one point one six billion in 2025, six
+
+00:03:18.232 --> 00:03:23.921
+point seven percent of the prior year. Reported growth was bought. Now the line that
+
+00:03:23.921 --> 00:03:29.610
+matters, highlighted. The company discloses same-store revenue, the stores it owned in both years,
+
+00:03:29.610 --> 00:03:35.299
+split into new vehicles, used vehicles, parts and service, and finance and insurance. Add the
+
+00:03:35.299 --> 00:03:40.988
+four up for 2024 and 2025 and the stores Asbury already owned grew one
+
+00:03:40.988 --> 00:03:46.677
+point two percent. Not four point seven. One point two. That is the organic business.
+
+00:03:47.480 --> 00:03:53.192
+Two ratios run a car dealer. Gross margin, gross profit over revenue: eighteen point
+
+00:03:53.192 --> 00:03:58.904
+six percent, seventeen point two, seventeen point one. It fell and then stabilised. The company's
+
+00:03:58.904 --> 00:04:04.616
+own discussion tells you why: new-vehicle margins were unusually high in the shortage years
+
+00:04:04.616 --> 00:04:10.328
+and have come back down; that is how the company itself puts it. So the
+
+00:04:10.328 --> 00:04:16.041
+fall is not a trend to extrapolate; it is a one-time return to normal.
+
+00:04:16.041 --> 00:04:21.753
+The second ratio is the one you will not find in a textbook, and the
+
+00:04:21.753 --> 00:04:27.465
+one dealers actually manage: SG and A as a share of gross profit. It
+
+00:04:27.465 --> 00:04:33.177
+answers the question, what does it cost this company to earn a dollar of gross
+
+00:04:33.177 --> 00:04:38.889
+profit? Fifty-eight point seven cents, then sixty-four point one, then sixty-four point seven. That
+
+00:04:38.889 --> 00:04:44.601
+is the whole story of the falling net income. Revenue up, gross margin normal, and
+
+00:04:44.601 --> 00:04:50.313
+the cost of running the stores rose faster than the gross profit they produced.
+
+00:04:50.313 --> 00:04:56.025
+Part of that, how much we cannot measure from the filings, is buying and integrating
+
+00:04:56.025 --> 00:05:01.737
+two large groups in two years. How fast it comes back down is the
+
+00:05:01.737 --> 00:05:07.450
+single biggest judgment in this valuation, and we will say so when we make it.
+
+00:05:08.250 --> 00:05:13.529
+Now the balance-sheet habits. Inventory days, inventory over cost of sales times three sixty-five:
+
+00:05:13.529 --> 00:05:18.809
+fifty-four, fifty-one, fifty-two. Stable. A dealer carries about fifty-two days of vehicles. The next
+
+00:05:18.809 --> 00:05:24.088
+line is the one that makes a dealer different from every other company you
+
+00:05:24.088 --> 00:05:29.367
+will model. Dealers do not pay cash for the cars on the lot. They
+
+00:05:29.367 --> 00:05:34.646
+borrow against them, from the manufacturers' finance arms and from banks. Those inventory loans
+
+00:05:34.646 --> 00:05:39.926
+are called floor plan, and they cover eighty-six percent of inventory in 2024 and
+
+00:05:39.926 --> 00:05:45.205
+ninety-five percent in 2025. Two billion dollars of vehicles, funded by lenders who hold
+
+00:05:45.205 --> 00:05:50.484
+the cars as collateral. When inventory rises, the loan rises with it. We will
+
+00:05:50.484 --> 00:05:55.764
+model it exactly that way, and later I will show you what happens if
+
+00:05:55.764 --> 00:06:01.043
+you forget. Depreciation over property and equipment, roughly two point seven to two point
+
+00:06:01.043 --> 00:06:06.322
+nine percent. Steady. Now look at the two capital-spending lines together, because this is
+
+00:06:06.322 --> 00:06:11.601
+a trap that catches professionals. The 10-K says capital spending was one forty-two, three
+
+00:06:11.601 --> 00:06:16.881
+oh eight, two oh five million. The standardised field from a data provider says
+
+00:06:16.881 --> 00:06:22.160
+one forty-two, one forty-six, and nineteen. Nineteen million. For a company with three billion
+
+00:06:22.160 --> 00:06:27.439
+dollars of property. The provider's tag picked up the wrong line in 2025. If
+
+00:06:27.439 --> 00:06:32.719
+you had trusted it, your free cash flow would be nearly two hundred million
+
+00:06:32.719 --> 00:06:37.998
+too high. Every number from a data provider gets checked against the filing before
+
+00:06:37.998 --> 00:06:43.277
+it goes anywhere near a model. That check is the cheapest insurance you will
+
+00:06:43.277 --> 00:06:48.556
+ever buy. Impairment charges: one seventeen, one fifty, one forty-one. These are write-downs of
+
+00:06:48.556 --> 00:06:53.836
+franchise rights, the right to sell a brand in a territory, which a dealer
+
+00:06:53.836 --> 00:06:59.115
+carries as an asset. Non-cash, and they happen every year. A charge that recurs
+
+00:06:59.115 --> 00:07:04.394
+is not one-off, so we will carry it, but we will remember it is
+
+00:07:04.394 --> 00:07:09.674
+not cash. Effective tax rate: twenty-four point eight, twenty-five point two, twenty-five point seven
+
+00:07:09.674 --> 00:07:14.953
+percent. That is the twenty-one percent federal rate plus about four points of state
+
+00:07:14.953 --> 00:07:20.232
+tax, drifting up slightly. That is the history read. Now we turn it into assumptions.
+
+00:07:23.530 --> 00:07:28.039
+Stop on this screen for a minute, because it answers a question you
+
+00:07:28.039 --> 00:07:32.547
+will be asked in your first week at work: why is this in Python
+
+00:07:32.547 --> 00:07:37.056
+and not in a spreadsheet? Look at what is on the screen. Seven assumptions.
+
+00:07:37.056 --> 00:07:41.564
+Each one has a name you can read, growth, gross margin, tax rate, and
+
+00:07:41.564 --> 00:07:46.073
+next to each one, in the same line, the label and the reason: judgment,
+
+00:07:46.073 --> 00:07:50.581
+history, guidance, and why. In a spreadsheet that number lives in a cell called
+
+00:07:50.581 --> 00:07:55.090
+C7, and the reason lives in your memory, or nowhere. Four things follow from
+
+00:07:55.090 --> 00:07:59.598
+that, and you will see all four today. First, when you change one number,
+
+00:07:59.598 --> 00:08:04.107
+everything downstream reruns, every statement, every check, the value, and if something breaks the
+
+00:08:04.107 --> 00:08:08.615
+model stops and tells you which year and by how much. A spreadsheet recalculates
+
+00:08:08.615 --> 00:08:13.124
+silently. Second, this model has a test suite: forty-three tests that run in two
+
+00:08:13.124 --> 00:08:17.632
+seconds and prove the arithmetic still ties. Nobody tests a spreadsheet. Third, every change
+
+00:08:17.632 --> 00:08:22.141
+to an assumption is a line in a history you can read: who moved
+
+00:08:22.141 --> 00:08:26.650
+the growth rate, when, and from what. Fourth, and this is the part that
+
+00:08:26.650 --> 00:08:31.158
+changes what the job is: you do not write most of this code. You
+
+00:08:31.158 --> 00:08:35.667
+describe the change in a sentence, your AI partner edits the model, and your
+
+00:08:35.667 --> 00:08:40.175
+job becomes judging whether the assumption is right. The skill that pays is the
+
+00:08:40.175 --> 00:08:44.684
+judgment, not the formula. And there is a door that opens from here. These
+
+00:08:44.684 --> 00:08:49.192
+same lines, with the assumptions behind a few sliders, become a small application. A
+
+00:08:49.192 --> 00:08:53.701
+colleague moves gross margin, watches the value move, and asks a better question than
+
+00:08:53.701 --> 00:08:58.209
+they would from a PDF. A student who can hand a portfolio manager a
+
+00:08:58.209 --> 00:09:02.718
+working, personalised valuation tool is doing something a spreadsheet builder cannot, and in my
+
+00:09:02.718 --> 00:09:07.226
+experience it is a thing people pay for. You will still be asked for
+
+00:09:07.226 --> 00:09:11.735
+the spreadsheet, and you will export one. But the thinking will have happened here.
+
+00:09:12.530 --> 00:09:18.247
+Here is the discipline. Every assumption is a named number, set in one
+
+00:09:18.247 --> 00:09:23.965
+place, with a label: history, guidance, or judgment. History means the number is a
+
+00:09:23.965 --> 00:09:29.682
+ratio we just computed and we are carrying it. Guidance means management said it.
+
+00:09:29.682 --> 00:09:35.400
+Judgment means we chose it, and we owe you the reason. Organic growth, one
+
+00:09:35.400 --> 00:09:41.117
+point eight percent a year. Judgment. The stores already owned grew one point two;
+
+00:09:41.117 --> 00:09:46.835
+the industry grows with the economy at low single digits; we sit a little
+
+00:09:46.835 --> 00:09:52.552
+above the same-store figure and well below the bought four point seven. Acquisitions are
+
+00:09:52.552 --> 00:09:58.270
+excluded; if Asbury buys another group, that is a separate decision with its own
+
+00:09:58.270 --> 00:10:03.987
+price tag. Gross margin, seventeen point zero five percent, essentially the 2025 margin,
+
+00:10:03.987 --> 00:10:09.705
+held flat. I label that judgment, not history, because holding it flat rather than
+
+00:10:09.705 --> 00:10:15.422
+extrapolating the decline is a choice. The reason for the choice is the one
+
+00:10:15.422 --> 00:10:21.140
+we just read: the shortage premium is gone. SG and A over gross profit.
+
+00:10:21.140 --> 00:10:26.857
+Judgment, and the big one. Sixty-six and a half percent in 2026, up from
+
+00:10:26.857 --> 00:10:32.575
+sixty-four point seven, because Herb Chambers was bought halfway through 2025 and the first
+
+00:10:32.575 --> 00:10:38.292
+full year of integration costs money. Then sixty-five and a half, then sixty-four and
+
+00:10:38.292 --> 00:10:44.009
+a half for the last three years. A recovery back near the 2024 level,
+
+00:10:44.009 --> 00:10:49.727
+not back to the fifty-nine percent of 2023. If you believe the cost savings
+
+00:10:49.727 --> 00:10:55.444
+from combining the groups come faster, the second video shows you exactly what
+
+00:10:55.444 --> 00:11:01.162
+that is worth. Depreciation, two point six eight percent of the opening property balance.
+
+00:11:01.162 --> 00:11:06.879
+History. Impairment, one hundred and twenty million a year. Judgment: below the three-year average
+
+00:11:06.879 --> 00:11:12.597
+of one thirty-six, a recurring non-cash charge we neither zero out nor inflate. Capital
+
+00:11:12.597 --> 00:11:18.314
+spending, two hundred and fifty million a year. Guidance: management's figure for 2026. Carrying
+
+00:11:18.314 --> 00:11:24.032
+it for five years is our judgment. Note the caveat on screen: the first
+
+00:11:24.032 --> 00:11:29.749
+half of 2026 ran hotter, around three thirty-nine annualised. That challenges the assumption; it
+
+00:11:29.749 --> 00:11:35.467
+does not yet replace it. Tax, twenty-five and a half percent. Judgment: between the
+
+00:11:35.467 --> 00:11:41.184
+three-year average of twenty-five point two and the 2025 rate of twenty-five point seven.
+
+00:11:41.980 --> 00:11:47.241
+Balance sheet and financing. Inventory days, fifty-two point two, history. Floor plan at ninety-five
+
+00:11:47.241 --> 00:11:52.502
+percent of inventory, history. Other working capital moves at zero point eight percent of
+
+00:11:52.502 --> 00:11:57.763
+the change in revenue, judgment, and it is tiny. Minimum cash, twenty-five million: this
+
+00:11:57.763 --> 00:12:03.024
+company runs on almost no cash, forty million at the end of 2025, because the
+
+00:12:03.024 --> 00:12:08.285
+floor plan does the funding. If cash would fall below twenty-five, the model draws
+
+00:12:08.285 --> 00:12:13.546
+a revolving credit line, the revolver, capped at eight hundred and fifty million at
+
+00:12:13.546 --> 00:12:18.807
+six percent. That is a safety net; in the base case it is never touched.
+
+00:12:19.610 --> 00:12:24.003
+Debt repayment, one hundred and fifty million a year, judgment. Share buyback,
+
+00:12:24.003 --> 00:12:28.396
+one hundred and fifty million a year, judgment, against actuals of two sixty,
+
+00:12:28.396 --> 00:12:32.790
+one eighty-five and one hundred over the three years. Interest rates: four point
+
+00:12:32.790 --> 00:12:37.183
+six seven percent on the floor plan and five point four four on
+
+00:12:37.183 --> 00:12:41.576
+the term debt, which is 2025 interest expense divided by the opening balances.
+
+00:12:42.380 --> 00:12:47.502
+Two valuation numbers. Cost of equity, ten percent: the return the owners of this
+
+00:12:47.502 --> 00:12:52.625
+stock require. It is a round number, a little above what an average stock
+
+00:12:52.625 --> 00:12:57.747
+in the market earns today, and I am using it deliberately as a starting
+
+00:12:57.747 --> 00:13:02.869
+point. In the second video we measure Asbury's beta, how much the stock moves when
+
+00:13:02.869 --> 00:13:07.992
+the market moves, and put the real number in. Terminal growth, two and a
+
+00:13:07.992 --> 00:13:13.114
+half percent: how fast the cash flows grow after 2030, forever. It must stay
+
+00:13:13.114 --> 00:13:18.236
+below the cost of equity, and I will show you why. And seventeen point nine
+
+00:13:18.236 --> 00:13:23.359
+five million shares: the latest filed count, from the June 2026 quarterly balance sheet,
+
+00:13:23.359 --> 00:13:28.481
+forty point one million issued less twenty-two point one five million held in treasury.
+
+00:13:28.481 --> 00:13:33.603
+A year-end count would be a year stale; the company has been buying back stock.
+
+00:13:34.400 --> 00:13:38.100
+Nineteen assumptions. Six from history, one from guidance, twelve judgments, plus one
+
+00:13:38.100 --> 00:13:41.799
+fact, the share count. You can see all of them on three
+
+00:13:41.799 --> 00:13:45.499
+short screens. That is the standard: nothing buried in a cell somewhere.
+
+00:13:48.800 --> 00:13:53.293
+Now we build 2026. The function on screen is the entire model: about
+
+00:13:53.293 --> 00:13:57.786
+forty lines, and every line is one statement line. Read it the way
+
+00:13:57.786 --> 00:14:02.279
+you would read a spreadsheet column. In a spreadsheet, this is three tabs
+
+00:14:02.279 --> 00:14:06.772
+and a few hundred cells, and the only way to know what a
+
+00:14:06.772 --> 00:14:11.265
+cell does is to click on it. Here you can read the whole
+
+00:14:11.265 --> 00:14:15.758
+business logic top to bottom in one minute, and so can the colleague
+
+00:14:15.758 --> 00:14:20.251
+who reviews your work, and so can the AI that helps you change
+
+00:14:20.251 --> 00:14:24.744
+it. I want you to see the order, because the order is the method.
+
+00:14:25.540 --> 00:14:31.047
+The income statement. Revenue: last year's seventeen thousand nine hundred and ninety-nine times one
+
+00:14:31.047 --> 00:14:36.554
+point zero one eight, eighteen thousand three hundred and twenty-three. Gross profit at seventeen
+
+00:14:36.554 --> 00:14:42.061
+point zero five percent, three thousand one hundred and twenty-four. SG and A at
+
+00:14:42.061 --> 00:14:47.568
+sixty-six and a half percent of that, two thousand and seventy-eight. Depreciation, opening property
+
+00:14:47.568 --> 00:14:53.075
+times two point six eight percent, eighty-two. Impairment, one twenty. Operating income, eight forty-four,
+
+00:14:53.075 --> 00:14:58.582
+down from eight sixty-one, because we made costs go up first. Interest is where
+
+00:14:58.582 --> 00:15:04.089
+the floor plan shows up again. Floor plan interest is the opening floor plan
+
+00:15:04.089 --> 00:15:09.596
+balance, two thousand and twenty-seven, times four point six seven percent: ninety-five million. Term
+
+00:15:09.596 --> 00:15:15.103
+debt interest is the opening debt, three thousand five hundred and seventy-two, times five
+
+00:15:15.103 --> 00:15:20.610
+point four four: one ninety-four. Pretax income five fifty-five. The 2025 figure of six
+
+00:15:20.610 --> 00:15:26.117
+sixty-two included an eighty-million gain on selling dealerships; we do not forecast gains. Tax
+
+00:15:26.117 --> 00:15:31.624
+at twenty-five and a half percent, and net income four hundred and fourteen million.
+
+00:15:32.420 --> 00:15:37.780
+The balance sheet. Inventory is cost of sales times fifty-two point two days over
+
+00:15:37.780 --> 00:15:43.140
+three sixty-five: two thousand one hundred and seventy-five. Property is opening plus two-fifty of
+
+00:15:43.140 --> 00:15:48.500
+spending less depreciation: three thousand two hundred and thirty-eight. Other assets fall by the
+
+00:15:48.500 --> 00:15:53.860
+impairment, because a write-down shrinks the asset it writes down. Floor plan is inventory
+
+00:15:53.860 --> 00:15:59.220
+times ninety-five percent, two thousand and sixty-four. Term debt is opening less one fifty,
+
+00:15:59.220 --> 00:16:04.580
+three thousand four hundred and twenty-two. Other liabilities held flat. Equity is opening plus
+
+00:16:04.580 --> 00:16:09.940
+net income less the buyback, four thousand one hundred and fifty-five. And cash, highlighted,
+
+00:16:09.940 --> 00:16:15.300
+one hundred and one point eight. Where did it come from? From the cash
+
+00:16:15.300 --> 00:16:20.659
+flow statement, which we build next. Assets eleven thousand seven hundred and sixty-nine. Liabilities
+
+00:16:20.659 --> 00:16:26.019
+and equity eleven thousand seven hundred and sixty-nine. Difference zero point zero. The 2025
+
+00:16:26.019 --> 00:16:31.379
+column shows minus zero point two, which is the company's own rounding in the
+
+00:16:31.379 --> 00:16:36.739
+filing, and we carry it so you can see we did not hide it.
+
+00:16:37.540 --> 00:16:42.386
+The cash flow statement, built as the flow to the owners. Start with
+
+00:16:42.386 --> 00:16:47.233
+net income, four fourteen. Add back the two charges that were not cash: depreciation
+
+00:16:47.233 --> 00:16:52.079
+eighty-two, impairment one twenty. Take out capital spending, two fifty. Take out the
+
+00:16:52.079 --> 00:16:56.925
+cash tied up in more inventory, thirty-nine, and in other working capital, two point
+
+00:16:56.925 --> 00:17:01.772
+six. Add back the increase in the floor plan, thirty-seven, because the lender
+
+00:17:01.772 --> 00:17:06.618
+funded ninety-five percent of that new inventory. Take out the debt repayment, one fifty.
+
+00:17:06.618 --> 00:17:11.464
+What is left is free cash flow to equity, two hundred and eleven
+
+00:17:11.464 --> 00:17:16.311
+million. That is the cash the business generates for its owners after the business
+
+00:17:16.311 --> 00:17:21.157
+has been fed and the lenders have been paid. That is the number
+
+00:17:21.157 --> 00:17:26.003
+we value. The buyback below it is how the owners take the cash out;
+
+00:17:26.003 --> 00:17:30.850
+it is a distribution, not the cash flow itself, so it does not
+
+00:17:30.850 --> 00:17:35.696
+change the value. Cash rises by sixty-one: two eleven in, one fifty out. Forty
+
+00:17:35.696 --> 00:17:40.542
+point four plus sixty-one is one hundred and one point eight, the cash
+
+00:17:40.542 --> 00:17:45.389
+on the balance sheet. Three statements, one number, nothing forced to make it balance.
+
+00:17:48.690 --> 00:17:53.845
+Five checks, all reading OK with a gap of zero. Assets equal liabilities plus
+
+00:17:53.845 --> 00:17:59.000
+equity. Cash on the balance sheet equals cash from the cash flow statement. Property
+
+00:17:59.000 --> 00:18:04.154
+rolls forward. Debt rolls forward. Cash stays above the floor. A check that cannot
+
+00:18:04.154 --> 00:18:09.309
+fail is decoration. So let me make two of them fail, on purpose. But
+
+00:18:09.309 --> 00:18:14.464
+first, the rule, because I am not going to assume you will remember to look.
+
+00:18:15.260 --> 00:18:19.393
+This function is six lines and it is the most important six lines
+
+00:18:19.393 --> 00:18:23.526
+in the model. For every projected year it asks two questions: do assets equal
+
+00:18:23.526 --> 00:18:27.659
+liabilities plus equity, and is cash at or above the floor? If either
+
+00:18:27.659 --> 00:18:31.793
+answer is no, it does not print a warning. It stops the model. In
+
+00:18:31.793 --> 00:18:35.926
+a moment you will see the valuation cell call it first, which means
+
+00:18:35.926 --> 00:18:40.059
+the discounted cash flow cannot run on a balance sheet that does not balance.
+
+00:18:40.860 --> 00:18:45.169
+Here is the rule, and it applies to every model you build in
+
+00:18:45.169 --> 00:18:49.477
+this course. One: every projected year, assets minus liabilities minus equity equals zero, printed,
+
+00:18:49.477 --> 00:18:53.786
+not assumed. Two: cash on the balance sheet equals opening cash plus the cash
+
+00:18:53.786 --> 00:18:58.094
+flow statement's net change. Three: cash stays at or above the floor, or the
+
+00:18:58.094 --> 00:19:02.403
+revolver line shows the draw. Four: the check block sits under every projection you
+
+00:19:02.403 --> 00:19:06.712
+hand in, and your valuation cell refuses to run without it. A model that
+
+00:19:06.712 --> 00:19:11.020
+does not show its checks has not been reviewed, by you or by anyone
+
+00:19:11.020 --> 00:19:15.329
+else. When I open your work, the check block is the first thing I
+
+00:19:15.329 --> 00:19:19.637
+look for. If it is missing, I stop reading, exactly as the model does.
+
+00:19:22.940 --> 00:19:27.347
+Break one. The most common spreadsheet error in the world: cash on the
+
+00:19:27.347 --> 00:19:31.754
+balance sheet typed as a number instead of linked to the cash flow statement.
+
+00:19:31.754 --> 00:19:36.161
+Leave cash at last year's forty point four. First thing that happens: the
+
+00:19:36.161 --> 00:19:40.569
+model refuses. Read the red line: 2026 does not balance, assets minus liabilities minus
+
+00:19:40.569 --> 00:19:44.976
+equity is minus sixty-one point four. Now the grid. The cash flow statement
+
+00:19:44.976 --> 00:19:49.383
+says one hundred and one point eight; the balance sheet says forty point four;
+
+00:19:49.383 --> 00:19:53.790
+the gap is minus sixty-one point four. Look at the size of that
+
+00:19:53.790 --> 00:19:58.197
+gap. It is exactly the year's change in cash with the sign flipped. That
+
+00:19:58.197 --> 00:20:02.604
+is the fingerprint of an unlinked cash line. When your balance check fails
+
+00:20:02.604 --> 00:20:07.011
+by an amount that looks like a cash flow, you know where to look.
+
+00:20:07.810 --> 00:20:13.048
+Break two, and this one is specific to this industry. Suppose you took
+
+00:20:13.048 --> 00:20:18.287
+a template built for a manufacturer, which has no inventory-loan line, and ran Asbury
+
+00:20:18.287 --> 00:20:23.525
+through it. The two-billion-dollar floor plan balance has to be repaid from cash, and
+
+00:20:23.525 --> 00:20:28.764
+nothing replaces it. The revolver draws its full eight hundred and fifty million and
+
+00:20:28.764 --> 00:20:34.002
+it is not enough. Cash ends the year at minus one point one billion.
+
+00:20:34.800 --> 00:20:40.164
+Now look at the bottom line. The balance sheet still balances. Zero point zero.
+
+00:20:40.164 --> 00:20:45.528
+A model can tie perfectly and still be wrong. That is why the cash-floor
+
+00:20:45.528 --> 00:20:50.891
+check exists alongside the balance check. Negative cash is not a forecast; it is
+
+00:20:50.891 --> 00:20:56.255
+a model telling you that you left out how this company actually finances itself.
+
+00:20:59.560 --> 00:21:04.860
+Same function, run five times, each year starting from the balance sheet the
+
+00:21:04.860 --> 00:21:10.160
+previous year left behind. Revenue grows from eighteen billion to nineteen point seven by
+
+00:21:10.160 --> 00:21:15.460
+2030. SG and A goes up in 2026 and then barely moves for
+
+00:21:15.460 --> 00:21:20.760
+two years while gross profit grows; that is the recovery in the cost ratio
+
+00:21:20.760 --> 00:21:26.060
+doing its work. Operating income climbs from eight forty-four to nine seventy-one. Interest
+
+00:21:26.060 --> 00:21:31.360
+falls every year, from two eighty-nine to two sixty-three, because we are repaying one
+
+00:21:31.360 --> 00:21:36.660
+fifty of term debt a year. Net income: four fourteen, four fifty-three, four
+
+00:21:36.660 --> 00:21:41.960
+ninety-three, five ten, five twenty-seven. By 2028 we are back to the 2025 level.
+
+00:21:42.760 --> 00:21:48.439
+The balance sheet. Cash, the result, builds from one hundred to seven hundred and
+
+00:21:48.439 --> 00:21:54.118
+twenty million by 2030, because the business generates more than the one fifty of repayment
+
+00:21:54.118 --> 00:21:59.797
+and one fifty of buyback we assumed. Term debt falls from three thousand six hundred
+
+00:21:59.797 --> 00:22:05.476
+to two thousand eight hundred. The revolver stays at zero. Equity grows with retained
+
+00:22:05.476 --> 00:22:11.155
+earnings. And the last line, highlighted: assets less liabilities less equity, zero in every projected
+
+00:22:11.155 --> 00:22:16.834
+year. The minus zero point two in the 2025 column is the filing's own rounding.
+
+00:22:16.834 --> 00:22:22.513
+A balance sheet that does not balance is not a forecast; it is a bug.
+
+00:22:23.310 --> 00:22:29.007
+Free cash flow to equity: two eleven, two fifty-five, three hundred, three twenty-one, three forty-two.
+
+00:22:29.007 --> 00:22:34.703
+It grows faster than net income because interest falls as debt is repaid. Working capital
+
+00:22:34.703 --> 00:22:40.400
+costs almost nothing, under five million a year, because the floor plan funds the inventory growth.
+
+00:22:41.200 --> 00:22:47.562
+And below it, twenty-five checks, all OK, all zero. Now, and only now, we are allowed to value it.
+
+00:22:53.360 --> 00:22:58.176
+The first line of the valuation cell is the check. Balanced, five years.
+
+00:22:58.176 --> 00:23:02.993
+Only now does the arithmetic run. A dollar in 2030 is worth less
+
+00:23:02.993 --> 00:23:07.809
+than a dollar today, and the cost of equity is the exchange rate.
+
+00:23:07.809 --> 00:23:12.626
+Ten percent means a dollar one year out is worth ninety-one cents today, a
+
+00:23:12.626 --> 00:23:17.442
+dollar five years out is worth sixty-two cents. Multiply each year's cash flow
+
+00:23:17.442 --> 00:23:22.259
+by its factor. Two eleven becomes one ninety-two; three forty-two in 2030 becomes
+
+00:23:22.259 --> 00:23:27.075
+two twelve. The five present values add up to one thousand and sixty million.
+
+00:23:27.880 --> 00:23:32.289
+But the company does not stop in 2030. Everything after 2030 is the
+
+00:23:32.289 --> 00:23:36.699
+terminal value, and it is built in three steps. First, the cash flow in
+
+00:23:36.699 --> 00:23:41.108
+2031. Take the 2030 free cash flow of three forty-two. Add back the one
+
+00:23:41.108 --> 00:23:45.518
+fifty of debt repayment, because we assumed repayment for five years, not forever; after
+
+00:23:45.518 --> 00:23:49.927
+2030 that cash stays with the owners. Grow it by two and a half
+
+00:23:49.927 --> 00:23:54.337
+percent: five hundred and five million. Second, turn a growing stream into one value:
+
+00:23:54.337 --> 00:23:58.746
+five oh five divided by ten percent minus two and a half percent, that
+
+00:23:58.746 --> 00:24:03.156
+is divided by seven and a half percent, gives six thousand seven hundred and
+
+00:24:03.156 --> 00:24:07.565
+twenty-eight million. That is what the business is worth at the end of 2030.
+
+00:24:07.565 --> 00:24:11.975
+Third, bring it back to today at the five-year factor, zero point six two:
+
+00:24:11.975 --> 00:24:16.384
+four thousand one hundred and seventy-seven. Add the two pieces. One thousand and sixty
+
+00:24:16.384 --> 00:24:20.794
+from the five years we modelled, four thousand one hundred and seventy-seven from everything
+
+00:24:20.794 --> 00:24:25.203
+after. Equity value five thousand two hundred and thirty-seven million. Divide by seventeen point
+
+00:24:25.203 --> 00:24:29.613
+nine five million shares: two hundred and ninety-one dollars and seventy-five cents a share.
+
+00:24:29.613 --> 00:24:34.022
+Now read the line above it. Eighty percent of that value sits after 2030.
+
+00:24:34.022 --> 00:24:38.432
+Eighty percent depends on two numbers we called judgment: ten percent and two and
+
+00:24:38.432 --> 00:24:42.841
+a half percent. That is not a flaw in this model; it is true
+
+00:24:42.841 --> 00:24:47.250
+of every discounted cash flow of a company that keeps operating. It is why
+
+00:24:47.250 --> 00:24:51.660
+the second video spends a long time on exactly those two numbers, and why
+
+00:24:51.660 --> 00:24:56.069
+nobody who understands this method quotes a single price without a range around it.
+
+00:24:59.370 --> 00:25:03.882
+One more break, because you will see this mistake in real models. Push
+
+00:25:03.882 --> 00:25:08.395
+terminal growth up to ten percent, equal to the cost of equity. The formula
+
+00:25:08.395 --> 00:25:12.907
+divides by zero and refuses. Good. Push it to eleven percent, above the cost
+
+00:25:12.907 --> 00:25:17.420
+of equity, and the formula happily prints a negative company. The arithmetic ran; the
+
+00:25:17.420 --> 00:25:21.932
+answer is meaningless. Growth forever above the return investors demand is not a valuation,
+
+00:25:21.932 --> 00:25:26.444
+it is a contradiction, and a model should refuse it rather than print it.
+
+00:25:29.740 --> 00:25:34.717
+Here is where we stand. Three filings. Nineteen assumptions, each labelled. Five years
+
+00:25:34.717 --> 00:25:39.695
+of statements that tie, with checks that can fail, that did fail when we
+
+00:25:39.695 --> 00:25:44.672
+broke them, and that the model enforces before it will value anything. Free
+
+00:25:44.672 --> 00:25:49.649
+cash flow to equity, discounted at ten percent, growing at two and a half
+
+00:25:49.649 --> 00:25:54.626
+after 2030. Two hundred and ninety-one dollars and seventy-five cents a share, in the
+
+00:25:54.626 --> 00:25:59.604
+base case. For orientation, and only for orientation: the shares traded near one
+
+00:25:59.604 --> 00:26:04.581
+hundred and eighty-three dollars in mid-September 2026. That is a dated marker, not a
+
+00:26:04.581 --> 00:26:09.558
+model output, and the gap between the two is not a recommendation. It is
+
+00:26:09.558 --> 00:26:14.535
+a question. Which of our nineteen assumptions would have to be wrong, and
+
+00:26:14.535 --> 00:26:19.513
+by how much, for one eighty-three to be right? The share count is the
+
+00:26:19.513 --> 00:26:24.490
+same on both sides of that comparison, so the gap is real, not an
+
+00:26:24.490 --> 00:26:29.467
+artefact of dates. Answering that question properly is the second video: the real
+
+00:26:29.467 --> 00:26:34.444
+beta and cost of equity, the operating what-ifs, the pictures that show the range,
+
+00:26:34.444 --> 00:26:39.422
+and how you put it in front of colleagues who will push back. The
+
+00:26:39.422 --> 00:26:44.399
+last line on the screen: this notebook agrees to the cent with the
+
+00:26:44.399 --> 00:26:49.376
+course's full model, which has forty-three tests behind it. Everything you saw is reproducible
+
+00:26:49.376 --> 00:26:54.354
+from the filings. Learning demonstration. Not investment advice. See you in the second video.
