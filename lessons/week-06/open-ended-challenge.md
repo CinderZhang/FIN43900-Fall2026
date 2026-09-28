@@ -1,29 +1,14 @@
-# Optional Open-Ended Challenge — The Rate, Measured
+# Further Practice — Explain a Third Driver
 
-**Ungraded. Never collected. Nobody reads this.** The in-room floors this week were Tuesday's ABG
-shock table with your locked predictions reconciled, and Thursday's page, eight answers and the
-sceptic's questions. This page is what to do with the rest of the week if you want to go further.
+**Ungraded; not collected.** The completion floors live in
+[Lab 11](lab-11-proforma-what-if.md) and [Lab 12](lab-12-proforma-present.md).
 
-## Measure your company's beta
+1. Choose another operating input already in your own pro-forma. Explain how it reaches
+   operating profit and cash flow before running it.
+2. Justify its lower and higher values using your existing company sources, or label your
+   range as judgment. Keep the same base and output definitions.
+3. Use your sensitivity function, restore the base and check the accounting.
+4. Compare its output span with the two drivers you already studied. Explain how the range
+   affects your conclusion and what evidence would improve it.
 
-Send this to your AI partner:
-
-> Pull sixty monthly closing prices for my company and for SPY, compute monthly returns, and
-> regress mine on the market's: slope, standard error, R-squared. Then compute the cost of equity
-> with a 5% risk-free rate and a 4.42% equity risk premium, for the observed beta, the Blume
-> adjusted beta and a beta of one.
-
-Rerun your model at each rate. Write the sentence the video uses: the statements did not change;
-the discount rate did. Ask your AI where the closing prices came from and whether they are
-split-adjusted; if it cannot say, the beta is not yet a number.
-
-## The terminal value taken apart
-
-Ask for the value under three terminal debt policies — debt held flat, debt growing with the firm,
-and repayment continuing — and for terminal growth at zero and at minus one percent. Which of these
-is closest to what today's price implies for your company?
-
-## Build the panel properly
-
-Turn the Lab 12 slider request into a small app your partner can open without you. If they can move
-an assumption and read the value in under a minute, you have built the Project 1 demo.
+Keep signed cash flows. Include value only when your existing valuation supports it.

@@ -38,6 +38,14 @@ in an afternoon. The two hours would have produced two videos. Learning to work 
 me, and the lesson is the one you will meet too: the first time is slow, because you are building the
 process, not the product. The second time the process is the asset.
 
+## Week 6 focus
+
+For the current labs, use the sensitivity-analysis examples to understand changes in one
+input at a time. The [Week 6 preparation](../week-06/student-prework.md) and
+[written sensitivity example](../week-06/student-handout.md) define the preparation.
+Both labs use your own company’s pro-forma; the other topics in the recording are background,
+not additional lab requirements.
+
 ## What to do with this
 
 Do it for your own company. Build the model with your AI partner. Label every assumption: history,

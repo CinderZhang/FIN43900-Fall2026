@@ -1,113 +1,114 @@
-<!-- AUTHORED HOME. Built under the 2026-09-06 rulings in OWNER-DECISION-GATES.md and Gate 7
-     (two full weeks of building; practise changing and researching assumptions; the Locked
-     Changed-Input Record is practised here before Project 1). -->
+<!-- AUTHORED HOME. Scope: OWNER-DECISION-GATES.md, Week 6 sensitivity ruling, 2026-09-28. -->
 
-# Lab 11 — Pro-Forma What-If: Shocks, a Named Case, and the Locked Prediction
+# Lab 11 — Pro-Forma Sensitivity: Find Your Company's Drivers
 
-**One thing today: rerun the model under changed assumptions, with a locked prediction written before every change.**
+**One thing today: find which inputs move your own pro-forma's results, and by how much.**
 
-**Category:** Tuesday completion checkout, **25 or 0**.
+<!-- Category scale generated from SIMPLE-SYLLABUS-COMPONENTS.md; category consistency checked by lesson_quality_audit.py. -->
+**Category:** Tuesday completion checkout, **25 or 0**. Dates and points: Brightspace and the course schedule.
 
-
-**You arrive with:** your company's pro-forma from Lab 10 · `proforma.py` for ABG · Part 2 watched ·
-your two written predictions · a new partner.
+**You arrive with:** your company's working pro-forma from Lab 10, its assumption table,
+and the same AI chat. Read the [worked sensitivity example](student-handout.md) before class.
 
 ## Open your workspace
 
-1. **VS Code → File → Open Recent** → your Course/Work Folder.
-2. **Terminal → New Terminal.**
-3. Run your pro-forma. *Expect:* Lab 10's values. If not, debug with your AI until they match.
+1. **VS Code → File → Open Recent** → your Course/Work Folder; **Terminal → New Terminal**.
+2. Run your company model using the command from Lab 10. Save its base inputs and visible output.
+   *Expect:* the same forecast and passing accounting checks as your last run.
+3. With your partner, name the input you expect to matter most and explain why. Write down
+   any gap in your understanding before asking AI. *Expect:* your prediction, not AI's ranking.
 
-**Something not working?** Debug with your AI: paste the exact command and the exact error text.
+**Something not working?** Debug with your AI: paste the exact command and exact error text.
 
 ## D — the question, the same for everyone
 
-> **Which assumptions carry the value, by how much, and what would have to be true for today's
-price to be right?**
+> **Which assumptions drive my company's forecast and value, and what explains their effects?**
 
-Paste it into your chat. Today you practise on ABG first, then run your own company.
+Paste this into your resumed chat. Work on your own company throughout.
 
-**Exchange predictions first** (five minutes, no screen): read your partner your two predictions —
-which assumptions move value most, and which way. Your partner writes them down. Swap. Neither of
-you runs anything until both are written. That written line is the Locked Changed-Input Record;
-Project 1 asks for it.
+## R — choose the inputs and the comparison
 
-## R — the shocks and the case
+1. Choose **two operating drivers already in your model**: for example, revenue growth and
+   operating margin, or a company-specific volume, price, cost, or reinvestment driver.
+   Choose independent inputs from your assumption table, not calculated statement totals.
+   *Expect:* inputs you can locate and explain, not copied ABG assumptions.
+2. For each driver, record its base, lower and higher values, units, affected forecast years,
+   and the reason for the range. For a multi-year path, list the values by year or specify
+   the same percentage-point shift to each affected year. Use your company's history or a labelled judgment.
+   A percentage point is different from a percent change; money uses your model's currency
+   and scale. *Expect:* a range a partner can reproduce.
+3. Use the same outputs for every run: **final-year operating profit, final-year free cash
+   flow, and value per share if your model supports a defensible valuation**. State FCFF or
+   FCFE consistently with your model. *Expect:* comparable results with units.
 
-| Shock, one at a time | Worse | Better |
-|---|---|---|
-| Gross margin | −1 point | +1 point |
-| Capital spending | +50 a year | −50 a year |
-| Organic growth | −1 point | +1 point |
-| SG&A ÷ gross profit, whole path | +1 point | −1 point |
-| Term-debt interest rate | +1 point | −1 point |
-| Floor-plan (or your company's line) rate | +1 point | −1 point |
-| Impairment | +40 a year | −40 a year |
-| Inventory days | +5 | −5 |
+If your cash flow is negative or valuation is unresolved, keep the signed cash flows and
+analyze operating profit and free cash flow. Mark value per share unavailable and explain why;
+do not discard negative years or invent a terminal value. The same sensitivity task applies.
 
-Named downside case, all at once: margin −1, growth −1, cost ratio +1, floor-plan rate +1.
+Before running a change, close AI and save one prediction with a timestamp or Git commit:
+input old → new with units, expected output direction and rough size, and why. This is your
+Locked Changed-Input Record. Your partner reads it before you run.
 
-## I — one request that reruns the model
+## I — add sensitivity analysis to your own model
 
-Send this to your chat, word for word:
+Send this request with your model and the input ranges available in the resumed chat:
 
-> Add to my pro-forma a function that reruns the whole model with one or more assumptions
-> changed and returns value per share. Use it to print: a table of the shocks I paste below, worse
-> and better side by side with the swing; the value under a named downside case with several
-> assumptions changed together, beside the value you would get by adding the single shocks;
-> and, holding everything else fixed, the cost of equity, the gross margin and the capital spending
-> that would each make the value equal a share price I give you, found by bisection over wide
-> brackets (cost of equity 5% to 30%; gross margin 5% to 30%; capital spending 0 to 1,000). Keep the
-> balance check running on every rerun and refuse any rerun that does not balance.
+> Add one-at-a-time sensitivity analysis to my existing company pro-forma. Preserve a separate
+> base input set, with a fresh independent copy for every run. For each of my two drivers,
+> rerun the entire linked model at its lower,
+> base and higher values, changing only that driver in the specified years. Reset all other
+> independent assumptions to base before every run; let linked accounting quantities
+> recalculate. Show actual input values and units, final-year operating profit, final-year
+> free cash flow with its FCFF or FCFE label, and value per share only if the existing
+> valuation is valid. Report signed changes from base in output units and each output span
+> (maximum minus minimum across valid lower/base/higher results). Retain the statement details
+> needed to trace a selected result. Keep the accounting
+> checks visible and flag invalid runs instead of ranking them. If valuation is unavailable,
+> retain signed cash flows and explain the limitation. Restore the base and rerun it at the
+> end. Do not generate company data, choose new ranges, or write my interpretation for me.
 
-Paste the shock table and the downside case under it. Save the returned file in your open folder.
-Run it on ABG first. *Expect:* a shock table, the named case beside the sum of shocks, and three
-price-implied values.
+Keep your working Lab 10 model. Save the added analysis in your open folder and run it from the terminal.
+*Expect:* your company's lower/base/higher results and a restored base that matches the first run.
+While AI works, explain your predicted input → statement → output link to your partner.
 
-## V — prove it on the ABG known answer (price 183.29)
+## V — check the result
 
-| Rerun | Value per share |
+| Check | Expected result |
 |---|---|
-| Gross margin −1 / +1 point | 256.1 / 327.4 |
-| Capital spending +50 / −50 | 258.3 / 325.2 |
-| Organic growth −1 / +1 point | 270.2 / 314.1 |
-| Named downside case | 210.0 |
-| The four single shocks added instead | 206.7 |
-| Cost of equity implied by 183.29 | 13.82% |
-| Gross margin implied by 183.29 | 14.08% |
-| Capital spending implied by 183.29 | 406.6 |
+| Base before and after the analysis | Same inputs and outputs, within stated rounding tolerance |
+| Lower or higher run | Only the selected independent input changed; linked quantities recalculated |
+| Accounting checks | Pass on each usable run; failures labelled and investigated |
+| Change from base | Recomputes as changed output minus base output |
 
-Match to the decimal, or debug with your AI until they match. Explain to your partner why the
-named case is not the sum of the shocks: lower margin means lower inventory means lower floor plan
-means lower interest — every link you built in Lab 09.
+Pick one changed result, trace it through the statements, and recompute its difference from
+base yourself. Add the actual result and an explanation of any prediction error to your
+locked record. State whether the result changes your valuation conclusion or research priority,
+and why (including a no-change reason). *Expect:* a result you understand, not just a table that prints.
 
-## E — your company, prediction first
+## E — find the driver
 
-1. For each of your two predicted assumptions, before you run: write the predicted direction and
-   rough size of a one-point (or 50, or 5) change, in your file, dated.
-2. Run the shocks on your company. Under each prediction write what happened and one sentence
-   reconciling the two. A wrong prediction with an honest reconciliation is the point of the record.
-3. Run your named downside case and the three price-implied solves on your company's current price
-   and date. Write the sentence the video uses: "the market is not pricing a slightly worse company;
-   it is pricing one that …".
+Compare the output spans over your stated input ranges. Identify the larger driver for
+operating profit and free cash flow, and for value if available. Say **"over these ranges"**:
+a bigger span can reflect a wider input range, not an inherently more important driver.
+Explain one causal link using your actual results. *Expect:* a qualified ranking with numbers.
 
 ## Floor
 
-The ABG table matched; your two locked predictions reconciled; your named case and one price-implied
-value for your company. You submit individually.
+Your own company's sensitivity table for two operating drivers, a passing restored-base check,
+one reconciled locked prediction, and a short explanation of the main driver over the tested
+ranges. Include visible output so a reader need not run your code. You submit individually.
 
-## Beta — Learn on your own
+## Sensitivity — Learn on your own
 
-1. What is it? 2. How is it measured (sixty monthly returns against the market; the slope; the
-standard error)? 3. Explain to your partner why the video's 10% was conservative for ABG.
+1. What is one-at-a-time sensitivity? 2. How does the chosen input range affect the ranking?
+3. Explain why a sensitivity table is not a forecast probability.
 
 ## Reflect
 
-Explain to your partner: 1. which of your predictions was wrong and why; 2. what the price-implied
-table says about your company in operating language.
+Explain to your partner: which driver mattered most over your ranges, and which result surprised you.
 
 ## Checkout — on GitHub
 
 **GitHub links of your files: md, py and/or other files as needed.**
 
-**Thursday preview:** the two-line message, the one page, and a sceptic across the table.
+**Thursday preview:** investigate why the drivers matter and whether your conclusion depends on the ranges.
