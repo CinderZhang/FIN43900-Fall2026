@@ -12,3 +12,8 @@
    affects your conclusion and what evidence would improve it.
 
 Keep signed cash flows. Include value only when your existing valuation supports it.
+
+If you explore this with your learning partner, take turns presenting the new driver’s causal
+link and checking the other person’s range rationale. Explain back whether the new result
+changes their conclusion. Keep this exploration separate from Lab 12’s scheduled full-analysis
+exchange; it adds no checkout requirement.

@@ -1,91 +1,118 @@
-<!-- AUTHORED HOME. Scope: OWNER-DECISION-GATES.md, Week 6 sensitivity ruling, 2026-09-28. -->
+<!-- AUTHORED HOME. Scope: OWNER-DECISION-GATES.md, Week 6 partner-review addendum, 2026-09-28. -->
 
-# Lab 12 — Pro-Forma Sensitivity: Interpret and Challenge the Drivers
+# Lab 12 — Pro-Forma Sensitivity: Present and Review Your Full Analysis
 
-**One thing today: explain your company's main drivers and test how much your conclusion depends on the input ranges.**
+**One thing today: explain your entire company analysis to your learning partner, then use their questions to improve it.**
 
 **Category:** Thursday merit checkout; anchors below. Dates and points: Brightspace and the course schedule.
 
-**You arrive with:** your own company model, sensitivity results and locked prediction from
-[Lab 11](lab-11-proforma-what-if.md), and the same AI chat.
+**You arrive with:** your target-selection rationale, company research and sources, DCF and
+peer comparison, own-company pro-forma, and Lab 11 sensitivity results. Open your existing
+files and visible outputs. No new slide deck, app or recording is required.
 
-## Reopen and explain
+## Your two-person team and the class clock
 
-1. Open your Course/Work Folder in VS Code and rerun Tuesday's analysis from the terminal.
-   *Expect:* the saved base and sensitivity results.
-2. Explain your driver ranking to your partner without AI. Your partner asks which input
-   range has the weakest justification. Swap roles. *Expect:* one specific range to investigate.
+Stay with your assigned learning partner. Decide who is A and who is B. Each person presents
+**their own company** and serves as the other person's reviewer. Both roles count; submit your
+own work. AI stays closed during the presentations and questions: explain from your own
+analysis, sources and model, rather than asking AI for an answer.
+
+| Class minutes | Activity |
+|---|---|
+| 0–5 | Both open their evidence; choose A/B and check the presentation route below |
+| 5–35 | A presents; B questions, checks evidence and gives feedback |
+| 35–65 | B presents; A questions, checks evidence and gives feedback |
+| 65–72 | Each records what the review changes, or why the conclusion remains the same |
+| 72–75 | Individual checkout |
+
+**Each 30-minute round:** 15 minutes presenting → 10 minutes questioning and checking →
+5 minutes for the reviewer to explain back the conclusion and give feedback. Swap at the
+scheduled boundary so both partners receive the full round. Take brief notes while listening.
 
 ## D — the question, the same for everyone
 
-> **Why do these inputs drive my company's results, and would my conclusion change under a different defensible range?**
+> **How did I get from choosing this company to my valuation conclusion, which assumptions drive it, and what evidence could change my mind?**
 
-Paste this into your resumed chat. Keep the company, model, base and output definitions from Lab 11.
+Start with your current conclusion, then show how you reached it. This is a review of the
+analysis you have built across the course, with the pro-forma and sensitivity results at its centre.
 
-## R — follow the mechanism
+## R — the full analysis route
 
-1. For the driver being questioned, write **input → statement line → cash flow → value**,
-   stopping at cash flow if valuation is unavailable. Cite the base and changed results.
-   Briefly explain the other driver’s direction. *Expect:* an explanation grounded in your model.
-2. Choose a revised lower/higher range for the driver your partner questioned. Use the
-   company filings or assumption sources you already used in Lab 10; record the source,
-   period, units and reason, or label an unsupported choice as judgment.
-   Keep the original base unchanged. *Expect:* a justified alternative range for the same input.
-3. Before running it, close AI and extend your locked record: revised input values, expected
-   output effect, whether the ranking will change, and why; save a timestamp or Git commit.
-   *Expect:* a prediction made before seeing the result.
+Use these six stops in your presentation. Show the existing evidence as you speak.
 
-## I — test the interpretation
+| Stop | Presenter explains and shows |
+|---|---|
+| Target selection | Why you selected this company, what makes it suitable to analyze, and your initial view |
+| Company and evidence | How it earns money; the sources, reporting periods and units behind the facts that matter most |
+| Your pro-forma | How history became forecast assumptions; the company-specific drivers; linked statements and accounting checks |
+| Valuation | Your DCF method, discount rate and terminal assumptions; enterprise-to-equity bridge if applicable; peer choices and why the methods differ; saved market price and reverse-DCF result with held-fixed inputs and limitations |
+| Sensitivity and drivers | Lab 11's base and changed inputs, ranges and output changes; the causal link through the statements; what the ranking does and does not establish |
+| Interpretation | The conditional recommendation you can support, what would change it, how your view changed since selecting the company, and the evidence to investigate next |
 
-Send this request with Tuesday's model, results and your revised range available in the chat:
+Show the valuation date, currency and share basis beside a value. Do not average conflicting
+methods just to reach one number. If P/E or a valuation is not meaningful, explain the sourced
+reason, show the analysis you can support, and identify what remains unresolved. Keep signed
+cash flows. An explained limitation is evidence; an invented value is not.
 
-> Reuse my existing one-at-a-time sensitivity function. Keep the original base, output
-> definitions and the other driver's range unchanged. Rerun the selected driver over my
-> revised lower/base/higher values. Show the original and revised input ranges with units,
-> the resulting operating profit and free cash flow, value per share only when valid,
-> signed changes from base, and output spans (maximum minus minimum across valid
-> lower/base/higher results). Retain the selected driver’s statement details for tracing
-> its effect. Keep the accounting
-> checks visible, flag invalid runs, and restore and verify the base. Do not change multiple
-> independent inputs together, fill missing company data, or infer probabilities. Leave
-> the causal interpretation and conclusion to me.
+## I — present your analysis
 
-Save and run the returned code in your open folder. *Expect:* an original-versus-revised
-comparison whose only change is the selected driver's tested range.
-While AI works, explain to your partner what evidence would justify that range.
+1. Walk your partner through the full route in your own words, using the files already open.
+   Explain the economic reason for an assumption as well as its value.
+2. At the sensitivity stop, show a base-versus-changed result already computed in Lab 11.
+   Trace **input → statement line → cash flow → value**, stopping at cash flow if valuation
+   is unavailable. Explain why the driver matters over the stated range.
+3. End with your supported conclusion and the assumption you would research next.
 
-## V — decide what the comparison means
+*Expect:* your partner can follow the path from target selection to valuation and identify
+which evidence and assumptions carry the conclusion. Presentation polish is not the task.
 
-1. Verify the unchanged base, the accounting checks and one difference from base by hand.
-   *Expect:* a valid comparison; investigate failures before interpreting them.
-2. Reconcile your prediction with the result. Does the same driver still matter most for
-   each output, or did the ranking change? Explain why using the actual input and output
-   values. *Expect:* either conclusion supported by evidence, not a preferred answer.
-3. Distinguish **sensitivity** (how much the output moves) from **uncertainty** (how well
-   you know the input). Identify which assumption deserves more research, considering both.
-   *Expect:* a research priority, not a claim that the largest swing is the most likely outcome.
+## V — question and check as the reviewer
 
-## E — the partner's challenge
+During the questioning portion, ask **at least one specific question in each area**:
 
-Your partner checks one causal explanation against your model and asks one specific question
-about the range or the conclusion. Save the question, your answer and any correction beside
-your results. Swap roles. *Expect:* a claim strengthened, qualified or corrected by fresh eyes.
+- **Selection and evidence:** why this company, and which source supports an important claim?
+- **Model and valuation:** how does an assumption reach the result, or why do the methods disagree?
+- **Sensitivity and interpretation:** does the ranking depend on the tested ranges, and what
+  evidence would change the conclusion?
+
+Use your partner's actual company, assumptions and results in the questions. Ask a follow-up
+when an answer is unsupported. Together, open one cited source or trace one calculation from
+input to output. Record what you checked and whether it supported the claim.
+
+The presenter answers from the analysis. If an answer is missing, record the specific gap and
+how to resolve it. Do not fill it with an AI answer or guess. *Expect:* substantive questions,
+evidence checked and an honest record of what remains uncertain.
+
+## E — explain back, give feedback, then swap
+
+1. The reviewer explains back the presenter's valuation conclusion, main driver and biggest
+   limitation. The presenter corrects any misunderstanding.
+2. The reviewer gives one evidence-backed strength and one specific improvement to make next.
+   Record the feedback in brief notes. Then reverse roles for the other company's full round.
+3. After both rounds, each student records what they will **keep, revise or investigate**,
+   with the reason. State whether the review changes the valuation conclusion or research
+   priority; explain why if it does not. Identify unresolved work rather than claiming a
+   model repair you have not run. A new computation is not required during this lab.
 
 ## Floor
 
-In the same analysis, keep the original and revised sensitivity results with visible checks,
-your causal explanations, the reconciled prediction, the partner's question and your response,
-and a conclusion naming the main driver and the assumption to research next. The signed-cash-flow
-and unavailable-valuation rule from Lab 11 still applies. You submit individually.
+Present the full analysis and review your partner's full analysis. Keep links to the existing
+analysis/output and one brief review note with:
 
-## Interpretation — Learn on your own
+- **As presenter:** the questions received, your answers or specific unresolved gaps, and
+  what you will keep, revise or investigate after the feedback.
+- **As reviewer:** the questions you asked, the source or calculation you checked and its
+  result, your explanation back of the conclusion/driver/limitation, and the strength and
+  improvement you identified.
 
-1. What makes a driver economically important? 2. How can an uncertain input have little
-impact, or a powerful input be well known? 3. Explain which needs more research in your company.
+Bullets are enough. Your evidence is graded individually; you are not responsible for making
+your partner's model or conclusion correct. An unresolved claim must be explained and scoped,
+not silently omitted. The same work is required of both team members.
 
 ## Reflect
 
-Explain to your partner what you learned about your company that the base forecast alone did not show.
+Tell your partner which question made you reconsider something and what you now understand
+better about your own company.
 
 ## Checkout — on GitHub
 
@@ -99,10 +126,10 @@ Explain to your partner what you learned about your company that the base foreca
 
 | Criterion | 5 | 3 | 0–1 |
 |---|---|---|---|
-| Reproducible sensitivity | Original and revised ranges, units, outputs and unchanged base are visible | A comparison detail is unclear | Results cannot be traced to the inputs |
-| Causal interpretation | Selected driver traced through own statements and results; other driver’s direction explained | Mechanism partly explained | Generic explanation or unsupported causal claim |
-| Range and ranking judgment | Revised range justified; ranking explicitly qualified by ranges and output | Rationale or qualification incomplete | Ranking treated as universal or as probability |
-| Validation and prediction | Checks and restored base verified; prior prediction honestly reconciled | A validation or reconciliation step incomplete | Failed runs treated as valid, or no pre-run prediction evidence |
-| Evidence and revision | Partner challenge answered; research priority justified by impact and uncertainty | Challenge or research rationale thin | Neither a supported response nor a research priority |
+| Full analysis and ownership | Selection-to-valuation route explained in own words with existing evidence and scoped limitations | Route present but an important connection is thin | Disconnected assertions, unexplained omissions or no ownership |
+| Valuation reasoning | Assumptions, valuation basis and method differences explained with traceable results or justified limitations | Reasoning partly supported | Unsupported values or material conventions left unexplained |
+| Sensitivity interpretation | Own-model result traced; driver ranking qualified by ranges; impact distinguished from uncertainty | Driver identified but mechanism or limitation incomplete | Generic driver claim or sensitivity treated as probability |
+| Reviewing the partner | Specific questions across all required areas; evidence check and explanation back recorded; actionable feedback | Review present but a question, check or feedback is weak | Passive listening or unsupported generic feedback |
+| Response and revision | Questions answered or gaps scoped; keep/revise/investigate decision and effect on conclusion or research priority explained | Response or next action partly justified | Feedback ignored, invented answers or no supported next action |
 
-**Next week:** bring this analysis to the Project 1 studio; use it to explain the assumptions that drive your valuation.
+**Next week:** bring the reviewed analysis and your unresolved questions to the Project 1 studio.

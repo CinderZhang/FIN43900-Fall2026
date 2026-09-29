@@ -10,13 +10,22 @@
 **You arrive with:** your company's working pro-forma from Lab 10, its assumption table,
 and the same AI chat. Read the [worked sensitivity example](student-handout.md) before class.
 
+## Your two-person team
+
+Work with your assigned learning partner. Each of you keeps your own company and model.
+In each exchange, one person explains while the other questions or checks; then swap.
+Keep brief notes of the question you received and your response, plus the check you performed
+on your partner's analysis. These notes stay with your individual results.
+
 ## Open your workspace
 
 1. **VS Code → File → Open Recent** → your Course/Work Folder; **Terminal → New Terminal**.
 2. Run your company model using the command from Lab 10. Save its base inputs and visible output.
    *Expect:* the same forecast and passing accounting checks as your last run.
-3. With your partner, name the input you expect to matter most and explain why. Write down
-   any gap in your understanding before asking AI. *Expect:* your prediction, not AI's ranking.
+3. **Partner exchange 1 — predict, then question.** Take turns: explain which input you expect
+   to matter most and trace why. The listener repeats the mechanism in their own words and
+   asks what supports the proposed input range. Write down any gap before asking AI.
+   *Expect:* both partners have explained their own company and questioned the other's.
 
 **Something not working?** Debug with your AI: paste the exact command and exact error text.
 
@@ -47,7 +56,9 @@ do not discard negative years or invent a terminal value. The same sensitivity t
 
 Before running a change, close AI and save one prediction with a timestamp or Git commit:
 input old → new with units, expected output direction and rough size, and why. This is your
-Locked Changed-Input Record. Your partner reads it before you run.
+Locked Changed-Input Record. Before either of you runs, show your partner the prediction
+and ranges. Each listener checks the units and confirms that only one independent input
+changes at a time. Resolve an unclear unit or range; then swap.
 
 ## I — add sensitivity analysis to your own model
 
@@ -80,8 +91,10 @@ While AI works, explain your predicted input → statement → output link to yo
 | Accounting checks | Pass on each usable run; failures labelled and investigated |
 | Change from base | Recomputes as changed output minus base output |
 
-Pick one changed result, trace it through the statements, and recompute its difference from
-base yourself. Add the actual result and an explanation of any prediction error to your
+**Partner exchange 2 — check each other's evidence.** Show one changed result and its base
+to your partner. The listener recomputes the difference, checks that the other independent
+inputs stayed at base, and asks the presenter to trace the result through the statements.
+Record what you checked on your partner's model and any question or correction. Swap roles. Add the actual result and an explanation of any prediction error to your
 locked record. State whether the result changes your valuation conclusion or research priority,
 and why (including a no-change reason). *Expect:* a result you understand, not just a table that prints.
 
@@ -90,13 +103,18 @@ and why (including a no-change reason). *Expect:* a result you understand, not j
 Compare the output spans over your stated input ranges. Identify the larger driver for
 operating profit and free cash flow, and for value if available. Say **"over these ranges"**:
 a bigger span can reflect a wider input range, not an inherently more important driver.
-Explain one causal link using your actual results. *Expect:* a qualified ranking with numbers.
+**Partner exchange 3 — explain and compare.** Each of you explains one causal link using your
+actual results. The listener asks whether the ranking could reflect the chosen ranges, then
+summarizes the presenter's conclusion. Compare why your companies may have different main
+drivers; do not rank unlike companies by raw dollar changes. Record the question you received
+and your answer. *Expect:* both partners can explain the other's main driver and its limitation.
 
 ## Floor
 
 Your own company's sensitivity table for two operating drivers, a passing restored-base check,
 one reconciled locked prediction, and a short explanation of the main driver over the tested
-ranges. Include visible output so a reader need not run your code. You submit individually.
+ranges, with your partner question/response and the check you performed on their analysis.
+Include visible output so a reader need not run your code. You submit individually.
 
 ## Sensitivity — Learn on your own
 
@@ -111,4 +129,7 @@ Explain to your partner: which driver mattered most over your ranges, and which 
 
 **GitHub links of your files: md, py and/or other files as needed.**
 
-**Thursday preview:** investigate why the drivers matter and whether your conclusion depends on the ranges.
+**Before Thursday:** open your existing target-selection rationale, company research, valuation,
+pro-forma and sensitivity results. Follow the [Lab 12 presentation route](lab-12-proforma-present.md#r--the-full-analysis-route).
+**Thursday preview:** each partner presents the entire analysis, from selecting the company to
+valuing it, and responds to the other's questions.

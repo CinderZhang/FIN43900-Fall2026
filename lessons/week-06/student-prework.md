@@ -16,6 +16,8 @@ illustrate the method. Use this week's worksheets for the work to do.
 
 **Before Thursday — about 15 minutes.**
 
-1. Reopen your Lab 11 sensitivity results and prediction. Be ready to explain the main driver
-   over your tested ranges.
-2. Revisit the company sources behind those ranges. Identify the range you are least sure of.
+1. Reopen the analysis you have already built: target-selection rationale, company research
+   and sources, DCF and peer comparison, pro-forma, and Lab 11 results.
+2. Walk through the [Lab 12 presentation route](lab-12-proforma-present.md#r--the-full-analysis-route)
+   using those existing files. Locate the evidence behind your conclusion and mark unresolved
+   questions. This is preparation to explain your work, not new research or a new slide deck.

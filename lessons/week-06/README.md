@@ -3,7 +3,8 @@
 ## Mission
 
 Use your own company's pro-forma to discover which assumptions move its results.
-Then explain the mechanism and test whether your conclusion depends on the ranges you chose.
+Then present your full analysis to your assigned learning partner, from target selection to
+valuation, and use each other’s questions to sharpen the interpretation.
 
 ## You arrive with
 
@@ -17,20 +18,23 @@ Then explain the mechanism and test whether your conclusion depends on the range
 - Trace an input through the statements to operating profit, cash flow and, when valid, value.
 - Explain how the tested ranges affect a driver ranking.
 - Choose an assumption to research using both its impact and uncertainty.
+- Present the selection-to-valuation reasoning and review your partner’s evidence.
 
 ## The two sessions
 
 | Session | Topic and authoritative worksheet |
 |---|---|
 | 11 | [Find your company's drivers](lab-11-proforma-what-if.md) |
-| 12 | [Interpret and challenge the drivers](lab-12-proforma-present.md) |
+| 12 | [Present and review your full analysis](lab-12-proforma-present.md) |
 
 Dates and points: the course schedule and Brightspace. Each worksheet owns its completion floor.
 
 ## Teams this week
 
-Explain your own company's results to a partner and check each other's reasoning. Keep your
-own model throughout both labs. Checkouts stay individual.
+Work in your assigned two-person learning-partner team. Lab 11 builds reciprocal explanation
+and evidence checks into the sensitivity work. Lab 12 gives each partner an extended turn to
+present, answer questions and receive feedback. Use the labs for the exact activities.
+Keep your own company and model throughout; checkouts stay individual.
 
 ## Prerequisites and prework
 
@@ -48,16 +52,18 @@ illustrate the method. Use this week's worksheets for the work to do.
 
 **Before Thursday — about 15 minutes.**
 
-1. Reopen your Lab 11 sensitivity results and prediction. Be ready to explain the main driver
-   over your tested ranges.
-2. Revisit the company sources behind those ranges. Identify the range you are least sure of.
+1. Reopen the analysis you have already built: target-selection rationale, company research
+   and sources, DCF and peer comparison, pro-forma, and Lab 11 results.
+2. Walk through the [Lab 12 presentation route](lab-12-proforma-present.md#r--the-full-analysis-route)
+   using those existing files. Locate the evidence behind your conclusion and mark unresolved
+   questions. This is preparation to explain your work, not new research or a new slide deck.
 
 ## DRIVER this week
 
 Define: which assumptions drive my company's results? Represent: inputs, units and justified
 ranges. Implement: AI adds sensitivity analysis to the existing model. Validate: check the
-accounting, differences and restored base. Evolve: revise a range and interpret the comparison.
-Reflect: explain the mechanism and the next research priority to a partner.
+accounting, differences and restored base. Evolve: use partner questions to decide what to keep, revise or investigate.
+Reflect: explain your full reasoning and the next research priority to your partner.
 
 ## Package map
 

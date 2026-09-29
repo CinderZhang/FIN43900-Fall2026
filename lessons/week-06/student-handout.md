@@ -9,7 +9,7 @@ answer and where better evidence could change your understanding. Both labs use 
 |---|---|
 | Run your company model with the Lab 10 command | The saved base results and accounting checks |
 | Run the sensitivity analysis added in Lab 11 | Lower/base/higher inputs and comparable outputs |
-| Run the revised range in Lab 12 | A comparison with the same base and other driver's range |
+| Open your existing analysis for Lab 12 | Evidence ready to explain from selection through valuation |
 
 The worksheets give the AI requests and own the completion floors:
 [Lab 11](lab-11-proforma-what-if.md) and [Lab 12](lab-12-proforma-present.md).
@@ -111,3 +111,28 @@ operating profit and signed cash flow; do not force a terminal value to fill a t
 Define the driver question yourself. Represent the ranges and units before asking AI to build.
 Implement with AI, then validate the results yourself. Evolve by questioning a range.
 Reflect by explaining what you learned about your company.
+
+## A presentation and review exchange
+
+*The shape, not your answer. This exchange uses only the teaching results above. It models
+one part of the [Lab 12 presentation route](lab-12-proforma-present.md#r--the-full-analysis-route);
+it does not supply a company-selection rationale or a complete investment conclusion.*
+
+**Presenter:** “At the original ranges, gross margin produces the larger value span. But when
+I halve that range, capital spending leads for value. My conclusion is about these tested
+ranges, not an inherent ranking of the company’s drivers.”
+
+**Reviewer:** “Which calculation supports the cash-flow effect, and what evidence supports the
+margin range?” Together they check the displayed higher-margin result: 395.3 − 342.3 = +$53.0m.
+
+**Presenter:** “That verifies the difference. The narrowed range here is illustrative judgment;
+this example supplies no company evidence establishing that it is more likely.”
+
+**Reviewer explains back:** “You can show margin’s cash-flow mechanism and the range-dependent
+ranking. You cannot use this table to claim an endpoint’s probability. Your strength is the
+traceable comparison; your next improvement is evidence for the range.”
+
+**Presenter’s disposition:** “Keep the arithmetic and the qualified ranking; investigate the
+range evidence before making a stronger conclusion.” In your own presentation, connect this
+reasoning to your actual selection rationale, company sources, pro-forma and valuation. When
+you review, check the claim your partner makes and explain back its limits before swapping roles.
