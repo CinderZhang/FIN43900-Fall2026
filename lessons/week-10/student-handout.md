@@ -1,66 +1,52 @@
-# Student Handout — Alternative Data Admission
+# Week 10 Student Handout — Point-in-Time
 
-## Role and deliverable
+Last week: the lowest-risk mix, and how far it moves. This week: were the numbers behind it
+knowable when you would have acted on them?
 
-You are a market-data risk analyst. Decide whether the supplied panel may be used for a historical
-market test. Deliver a data card, row funnel, point-in-time rule, naive-versus-valid comparison,
-AI claim dispositions, and an admit/quarantine/prospective-test/reject decision.
+## The commands
 
-## Prework record
+In the terminal, with your own Python command:
 
-Run the starter at `2026-01-02T10:00:00Z`. Before using AI, record the timestamp that should
-control admissibility and one row you expect to be unavailable. Preserve your prediction.
+| Command | Expect |
+|---|---|
+| `python asof.py` | Tuesday: the row funnel, the as-of panel, and as-of beside naive signals. Thursday: three decision dates on the training table, then your own series |
 
-## Data-card template
+Something breaks? Debug with your AI: the exact command and the exact error text.
 
-| Field | Evidence or value | Unknown/limitation | Decision consequence |
-|---|---|---|---|
-| source/owner and collection method |  |  |  |
-| license/use boundary |  |  |  |
-| population/unit/coverage |  |  |  |
-| entity identifier and mapping |  |  |  |
-| event, availability, decision, revision time |  |  |  |
-| missingness/duplicates/revisions |  |  |  |
-| PII/privacy and retention |  |  |  |
-| evaluation label and embargo |  |  |  |
+## Point-in-time in plain language
 
-`event_time` describes when an event occurred. `available_time` describes when the observation
-could enter the information set. `decision_time` is the portfolio/research cutoff. A revision is
-not retroactively available. `future_return` is supplied only for later evaluation and cannot be
-used to choose the historical sample, rule, threshold, or disposition.
+Every data point has two dates. The **month measured** is what the number describes. The
+**published on** date is when anyone could first see it. A decision on 31 March can use only
+what was published by 31 March. A **revision** replaces an earlier number, but only from the day the
+revision is published; before that, the old number is what the market saw. A backtest that uses
+today's file — with every revision and every late release already in it — is answering a question
+nobody could have asked at the time. That is **look-ahead bias**, and it makes weak signals look
+strong.
 
-## Tuesday workflow — provenance gate
+## The digits, once
 
-1. State the intended market decision and information cutoff.
-2. Build the data card and mark unsupported facts as unknown.
-3. Preserve row IDs; flag missing identity, exact duplicate, revision, late availability, and
-   label leakage separately.
-4. Ask AI to draft source/cleanup claims. Disposition every material claim against the actual
-   file or documentation; do not accept invented provenance.
-5. Build a row funnel with counts and reasons. Quarantine is evidence preservation, not failure.
-6. Decide admit, quarantine, prospective test, or reject and name evidence that reverses it.
+AAA on the training table, decision date 31 March 2026:
 
-## Thursday workflow — point-in-time panel
+| Step | Rule | AAA |
+|---|---|---|
+| Knowable rows | published on or before 31 March | Jan 101.0 (10 Feb); Feb 104.0 (10 Mar); Feb 103.0 (25 Mar) |
+| Revision | keep the latest publication for each month | Feb = 103.0 |
+| As-of signal | latest knowable month ÷ previous month − 1 | 103.0 ÷ 101.0 − 1 = +1.98% |
+| Naive signal | uses March, published 10 April | 109.0 ÷ 103.0 − 1 = +5.83% |
+| The leak | naive − as-of | +3.85 points that nobody had on 31 March |
 
-Write the rule before code. At minimum, a row cannot enter if it was not available by the
-decision time or lacks a defensible entity. State how exact duplicates and revisions are handled.
+## The rules
 
-| Row ID | Event time | Available time | Issue(s) | Admit/quarantine/exclude | Reason |
-|---:|---|---|---|---|---|
-|  |  |  |  |  |  |
+- Every row keeps its row number from start to end. Removing a row is a recorded decision, not a
+  cleanup.
+- Quarantine first, then duplicates, then late publications, then revisions. The order changes
+  the answer.
+- A data card names the source, the measure, the units, the publication lag, the revisions and the
+  download date. "Cleaned the data" is not a data card.
+- If you cannot find a publication date, the series is quarantined until you can.
 
-Compare a naive event-date panel with the valid as-of panel. Quantify row/sample differences and
-any mechanical result difference, but do not use the evaluation label to repair the rule. Change
-the cutoff or revision policy once and predict the effect first.
+## DRIVER, one line each
 
-## Decision and submission checklist
-
-- research may proceed, must wait, may run only prospectively, or must stop;
-- exact as-of/revision/duplicate rule and retained audit trail;
-- unsupported AI claim and disposition;
-- most consequential limitation and missing evidence;
-- monitoring/recheck trigger and reversal condition;
-- Lab 16/19 individual fields, AI disclosure, truth attestation, and receipt verified.
-
-If code or network access fails, the row-level table and plain-language rule provide the
-equivalent evidence. Do not paste licensed, personal, or nonpublic data into an AI system.
+Define — the same question for everyone. Represent — the table and four rules. Implement — the
+filter from one request. Validate — the known answer and the partner's later date. Evolve and
+Reflect — your own series, and the lag it needs.

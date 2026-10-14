@@ -1,22 +1,26 @@
-# Student Handout — Project 2 Audit and Defense Studio
+# Week 12 Student Handout — Project 2 Studio
 
-## Role and deliverable
+Both meetings are open studios: no lab checkout, no lab points. Bring your Project 2 repository
+on GitHub and leave with a cold-run record, a committee answer, and a short must-fix list.
 
-You are the senior analyst preparing an investment process for cold model-risk review and an
-allocation committee. Leave with a 12-row manifest (11 required + one optional), cold-run record, highest-risk validation,
-Edition A/B reconciliation, three distinct video evidence plans, committee answer, and frozen
-must-fix list.
+## Where each Project 2 part comes from
 
-## Bring to class
+You built every piece in the labs; before Tuesday you connect the backtest to your app (the
+[prework](student-prework.md)). The studio puts them in one repository.
 
-- unchanged Brightspace Edition A receipt/file and current Edition B;
-- accessible repository and exact environment/run command;
-- visible executed output showing the material result;
-- decision memo/deck and Validation-and-AI-Use draft;
-- three video/transcript drafts or outlines; and
-- 12-row manifest with locations, timestamps, access checks, and frozen identifiers completed.
+| Project 2 needs | You built it in |
+|---|---|
+| Mandate: objective, hard constraints, the question for the client | [Lab 13](../week-08/lab-13-portfolio-mandate.md) and your own mandate |
+| Baselines and the mandate check | [Lab 14](../week-09/lab-14-portfolio-baselines.md) |
+| Your first app: your universe, the constrained search, the stress run (`app.py`) | [Lab 15](../week-09/lab-15-portfolio-stability.md) |
+| Point-in-time rule and data card | [Lab 16](../week-10/lab-16-provenance-gate.md) and [Lab 17](../week-10/lab-17-point-in-time.md) |
+| Frozen rule card, holdout, placebo, selection ledger | [Lab 18](../week-11/lab-18-holdout-test.md) and [Lab 19](../week-11/lab-19-signal-decision.md) |
+| The product: your app with the holdout panel and the lag and cost controls | Lab 15 and Lab 19, joined in the Week 12 [prework](student-prework.md) |
+| Locked Changed-Input Record | the Week 6 pattern ([Lab 11](../week-06/lab-11-proforma-what-if.md)), on one Project 2 input |
+| The bundle itself | [the Project 2 page](../../projects/project-2-investment-management-application.md) and the [submission architecture](../../PROJECT-SUBMISSION-ARCHITECTURE.md) |
 
-Do not bring or display API keys, private data, cookies, or `.env` contents.
+**GitHub is the main delivery.** Every location in your submission manifest is a GitHub link,
+except the videos.
 
 ## Local model-risk reference
 
@@ -37,50 +41,31 @@ question and studio; the external guidance is a professional analogue, not gener
 The 2026 guidance expressly leaves generative and agentic AI outside its model definition. Here,
 apply these validation ideas to the finance model and decision system only.
 
-## Tuesday audit protocol
+## Tuesday — the cold run, with your partner
 
-1. State the decision and highest-risk claim without opening code.
-2. Write one mandate/finance, one data/timing, and one technical/reproducibility failure.
-3. Give a partner only the README. Record command, environment, first failure, elapsed time, and
-   location of visible output. Do not coach.
-4. Complete the evidence audit:
+1. Without AI, write your committee decision and the one claim most likely to reverse it.
+2. Give your partner only your repository's README link. They run it in their own folder and
+   write: the command, the first failure, the elapsed time, where the result is. Do not coach. Swap.
+3. Ask your AI for one concrete test of your riskiest claim. Check it yourself; repair, qualify, or
+   drop the claim.
+4. Freeze the must-fix list. No new analysis.
 
-| Risk surface | Required evidence | Current result | Repair/qualify/reject action |
-|---|---|---|---|
-| mandate and constraints | operational objective/bounds and compliance checks |  |  |
-| point-in-time data | source, as-of, availability lag, revisions |  |  |
-| baseline and holdout | naive comparison, frozen split, selection ledger |  |  |
-| costs/capacity | units, turnover timing, implementation boundary |  |  |
-| stability | expected/actual changed-input direction |  |  |
-| reproducibility | cold command, environment, visible output |  |  |
+## Thursday — the three videos, rehearsed
 
-5. Ask AI for one concrete counterexample/test. Independently calculate or source-check it.
-6. Repair, qualify, or reject the claim and freeze remaining actions—do not add unsupported scope.
+| Video | The one question it answers |
+|---|---|
+| Video 1 — how it changed | What changed in your system and your thinking since your first mandate, and which AI output did you check? |
+| Video 2 — technical walkthrough | How does your code turn the data into the result, and which test passed or failed? |
+| Video 3 — committee presentation | What should the committee do, under what conditions, and what reverses it? |
 
-## Thursday evidence surfaces
-
-| Surface | Unique question | Evidence you will show |
-|---|---|---|
-| Video 1 — research evolution | What changed or held after project-specific research; what was caused by instruction, own analysis, peer challenge, AI, or mixed inputs; and why? |  |
-| Video 2 — technical walkthrough | How does the submitted code/data flow produce the result, and what high-risk test passed/failed? |  |
-| Video 3 — formal committee presentation | What should the committee do, under what conditions, and what reverses it? |  |
-
-Practice one skeptical question on mandate, timing, baseline, costs, capacity, or failure. It is
-acceptable to say what the system cannot establish. AI may improve organization only after you
-tag each accepted/rejected edit and independently recheck every number and source.
+Rehearse Video 3 to your partner; your partner asks one sceptical question on the mandate, the
+timing, the baseline or the holdout. "My system cannot establish that" is an acceptable answer.
 
 ## Final studio checklist
 
-- all 11 required manifest rows ready or truthfully identified as unresolved, with the optional row labeled;
-- access tested from a second account/window where feasible;
-- README cold command and visible output agree;
-- Edition A remains unchanged; Edition B states what changed and why;
-- memo/deck and all videos use the same decision, numbers, as-of dates, and conditions;
-- captions/transcripts corrected only for substantive errors and durations within limits;
-- validation record includes baseline, holdout, costs, selection ledger, uncertainty, capacity,
-  and changed-input/failure evidence; and
-- action, range, monitor, owner, and reversal/kill trigger are explicit.
-
-If a checkout is dropped, the underlying project evidence is still required. The ungraded
-readiness-feedback path may provide a mechanical gap report and one risk probe before its cutoff;
-it does not approve or pre-grade the project.
+- every manifest row is a working link, or marked unresolved;
+- your partner's cold run reached your result from the README alone;
+- memo, videos and output use the same numbers, dates and conditions;
+- the decision names an action, a condition, a monitor and a reversal trigger;
+- your README, memo and each video open with the AI announcement and "education, not investment
+  advice" ([the Project 2 page](../../projects/project-2-investment-management-application.md)).

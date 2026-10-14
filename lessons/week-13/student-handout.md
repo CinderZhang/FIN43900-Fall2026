@@ -27,10 +27,9 @@ changed-input result. Freeze remaining must-fix actions; do not open new project
 
 | Item | Ready location/evidence | Remaining defect | Owner/action before cutoff |
 |---|---|---|---|
-| Edition A and A/B reconciliation |  |  |  |
 | repository/environment/visible output |  |  |  |
-| memo/deck and numbers/as-of consistency |  |  |  |
-| validation, holdout, costs, capacity, kill rule |  |  |  |
+| Decision memo (`docs/decision-memo.md`) and numbers/as-of consistency |  |  |  |
+| validation, holdout, costs, placebo, kill rule |  |  |  |
 | Videos 1–3 and corrected transcripts |  |  |  |
 
 Lab 20 records current evidence and gaps; it does not extend the project deadline or create a

@@ -1,0 +1,269 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 16</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 16 — Provenance Gate</h1>
+<blockquote>
+<p><strong>One thing today: build a point-in-time filter, and prove on the known answer what was knowable on the decision date.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li>Opener — 0–8</li>
+<li><strong>D</strong> and <strong>R</strong> — 8–15</li>
+<li><strong>I</strong> build — 15–35</li>
+<li><strong>V</strong> known answer — 35–45</li>
+<li>Explain the code — 45–52</li>
+<li>Swap and break — 52–60</li>
+<li>Learn and reflect — 60–70</li>
+<li>Checkout — 70–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/lab-16-provenance-gate.md" target="_blank" rel="noopener">Lab 16</a></p>
+</section>
+<section class="slide">
+<h2>Explain to your partner first</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Five minutes, no screen: the difference between the month a number measures and the day it was
+published. Then swap.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 8–15</strong></p>
+<blockquote>
+<p><strong>On the day you would have traded, what did this data actually say — and how much of what you
+see now came later?</strong></p>
+</blockquote>
+<p>Paste it into your Lab 15 chat. Today the data is a training table. Thursday it is your own series.</p>
+</section>
+<section class="slide">
+<h2>R — the training table (fictional card-spend index, three retailers)</h2>
+<p><strong>Minutes 8–15</strong></p>
+<p>Decision date: <strong>31 March 2026</strong>. A row is knowable only if it was published on or before that day.</p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — the training table (fictional card-spend index, three retailers) (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — the training table (fictional card-spend index, three retailers)</caption>
+<thead>
+<tr>
+<th align="right" scope="col">Row</th>
+<th scope="col">Ticker</th>
+<th scope="col">Month measured</th>
+<th scope="col">Published on</th>
+<th align="right" scope="col">Index</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>AAA</td>
+<td>2026-01</td>
+<td>2026-02-10</td>
+<td align="right">101.0</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>AAA</td>
+<td>2026-02</td>
+<td>2026-03-10</td>
+<td align="right">104.0</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>AAA</td>
+<td>2026-03</td>
+<td>2026-04-10</td>
+<td align="right">109.0</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>AAA</td>
+<td>2026-02</td>
+<td>2026-03-25</td>
+<td align="right">103.0</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>BBB</td>
+<td>2026-01</td>
+<td>2026-02-10</td>
+<td align="right">98.0</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>BBB</td>
+<td>2026-02</td>
+<td>2026-03-10</td>
+<td align="right">97.0</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>BBB</td>
+<td>2026-02</td>
+<td>2026-03-10</td>
+<td align="right">97.0</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>BBB</td>
+<td>2026-03</td>
+<td>2026-04-10</td>
+<td align="right">92.0</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>CCC</td>
+<td>2026-01</td>
+<td>2026-02-10</td>
+<td align="right">110.0</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>CCC</td>
+<td>2026-02</td>
+<td>2026-04-05</td>
+<td align="right">112.0</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td></td>
+<td>2026-02</td>
+<td>2026-03-10</td>
+<td align="right">99.0</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>CCC</td>
+<td>2026-02</td>
+<td>2026-03-10</td>
+<td align="right">111.0</td>
+</tr>
+</tbody></table></div>
+<p>The rules, in this order: (1) quarantine a row with no ticker; (2) remove an exact duplicate;
+(3) remove a row published after the decision date; (4) where one ticker and month has two
+publications, keep the latest one published by the decision date (a revision). The signal is the
+change in the index from the previous month to the latest knowable month.</p>
+</section>
+<section class="slide">
+<h2>I — build the filter from the instruction</h2>
+<p><strong>Minutes 15–35</strong></p>
+<ol>
+<li>Send this to your AI partner, then paste the table and the rules under it. The code it writes
+is yours: read it, run it, debug it.</li>
+</ol>
+<blockquote>
+<p>Write one Python file, <code>asof.py</code>, standard library only. At the top, editable inputs: the
+table I paste below and a decision date of 2026-03-31. Apply my four rules in order and print
+the row funnel: for each rule, how many rows it removed and their row numbers. Print the as-of
+panel that remains. For each ticker print the signal: the percent change from the previous
+month to the latest month in the panel, to two decimals, naming that month. Then print a
+naive signal for comparison: the same calculation using every row's latest publication,
+ignoring the publication date. Compute everything from the inputs; never type an answer in.
+Give me the command to run it.</p>
+</blockquote>
+<ol start="2">
+<li>Run <code>python asof.py</code>. <em>Expect:</em> the funnel, the as-of panel, and the as-of and naive signal for
+each ticker; if not, debug with your AI.</li>
+<li>Ask your AI to quiz you on the line you understand least; answer before it explains.</li>
+</ol>
+<p><strong>At minute 20:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 16.</p>
+</section>
+<section class="slide">
+<h2>V — prove it on the known answer: the row funnel</h2>
+<p><strong>Minutes 35–45</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer: the row funnel (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer: the row funnel</caption>
+<thead>
+<tr>
+<th scope="col">Funnel step</th>
+<th scope="col">Rows removed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quarantined: no ticker</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Exact duplicate</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Published after 31 March</td>
+<td>3, 8, 10</td>
+</tr>
+<tr>
+<td>Older vintage replaced by a revision</td>
+<td>2</td>
+</tr>
+<tr>
+<td>As-of panel</td>
+<td>1, 4, 5, 6, 9, 12</td>
+</tr>
+</tbody></table></div>
+</section>
+<section class="slide">
+<h2>V — prove it on the known answer: the signals</h2>
+<p><strong>Minutes 35–45</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer: the signals (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer: the signals</caption>
+<thead>
+<tr>
+<th scope="col">Ticker</th>
+<th scope="col">As-of signal</th>
+<th scope="col">Naive signal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AAA</td>
+<td>+1.98% (February)</td>
+<td>+5.83% (March)</td>
+</tr>
+<tr>
+<td>BBB</td>
+<td>−1.02% (February)</td>
+<td>−5.15% (March)</td>
+</tr>
+<tr>
+<td>CCC</td>
+<td>+0.91% (February)</td>
+<td>+1.82% (February, revised)</td>
+</tr>
+</tbody></table></div>
+<p>Every value matches, or debug with your AI until they do. The classic error: row 2 kept instead
+of its revision, row 4, which turns AAA's +1.98% into +2.97%.</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 45–52</strong></p>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>asof.py</code> that applies rule 4: one
+ticker and month, two publications, keep the latest one published by the decision date. Explain
+it to your partner line by line; your partner asks one question you answer from the code. Swap.
+A line you cannot explain is your next question for your AI.</p>
+</section>
+<section class="slide">
+<h2>Swap and break</h2>
+<p><strong>Minutes 52–60</strong></p>
+<p>Run your partner's <code>asof.py</code>; same values.</p>
+<p>In their file set the decision date to <code>2026-04-15</code>. <em>Expect:</em> the as-of signal becomes the naive
+signal, ticker for ticker. Undo.</p>
+<p>The gap between the two columns is exactly what had not been published yet.</p>
+</section>
+<section class="slide">
+<h2>Point-in-time — Learn on your own · Reflect</h2>
+<p><strong>Minutes 60–70</strong></p>
+<p><strong>Learn on your own:</strong></p>
+<ol>
+<li>What is look-ahead bias?</li>
+<li>How does it work — event time, publication time, revision?</li>
+<li>Explain it to your partner with AAA: why does +5.83% look better than anything you could have
+known?</li>
+</ol>
+<p><strong>Reflect — explain to your partner:</strong></p>
+<ol>
+<li>Which rule removed the row that mattered most;</li>
+<li>What a backtest built on the naive column would claim.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 16.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>Before Thursday — do these</strong></p>
+<ol>
+<li>Keep <code>asof.py</code> matching the Lab 16 known answer.</li>
+<li>Bring your Lab 16 chat and your Project 2 universe from Lab 15.</li>
+<li>Build your ALFRED series table (<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/student-prework.md" target="_blank" rel="noopener">prework</a>).</li>
+</ol>
+<p><strong>Thursday preview:</strong> your own monthly series from ALFRED, through the same filter.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

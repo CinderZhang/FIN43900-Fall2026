@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 20</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 20 — Project 2 Readiness</h1>
+<blockquote>
+<p><strong>One thing today: prove that a stranger can reach your Project 2 decision from your GitHub repository alone.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li><strong>D</strong> question — minutes 0–5</li>
+<li>Cold run, by your partner — minutes 5–25; <strong>quiz at minute 20</strong></li>
+<li>One changed input — minutes 25–40</li>
+<li>Explain the code — minutes 40–46</li>
+<li>Fix one thing — minutes 46–60</li>
+<li>Decision line and <strong>Reflect</strong> — minutes 60–70</li>
+<li>Checkout — GitHub — minutes 70–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md" target="_blank" rel="noopener">Lab 20</a></p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 0–5</strong></p>
+<blockquote>
+<p><strong>Could a committee member who has never met you reach your decision from your repository —
+and does the decision survive one changed input?</strong></p>
+</blockquote>
+<p><strong>You arrive with:</strong> your Project 2 repository on GitHub · the must-fix list from the
+<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/..\week-12\student-handout.md" target="_blank" rel="noopener">Week 12 studio</a> · your partner.</p>
+</section>
+<section class="slide">
+<h2>R — what a stranger needs</h2>
+<p><strong>Minutes 5–25</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — what a stranger needs (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — what a stranger needs</caption>
+<thead>
+<tr>
+<th scope="col">Manifest part</th>
+<th scope="col">Ready means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The tool</td>
+<td>a teammate moves one control and reads the mandate verdict and the holdout</td>
+</tr>
+<tr>
+<td>Repository</td>
+<td>a README with the one command that produces your result</td>
+</tr>
+<tr>
+<td>Visible output</td>
+<td>the decision numbers readable on GitHub without running anything</td>
+</tr>
+<tr>
+<td>Decision memo (<code>docs/decision-memo.md</code>)</td>
+<td>the same numbers, dates and conditions as the output</td>
+</tr>
+<tr>
+<td>Validation and AI use</td>
+<td>baseline, mandate check, stress run, holdout, placebo, Locked Changed-Input Record</td>
+</tr>
+<tr>
+<td>Videos 1–3 and transcripts</td>
+<td>links work; each video answers its own question</td>
+</tr>
+</tbody></table></div>
+<p>The full list is on <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/..\..\projects\project-2-investment-management-application.md" target="_blank" rel="noopener">the Project 2 page</a>.</p>
+</section>
+<section class="slide">
+<h2>I — the cold run, by your partner</h2>
+<p><strong>Minutes 5–25</strong></p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+<ol>
+<li>Send your partner your repository link and nothing else.</li>
+<li>They open it in their own folder, follow only the README, and write in your <code>.md</code> file: the
+command, the first failure, the elapsed time, where the result is.</li>
+<li>Swap. Do not coach; a question you have to answer is a README line you have to write.</li>
+</ol>
+<p><strong>At minute 20:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 20.</p>
+</section>
+<section class="slide">
+<h2>V — one changed input, predicted first</h2>
+<p><strong>Minutes 25–40</strong></p>
+<ol>
+<li>AI closed: pick one load-bearing input (an estimate, the lag, the cost). Before the run, write
+the old and new value with units, the direction you expect the decision numbers to move, and
+the effect you expect on the decision. Commit and push.</li>
+<li>Rerun. Keep the before and after output. Under the prediction write what happened, whether the
+decision changes, and why the actual matched your prediction or not — or why nothing changed.</li>
+</ol>
+<p>A changed-lag run is a sensitivity scenario: your original frozen rule and holdout stay the evidence.</p>
+<p><em>Example (Meridian, Lab 15):</em> "Equity return 8.0% → 7.0% a year; I expect the lowest-risk mix to
+add equity and the decision to hold. Actual: 55 → 80 points of equity, volatility 9.44% → 12.94%.
+Matched: a lower equity return needs more equity to reach the objective. Decision holds: pilot, not adopt."</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 40–46</strong></p>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of your Project 2 code that produces your
+decision number. Explain it to your partner line by line; your partner asks one question you answer
+from the code. Swap. A line you cannot explain is your next question for your AI.</p>
+</section>
+<section class="slide">
+<h2>E — fix one thing</h2>
+<p><strong>Minutes 46–60</strong></p>
+<p>Fix the first failure your partner hit, push it, and ask them to rerun. If the cold run was clean,
+record that no fix was needed.</p>
+</section>
+<section class="slide">
+<h2>Your decision line</h2>
+<p><strong>Minutes 60–70</strong></p>
+<p>One line, as the committee will hear it: <strong>adopt, allocate to, rebalance, pilot, or reject</strong>, with
+the condition that would reverse it.</p>
+<p><strong>Floor:</strong> your partner's cold-run note; your predicted changed input with its commit; one fix
+pushed, or a clean cold run recorded with no fix needed; your decision line. You submit individually. Truthful unresolved items complete the lab;
+this lab does not grade or approve Project 2.</p>
+</section>
+<section class="slide">
+<h2>Reflect</h2>
+<p><strong>Minutes 60–70</strong></p>
+<p><strong>Explain to your partner:</strong></p>
+<ol>
+<li>what the cold run found that you could not see;</li>
+<li>what you will not touch before the deadline.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 20.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>Before Thursday — do these</strong></p>
+<ol>
+<li>Find the Project 2 due date in the Brightspace assignment header.</li>
+<li>Check your repository against the readiness table: a stranger reaches your decision from it alone.</li>
+<li>Leave untouched what you said you will not touch before the deadline.</li>
+</ol>
+<p><strong>Next:</strong> Project 2 is due on the date in the Brightspace assignment header; Thursday starts the
+fixed-income weeks.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

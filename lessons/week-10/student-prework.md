@@ -2,14 +2,15 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
-Before Tuesday, read only these headings on [ALFRED Help](https://alfred.stlouisfed.org/help):
-**“What is ALFRED?”**, **“What is a Release and what are Release Dates?”**, **“How are Release Dates
-determined?”**, and **“How does ALFRED verify vintage data?”** (5–7 minutes). Ask: **What was
-knowable on the decision date, and what is visible only because I am looking later?** ALFRED's
-macro-data vintages are an analogy, not a substitute for the course alternative-data definitions;
-the handout and supplied CSV are the accessible/offline route.
+**Before Tuesday — about 20 minutes.** Read only these headings on
+[ALFRED Help](https://alfred.stlouisfed.org/help): **"What is ALFRED?"**, **"What is a Release and
+what are Release Dates?"**, **"How are Release Dates determined?"**, and **"How does ALFRED verify
+vintage data?"** (5–7 minutes). Ask: **what was knowable on the decision date, and what is visible
+only because I am looking later?** The [handout's point-in-time section](student-handout.md#point-in-time-in-plain-language)
+is the complete alternative.
 
-Open `alternative_events.csv` as text and run the starter at the supplied decision time. Without
-AI, predict which timestamps govern admissibility and mark one row you suspect is unavailable.
-The ALFRED reading replaces the abstract vintage-data introduction. **Prework-only budget: 20–25 minutes.**
-Do not implement the unfinished panel or admission functions.
+**Before Thursday — about 30 minutes.** Choose one **monthly** series on
+[ALFRED](https://alfred.stlouisfed.org) that you think moves your Project 2 universe (not your funds'
+own prices). Ask your AI to put every vintage of its last 26 months or more into one table with
+Tuesday's columns: series name, month measured, published on, value. Check three rows against
+ALFRED yourself.

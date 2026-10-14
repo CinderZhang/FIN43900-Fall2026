@@ -1,0 +1,140 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 17</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 17 — Point-in-Time Audit</h1>
+<blockquote>
+<p><strong>One thing today: put your own series through the filter, and decide whether Project 2 may use it.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li>Opener — 0–8</li>
+<li><strong>R</strong> your series — 8–25</li>
+<li><strong>E</strong> on the training table — 25–40</li>
+<li>Your series — 40–52</li>
+<li>Explain the code — 52–58</li>
+<li>Partner attack and your call — 58–65</li>
+<li>Learn, reflect, checkout — 65–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/lab-17-point-in-time.md" target="_blank" rel="noopener">Lab 17</a></p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Rerun <code>python asof.py</code> first: Tuesday's values.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+<blockquote>
+<p><strong>Was each number in your series knowable on the day you would have traded on it — and may
+Project 2 use it?</strong></p>
+</blockquote>
+<p>Paste it into your Lab 16 chat.</p>
+</section>
+<section class="slide">
+<h2>Explain to your partner first</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Five minutes, no screen: one series you think moves your universe, and why. Your partner writes
+the reason down. Swap.</p>
+</section>
+<section class="slide">
+<h2>R — your series</h2>
+<p><strong>Minutes 8–25</strong></p>
+<p>Bring the series you built before class (<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/student-prework.md" target="_blank" rel="noopener">the prework</a>): <strong>one monthly series
+from <a href="https://alfred.stlouisfed.org" target="_blank" rel="noopener">ALFRED</a></strong> that is not your funds' own prices, every vintage
+of at least its last 26 months, in a table with Tuesday's columns: series name, month measured,
+published on, value. In your <code>.md</code> file write a <strong>data card</strong>: source and link, what it measures,
+units, how late it is published, whether it is revised, the download date. Read three rows
+against ALFRED yourself. No table yet: build it now with your AI, as the prework says.</p>
+</section>
+<section class="slide">
+<h2>E — many decision dates, from one message</h2>
+<p><strong>Minutes 25–40</strong></p>
+<p>Send this to your Lab 16 chat:</p>
+<blockquote>
+<p>In my <code>asof.py</code>, keep everything it already prints exactly as it is. Add a list of decision dates
+at the top. For each date, apply the same four rules and print the as-of signal per ticker, or
+"not enough knowable months", and the row numbers the naive panel used for months already over by
+that date but published after it. Add an option to read my own table from a CSV file I name, with the same columns, and
+run the same report on the last day of each of the last 24 months. One file, one command.</p>
+</blockquote>
+<p>Read what changed in <code>asof.py</code> before you run it; ask your AI about any line you cannot explain.</p>
+</section>
+<section class="slide">
+<h2>E — the training table first</h2>
+<p><strong>Minutes 25–40</strong></p>
+<p>Dates 28 February, 31 March, 30 April 2026. <em>Expect:</em></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="E — the training table first (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">E — the training table first</caption>
+<thead>
+<tr>
+<th scope="col">Decision date</th>
+<th scope="col">As-of signal</th>
+<th scope="col">Naive rows not yet published</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>28 Feb 2026</td>
+<td>not enough knowable months</td>
+<td>4, 6, 10</td>
+</tr>
+<tr>
+<td>31 Mar 2026</td>
+<td>AAA +1.98, BBB −1.02, CCC +0.91</td>
+<td>3, 8, 10</td>
+</tr>
+<tr>
+<td>30 Apr 2026</td>
+<td>equal to the naive signal</td>
+<td>none</td>
+</tr>
+</tbody></table></div>
+<p>If not, debug with your AI until they match.</p>
+<p><strong>At minute 30:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 17.</p>
+</section>
+<section class="slide">
+<h2>Your series</h2>
+<p><strong>Minutes 40–52</strong></p>
+<p>Your series, last 24 month-ends. <em>Expect:</em> your funnel and, for each month-end, how many naive rows
+were not yet published.</p>
+<p>A series published the same day it measures shows none: say so.</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 52–58</strong></p>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>asof.py</code> that runs the filter at each
+decision date. Explain it to your partner line by line; your partner asks one question you answer
+from the code. Swap. A line you cannot explain is your next question for your AI.</p>
+</section>
+<section class="slide">
+<h2>Partner attack · Your call</h2>
+<p><strong>Minutes 58–65</strong></p>
+<p><strong>Partner attack.</strong> Your partner reads your data card and names the field they trust least:
+publication date, revisions, or units. Answer in two sentences under the card. Swap.</p>
+<p><strong>Your call: admit, quarantine, or reject</strong> the series for Project 2, with the reason and what
+would change it.</p>
+<p><em>Example (training table):</em> "Quarantine: a publication lag of 10 to 36 days after month-end and a
+revision to AAA February; admit only through the as-of filter — a fixed lag on today's data still
+uses CCC's February value, published 5 April."</p>
+</section>
+<section class="slide">
+<h2>Data card — Learn on your own · Reflect</h2>
+<p><strong>Minutes 65–75</strong></p>
+<p><strong>Learn on your own:</strong></p>
+<ol>
+<li>What is it?</li>
+<li>How does it work — which fields stop a leak before it starts?</li>
+<li>Explain to your partner why "cleaned the data" is not a data card.</li>
+</ol>
+<p><strong>Reflect — explain to your partner:</strong></p>
+<ol>
+<li>How late your series is published, and why the as-of filter handles it;</li>
+<li>What a naive backtest on it would have overstated.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 65–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 17.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>Before Tuesday — do these</strong></p>
+<ol>
+<li>Keep your Lab 17 chat and your call.</li>
+<li>Read the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/..\week-11\student-prework.md" target="_blank" rel="noopener">F-Squared reading</a>.</li>
+</ol>
+<p><strong>Next week:</strong> a rule frozen before you look, and a holdout you do not touch until the end.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

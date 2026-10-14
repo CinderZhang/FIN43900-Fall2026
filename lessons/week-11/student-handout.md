@@ -1,4 +1,7 @@
-# Student Handout — Robust Signal Decision
+# Week 11 Student Handout — Frozen Rules and Holdouts
+
+Last week: was the number knowable when you would have traded? This week: does a rule built on it
+still work on months it has never seen, after costs?
 
 ## F-Squared accessible case summary
 
@@ -9,81 +12,43 @@ drops and buy before price increases. Correcting the timing removed virtually al
 pre-October-2008 outperformance in the SEC's findings. This summary is the required accessible
 alternative to the linked PDF; the course uses it to study leakage, not to supply legal advice.
 
-## Role and deliverable
+## The commands
 
-You are a quantitative investment researcher. Decide whether the supplied signal should be
-rejected, redesigned as a new hypothesis, tested in a bounded prospective pilot, or advanced for
-more evidence. Deliver the frozen research card, baseline/holdout record, gross/net convention,
-selection ledger, robustness evidence, mechanism/claim map, and conditional decision.
+In the terminal, with your own Python command:
 
-## Freeze before testing
+| Command | Expect |
+|---|---|
+| `python backtest.py` | Tuesday: development and holdout, rule and buy-and-hold, and the failure-rule line. Thursday: the placebo beside the rule, then your own data |
 
-| Design element | Frozen value | Why it is permitted before holdout |
-|---|---|---|
-| hypothesis and sign |  |  |
-| information/availability lag |  |  |
-| universe and weighting |  |  |
-| naive benchmark |  |  |
-| development/holdout split |  |  |
-| turnover and one-way cost |  |  |
-| primary metric and failure threshold |  |  |
-| permitted alternatives |  |  |
+Something breaks? Debug with your AI: the exact command and the exact error text.
 
-After the holdout is visible, changing any material design element creates a new hypothesis.
+## The digits, once
 
-## Finance and implementation reference
+The first five development months of the training series (start in bills; cost 0.10% a switch;
+bills 0.3% a month):
 
-For the teaching sign rule, `position_t = sign(signal_t)` and
-`gross_return_t = position_t × next_return_t`. State the availability lag that makes this
-alignment valid. Define turnover and the initial position before computing costs. One transparent
-convention is `turnover_t = |position_t − position_(t−1)|` with `position_0 = 0`, and
-`cost_t = turnover_t × one_way_cost_bps / 10,000`. If you use another defensible convention,
-label it and reconcile the difference.
+| Month | Last month's signal | Position | Return | Cost | Net |
+|---|---:|---|---:|---:|---:|
+| 2025-01 | +0.8 (Dec) | equity | 2.0% | 0.10% (switch) | 1.90% |
+| 2025-02 | +1.2 (Jan) | equity | 1.5% | 0 | 1.50% |
+| 2025-03 | +0.9 (Feb) | equity | 3.0% | 0 | 3.00% |
+| 2025-04 | +1.5 (Mar) | equity | −2.5% | 0 | −2.50% |
+| 2025-05 | −1.0 (Apr) | bills | 0.3% | 0.10% (switch) | 0.20% |
 
-## Tuesday workflow
+Compounding: 1.019 × 1.015 = 1.0343, so two months net +3.43%. With **no lag**, April would use
+April's own −1.0 and sit in bills for the −2.5% month: that is the leak, a month's loss avoided with
+information nobody had.
 
-If code is unavailable, use **Week 11 Signal Calculation Recovery**. Staff release the same
-holdout only after the frozen design; a paper or accessible-spreadsheet route is acceptable and a
-failed holdout remains evidence.
+## The rules
 
-1. Complete and preserve the frozen research card without AI.
-2. Compute a naive benchmark and two manual early-period known answers.
-3. Use AI to implement only the frozen rule; reject optimization or retuning suggestions.
-4. Audit point-in-time alignment, first position, turnover timing, units, and selection ledger.
-5. Reveal/run the holdout once.
-6. Report early/late and gross/net evidence, including failure.
-7. Decide continue unchanged, stop, or register a new hypothesis.
+- Write the rule card first, commit it, then run. The commit time is the proof.
+- The holdout is run once. A rule changed after seeing it is a new hypothesis that needs new months.
+- Report gross and net. A cost per switch is part of the rule, not an afterthought.
+- Keep a selection ledger: every rule you tried, including the ones you dropped.
+- Beating buy-and-hold is not enough if a placebo does it too.
 
-## Thursday robustness and claim record
+## DRIVER, one line each
 
-| Check | Expected result/failure | Actual evidence | Claim consequence |
-|---|---|---|---|
-| higher costs/breakpoint |  |  |  |
-| early versus late/subperiod |  |  |  |
-| placebo/falsification |  |  |  |
-| uncertainty interval |  |  |  |
-| capacity/turnover |  |  |  |
-
-For an interval, state whether resampling assumes independent periods or uses blocks. An interval
-does not repair leakage, multiple testing, or post-hoc design.
-
-### What the teaching panels cannot establish
-
-The required 12-row panel is a known-answer mechanism check, not credible statistical evidence.
-The optional 36-row `signal_extension_panel.csv` exposes a positive, mixed, and negative regime,
-but it is still synthetic, serially structured, and far too small to establish uncertainty,
-capacity, or investability. Use it to test whether the action changes when the regime changes—not
-to report a persuasive Sharpe ratio or a production allocation.
-
-## Selection ledger
-
-List every signal, lag, threshold, universe, weighting rule, cost rule, and split inspected—not
-only the displayed result. Tag bull/bear AI claims as `output`, `source`, `assumption`, or
-`speculation`, and independently verify any claim supporting the action.
-
-## Decision record and submission
-
-State action, permitted pilot size/range if any, economic mechanism, gross/net and capacity
-assumptions, most consequential failure, monitoring metric/frequency/owner, kill rule, and evidence
-required to reopen a failed decision. Lab 18 records the frozen holdout result; Lab 19 records the
-merit decision. Submit individually, disclose AI use, attest truthfully, and verify the receipt.
+Define — the same question for everyone. Represent — the rule card, committed. Implement — the
+backtest from one request. Validate — the known answer and the lag-0 break. Evolve and Reflect — the
+placebo, your own data, and the decision.

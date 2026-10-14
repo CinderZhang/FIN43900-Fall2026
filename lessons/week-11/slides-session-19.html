@@ -1,0 +1,147 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 19</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 19 — Signal Decision</h1>
+<blockquote>
+<p><strong>One thing today: your own signal through a frozen rule, a placebo and an untouched holdout — then a decision.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li>Opener: rerun, the <strong>D</strong> question — 0–8</li>
+<li><strong>R</strong> rule card — 8–18</li>
+<li><strong>E</strong> on the training panel — 18–32</li>
+<li>Your data — 32–46</li>
+<li>Explain the code — 46–52</li>
+<li>Bull and bear — 52–60</li>
+<li>Decision and learn — 60–70</li>
+<li>Reflect and checkout — 70–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-19-signal-decision.md" target="_blank" rel="noopener">Lab 19</a></p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Rerun <code>python backtest.py</code> first: Tuesday's values.</p>
+<blockquote>
+<p><strong>Does your signal beat a placebo on months it has never seen, after costs — and what will you do
+about it?</strong></p>
+</blockquote>
+<p>Paste it into your Lab 18 chat.</p>
+<p><strong>Explain to your partner first</strong> (five minutes, no screen): the economic reason your series should
+move your asset. Your partner writes it down. Swap.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+</section>
+<section class="slide">
+<h2>R — your rule card, frozen and committed</h2>
+<p><strong>Minutes 8–18</strong></p>
+<p>Copy Tuesday's rule card into a new <code>.md</code> file and fill it for your own case <strong>before you run
+anything on your data</strong>:</p>
+<ul>
+<li>signal: your Lab 17 series, the as-of value at each month-end; lag one month, as Tuesday</li>
+<li>one fund from your Lab 15 universe; bills = your Treasury-bill fund, or 0.3% labelled an
+assumption; cost 0.10% a switch</li>
+<li>development = all months except the last 12; holdout = the last 12</li>
+<li>benchmark = buy-and-hold; failure rule</li>
+</ul>
+<p>Commit and push it. Quarantined: only through the as-of filter. Rejected: the training panel — say so.</p>
+<p>Under the card, start a <strong>selection ledger</strong>: every rule you try today, one line each, including the
+ones you drop. Number tried is disclosure, not evidence.</p>
+</section>
+<section class="slide">
+<h2>E — the placebo and your data, from one message</h2>
+<p><strong>Minutes 18–32</strong></p>
+<p>Send this to your Lab 18 chat:</p>
+<blockquote>
+<p>In my <code>backtest.py</code>, keep everything it already prints exactly as it is. Add a placebo: the same
+rule with the signal's sign flipped, printed beside the rule for development and holdout, gross
+and net. Add an option to read my own monthly table from a CSV file I name, with columns month,
+signal and asset return in percent, and to set the holdout as the last 12 months. Print the rule
+card values at the top of every run. One file, one command.</p>
+</blockquote>
+<p>Read what changed in <code>backtest.py</code> before you run it; ask your AI about any line you cannot explain.</p>
+<p><strong>At minute 30:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 19.</p>
+</section>
+<section class="slide">
+<h2>E — training first</h2>
+<p><strong>Minutes 18–32</strong></p>
+<p><em>Expect:</em> the rule as Tuesday, and the placebo beside it:</p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="E — training first (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">E — training first</caption>
+<thead>
+<tr>
+<th scope="col">Period</th>
+<th align="right" scope="col">Rule net</th>
+<th align="right" scope="col">Placebo net</th>
+<th align="right" scope="col">Buy-and-hold</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Development</td>
+<td align="right">6.13</td>
+<td align="right">2.16</td>
+<td align="right">5.33</td>
+</tr>
+<tr>
+<td>Holdout</td>
+<td align="right">−6.09</td>
+<td align="right">4.88</td>
+<td align="right">−2.09</td>
+</tr>
+</tbody></table></div>
+<p>The placebo beats the rule on the holdout. If not, debug with your AI until they match.</p>
+</section>
+<section class="slide">
+<h2>E — your data</h2>
+<p><strong>Minutes 32–46</strong></p>
+<p>Build the monthly table: month, your as-of signal at that month-end, and your fund's monthly
+return from Lab 15.</p>
+<p>Run once on the frozen card.</p>
+<p><em>Expect:</em> your rule, your placebo and buy-and-hold, development and holdout.</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 46–52</strong></p>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>backtest.py</code> that builds the placebo. Explain it to your partner line by
+line; your partner asks one question you answer from the code. Swap. A line you cannot explain is
+your next question for your AI.</p>
+</section>
+<section class="slide">
+<h2>V — bull, bear, and the ledger</h2>
+<p><strong>Minutes 52–60</strong></p>
+<p><strong>Partner attack.</strong> Your partner argues the bear case from your numbers; you argue the bull case
+from the same numbers. Write both in two sentences each. Swap.</p>
+<p>Check your ledger: if you changed the rule after seeing the holdout, the change is a new hypothesis
+and the holdout no longer tests it. Say so.</p>
+</section>
+<section class="slide">
+<h2>Your decision · Placebo</h2>
+<p><strong>Minutes 60–70</strong></p>
+<p><strong>Reject, redesign as a new hypothesis, gather more evidence, or a bounded research pilot</strong> —
+with the condition that would change it.</p>
+<p><em>Example (training):</em> "Reject: the holdout trails buy-and-hold by 4 points and the placebo beats
+the rule; any revised rule needs months after June 2026."</p>
+<p><strong>Placebo — Learn on your own:</strong></p>
+<ol>
+<li>What is it?</li>
+<li>How does it work — what does a flipped or random signal tell you?</li>
+<li>Explain to your partner why beating buy-and-hold is not enough if a placebo does it too.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Reflect</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p>Explain to your partner:</p>
+<ol>
+<li>what your holdout says that development did not;</li>
+<li>what you would need before risking real money on this signal.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 19.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>Before Tuesday — do these</strong></p>
+<ol>
+<li>Commit and push your rule card, ledger and decision.</li>
+<li>Have your rule card, your data card and your mandate on GitHub.</li>
+</ol>
+<p><strong>Next week:</strong> Project 2 studio — the rule card, the data card and the mandate become one repository.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

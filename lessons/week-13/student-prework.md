@@ -9,8 +9,9 @@
   your Thursday prework is that track's `week-13/prework.md` instead of the FINRA reading
   below — and class attendance still pays either way, because the sessions model the
   replication moves both tracks share.
-- Tuesday: run the 12-row Project 2 audit, verify access/visible output/transcripts, and bring
-  only remaining must-fix evidence.
+- Tuesday: Lab 20 (Project 2 Readiness) — your partner runs your Project 2 repository
+  cold from the README, and you rerun one changed input, predicted first. Bring only remaining
+  must-fix evidence.
 - Thursday: read only the FINRA [Bonds](https://www.finra.org/investors/investing/investment-products/bonds)
   headings **“Selling Before the Maturity Date,” “Bond Pricing,” “Bonds and Interest Rates,”** and
   glossary entry **“Yield to Maturity”** (5–7 minutes). Ask: **What is quoted, what does the buyer
