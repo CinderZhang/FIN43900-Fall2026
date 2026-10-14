@@ -1,6 +1,7 @@
 # AI Boundary Card — Use This All Semester
 
-This card controls the Edition A project checkpoints. A weekly lab may add a narrower AI-off phase,
+This card controls the Edition A checkpoints of Project 1 and the capstone; Project 2 has none
+(changed 2026-10-14), so AI is open for it from the start. A weekly lab may add a narrower AI-off phase,
 but it cannot silently change these project rules.
 
 ## The short rule
@@ -42,8 +43,6 @@ portfolio, data, assumptions, code, decision, or deliverable.
 
 - Week 1's assigned AI-assisted company-screening practice occurs before the Project 1 valuation
   boundary and does not invalidate Project 1 Edition A.
-- Week 8 Lab 15's assigned two-AI comparison uses a common CIO case and does not invalidate
-  Project 2 Edition A. Giving either model the student's own Project 2 proposal does.
 - General course demonstrations do not invalidate an Edition A unless a student turns them into
   project-specific generated work before the receipt.
 
@@ -51,13 +50,13 @@ portfolio, data, assumptions, code, decision, or deliverable.
 
 The AI-off phase ends only after Brightspace shows the first successful receipt for the designated
 Edition A assignment. Record its attempt/receipt identifier and timestamp. Where the checkpoint
-requires a repository snapshot, record the matching commit. The published Project 1, Project 2,
-and Capstone assignment pages control their respective Edition A availability windows; Special
+requires a repository snapshot, record the matching commit. The published Project 1 and Capstone
+assignment pages control their respective Edition A availability windows; Special
 Access controls an approved individual variation.
 
 The receipt proves when the submitted version was frozen; it does not prove what tools were used
-before submission. Project 1's supervised Lab 03 can supply observed pre-AI evidence. Project 2 and
-Capstone Edition A are declared baselines, followed by supervised changed-input/evidence-navigation
+before submission. Project 1's supervised Lab 03 can supply observed pre-AI evidence. Capstone
+Edition A is a declared baseline, followed by supervised changed-input/evidence-navigation
 work that tests individual command without relying on the declaration alone.
 
 Each checkpoint page must publish how Special Access implements approved extended time or an

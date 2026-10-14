@@ -49,8 +49,8 @@ handled under one published instructor ruling applied to the whole class. Editio
 - the research and validation plan.
 
 The student attests that Edition A was prepared without generative-AI assistance. Project 1's
-supervised Lab 03 may be described as observed pre-AI evidence. The unsupervised Project 2 and
-Capstone windows establish declared baselines, not proof that AI was absent. The first successful
+supervised Lab 03 may be described as observed pre-AI evidence. The unsupervised
+Capstone window establishes a declared baseline, not proof that AI was absent. The first successful
 on-time Brightspace submission is the baseline of record: its timestamp fixes the
 submission order and makes the comparison auditable, but does not by itself prove authorship.
 Individual ownership is verified through later supervised changed-input/evidence-navigation work,
@@ -134,6 +134,8 @@ AI-generated claim, suggestion, or result and the check
 performed on it; state whether it was accepted, qualified, corrected, or rejected and why.
 This video's unique function is to demonstrate authorship of the research decisions and the
 checks performed on AI output, not to read the change table or deliver a generic reflection.
+Project 2 has no editions: its Video 1 shows how the system and the student's thinking changed,
+plus the AI-output check.
 
 ### 5. Video 2 — Detailed codebase walkthrough
 
@@ -164,7 +166,7 @@ presents the decision through an investment-committee simulation.
 
 **Maximum duration: 5:00. Graders stop at 5:00.** A project brief may require a specific
 opening segment inside this window — Project 1 requires a live product demonstration as
-the video's main delivery — and that requirement is stated in the project's own brief.
+the video's main delivery, and Project 2 opens with one — and each requirement is stated in the project's own brief.
 Present as the assigned analyst to a
 buy-side investment committee. Lead with the decision, not the build process. Defend the
 recommendation, range, evidence, material assumptions, risks, and explicit conditions or
@@ -206,6 +208,20 @@ duration; the submitted recording may not be replaced or edited after the deadli
 instructional-team GitHub access identity and filename prefix for each project are published on
 the assignment page before the Edition A checkpoint opens.
 
+### Markdown, not PDF — Project 2 and the capstone (owner ruling 2026-10-13)
+
+From Project 2 on, every written part is a Markdown file in the repository's `docs/` folder:
+`edition-a.md` (capstone only, committed unchanged after its Brightspace receipt),
+`research-evolution.md` (capstone only), `decision-memo.md` and `validation-and-ai-use.md`. The
+capstone Edition A checkpoint takes `edition-a.md`; the final submission attaches the same `.md` files, which are the frozen grading and appeal record
+in place of the PDFs named above. Manifest rows keep their names; each location is the GitHub
+link. Project 1 keeps the PDFs.
+
+**Project 2 has no Edition A or Edition B (owner ruling 2026-10-14).** Only Edition A, Edition B
+and their A-to-B comparison (parts 1 and 2 above) do not apply to it; the Locked Changed-Input
+Record and its AI-off prediction remain required for Project 2. Its manifest's research-evolution
+row is marked not required, and its Video 1 covers how the system and the student's thinking changed plus one checked AI output.
+
 ### Capstone-only extensions
 
 The capstone brief extends this shared architecture without changing it for Projects 1–2:
@@ -244,6 +260,9 @@ for those criteria:
 | Technical execution and usability | repository, executed output, Video 2 |
 | Validation, sensitivity, and reproducibility | validation record, Video 1 AI-output check, Locked Changed-Input Record, Video 2 |
 | Professional communication | all written artifacts and Videos 1–3 |
+
+Project 2 has no editions: the Edition A and B evidence above comes from its decision memo,
+README, validation record and Video 1.
 
 No video earns points merely for existing. Graders assess the evidence under the published
 criteria and do not deduct twice for one defect. Professional communication means structure,
@@ -292,7 +311,7 @@ project to audit consistency across graders and sections.
 
 For each major project, build:
 
-1. one Edition A checkpoint with a published availability window and a timestamped receipt;
+1. one Edition A checkpoint (Project 1 and the capstone; Project 2 has none) with a published availability window and a timestamped receipt;
 2. one final assignment with a required link/file manifest and the six-criterion rubric;
 3. one student-facing checklist using the seven bundle headings above;
 4. one submission template with consistent filenames and link labels; and

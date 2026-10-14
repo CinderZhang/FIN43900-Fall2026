@@ -1,5 +1,13 @@
 # Major Project Student Checklist
 
+**Project 2 and the capstone:** every written part below is a Markdown file in your repository's
+`docs/` folder, not a PDF (`decision-memo.md`, `validation-and-ai-use.md`, and for the capstone
+`edition-a.md` and `research-evolution.md`); attach the same `.md` files to the Brightspace
+submission. **Project 2 has no Edition A or B:** skip "Before AI" and the research-evolution item.
+**Project 2 also requires** two short statements opening your README, your memo and each video
+(an AI announcement; education, not investment advice), and Video 3 opens with a live demo of
+your app. See the [Project 2 page](project-2-investment-management-application.md).
+
 ## Before AI
 
 - [ ] Submit the designated Edition A PDF through Brightspace and save the first successful
@@ -22,9 +30,9 @@
   complete **Locked Changed-Input Record** (human-authored AI-off prediction before the run;
   immutable commit/snapshot; old and new values with units; expected and actual direction;
   decision effect; failure diagnosis when expectation and result diverge).
-- [ ] Video 1 ≤3:00 plus `transcript-video-1.txt`.
-- [ ] Video 2 ≤5:00 plus `transcript-video-2.txt`.
-- [ ] Video 3 ≤5:00 plus `transcript-video-3.txt`.
+- [ ] Video 1 ≤3:00 (Projects 1–2; capstone ≤6:00) plus `transcript-video-1.txt`.
+- [ ] Video 2 ≤5:00 (Projects 1–2; capstone ≤10:00) plus `transcript-video-2.txt`.
+- [ ] Video 3 ≤5:00 (Projects 1–2; capstone ≤8:00) plus `transcript-video-3.txt`.
 - [ ] Brightspace manifest: stable repository/video URLs, optional deployment, titles/durations,
   timestamp indices, access confirmation, and frozen-file checklist.
 
