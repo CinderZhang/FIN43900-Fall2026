@@ -19,7 +19,7 @@ bug worth reporting.
 - [Week 6 — Pro-Forma Financial Modeling II](lessons/week-06/) — video: [Pro-Forma Valuation with AI, Part 2 (22 min)](https://youtu.be/zDBUpjaQzpo) · slides: [Part 2](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-05/pro-forma-abg-tutorial/video-2-take-it-apart-and-present-slides.html) · [tutorial page](lessons/week-05/pro-forma-abg-tutorial/)
 - [Week 7 — Project 1 Studio](lessons/week-07/)
 - [Week 8 — Project 1 Due & Portfolio Construction Opens](lessons/week-08/)
-- [Week 9 — Portfolio Construction & Optimization](lessons/week-09/)
+- [Week 9 — Portfolio Construction & Optimization](lessons/week-09/) — projected slides: [Session 14](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-09/slides-session-14.html) · [Session 15](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-09/slides-session-15.html)
 - [Week 10 — Alternative Data & Market Analysis](lessons/week-10/)
 - [Week 11 — Alternative Data & Market Analysis](lessons/week-11/)
 - [Week 12 — Project 2 Studio](lessons/week-12/)
@@ -27,6 +27,11 @@ bug worth reporting.
 - [Week 14 — Applied Financial Decision Systems](lessons/week-14/) — projected slides: [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-14/slides-session-26.html)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
 - [Week 16 — Capstone Submission & Consultation](lessons/week-16/)
+
+## Projects
+
+- [Project 1 — Corporate Finance Application](projects/project-1-corporate-finance-application.md)
+- [Project 2 — Investment Management Application](projects/project-2-investment-management-application.md)
 
 The `.html` slide files do not render inside the GitHub file browser —
 use the projected-slides links above (arrow keys or click to advance).
