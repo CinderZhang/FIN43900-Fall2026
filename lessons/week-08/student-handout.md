@@ -1,58 +1,39 @@
-# Student Handout — Portfolio Mandate
+# Week 8 Student Handout — The Mandate Comes First
 
-## Role and deliverable
+Last month: what is one company worth? Project 2: what should a portfolio hold, for whom, under
+which rules? Before anyone builds a portfolio, the client's words become rules.
 
-You are a portfolio analyst converting an ambiguous CIO request into a decision contract. Deliver
-a complete mandate, two AI interpretation dispositions, precommitted validation plan, and one
-question that must be escalated before optimization.
+**GitHub is the main delivery from now on.** Every lab and project is handed in as GitHub links to
+your own files. This week: [Lab 13](lab-13-portfolio-mandate.md), on your own after the guest talk.
 
-Use only **Week 8 Common CIO Case — Meridian Foundation Reserve** for the Lab 13 comparison. Its
-dated facts and exact common prompt keep the two sections comparable. The optional Mandate
-Collision challenge is a different transfer case and must not be merged into this record.
+## The command
 
-## Mandate record
+In the VS Code terminal (**Terminal → New Terminal**), with your own Python command (`python`,
+`py`, or `python3` — the one that answered in Week 3):
 
-- intended user and decision;
-- objective stated as a measurable tradeoff, not “best”;
-- investable universe and as-of boundary;
-- horizon and rebalancing assumption;
-- benchmark and naive baseline;
-- risk measure and loss tolerance;
-- constraints: long-only/shorting, leverage, concentration, turnover, liquidity, sector or
-  mandate suitability;
-- precommitted tests and failure conditions.
+| Command | Expect |
+|---|---|
+| `python mandate.py` | the reserve minimum, then each candidate's rules with pass or FAIL and a verdict |
 
-Write the mandate before selecting an optimizer. AI can reveal ambiguity, but it cannot invent
-the CIO’s preferences. If two plausible interpretations produce different allocations, stop
-and escalate the decision rather than silently choosing one.
+Something breaks? Debug with your AI: the exact command and the exact error text.
 
-## Human and AI workflow
+## The rules
 
-1. Without AI, classify each CIO statement as objective, hard constraint, preference, aspiration,
-   or unverifiable promise.
-2. Complete the mandate fields and identify missing facts.
-3. Ask two AI systems for competing operational interpretations. For each, mark supported,
-   unsupported, or requires clarification and cite the governing CIO fact.
-4. Precommit benchmark, naive baseline, perturbation, holdout, cost, and failure tests.
-5. Close AI and state the minimum question/action required before analysis proceeds.
+- Sort before you build, without AI. Every client statement is an objective, a hard constraint, a preference,
+  an unverifiable promise, or missing.
+- A rule the client did not define is not tested. The checker prints "requires CIO clarification";
+  nobody invents the number.
+- Compute every threshold from the facts. The reserve minimum is quarters × payout ÷ reserve size.
+- Passing every checkable rule is not the same as suitable. Name the statement that decides.
+- One question back to the client beats a guess.
 
-## Evidence table
+## After the lab
 
-| Mandate element | Operational value | Governing fact | Ambiguity/escalation |
-|---|---|---|---|
-| objective/benchmark |  |  |  |
-| horizon/rebalancing |  |  |  |
-| risk/loss tolerance |  |  |  |
-| liquidity/turnover |  |  |  |
-| leverage/shorting/concentration/suitability |  |  |  |
+Lab 13 uses the **assigned common case**. Then write your own Project 2 mandate in the same shape:
+objective, hard constraints, the one question for your client. Project 2 starts from it in Week 9.
 
-Keep the mandate and AI dispositions for Lab 13 and Project 2 Edition A.
+## DRIVER, one line each
 
-The Project 2 Edition A checkpoint must be submitted before generative-AI work on that project.
-Lab 13's two-AI interpretation comparison uses the assigned common case and therefore does not
-violate that boundary. Do not give either model the student's own proposed securities, strategy,
-data, or code until the first successful **Project 2 — Investment Management Application —
-Edition A checkpoint** receipt is recorded. Follow the uniform project
-architecture; this class exercise does not itself constitute the checkpoint. The **Project 2 —
-Investment Management Application — Edition A Checkpoint (AI Closed)** page and its Brightspace
-availability fields give the exact window, and Special Access controls any approved individual change.
+Define — the same question for everyone. Represent — the CIO's statements, sorted. Implement — the
+checker from one request. Validate — the known answer and the probe. Evolve and Reflect — your AI
+attacks the checker; you judge it.

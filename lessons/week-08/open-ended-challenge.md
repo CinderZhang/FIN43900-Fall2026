@@ -1,6 +1,6 @@
 # Open-Ended Challenge — Mandate Collision
 
-This is a changed transfer case after Lab 13. Its facts are not the Meridian Foundation common
+This is a changed transfer case after [Lab 13](lab-13-portfolio-mandate.md). Its facts are not the Meridian Foundation common
 case and must not be used as Lab 13 evidence.
 
 The CIO requests a 7% annual return, no calendar-year loss greater than 5%, daily liquidity,
