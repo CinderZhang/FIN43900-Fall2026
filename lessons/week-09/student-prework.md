@@ -2,24 +2,24 @@
 
 <!-- Generated from the matching weekly README by build_student_prework.py. Edit the canonical section, then rebuild. -->
 
-Before Tuesday, read [OpenStax §15.2](https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets)
-from **“Diversification” through “Portfolio Size and Risk”** (8–10 minutes). Do not paste or ingest
-OpenStax text into an AI system. Ask: **Why can two individually risky assets reduce portfolio
-risk?** The course handout's **Diversification in plain language** section is the complete readable
-alternative and controls notation. If the page is unavailable, use that section; no outside link
-is needed to complete the purpose question or graded work.
+**Before Tuesday — about 30 minutes.**
 
-Bring the Week 8 mandate and its unresolved ambiguity, open both CSV files, run
-`portfolio_starter.py`, and record the four equal weights printed by the starter. Without AI,
-predict which two assets should be most highly correlated and which asset should receive the
-largest inverse-volatility weight. The external excerpt adds a second explanation of the same
-concepts. **Prework-only budget: 30–35 minutes.** Do not implement unfinished
-functions or import PyPortfolioOpt before class.
+1. Read [OpenStax Principles of Finance §15.2](https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets)
+   from **"Diversification"** through **"Portfolio Size and Risk"** (8–10 minutes). Ask: **why can
+   two risky assets together be less risky than either alone?** The
+   [handout's diversification section](student-handout.md#diversification-in-plain-language) is
+   the complete alternative.
+2. Work the benchmark's volatility by hand from the [handout's digits](student-handout.md#the-digits-once).
+   You will explain it to your partner first thing.
 
-Only after the manual covariance and baselines are reconciled in class, inspect the
-[PyPortfolioOpt User Guide](https://pyportfolioopt.readthedocs.io/en/latest/UserGuide.html)
-sections **“Processing historical prices”** and **“Mean-variance optimization”** through the
-efficient-frontier equation (5 minutes). Treat this as code archaeology: identify the inputs and
-assumptions hidden behind the weights; do not use its ready-made code as the lab solution. If the
-documentation is unavailable, use the handout's **PyPortfolioOpt input-contract archaeology**
-section, which is the complete local alternative for this inspection.
+**Before Thursday — about 35 minutes.**
+
+1. From your own mandate, choose three to six funds for your universe (cash, bonds, fixed income,
+   equity — the [end of Lab 14](lab-14-portfolio-baselines.md#before-thursday--your-own-universe-in-funds)
+   shows how), and write down your objective as a number and your one hard constraint.
+2. Build your `prices.csv` for those funds, as the end of Lab 14 says: five years of monthly
+   **Adj Close** prices, each ticker's source and download date in your `.md` file.
+3. Install Streamlit, the Python library that turns a script into a web page, and run its demo:
+   [Streamlit's install page](https://docs.streamlit.io/get-started/installation/command-line). Then read
+   [Basic concepts](https://docs.streamlit.io/get-started/fundamentals/main-concepts) through **Data flow**.
+   Ask: **what happens to my script each time someone moves a control?**

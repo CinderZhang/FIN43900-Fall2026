@@ -1,0 +1,194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 15</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 15 — Portfolio Stability Decision</h1>
+<blockquote>
+<p><strong>One thing today: turn your engine into your first app — a Streamlit page that finds the lowest-risk mix meeting the mandate's objective and reserve rule — and test whether its answer survives a one-point change.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li>Opener — minutes 0–8</li>
+<li><strong>R</strong> your universe and your mandate — minutes 8–15</li>
+<li><strong>I</strong> the app on Meridian — minutes 15–35</li>
+<li><strong>V</strong> the known answer — minutes 35–42</li>
+<li>Your universe — minutes 42–52</li>
+<li>Explain the code — minutes 52–58</li>
+<li>Partner attack — minutes 58–63</li>
+<li>Your call and learn — minutes 63–70</li>
+<li>Reflect and checkout — minutes 70–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/lab-15-portfolio-stability.md" target="_blank" rel="noopener">Lab 15</a></p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Rerun <code>python portfolio.py</code> first: Tuesday's values.</p>
+<blockquote>
+<p><strong>Which mix carries the least risk while meeting the mandate — and does the answer survive a
+one-point change in one estimate?</strong></p>
+</blockquote>
+<p>Paste it into your Lab 14 chat. Today the answer lives in an app your client could use: a web
+page with controls, running on your own engine.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+</section>
+<section class="slide">
+<h2>Explain to your partner first</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Five minutes, no screen: your Project 2 universe, your objective, and your one hard constraint.
+Your partner writes them down. Swap.</p>
+</section>
+<section class="slide">
+<h2>R — your universe and your mandate</h2>
+<p><strong>Minutes 8–15</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — your universe and your mandate (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — your universe and your mandate</caption>
+<thead>
+<tr>
+<th scope="col">Input</th>
+<th scope="col">Meridian (training)</th>
+<th scope="col">Yours</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Assets</td>
+<td>the four sleeves from Lab 14</td>
+<td>three to six funds from your mandate</td>
+</tr>
+<tr>
+<td>Return, volatility, correlation</td>
+<td>Lab 14's tables</td>
+<td>estimated from five years of monthly prices</td>
+</tr>
+<tr>
+<td>Objective</td>
+<td>6.5% expected return</td>
+<td>your mandate's objective, as a number</td>
+</tr>
+<tr>
+<td>Hard constraint</td>
+<td>reserve-eligible weight at least 3%</td>
+<td>your mandate's constraint, or <code>none</code> stated</td>
+</tr>
+</tbody></table></div>
+<p><strong>Your prices.</strong> Bring the <code>prices.csv</code> you built after Lab 14: five years of monthly <strong>Adj Close</strong>,
+date first, oldest month first, one column per ticker; sources and download date in your <code>.md</code>
+file. No file yet: build it now, as the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/lab-14-portfolio-baselines.md#before-thursday--your-own-universe-in-funds" target="_blank" rel="noopener">end of Lab 14</a> says.</p>
+<p>A five-year average is history, not a forecast. Label your returns <code>estimate</code>.</p>
+</section>
+<section class="slide">
+<h2>I — the app, from one message</h2>
+<p><strong>Minutes 15–35</strong></p>
+<p>Send this to your Lab 14 chat:</p>
+<blockquote>
+<p>In my <code>portfolio.py</code>, keep everything it already prints exactly as it is. Add two functions:
+a search that tries every long-only mix of the assets in 5-point steps, keeps the mixes whose
+expected return is at least the objective and whose reserve-eligible weight is at least a
+minimum, and returns the one with the lowest volatility, or nothing if no mix meets the
+objective; and an estimate from a CSV of monthly prices (date first, oldest first, one column per ticker):
+monthly returns from prices, mean × 12, standard deviation × √12, correlations, on all months
+or only the last 36. Then build <code>app.py</code>, a Streamlit app that imports these functions and the
+Meridian inputs from <code>portfolio.py</code> — reuse them, never copy the math. Sidebar: the objective
+(start 6.5%), the reserve minimum (start 3%), an upload for my <code>prices.csv</code>, and a last-36-months
+switch. Page: every expected return as a box I can edit; a tick box per asset for
+reserve-eligible (bills and the 10-year note ticked for Meridian); the lowest-risk mix —
+weights, return and volatility to two decimals, reserve-eligible weight — or "no mix meets the
+objective", beside the answer for the inputs as loaded (Meridian's, or the CSV's on all
+months), with the largest weight change in points. Under the title, one line: built with AI
+help, a learning demonstration, not investment advice. Give me the command to run it.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>I — run it</h2>
+<p><strong>Minutes 15–35</strong></p>
+<ol>
+<li><code>python portfolio.py</code> — <em>Expect:</em> Tuesday's values, unchanged.</li>
+<li>Run the app with the command your AI gave you — <em>Expect:</em> your browser opens it on Meridian's
+answer. An error: paste the exact text to your AI.</li>
+</ol>
+<p><strong>At minute 30:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 15.</p>
+</section>
+<section class="slide">
+<h2>V — prove it on the known answer</h2>
+<p><strong>Minutes 35–42</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer</caption>
+<thead>
+<tr>
+<th scope="col">Run</th>
+<th scope="col">Bills / 10-year / IG / equity</th>
+<th align="right" scope="col">Return</th>
+<th align="right" scope="col">Volatility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>As loaded</td>
+<td>0 / 20 / 25 / 55</td>
+<td align="right">6.51</td>
+<td align="right">9.44</td>
+</tr>
+<tr>
+<td>Equity return box 8.0 → 7.0</td>
+<td>0 / 10 / 10 / 80</td>
+<td align="right">6.53</td>
+<td align="right">12.94</td>
+</tr>
+</tbody></table></div>
+<p>Largest weight change: <strong>25 points</strong>. One point off one estimate moves a quarter of the money.</p>
+<p><strong>Prove it is your engine.</strong> IG–equity correlation <code>0.50</code> in <code>portfolio.py</code>, save, refresh the
+page. <em>Expect:</em> <strong>0 / 40 / 0 / 60</strong> at <strong>6.52</strong> and <strong>9.73</strong>. Set it back.</p>
+</section>
+<section class="slide">
+<h2>Your universe</h2>
+<p><strong>Minutes 42–52</strong></p>
+<p>Upload your <code>prices.csv</code>. Your objective, your reserve rule (tick the assets that count, or set the
+minimum to 0). All months; then flip to the last 36.</p>
+<p><em>Expect:</em> your mix, or "no mix meets the objective" — a real answer; never lower the objective
+to get one. Copy both answers, and the largest change when both have a mix, into your <code>.md</code> file.</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 52–58</strong></p>
+<blockquote>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the search function in <code>portfolio.py</code> that tries
+the mixes and keeps the lowest-risk one that meets the objective. Explain it to your partner line
+by line; your partner asks one question you answer from the code. Swap. A line you cannot explain
+is your next question for your AI.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>Partner attack</h2>
+<p><strong>Minutes 58–63</strong></p>
+<p>Your partner opens your app, moves the estimate they distrust most, and reads the answer aloud.
+Answer in two sentences in your <code>.md</code> file. Swap.</p>
+</section>
+<section class="slide">
+<h2>Your call · Estimation risk — Learn on your own</h2>
+<p><strong>Minutes 63–70</strong></p>
+<p><strong>Adopt, pilot, or reject</strong> the app's mix as your Project 2 starting allocation, with the
+condition that would change it.</p>
+<p><em>Example (Meridian):</em> "Pilot, not adopt: a one-point lower equity estimate moves 25 points into
+equity. Adopt only once the CIO answers S9."</p>
+<p><strong>Learn on your own:</strong></p>
+<ol>
+<li>What is it?</li>
+<li>How does it work — why does an optimizer amplify small errors in expected returns?</li>
+<li>Explain it to your partner using your own largest weight change.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Reflect</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Explain to your partner:</strong></p>
+<ol>
+<li>why the lowest-risk mix moved so far;</li>
+<li>what you would need to see before you adopted it.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 15.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong> Your <code>app.py</code> is one of them.</p>
+<p><strong>Before Tuesday — do these</strong></p>
+<ol>
+<li>Read the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/..\week-10\student-prework.md" target="_blank" rel="noopener">ALFRED reading</a>.</li>
+<li>Keep your Lab 15 chat, your <code>app.py</code> and your partner.</li>
+</ol>
+<p><strong>Next week:</strong> when was each number you used actually knowable? Data provenance and point-in-time.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>

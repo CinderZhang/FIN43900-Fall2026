@@ -1,38 +1,21 @@
-# Student Handout — Portfolio Construction and Stability
+# Week 9 Student Handout — Portfolio Construction and Stability
 
-## Input provenance and decision boundary
+Last week: which portfolios does the client's mandate permit? This week: what does each portfolio
+earn and risk, and does the "best" one survive a small change in what you assumed?
 
-`asset_statistics.csv` and `correlation.csv` are fictional, course-authored, annualized teaching
-inputs published for the Oct. 20, 2026 class. They are not estimates from a historical sample,
-do not describe real securities, and contain no missing values. Record the sample boundary as
-`not applicable — course-authored synthetic point-in-time inputs`; record the as-of boundary as
-`Oct. 20, 2026 course release`. A historical estimator, live-market inference, or claim about
-future returns is outside the evidence supplied here.
+## The commands
 
-The CIO case does not authorize one optimization objective. If that ambiguity remains material,
-record `DEFERRED_NO_ADOPTABLE_CANDIDATE`, name the ambiguity and escalation owner, and construct
-one transparent mechanics-only feasible allocation under an explicitly labeled provisional
-classroom objective. It practices the model mechanics but cannot support adoption. Lab 14 still
-requires both baselines, mechanical checks, the exact CIO question, and evidence needed to resume.
+In the terminal, with your own Python command:
 
-## Role and deliverable
+| Command | Expect |
+|---|---|
+| `python portfolio.py` | Tuesday: three Meridian baselines with return, volatility and reserve. Thursday: unchanged; your app imports its functions |
+| the run command your AI gives you for `app.py` | Thursday: your first app in the browser — the lowest-risk mix beside the as-loaded answer, then your own universe from `prices.csv`. Reference: [Streamlit's Basic concepts](https://docs.streamlit.io/get-started/fundamentals/main-concepts) |
+| `python mandate.py` | your Lab 13 verdicts, plus the benchmark failing the reserve rule |
 
-You are a portfolio analyst. Recommend whether the committee should adopt, rebalance, pilot, or
-reject one constrained allocation under the Week 8 mandate. Your deliverable is not a winning
-weight vector; it is a baseline comparison, constraint audit, stability record, and conditional
-decision that another analyst can reproduce.
+Something breaks? Debug with your AI: the exact command and the exact error text.
 
-## Prework record
-
-Bring your Week 8 mandate. Run the starter and record its equal weights. Without AI, write:
-
-1. the two assets you expect to be most highly correlated;
-2. the asset you expect to receive the largest inverse-volatility weight; and
-3. one mandate constraint that could bind.
-
-## Finance reference
-
-### Diversification in plain language
+## Diversification in plain language
 
 Portfolio risk depends on how assets move **together**, not only on each asset's standalone
 volatility. The portfolio-variance calculation therefore includes covariance terms. When two
@@ -45,90 +28,32 @@ benefit normally shrinks as more assets are added. Diversification cannot remove
 systematic risks shared across the portfolio. A low historical correlation is evidence to test,
 not a promise: it may rise in a new window or stress regime.
 
-### Equations and mechanical checks
+## The digits, once
 
-For volatility vector `σ` and correlation matrix `C`:
+The benchmark: 40% investment-grade bonds (return 5.0%, volatility 6.0%), 60% global equity
+(8.0%, 16.0%), correlation 0.25.
 
-`Σ = diag(σ) × C × diag(σ)`
+| Step | Rule | Benchmark |
+|---|---|---|
+| Expected return | Σ weight × return | 0.40 × 5.0 + 0.60 × 8.0 = 6.80% |
+| Covariance, bonds–equity | correlation × vol × vol | 0.25 × 0.06 × 0.16 = 0.0024 |
+| Variance | w₁²σ₁² + w₂²σ₂² + 2w₁w₂ × covariance | 0.000576 + 0.009216 + 0.001152 = 0.010944 |
+| Volatility | √variance | √0.010944 = 10.46% |
+| Without the correlation term | the classic error | √(0.000576 + 0.009216) = 9.90% |
+| Inverse volatility, bills | (1 ÷ 0.005) ÷ Σ(1 ÷ vol) | 200 ÷ 237.2 = 84.3% |
+| Annualizing monthly data | mean × 12; standard deviation × √12 (simple scaling, not compounded growth; it treats months as independent) | 0.6% a month → 7.2% a year; 4.0% a month → 13.9% a year |
 
-For weights `w`, expected-return vector `μ`, and covariance `Σ`:
+## The rules
 
-- portfolio expected return: `wᵀμ`;
-- portfolio variance: `wᵀΣw`;
-- portfolio volatility: `sqrt(wᵀΣw)`.
+- Training values and your estimates are labelled differently. A five-year average is history,
+  not a forecast.
+- Never lower the objective to make a mix appear. "No mix meets the objective" is an answer.
+- A search result is a starting point. If one point on one estimate moves a quarter of the money,
+  the call is pilot or reject, not adopt.
+- Run every new portfolio through the mandate checker before you call it better.
 
-All inputs must use compatible frequency and units. Verify labels/order, symmetry, unit diagonal
-in correlation, nonnegative variances, positive semidefiniteness within tolerance, weights that
-sum to one, and every mandate bound. A solver success message proves none of these by itself.
+## DRIVER, one line each
 
-### PyPortfolioOpt input-contract archaeology
-
-The optional in-class documentation inspection is about the contract hidden behind a returned
-weight vector. A portfolio library may accept historical **prices**, transform them into returns,
-estimate expected returns `μ` and covariance `Σ`, annualize them at a selected frequency, and pass
-those estimates to an optimizer. Before trusting the output, identify and record:
-
-- whether the interface received prices or returns and how missing observations were handled;
-- the return, covariance, frequency, and annualization estimators;
-- the chosen objective, risk-free-rate assumption if any, and all weight bounds/constraints;
-- solver and post-processing behavior, including cleaning or rounding of weights; and
-- which results you can reproduce from the course equations and transparent baselines.
-
-The course does not require importing PyPortfolioOpt. This subsection is the complete readable
-alternative if its documentation is unavailable; the manual covariance, equal-weight, and
-inverse-volatility baselines still come first.
-
-## Tuesday workflow — baseline before candidate
-
-If Python, NumPy, or a solver is unavailable, open **Week 9 Portfolio Calculation Recovery** and
-use its paper/accessible-spreadsheet route. The finance evidence and validation standard do not
-change; label optimizer-only output unexecuted.
-
-1. Restate decision user, objective, horizon, benchmark, universe, and hard constraints.
-2. Record return/volatility frequency, sample/as-of boundary, missingness policy, and whether
-   expected returns are forecasts or teaching inputs.
-3. Construct covariance and reconcile at least two cells independently.
-4. Calculate equal-weight and inverse-volatility weights and portfolio metrics.
-5. Write the explicitly provisional mechanics-probe objective and constraints before asking AI
-   for code. If the objective remains unresolved, label the decision
-   `DEFERRED_NO_ADOPTABLE_CANDIDATE` and name the exact CIO question and escalation owner.
-6. Use AI only for implementation help; keep accepted/rejected suggestions and reasons.
-7. Verify sum-to-one, bounds, concentration, units, covariance, and baseline comparison.
-
-| Portfolio | Weight summary | Expected return | Volatility | Constraint breach? | What it establishes |
-|---|---|---:|---:|---|---|
-| Equal weight |  |  |  |  | transparent baseline |
-| Inverse volatility |  |  |  |  | risk-scaling baseline |
-| Candidate |  |  |  |  | conditional model output |
-
-## Thursday workflow — attack before adoption
-
-Write expected direction before running each selected test.
-
-| Test | Input/constraint changed | Expected direction | Actual result | Mandate effect | Disposition |
-|---|---|---|---|---|---|
-| Mean estimate |  |  |  |  |  |
-| Covariance/window |  |  |  |  |  |
-| Constraint/bound |  |  |  |  |  |
-| Turnover/cost |  |  |  |  |  |
-
-Ask two AI systems for opposing recommendations. For every material claim, mark
-`output-supported`, `assumption-dependent`, or `unsupported`; verify the first independently.
-Then close AI and decide a small changed case without it.
-
-## Decision record
-
-- action: adopt, rebalance, pilot, or reject;
-- acceptable allocation/risk range rather than false precision;
-- baseline and net-of-cost comparison;
-- most fragile estimate or interface;
-- binding constraint and unresolved ambiguity;
-- monitoring trigger, owner, and review frequency; and
-- evidence that would reverse the action.
-
-## Submission checklist
-
-Lab 14 requires the mandate, conventions, baselines, candidate, mechanical checks, known answer,
-AI disclosure, and receipt. Lab 15 requires the precommitted stability evidence, cost-aware
-comparison, committee decision, and transfer explanation. Submit only for yourself. Teammates
-may be named, but their names do not establish your evidence. Artifact links are optional.
+Define — the same question for everyone. Represent — inputs, labelled. Implement — the engine from
+one request. Validate — the known answer and the partner's break. Evolve and Reflect — the search,
+the stress, and why the answer moved.

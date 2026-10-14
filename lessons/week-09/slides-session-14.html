@@ -1,0 +1,225 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 14</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 14 — Portfolio Baselines</h1>
+<blockquote>
+<p><strong>One thing today: build the risk engine from the instruction, and price three simple portfolios on the known answer.</strong></p>
+</blockquote>
+<h2>Today's run of show</h2>
+<ol>
+<li>Opener — minutes 0–8</li>
+<li>Rerun and <strong>D</strong> — minutes 8–15</li>
+<li><strong>R</strong> inputs — minutes 15–20</li>
+<li><strong>I</strong> build the engine — minutes 20–40</li>
+<li><strong>V</strong> known answer — minutes 40–50</li>
+<li>Explain the code — minutes 50–56</li>
+<li>Swap and break — minutes 56–62</li>
+<li>Learn and reflect — minutes 62–70</li>
+<li>Checkout — minutes 70–75</li>
+</ol>
+<p><a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/lab-14-portfolio-baselines.md" target="_blank" rel="noopener">Lab 14</a></p>
+</section>
+<section class="slide">
+<h2>Explain to your partner first</h2>
+<p><strong>Minutes 0–8</strong></p>
+<p>Five minutes, no screen: why can two risky assets together be less risky than either alone?
+Use the 10.46 you worked by hand. Then swap.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
+</section>
+<section class="slide">
+<h2>D — the question, the same for everyone</h2>
+<p><strong>Minutes 8–15</strong></p>
+<p>Rerun <code>python mandate.py</code> first: your Lab 13 verdicts.</p>
+<blockquote>
+<p><strong>What does each simple portfolio earn and risk — and does any of them meet the Meridian mandate?</strong></p>
+</blockquote>
+<p>Paste it into your Lab 13 chat. Today the portfolio is Meridian's. Thursday it is yours.</p>
+</section>
+<section class="slide">
+<h2>R — the inputs (course-authored training values, not market estimates)</h2>
+<p><strong>Minutes 15–20</strong></p>
+<h3>Return and volatility</h3>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Return and volatility (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Return and volatility</caption>
+<thead>
+<tr>
+<th scope="col">Sleeve</th>
+<th align="right" scope="col">Expected return</th>
+<th align="right" scope="col">Volatility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Treasury bills</td>
+<td align="right">3.5%</td>
+<td align="right">0.5%</td>
+</tr>
+<tr>
+<td>Treasury 10-year note</td>
+<td align="right">4.3%</td>
+<td align="right">7.0%</td>
+</tr>
+<tr>
+<td>Investment-grade bond fund</td>
+<td align="right">5.0%</td>
+<td align="right">6.0%</td>
+</tr>
+<tr>
+<td>Global equity index fund</td>
+<td align="right">8.0%</td>
+<td align="right">16.0%</td>
+</tr>
+</tbody></table></div>
+<h3>Correlation</h3>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="Correlation (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">Correlation</caption>
+<thead>
+<tr>
+<th scope="col">Correlation</th>
+<th align="right" scope="col">Bills</th>
+<th align="right" scope="col">10-year</th>
+<th align="right" scope="col">IG bonds</th>
+<th align="right" scope="col">Equity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bills</td>
+<td align="right">1.00</td>
+<td align="right">0.10</td>
+<td align="right">0.05</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td>10-year</td>
+<td align="right">0.10</td>
+<td align="right">1.00</td>
+<td align="right">0.80</td>
+<td align="right">−0.10</td>
+</tr>
+<tr>
+<td>IG bonds</td>
+<td align="right">0.05</td>
+<td align="right">0.80</td>
+<td align="right">1.00</td>
+<td align="right">0.25</td>
+</tr>
+<tr>
+<td>Equity</td>
+<td align="right">0.00</td>
+<td align="right">−0.10</td>
+<td align="right">0.25</td>
+<td align="right">1.00</td>
+</tr>
+</tbody></table></div>
+<p>Baselines: <strong>Benchmark</strong> 40% IG bonds, 60% equity · <strong>Equal weight</strong> 25% each · <strong>Inverse
+volatility</strong> each weight proportional to 1 ÷ volatility. Objective <strong>6.5%</strong>. Reserve-eligible:
+bills and the 10-year note.</p>
+</section>
+<section class="slide">
+<h2>I — build the engine from the instruction</h2>
+<p><strong>Minutes 20–40</strong></p>
+<p>Send this to your AI partner, then paste both tables under it. The code it writes is yours.</p>
+<blockquote>
+<p>Write one Python file, <code>portfolio.py</code>, standard library only. At the top, editable inputs:
+the four sleeves with expected return and volatility, the correlation table I paste below,
+and an objective return of 6.5%. Build the covariance matrix as correlation × volatility ×
+volatility. Refuse to run, with a clear message, if any correlation is outside −1 to 1 or the
+table is not symmetric. Define three portfolios: benchmark (40% investment-grade bond fund,
+60% global equity index fund); equal weight; inverse volatility (each weight = 1 ÷ its
+volatility, scaled to sum to 100%). For each print the weights in percent to one decimal,
+expected return and volatility in percent to two decimals, the reserve-eligible weight
+(bills plus the 10-year note), and whether expected return meets the objective. Compute
+everything from the inputs; never type an answer in. Put each calculation in its own
+function, so another file can reuse them. Give me the command to run it.</p>
+</blockquote>
+<p><code>python portfolio.py</code>. <em>Expect:</em> three portfolios with their numbers. Ask your AI to quiz you on
+the line you understand least.</p>
+<p><strong>At minute 25:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 14.</p>
+</section>
+<section class="slide">
+<h2>V — prove it on the known answer</h2>
+<p><strong>Minutes 40–50</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer</caption>
+<thead>
+<tr>
+<th scope="col">Portfolio</th>
+<th scope="col">Weights: bills / 10-year / IG / equity</th>
+<th align="right" scope="col">Return</th>
+<th align="right" scope="col">Volatility</th>
+<th align="right" scope="col">Reserve-eligible</th>
+<th scope="col">Meets 6.5%?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Benchmark</td>
+<td>0.0 / 0.0 / 40.0 / 60.0</td>
+<td align="right">6.80</td>
+<td align="right">10.46</td>
+<td align="right">0.0</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Equal weight</td>
+<td>25.0 / 25.0 / 25.0 / 25.0</td>
+<td align="right">5.20</td>
+<td align="right">5.21</td>
+<td align="right">50.0</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Inverse volatility</td>
+<td>84.3 / 6.0 / 7.0 / 2.6</td>
+<td align="right">3.77</td>
+<td align="right">1.05</td>
+<td align="right">90.3</td>
+<td>no</td>
+</tr>
+</tbody></table></div>
+<p>Classic error: volatility squared without the correlation term gives the benchmark 9.90.</p>
+<p><strong>Prove it computes.</strong> IG–equity correlation <code>0.50</code> in both cells, rerun. <em>Expect:</em> benchmark
+volatility <strong>11.00</strong>. Set it back.</p>
+</section>
+<section class="slide">
+<h2>Explain the code</h2>
+<p><strong>Minutes 50–56</strong></p>
+<blockquote>
+<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>portfolio.py</code> that turns weights,
+volatilities and correlations into a portfolio volatility. Explain it to your partner line by
+line; your partner asks one question you answer from the code. Swap. A line you cannot explain
+is your next question for your AI.</p>
+</blockquote>
+</section>
+<section class="slide">
+<h2>Swap and break</h2>
+<p><strong>Minutes 56–62</strong></p>
+<p><strong>Swap and break.</strong> Run your partner's <code>portfolio.py</code>; same values. In their file set the
+IG–equity correlation to <code>1.3</code>. <em>Expect:</em> it refuses. Undo.</p>
+<p><strong>Read it.</strong> Add the benchmark to <code>mandate.py</code> as candidate E (40 IG fund, 60 equity fund). Run it.
+<em>Expect:</em> it fails the reserve rule at 0.0%. The client's own benchmark breaks the client's mandate.</p>
+</section>
+<section class="slide">
+<h2>Diversification — Learn on your own · Reflect</h2>
+<p><strong>Minutes 62–70</strong></p>
+<p><strong>Learn on your own:</strong></p>
+<ol>
+<li>What is it?</li>
+<li>How does it work — why does a correlation below +1 lower risk?</li>
+<li>Explain it: work the benchmark's volatility by hand from the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/student-handout.md#the-digits-once" target="_blank" rel="noopener">handout's digits</a>.</li>
+</ol>
+<p><strong>Explain to your partner:</strong></p>
+<ol>
+<li>why inverse volatility piles into bills;</li>
+<li>which baseline you would show the CIO first, and why.</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Checkout — on GitHub</h2>
+<p><strong>Minutes 70–75</strong></p>
+<p><strong>Brightspace → Quizzes → Lab 14.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>Before Thursday — do these</strong></p>
+<ol>
+<li>Have <code>portfolio.py</code> matching the Lab 14 known answer.</li>
+<li>Keep your Lab 14 chat and your partner.</li>
+<li>Have your own Project 2 mandate, in Lab 13's shape, three to six fund tickers for it, and their <code>prices.csv</code> —
+cash, bonds, fixed income, equity (<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/lab-14-portfolio-baselines.md#before-thursday--your-own-universe-in-funds" target="_blank" rel="noopener">Lab 14, last section</a>). No money market funds: most hold their price at $1.00, so prices cannot show what they earn.</li>
+<li>Install Streamlit, run its demo, and read its Basic concepts (<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-09/student-prework.md" target="_blank" rel="noopener">prework</a>).</li>
+</ol>
+<p><strong>Thursday preview:</strong> turn your engine into your first app, in Streamlit: the lowest-risk mix that
+meets the mandate, and whether it survives a one-point change.</p>
+
+</section><div id="pos"></div><script>let i=0;const s=[...document.querySelectorAll('.slide')],p=document.getElementById('pos');function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((el,k)=>el.classList.toggle('active',k===i));p.textContent=(i+1)+' / '+s.length;}addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){go(i+1);e.preventDefault()}if(['ArrowLeft','PageUp'].includes(e.key)){go(i-1);e.preventDefault()}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});go(0);</script></body></html>
