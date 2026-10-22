@@ -44,6 +44,10 @@ download date in your `.md` file. No file yet: build it now, as the
 
 A five-year average is history, not a forecast. Label your returns `estimate`.
 
+**Draw your app first** (four minutes, paper, no AI). Read the message under I, then draw the app
+it asks for: one box per step from your `prices.csv` to the answer on the page, and an arrow where
+each control comes in. Show your partner.
+
 ## I — the app, from one message
 
 1. Send this to your Lab 14 chat:
@@ -67,6 +71,9 @@ A five-year average is history, not a forecast. Label your returns `estimate`.
 2. Save both files. Run `python portfolio.py`. *Expect:* Tuesday's values, unchanged.
 3. Run it with the command your AI gave you. *Expect:* your browser opens the app on Meridian's
    answer. An error on the page or in the terminal: paste the exact text to your AI.
+4. Ask your AI: "Draw my `app.py` and `portfolio.py` as a Mermaid flowchart for my `.md` file."
+   Paste it into your `.md` file. *Expect:* the path you drew on paper; GitHub shows it as a chart.
+   A box you did not draw is your next question for your AI.
 
 **At minute 30:** open the quiz attempt — Brightspace → Quizzes → Lab 15.
 
