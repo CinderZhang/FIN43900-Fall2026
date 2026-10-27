@@ -89,6 +89,21 @@ partner why "cleaned the data" is not a data card.
 Explain to your partner: 1. how late your series is published, and why the as-of filter handles it; 2. what a naive backtest
 on it would have overstated.
 
+## References
+
+Reading only: nothing graded needs a key or an account.
+
+- Financial Datasets: an API for prices, financial statements and earnings, built for AI agents.
+  Same shape as ALFRED's: a request in, records out, with a key.
+  [docs.financialdatasets.ai](https://docs.financialdatasets.ai)
+- virattt, *ai-hedge-fund*: an open-source team of AI agents that reads its data from the
+  Financial Datasets API. Educational; it makes no trades.
+  [github.com/virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund)
+- Francis, A., & Zhang, C. X. (2026). *Can AI match professional analysts? Evidence from a
+  multi-agent system.* Finance Research Letters, 103, 110127.
+  [doi.org/10.1016/j.frl.2026.110127](https://doi.org/10.1016/j.frl.2026.110127), through the
+  Purdue Libraries login.
+
 ## Checkout — on GitHub
 
 **GitHub links of your files: md, py and/or other files as needed.**

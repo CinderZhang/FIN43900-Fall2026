@@ -39,13 +39,29 @@ Paste it into your Lab 15 chat. Today the data is a training table. Thursday it 
 
 ---
 
-## R — the training table (fictional card-spend index, three retailers)
+## One table, three lessons
+
+**Minutes 8–15**
+
+1. **Data gating** — every row admitted, quarantined or removed by a stated rule. Today's four
+   rules are a provenance gate: *when* was it knowable, not *does it make sense*.
+2. **APIs** — a request in, records out. ALFRED's API sends each row as `date` (month measured),
+   `realtime_start` (published on), `value`; a revision is a second record for the same `date`.
+3. **Fixed income** — each price is a fund of one-year zero-coupon bonds, per 100 of face. Yield =
+   100 ÷ price − 1. Above 100 the yield is negative; riskier credit is priced lower: AAA above BBB
+   above CCC.
+
+**The errors are planted:** AAA and CCC trade above 100; CCC is priced above BBB.
+
+---
+
+## R — the training table (fictional zero-coupon bond funds, three ratings)
 
 **Minutes 8–15**
 
 Decision date: **31 March 2026**. A row is knowable only if it was published on or before that day.
 
-| Row | Ticker | Month measured | Published on | Index |
+| Row | Ticker | Month measured | Published on | Price |
 |---:|---|---|---|---:|
 | 1 | AAA | 2026-01 | 2026-02-10 | 101.0 |
 | 2 | AAA | 2026-02 | 2026-03-10 | 104.0 |
@@ -63,7 +79,7 @@ Decision date: **31 March 2026**. A row is knowable only if it was published on 
 The rules, in this order: (1) quarantine a row with no ticker; (2) remove an exact duplicate;
 (3) remove a row published after the decision date; (4) where one ticker and month has two
 publications, keep the latest one published by the decision date (a revision). The signal is the
-change in the index from the previous month to the latest knowable month.
+change in the price from the previous month to the latest knowable month: the fund's return.
 
 ---
 
@@ -120,6 +136,25 @@ of its revision, row 4, which turns AAA's +1.98% into +2.97%.
 
 ---
 
+## V — the sanity check, by hand
+
+**Minutes 35–45**
+
+The gate passed all six rows. Yield = 100 ÷ price − 1.
+
+| Row | Fund | Month | Price | Yield | Breaks |
+|---:|---|---|---:|---:|---|
+| 1 | AAA | Jan | 101.0 | −0.99% | negative yield |
+| 4 | AAA | Feb | 103.0 | −2.91% | negative yield |
+| 5 | BBB | Jan | 98.0 | +2.04% | nothing |
+| 6 | BBB | Feb | 97.0 | +3.09% | nothing |
+| 9 | CCC | Jan | 110.0 | −9.09% | negative yield; priced above BBB and AAA |
+| 12 | CCC | Feb | 111.0 | −9.91% | negative yield; priced above BBB and AAA |
+
+On time is not the same as true: a provenance gate needs a sanity gate behind it.
+
+---
+
 ## Explain the code
 
 **Minutes 45–52**
@@ -158,7 +193,8 @@ The gap between the two columns is exactly what had not been published yet.
 **Reflect — explain to your partner:**
 
 1. Which rule removed the row that mattered most;
-2. What a backtest built on the naive column would claim.
+2. What a backtest built on the naive column would claim;
+3. The fifth rule that would have quarantined rows 1, 4, 9 and 12.
 
 ---
 

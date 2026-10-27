@@ -32,17 +32,31 @@ see now came later?</strong></p>
 <p>Paste it into your Lab 15 chat. Today the data is a training table. Thursday it is your own series.</p>
 </section>
 <section class="slide">
-<h2>R — the training table (fictional card-spend index, three retailers)</h2>
+<h2>One table, three lessons</h2>
+<p><strong>Minutes 8–15</strong></p>
+<ol>
+<li><strong>Data gating</strong> — every row admitted, quarantined or removed by a stated rule. Today's four
+rules are a provenance gate: <em>when</em> was it knowable, not <em>does it make sense</em>.</li>
+<li><strong>APIs</strong> — a request in, records out. ALFRED's API sends each row as <code>date</code> (month measured),
+<code>realtime_start</code> (published on), <code>value</code>; a revision is a second record for the same <code>date</code>.</li>
+<li><strong>Fixed income</strong> — each price is a fund of one-year zero-coupon bonds, per 100 of face. Yield =
+100 ÷ price − 1. Above 100 the yield is negative; riskier credit is priced lower: AAA above BBB
+above CCC.</li>
+</ol>
+<p><strong>The errors are planted:</strong> AAA and CCC trade above 100; CCC is priced above BBB.</p>
+</section>
+<section class="slide">
+<h2>R — the training table (fictional zero-coupon bond funds, three ratings)</h2>
 <p><strong>Minutes 8–15</strong></p>
 <p>Decision date: <strong>31 March 2026</strong>. A row is knowable only if it was published on or before that day.</p>
-<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — the training table (fictional card-spend index, three retailers) (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — the training table (fictional card-spend index, three retailers)</caption>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — the training table (fictional zero-coupon bond funds, three ratings) (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — the training table (fictional zero-coupon bond funds, three ratings)</caption>
 <thead>
 <tr>
 <th align="right" scope="col">Row</th>
 <th scope="col">Ticker</th>
 <th scope="col">Month measured</th>
 <th scope="col">Published on</th>
-<th align="right" scope="col">Index</th>
+<th align="right" scope="col">Price</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -133,7 +147,7 @@ see now came later?</strong></p>
 <p>The rules, in this order: (1) quarantine a row with no ticker; (2) remove an exact duplicate;
 (3) remove a row published after the decision date; (4) where one ticker and month has two
 publications, keep the latest one published by the decision date (a revision). The signal is the
-change in the index from the previous month to the latest knowable month.</p>
+change in the price from the previous month to the latest knowable month: the fund's return.</p>
 </section>
 <section class="slide">
 <h2>I — build the filter from the instruction</h2>
@@ -222,6 +236,72 @@ each ticker; if not, debug with your AI.</li>
 of its revision, row 4, which turns AAA's +1.98% into +2.97%.</p>
 </section>
 <section class="slide">
+<h2>V — the sanity check, by hand</h2>
+<p><strong>Minutes 35–45</strong></p>
+<p>The gate passed all six rows. Yield = 100 ÷ price − 1.</p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — the sanity check, by hand (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — the sanity check, by hand</caption>
+<thead>
+<tr>
+<th align="right" scope="col">Row</th>
+<th scope="col">Fund</th>
+<th scope="col">Month</th>
+<th align="right" scope="col">Price</th>
+<th align="right" scope="col">Yield</th>
+<th scope="col">Breaks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>AAA</td>
+<td>Jan</td>
+<td align="right">101.0</td>
+<td align="right">−0.99%</td>
+<td>negative yield</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>AAA</td>
+<td>Feb</td>
+<td align="right">103.0</td>
+<td align="right">−2.91%</td>
+<td>negative yield</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>BBB</td>
+<td>Jan</td>
+<td align="right">98.0</td>
+<td align="right">+2.04%</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>BBB</td>
+<td>Feb</td>
+<td align="right">97.0</td>
+<td align="right">+3.09%</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>CCC</td>
+<td>Jan</td>
+<td align="right">110.0</td>
+<td align="right">−9.09%</td>
+<td>negative yield; priced above BBB and AAA</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>CCC</td>
+<td>Feb</td>
+<td align="right">111.0</td>
+<td align="right">−9.91%</td>
+<td>negative yield; priced above BBB and AAA</td>
+</tr>
+</tbody></table></div>
+<p>On time is not the same as true: a provenance gate needs a sanity gate behind it.</p>
+</section>
+<section class="slide">
 <h2>Explain the code</h2>
 <p><strong>Minutes 45–52</strong></p>
 <p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>asof.py</code> that applies rule 4: one
@@ -250,7 +330,8 @@ known?</li>
 <p><strong>Reflect — explain to your partner:</strong></p>
 <ol>
 <li>Which rule removed the row that mattered most;</li>
-<li>What a backtest built on the naive column would claim.</li>
+<li>What a backtest built on the naive column would claim;</li>
+<li>The fifth rule that would have quarantined rows 1, 4, 9 and 12.</li>
 </ol>
 </section>
 <section class="slide">

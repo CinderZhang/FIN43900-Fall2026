@@ -6,6 +6,11 @@ Tuesday: build a point-in-time filter from an instruction and prove, on a traini
 knowable on the decision date. Thursday: put your own series through the same filter and decide
 whether Project 2 may use it.
 
+One table, three lessons: the training table is a set of zero-coupon bond-fund prices, delivered
+the way an API delivers records, with errors planted on purpose. You practise **data gating**,
+learn how an **API** record carries the two dates, and review **fixed income**: price, yield and
+credit order.
+
 **GitHub is the main delivery.** Every lab and project is handed in as GitHub links to your own
 files.
 
@@ -19,6 +24,9 @@ files.
 - Tell the month a number measures from the day it was published, and say why it matters.
 - Build an as-of filter: quarantine, duplicates, late publications, revisions — in that order.
 - Show the gap between a naive signal and a knowable one, row by row.
+- Read an API record: the month measured (`date`), the day published (`realtime_start`), the value.
+- Price a zero-coupon bond's yield (100 ÷ price − 1) and catch prices that break finance: a
+  negative yield, or riskier credit priced above safer credit.
 - Write a data card for a real series and decide admit, quarantine or reject.
 
 ## Prerequisites and prework
