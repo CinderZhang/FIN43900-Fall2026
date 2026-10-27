@@ -1,2 +1,0 @@
--r requirements-course.txt
-streamlit>=1.40,<2
