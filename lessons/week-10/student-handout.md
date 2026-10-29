@@ -9,7 +9,8 @@ In the terminal, with your own Python command:
 
 | Command | Expect |
 |---|---|
-| `python asof.py` | Tuesday: the row funnel, the as-of panel, and as-of beside naive signals. Thursday: three decision dates on the training table, then your own series |
+| `python asof.py` | Tuesday: the row funnel, the as-of panel, and as-of beside naive signals |
+| the run command your AI gives you for `asof_app.py` | Thursday: the rates app in your browser — charts, and what was known on any date |
 
 Something breaks? Debug with your AI: the exact command and the exact error text.
 

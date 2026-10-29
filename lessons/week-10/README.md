@@ -3,8 +3,8 @@
 ## Mission
 
 Tuesday: build a point-in-time filter from an instruction and prove, on a training table, what was
-knowable on the decision date. Thursday: put your own series through the same filter and decide
-whether Project 2 may use it.
+knowable on the decision date. Thursday: build a FRED-style Streamlit app from live FRED and ALFRED
+data that shows what was known on any date, and decide whether Project 2 may use your series.
 
 One table, three lessons: the training table is a set of zero-coupon bond-fund prices, delivered
 the way an API delivers records, with errors planted on purpose. You practise **data gating**,
@@ -27,6 +27,7 @@ files.
 - Read an API record: the month measured (`date`), the day published (`realtime_start`), the value.
 - Price a zero-coupon bond's yield (100 ÷ price − 1) and catch prices that break finance: a
   negative yield, or riskier credit priced above safer credit.
+- Build a Streamlit app that charts live FRED rates and shows what was known on any date.
 - Write a data card for a real series and decide admit, quarantine or reject.
 
 ## Prerequisites and prework
@@ -38,18 +39,17 @@ vintage data?"** (5–7 minutes). Ask: **what was knowable on the decision date,
 only because I am looking later?** The [handout's point-in-time section](student-handout.md#point-in-time-in-plain-language)
 is the complete alternative.
 
-**Before Thursday — about 30 minutes.** Choose one **monthly** series on
-[ALFRED](https://alfred.stlouisfed.org) that you think moves your Project 2 universe (not your funds'
-own prices). Ask your AI to put every vintage of its last 26 months or more into one table with
-Tuesday's columns: series name, month measured, published on, value. Check three rows against
-ALFRED yourself.
+**Before Thursday — about 15 minutes.** Choose one series on [FRED](https://fred.stlouisfed.org)
+that you think moves your Project 2 universe (not your funds' own prices). Note its ID, the code at
+the end of its page address (for example BAA), and read its units, frequency and release on the
+page. Thursday's app pulls it live.
 
 ## The two sessions
 
 | Session | Lab | One thing |
 |---|---|---|
 | Tuesday | [Lab 16](lab-16-provenance-gate.md) | the as-of filter, proved on the training table |
-| Thursday | [Lab 17](lab-17-point-in-time.md) | your own series through the filter, and an admit, quarantine or reject call |
+| Thursday | [Lab 17](lab-17-point-in-time.md) | a FRED-style app showing what was known on any date, and an admit, quarantine or reject call |
 
 ## Teams this week
 
@@ -60,7 +60,7 @@ and break on Tuesday, attack one data-card field on Thursday. Checkouts stay ind
 
 Define: the same question for everyone — what was knowable on the day you would have traded?
 Represent: the table and the four rules. Implement: the filter from one request. Validate: the
-known answer and the partner's later date. Evolve: many decision dates, then your own series.
+known answer and the partner's later date. Evolve: the same question as an app on live rates, then your own series.
 Reflect: why the as-of filter, not a fixed lag, keeps a backtest honest.
 
 ## Package map

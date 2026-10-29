@@ -1,13 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 17</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 17 — Point-in-Time Audit</h1>
 <blockquote>
-<p><strong>One thing today: put your own series through the filter, and decide whether Project 2 may use it.</strong></p>
+<p><strong>One thing today: build a FRED-style rates app that shows what was known on any date, then decide whether Project 2 may use your series.</strong></p>
 </blockquote>
 <h2>Today's run of show</h2>
 <ol>
 <li>Opener — 0–8</li>
-<li><strong>R</strong> your series — 8–25</li>
-<li><strong>E</strong> on the training table — 25–40</li>
-<li>Your series — 40–52</li>
+<li><strong>I</strong> the app — 8–30</li>
+<li><strong>V</strong> known answer — 30–42</li>
+<li><strong>E</strong> your series — 42–52</li>
 <li>Explain the code — 52–58</li>
 <li>Partner attack and your call — 58–65</li>
 <li>Learn, reflect, checkout — 65–75</li>
@@ -17,98 +17,135 @@
 <section class="slide">
 <h2>D — the question, the same for everyone</h2>
 <p><strong>Minutes 0–8</strong></p>
-<p>Rerun <code>python asof.py</code> first: Tuesday's values.</p>
-<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
 <blockquote>
 <p><strong>Was each number in your series knowable on the day you would have traded on it — and may
 Project 2 use it?</strong></p>
 </blockquote>
 <p>Paste it into your Lab 16 chat.</p>
+<p><strong>Explain to your partner first</strong> (five minutes, no screen): one rate you think moves your
+universe, and why. Your partner writes the reason down. Swap.</p>
+<p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
 </section>
 <section class="slide">
-<h2>Explain to your partner first</h2>
-<p><strong>Minutes 0–8</strong></p>
-<p>Five minutes, no screen: one series you think moves your universe, and why. Your partner writes
-the reason down. Swap.</p>
-</section>
-<section class="slide">
-<h2>R — your series</h2>
-<p><strong>Minutes 8–25</strong></p>
-<p>Bring the series you built before class (<a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-10/student-prework.md" target="_blank" rel="noopener">the prework</a>): <strong>one monthly series
-from <a href="https://alfred.stlouisfed.org" target="_blank" rel="noopener">ALFRED</a></strong> that is not your funds' own prices, every vintage
-of at least its last 26 months, in a table with Tuesday's columns: series name, month measured,
-published on, value. In your <code>.md</code> file write a <strong>data card</strong>: source and link, what it measures,
-units, how late it is published, whether it is revised, the download date. Read three rows
-against ALFRED yourself. No table yet: build it now with your AI, as the prework says.</p>
-</section>
-<section class="slide">
-<h2>E — many decision dates, from one message</h2>
-<p><strong>Minutes 25–40</strong></p>
-<p>Send this to your Lab 16 chat:</p>
-<blockquote>
-<p>In my <code>asof.py</code>, keep everything it already prints exactly as it is. Add a list of decision dates
-at the top. For each date, apply the same four rules and print the as-of signal per ticker, or
-"not enough knowable months", and the row numbers the naive panel used for months already over by
-that date but published after it. Add an option to read my own table from a CSV file I name, with the same columns, and
-run the same report on the last day of each of the last 24 months. One file, one command.</p>
-</blockquote>
-<p>Read what changed in <code>asof.py</code> before you run it; ask your AI about any line you cannot explain.</p>
-</section>
-<section class="slide">
-<h2>E — the training table first</h2>
-<p><strong>Minutes 25–40</strong></p>
-<p>Dates 28 February, 31 March, 30 April 2026. <em>Expect:</em></p>
-<div class="table-wrap table-region" tabindex="0" role="region" aria-label="E — the training table first (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">E — the training table first</caption>
+<h2>R — the data, real and live</h2>
+<p><strong>Minutes 8–30</strong></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="R — the data, real and live (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">R — the data, real and live</caption>
 <thead>
 <tr>
-<th scope="col">Decision date</th>
-<th scope="col">As-of signal</th>
-<th scope="col">Naive rows not yet published</th>
+<th scope="col">Series</th>
+<th scope="col">What it is</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>28 Feb 2026</td>
-<td>not enough knowable months</td>
-<td>4, 6, 10</td>
+<td>BAA</td>
+<td>Moody's Baa corporate bond yield, monthly</td>
 </tr>
 <tr>
-<td>31 Mar 2026</td>
-<td>AAA +1.98, BBB −1.02, CCC +0.91</td>
-<td>3, 8, 10</td>
+<td>FEDFUNDS</td>
+<td>Effective federal funds rate, monthly</td>
 </tr>
 <tr>
-<td>30 Apr 2026</td>
-<td>equal to the naive signal</td>
-<td>none</td>
+<td>DGS10</td>
+<td>10-year Treasury yield, daily</td>
+</tr>
+<tr>
+<td>MORTGAGE30US</td>
+<td>30-year fixed mortgage rate, weekly</td>
+</tr>
+<tr>
+<td>Yours</td>
+<td>the series you chose for the prework</td>
 </tr>
 </tbody></table></div>
-<p>If not, debug with your AI until they match.</p>
-<p><strong>At minute 30:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 17.</p>
+<p><strong>FRED</strong> shows each series as it reads today; <strong>ALFRED</strong>, as it read on an earlier date — Tuesday's
+two dates, real. Both free, no key, no account.</p>
 </section>
 <section class="slide">
-<h2>Your series</h2>
-<p><strong>Minutes 40–52</strong></p>
-<p>Your series, last 24 month-ends. <em>Expect:</em> your funnel and, for each month-end, how many naive rows
-were not yet published.</p>
-<p>A series published the same day it measures shows none: say so.</p>
+<h2>I — the app, from one message</h2>
+<p><strong>Minutes 8–30</strong></p>
+<p>Send this to your Lab 16 chat:</p>
+<blockquote>
+<p>Build <code>asof_app.py</code>, a Streamlit app that works like a FRED page for interest rates. Get the
+data from FRED's public CSV downloads, no API key, one request per series: today's values from
+<code>https://fred.stlouisfed.org/graph/fredgraph.csv?id=SERIES</code> and the values as known on a date
+from <code>https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SERIES&amp;vintage_date=YYYY-MM-DD</code>.
+A "." in the data is a missing day. Put the two downloads in two functions and cache them.
+Sidebar: a multiselect of series IDs with their names — BAA (Moody's Baa corporate bond
+yield), FEDFUNDS (federal funds rate), DGS10 (10-year Treasury yield), MORTGAGE30US (30-year
+mortgage rate), all four selected at the start; a text box to add any other FRED series ID; a
+start date (1 January 2020 at the start); an "as known on" date (today at the start). Page: one
+line chart per selected series, today's values from the start date, and under it the last
+date in the data known on the "as known on" date. Then one table, a row per series: the ID
+linked to its FRED page; the last date measured and its value as known on that date; the
+last date measured and its value today; how many values today's data has after the last date
+known then; how many values on the same dates have been revised since. An unknown ID shows
+an error for that series and the rest of the page still works. Under the title, one line:
+data from FRED and ALFRED, Federal Reserve Bank of St. Louis, downloaded today; built with AI
+help, a learning demonstration, not investment advice. Give me the command to run it.</p>
+</blockquote>
+<p>Run it with the command your AI gave you. <em>Expect:</em> four rate charts and the table, as of today.</p>
+</section>
+<section class="slide">
+<h2>V — prove it on the known answer</h2>
+<p><strong>Minutes 30–42</strong></p>
+<p><strong>At minute 30:</strong> open the quiz attempt — Brightspace → Quizzes → Lab 17.</p>
+<p>Set <strong>As known on</strong> to <strong>5 October 2026</strong>. <em>Expect:</em></p>
+<div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer</caption>
+<thead>
+<tr>
+<th scope="col">Series</th>
+<th scope="col">Last date known on 5 Oct 2026</th>
+<th scope="col">Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BAA</td>
+<td>September 2026</td>
+<td>6.47</td>
+</tr>
+<tr>
+<td>FEDFUNDS</td>
+<td>September 2026</td>
+<td>3.75</td>
+</tr>
+<tr>
+<td>DGS10</td>
+<td>2 October 2026</td>
+<td>5.28</td>
+</tr>
+<tr>
+<td>MORTGAGE30US</td>
+<td>1 October 2026</td>
+<td>7.28</td>
+</tr>
+</tbody></table></div>
+<p><strong>Probe.</strong> Add <strong>PAYEMS</strong>; set the date to <strong>15 January 2025</strong>. <em>Expect:</em> December 2024,
+<strong>159,536</strong> as known then; today's is lower; the revised count well above zero.</p>
+</section>
+<section class="slide">
+<h2>E — your series</h2>
+<p><strong>Minutes 42–52</strong></p>
+<p>Add your series' ID. Set the date to the last day of last month, then today. <em>Expect:</em> the values
+that vanish were not yet published then; the revised count shows whether it is revised.</p>
+<p><strong>Data card</strong> in your <code>.md</code> file: source and link, what it measures, units, how late it is
+published, whether it is revised, the download date. Read three values against the FRED page.</p>
 </section>
 <section class="slide">
 <h2>Explain the code</h2>
 <p><strong>Minutes 52–58</strong></p>
-<p><strong>Explain the code</strong> (six minutes, no AI). Open the block of <code>asof.py</code> that runs the filter at each
-decision date. Explain it to your partner line by line; your partner asks one question you answer
-from the code. Swap. A line you cannot explain is your next question for your AI.</p>
+<p>Six minutes, no AI. Open the function that downloads the values as known on a date. Explain it to
+your partner line by line; your partner asks one question you answer from the code. Swap.</p>
 </section>
 <section class="slide">
 <h2>Partner attack · Your call</h2>
 <p><strong>Minutes 58–65</strong></p>
-<p><strong>Partner attack.</strong> Your partner reads your data card and names the field they trust least:
-publication date, revisions, or units. Answer in two sentences under the card. Swap.</p>
-<p><strong>Your call: admit, quarantine, or reject</strong> the series for Project 2, with the reason and what
+<p><strong>Partner attack.</strong> Your partner names the data-card field they trust least: publication date,
+revisions, or units. Answer in two sentences, with evidence from the app or the FRED page. Swap.</p>
+<p><strong>Your call: admit, quarantine, or reject</strong> your series for Project 2, with the reason and what
 would change it.</p>
-<p><em>Example (training table):</em> "Quarantine: a publication lag of 10 to 36 days after month-end and a
-revision to AAA February; admit only through the as-of filter — a fixed lag on today's data still
-uses CCC's February value, published 5 April."</p>
+<p><em>Example (PAYEMS):</em> "Quarantine: published about a week after the month, revised in the next two
+months and again each year — December 2024 read 159,536 in January 2025 and is lower today; admit
+only as known on each decision date, never today's values with a fixed lag."</p>
 </section>
 <section class="slide">
 <h2>Data card — Learn on your own · Reflect</h2>
@@ -121,18 +158,18 @@ uses CCC's February value, published 5 April."</p>
 </ol>
 <p><strong>Reflect — explain to your partner:</strong></p>
 <ol>
-<li>How late your series is published, and why the as-of filter handles it;</li>
-<li>What a naive backtest on it would have overstated.</li>
+<li>How late your series is published, and what your app's "as known on" date shows about it;</li>
+<li>What a backtest on today's values would have overstated.</li>
 </ol>
 </section>
 <section class="slide">
 <h2>Checkout — on GitHub</h2>
 <p><strong>Minutes 65–75</strong></p>
 <p><strong>Brightspace → Quizzes → Lab 17.</strong></p>
-<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong></p>
+<p><strong>GitHub links of your files: md, py and/or other files as needed.</strong> Your <code>asof_app.py</code> is one of them.</p>
 <p><strong>Before Tuesday — do these</strong></p>
 <ol>
-<li>Keep your Lab 17 chat and your call.</li>
+<li>Keep your Lab 17 chat, your app and your call.</li>
 <li>Read the <a href="https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/student-prework.md" target="_blank" rel="noopener">F-Squared reading</a>.</li>
 </ol>
 <p><strong>Next week:</strong> a rule frozen before you look, and a holdout you do not touch until the end.</p>

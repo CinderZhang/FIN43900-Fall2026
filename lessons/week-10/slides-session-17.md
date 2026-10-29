@@ -1,13 +1,13 @@
 # Session 17 — Point-in-Time Audit
 
-> **One thing today: put your own series through the filter, and decide whether Project 2 may use it.**
+> **One thing today: build a FRED-style rates app that shows what was known on any date, then decide whether Project 2 may use your series.**
 
 ## Today's run of show
 
 1. Opener — 0–8
-2. **R** your series — 8–25
-3. **E** on the training table — 25–40
-4. Your series — 40–52
+2. **I** the app — 8–30
+3. **V** known answer — 30–42
+4. **E** your series — 42–52
 5. Explain the code — 52–58
 6. Partner attack and your call — 58–65
 7. Learn, reflect, checkout — 65–75
@@ -20,81 +20,92 @@
 
 **Minutes 0–8**
 
-Rerun `python asof.py` first: Tuesday's values.
-
-Something not working? Debug with your AI: the exact command and the exact error text.
-
 > **Was each number in your series knowable on the day you would have traded on it — and may
 Project 2 use it?**
 
 Paste it into your Lab 16 chat.
 
----
+**Explain to your partner first** (five minutes, no screen): one rate you think moves your
+universe, and why. Your partner writes the reason down. Swap.
 
-## Explain to your partner first
-
-**Minutes 0–8**
-
-Five minutes, no screen: one series you think moves your universe, and why. Your partner writes
-the reason down. Swap.
+Something not working? Debug with your AI: the exact command and the exact error text.
 
 ---
 
-## R — your series
+## R — the data, real and live
 
-**Minutes 8–25**
+**Minutes 8–30**
 
-Bring the series you built before class ([the prework](student-prework.md)): **one monthly series
-from [ALFRED](https://alfred.stlouisfed.org)** that is not your funds' own prices, every vintage
-of at least its last 26 months, in a table with Tuesday's columns: series name, month measured,
-published on, value. In your `.md` file write a **data card**: source and link, what it measures,
-units, how late it is published, whether it is revised, the download date. Read three rows
-against ALFRED yourself. No table yet: build it now with your AI, as the prework says.
+| Series | What it is |
+|---|---|
+| BAA | Moody's Baa corporate bond yield, monthly |
+| FEDFUNDS | Effective federal funds rate, monthly |
+| DGS10 | 10-year Treasury yield, daily |
+| MORTGAGE30US | 30-year fixed mortgage rate, weekly |
+| Yours | the series you chose for the prework |
+
+**FRED** shows each series as it reads today; **ALFRED**, as it read on an earlier date — Tuesday's
+two dates, real. Both free, no key, no account.
 
 ---
 
-## E — many decision dates, from one message
+## I — the app, from one message
 
-**Minutes 25–40**
+**Minutes 8–30**
 
 Send this to your Lab 16 chat:
 
-> In my `asof.py`, keep everything it already prints exactly as it is. Add a list of decision dates
-> at the top. For each date, apply the same four rules and print the as-of signal per ticker, or
-> "not enough knowable months", and the row numbers the naive panel used for months already over by
-> that date but published after it. Add an option to read my own table from a CSV file I name, with the same columns, and
-> run the same report on the last day of each of the last 24 months. One file, one command.
+> Build `asof_app.py`, a Streamlit app that works like a FRED page for interest rates. Get the
+> data from FRED's public CSV downloads, no API key, one request per series: today's values from
+> `https://fred.stlouisfed.org/graph/fredgraph.csv?id=SERIES` and the values as known on a date
+> from `https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SERIES&vintage_date=YYYY-MM-DD`.
+> A "." in the data is a missing day. Put the two downloads in two functions and cache them.
+> Sidebar: a multiselect of series IDs with their names — BAA (Moody's Baa corporate bond
+> yield), FEDFUNDS (federal funds rate), DGS10 (10-year Treasury yield), MORTGAGE30US (30-year
+> mortgage rate), all four selected at the start; a text box to add any other FRED series ID; a
+> start date (1 January 2020 at the start); an "as known on" date (today at the start). Page: one
+> line chart per selected series, today's values from the start date, and under it the last
+> date in the data known on the "as known on" date. Then one table, a row per series: the ID
+> linked to its FRED page; the last date measured and its value as known on that date; the
+> last date measured and its value today; how many values today's data has after the last date
+> known then; how many values on the same dates have been revised since. An unknown ID shows
+> an error for that series and the rest of the page still works. Under the title, one line:
+> data from FRED and ALFRED, Federal Reserve Bank of St. Louis, downloaded today; built with AI
+> help, a learning demonstration, not investment advice. Give me the command to run it.
 
-Read what changed in `asof.py` before you run it; ask your AI about any line you cannot explain.
+Run it with the command your AI gave you. *Expect:* four rate charts and the table, as of today.
 
 ---
 
-## E — the training table first
+## V — prove it on the known answer
 
-**Minutes 25–40**
-
-Dates 28 February, 31 March, 30 April 2026. *Expect:*
-
-| Decision date | As-of signal | Naive rows not yet published |
-|---|---|---|
-| 28 Feb 2026 | not enough knowable months | 4, 6, 10 |
-| 31 Mar 2026 | AAA +1.98, BBB −1.02, CCC +0.91 | 3, 8, 10 |
-| 30 Apr 2026 | equal to the naive signal | none |
-
-If not, debug with your AI until they match.
+**Minutes 30–42**
 
 **At minute 30:** open the quiz attempt — Brightspace → Quizzes → Lab 17.
 
+Set **As known on** to **5 October 2026**. *Expect:*
+
+| Series | Last date known on 5 Oct 2026 | Value |
+|---|---|---|
+| BAA | September 2026 | 6.47 |
+| FEDFUNDS | September 2026 | 3.75 |
+| DGS10 | 2 October 2026 | 5.28 |
+| MORTGAGE30US | 1 October 2026 | 7.28 |
+
+**Probe.** Add **PAYEMS**; set the date to **15 January 2025**. *Expect:* December 2024,
+**159,536** as known then; today's is lower; the revised count well above zero.
+
 ---
 
-## Your series
+## E — your series
 
-**Minutes 40–52**
+**Minutes 42–52**
 
-Your series, last 24 month-ends. *Expect:* your funnel and, for each month-end, how many naive rows
-were not yet published.
+Add your series' ID. Set the date to the last day of last month, then today. *Expect:* the values
+that vanish were not yet published then; the revised count shows whether it is revised.
 
-A series published the same day it measures shows none: say so.
+**Data card** in your `.md` file: source and link, what it measures, units, how late it is
+published, whether it is revised, the download date. Read three values against the FRED page.
 
 ---
 
@@ -102,9 +113,8 @@ A series published the same day it measures shows none: say so.
 
 **Minutes 52–58**
 
-**Explain the code** (six minutes, no AI). Open the block of `asof.py` that runs the filter at each
-decision date. Explain it to your partner line by line; your partner asks one question you answer
-from the code. Swap. A line you cannot explain is your next question for your AI.
+Six minutes, no AI. Open the function that downloads the values as known on a date. Explain it to
+your partner line by line; your partner asks one question you answer from the code. Swap.
 
 ---
 
@@ -112,15 +122,15 @@ from the code. Swap. A line you cannot explain is your next question for your AI
 
 **Minutes 58–65**
 
-**Partner attack.** Your partner reads your data card and names the field they trust least:
-publication date, revisions, or units. Answer in two sentences under the card. Swap.
+**Partner attack.** Your partner names the data-card field they trust least: publication date,
+revisions, or units. Answer in two sentences, with evidence from the app or the FRED page. Swap.
 
-**Your call: admit, quarantine, or reject** the series for Project 2, with the reason and what
+**Your call: admit, quarantine, or reject** your series for Project 2, with the reason and what
 would change it.
 
-*Example (training table):* "Quarantine: a publication lag of 10 to 36 days after month-end and a
-revision to AAA February; admit only through the as-of filter — a fixed lag on today's data still
-uses CCC's February value, published 5 April."
+*Example (PAYEMS):* "Quarantine: published about a week after the month, revised in the next two
+months and again each year — December 2024 read 159,536 in January 2025 and is lower today; admit
+only as known on each decision date, never today's values with a fixed lag."
 
 ---
 
@@ -136,8 +146,8 @@ uses CCC's February value, published 5 April."
 
 **Reflect — explain to your partner:**
 
-1. How late your series is published, and why the as-of filter handles it;
-2. What a naive backtest on it would have overstated.
+1. How late your series is published, and what your app's "as known on" date shows about it;
+2. What a backtest on today's values would have overstated.
 
 ---
 
@@ -147,11 +157,11 @@ uses CCC's February value, published 5 April."
 
 **Brightspace → Quizzes → Lab 17.**
 
-**GitHub links of your files: md, py and/or other files as needed.**
+**GitHub links of your files: md, py and/or other files as needed.** Your `asof_app.py` is one of them.
 
 **Before Tuesday — do these**
 
-1. Keep your Lab 17 chat and your call.
+1. Keep your Lab 17 chat, your app and your call.
 2. Read the [F-Squared reading](../week-11/student-prework.md).
 
 **Next week:** a rule frozen before you look, and a holdout you do not touch until the end.
