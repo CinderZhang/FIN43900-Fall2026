@@ -1,4 +1,0 @@
-scenario,rate_shock_bps,spread_shock_bps
-Rate up 100,100,0
-Spread wider 75,0,75
-Combined extension,100,75

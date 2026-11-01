@@ -1,6 +1,0 @@
-bond_id,weight,modified_duration,spread_bps,stale_days,trade_count_20d,issuer,sector
-K1,0.25,2.751407,115,1,18,Northstar Tools,Industrial
-K2,0.20,4.353819,175,2,12,Harbor Health,Healthcare
-K3,0.20,5.599442,205,1,22,Gridline Energy,Utilities
-K4,0.20,3.376072,390,16,2,Orchard Retail,Consumer
-K5,0.15,1.883046,145,3,9,Metro Data,Technology

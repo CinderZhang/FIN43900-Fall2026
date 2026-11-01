@@ -1,6 +1,0 @@
-bond_id,issuer,sector,coupon_rate,years_to_maturity,ytm,price,modified_duration,convexity,spread_bps,stale_days,trade_count_20d
-K1,Northstar Tools,Industrial,0.050,3,0.040,102.775091,2.751407,10.412662,115,1,18
-K2,Harbor Health,Healthcare,0.045,5,0.052,96.986049,4.353819,24.091981,175,2,12
-K3,Gridline Energy,Utilities,0.060,7,0.058,101.124457,5.599442,39.894348,205,1,22
-K4,Orchard Retail,Consumer,0.075,4,0.068,102.381793,3.376072,15.241790,390,16,2
-K5,Metro Data,Technology,0.035,2,0.044,98.312194,1.883046,5.379764,145,3,9

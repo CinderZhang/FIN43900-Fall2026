@@ -10,20 +10,15 @@ Brightspace only collects your submissions. Dates and points: [the syllabus](syl
 ## Ahead
 
 - [Week 12 — Project 2 Audit and Investment-Committee Defense](lessons/week-12/)
-- [Week 13 — Choose Your Track](lessons/week-13/) — projected slides: [Session 20](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-13/slides-session-20.html) · [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-13/slides-session-25.html)
-- [Week 14 — Choose Your Track, Continued](lessons/week-14/) — projected slides: [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-14/slides-session-26.html)
+- [Week 13 — Project 2 Due & Applied Decision Systems](lessons/week-13/) — projected slides: [Session 20](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-13/slides-session-20.html)
+- [Week 14 — Applied Financial Decision Systems](lessons/week-14/)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
 - [Week 16 — Capstone Submission & Consultation](lessons/week-16/)
 
 ## Projects
 
 - [Project 2 — Investment Management Application](projects/project-2-investment-management-application.md)
-
-## Weeks 13–14 — two tracks, your choice
-
-**Fixed income** ([Week 13](lessons/week-13/), [Week 14](lessons/week-14/) — class
-sessions walk this one) or **robo-advisory** ([tracks/robo-advisory](tracks/robo-advisory/)) — projected slides: [Session 25](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-13/slides-session-25.html) · [Session 26](https://cinderzhang.github.io/FIN43900-Fall2026/tracks/robo-advisory/week-14/slides-session-26.html).
-Either counts, and either can seed your capstone.
+- [Capstone — Integrated Financial Analysis System](projects/capstone-integrated-financial-analysis-system.md)
 
 ## Past weeks
 

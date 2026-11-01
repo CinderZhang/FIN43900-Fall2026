@@ -1,4 +1,0 @@
-scenario,max_one_year_loss_pct,max_equity_pct,min_cash_pct,max_illiquid_pct,max_fee_pct,changed_fact
-Base,18,60,5,10,0.60,No new verified fact
-JobLoss,12,45,10,8,0.60,Employment income stops and withdrawals may rise
-LiquidityShock,15,50,15,8,0.60,Near-term family obligation requires additional cash

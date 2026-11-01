@@ -1,7 +1,0 @@
-{
-  "case_label": "SYNTHETIC_TRAINING_CASE_NOT_CLIENT_ADVICE",
-  "decision_user": "fictional household client and fiduciary review committee",
-  "decision": "retain, change, or defer a model-portfolio recommendation",
-  "horizon_years": 12,
-  "target_net_return_pct": 5.5
-}

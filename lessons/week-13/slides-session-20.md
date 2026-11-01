@@ -129,5 +129,5 @@ this lab does not grade or approve Project 2.
 2. Check your repository against the readiness table: a stranger reaches your decision from it alone.
 3. Leave untouched what you said you will not touch before the deadline.
 
-**Next:** Project 2 is due on the date in the Brightspace assignment header; Thursday starts the
-fixed-income weeks.
+**Next:** Project 2 is due on the date in the Brightspace assignment header; Thursday has no lab
+and no lecture: the [robo-advisor guide](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/tracks/robo-advisory/week-13/README.md), self-paced.

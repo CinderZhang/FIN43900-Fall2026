@@ -76,5 +76,5 @@ touch before the deadline.
 
 **GitHub links of your files: md, py and/or other files as needed.**
 
-**Next:** Project 2 is due on the date in the Brightspace assignment header; Thursday starts the
-fixed-income weeks.
+**Next:** Project 2 is due on the date in the Brightspace assignment header; Thursday has no lab
+and no lecture: the [robo-advisor guide](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/tracks/robo-advisory/week-13/README.md), self-paced.
