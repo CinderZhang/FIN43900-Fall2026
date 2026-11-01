@@ -29,7 +29,7 @@ changed-input result. Freeze remaining must-fix actions; do not open new project
 |---|---|---|---|
 | repository/environment/visible output |  |  |  |
 | Decision memo (`docs/decision-memo.md`) and numbers/as-of consistency |  |  |  |
-| validation, holdout, costs, placebo, kill rule |  |  |  |
+| validation, costs, stress run, kill rule |  |  |  |
 | Videos 1–3 and corrected transcripts |  |  |  |
 
 Lab 20 records current evidence and gaps; it does not extend the project deadline or create a

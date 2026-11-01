@@ -1,16 +1,16 @@
-# Session 19 — Signal Decision
+# Session 19 — The Investor Panel
 
-> **One thing today: your own signal through a frozen rule, a placebo and an untouched holdout — then a decision.**
+> **One thing today: add Graham and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.**
 
 ## Today's run of show
 
-1. Opener: rerun, the **D** question — 0–8
-2. **R** rule card — 8–18
-3. **E** on the training panel — 18–32
-4. Your data — 32–46
-5. Explain the code — 46–52
-6. Bull and bear — 52–60
-7. Decision and learn — 60–70
+1. Opener — 0–8
+2. **Build** the panel — 8–33
+3. **V** known answer and probe — 33–43
+4. Your company — 43–50
+5. Explain the code — 50–56
+6. Bull and bear — 56–62
+7. Decision and learn — 62–70
 8. Reflect and checkout — 70–75
 
 [Lab 19](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-19-signal-decision.md)
@@ -21,123 +21,121 @@
 
 **Minutes 0–8**
 
-Rerun `python backtest.py` first: Tuesday's values.
+Open your app first: COST's values.
 
-> **Does your signal beat a placebo on months it has never seen, after costs — and what will you do
-about it?**
+> **When three investors' skills read the same 10-K facts, where do they agree, where do they split — and would you trust the panel?**
 
 Paste it into your Lab 18 chat.
 
-**Explain to your partner first** (five minutes, no screen): the economic reason your series should
-move your asset. Your partner writes it down. Swap.
+**Explain to your partner first** (five minutes, no screen): from their pages, one place Graham or
+Burry would read Costco differently from Buffett. Swap.
 
 Something not working? Debug with your AI: the exact command and the exact error text.
 
 ---
 
-## R — your rule card, frozen and committed
+## Build — the panel, your request
 
-**Minutes 8–18**
+**Minutes 8–33**
 
-Copy Tuesday's rule card into a new `.md` file and fill it for your own case **before you run
-anything on your data**:
+Write your own request to your AI; keep everything your skill and app already do. The same facts
+and the same rules as Lab 18, plus `Liabilities`, `AssetsCurrent` and `LiabilitiesCurrent`;
+current ratio = current assets ÷ current liabilities.
 
-- signal: your Lab 17 series, the as-of value at each month-end; lag one month, as Tuesday
-- one fund from your Lab 15 universe; bills = your Treasury-bill fund, or 0.3% labelled an
-  assumption; cost 0.10% a switch
-- development = all months except the last 12; holdout = the last 12
-- benchmark = buy-and-hold; failure rule
+Your panel must:
 
-Commit and push it. Quarantined: only through the as-of filter. Rejected: the training panel — say so.
+1. two more skills, Graham and Burry from FAskills, each with its checks in code on the same facts —
+   **Graham:** current ratio of 2 or more, latest year; net income positive every year; net income
+   grew, first year to last. **Burry:** operating cash flow at least net income every year;
+   liabilities no more than twice equity, latest year;
+2. each skill writes its own memo from printed numbers only;
+3. the app shows a panel table — investor × check: pass, fail or not known — each investor's
+   verdict, the three memos side by side, and the unprinted-number flag across all memos.
 
-Under the card, start a **selection ledger**: every rule you try today, one line each, including the
-ones you drop. Number tried is disclosure, not evidence.
+**Sources:** [Graham's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md) ·
+[Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md) ·
+[Streamlit docs](https://docs.streamlit.io).
 
----
-
-## E — the placebo and your data, from one message
-
-**Minutes 18–32**
-
-Send this to your Lab 18 chat:
-
-> In my `backtest.py`, keep everything it already prints exactly as it is. Add a placebo: the same
-> rule with the signal's sign flipped, printed beside the rule for development and holdout, gross
-> and net. Add an option to read my own monthly table from a CSV file I name, with columns month,
-> signal and asset return in percent, and to set the holdout as the last 12 months. Print the rule
-> card values at the top of every run. One file, one command.
-
-Read what changed in `backtest.py` before you run it; ask your AI about any line you cannot explain.
+Run the panel on COST. *Expect:* the panel table, three verdicts and three memos side by side.
 
 **At minute 30:** open the quiz attempt — Brightspace → Quizzes → Lab 19.
 
 ---
 
-## E — training first
+## V — prove it on the known answer
 
-**Minutes 18–32**
+**Minutes 33–43**
 
-*Expect:* the rule as Tuesday, and the placebo beside it:
+Costco (COST), the two new ratios:
 
-| Period | Rule net | Placebo net | Buy-and-hold |
-|---|---:|---:|---:|
-| Development | 6.13 | 2.16 | 5.33 |
-| Holdout | −6.09 | 4.88 | −2.09 |
+| FY end | 2022-08-28 | 2023-09-03 | 2024-09-01 | 2025-08-31 | 2026-08-30 |
+|---|---:|---:|---:|---:|---:|
+| Current ratio | 1.02 | 1.07 | 0.97 | 1.03 | 1.06 |
+| Liabilities ÷ equity | 2.11 | 1.75 | 1.96 | 1.64 | 1.49 |
 
-The placebo beats the rule on the holdout. If not, debug with your AI until they match.
+### The panel on COST
+
+| Investor | Check | COST |
+|---|---|---|
+| Buffett | ROE of 15% or more every year | pass |
+| Buffett | Owner earnings positive every year | pass |
+| Buffett | Owner earnings grew, first year to last | pass |
+| Graham | Current ratio of 2 or more, latest year | **fail** (1.06) |
+| Graham | Net income positive every year | pass |
+| Graham | Net income grew, first year to last | pass |
+| Burry | Operating cash flow at least net income every year | pass |
+| Burry | Liabilities no more than twice equity, latest year | pass (1.49) |
+
+Buffett 3 of 3, Graham 2 of 3, Burry 2 of 2. Every value matches, or debug with your AI until they
+do.
+
+**Probe — a threshold is a design choice.** Lower Graham's current-ratio threshold to 1.0 in his
+skill. *Expect:* Graham now passes COST. Record the threshold you keep, and why, in one line under
+Graham's memo.
 
 ---
 
-## E — your data
+## Your company
 
-**Minutes 32–46**
+**Minutes 43–50**
 
-Build the monthly table: month, your as-of signal at that month-end, and your fund's monthly
-return from Lab 15.
-
-Run once on the frozen card.
-
-*Expect:* your rule, your placebo and buy-and-hold, development and holdout.
+Run the panel on your fund's largest company. *Expect:* its panel table, verdicts and memos. A
+check not known stays not known. No 10-K on EDGAR for it? Take the fund's next-largest company
+that files one, and say so.
 
 ---
 
 ## Explain the code
 
-**Minutes 46–52**
+**Minutes 50–56**
 
-**Explain the code** (six minutes, no AI). Open the block of `backtest.py` that builds the placebo. Explain it to your partner line by
-line; your partner asks one question you answer from the code. Swap. A line you cannot explain is
-your next question for your AI.
-
----
-
-## V — bull, bear, and the ledger
-
-**Minutes 52–60**
-
-**Partner attack.** Your partner argues the bear case from your numbers; you argue the bull case
-from the same numbers. Write both in two sentences each. Swap.
-
-Check your ledger: if you changed the rule after seeing the holdout, the change is a new hypothesis
-and the holdout no longer tests it. Say so.
+Six minutes, no AI. Open the function that turns Graham's checks into pass,
+fail or not known. Explain it to your partner line by line; your partner asks what it does when an
+input is missing, and you answer from the code. Swap.
 
 ---
 
-## Your decision · Placebo
+## Bull and bear
 
-**Minutes 60–70**
+**Minutes 56–62**
 
-**Reject, redesign as a new hypothesis, gather more evidence, or a bounded research pilot** —
-with the condition that would change it.
+**Partner attack.** Your partner argues the bear case on your company from the panel; you argue the
+bull case from the same panel. Two sentences each. Swap.
 
-*Example (training):* "Reject: the holdout trails buy-and-hold by 4 points and the placebo beats
-the rule; any revised rule needs months after June 2026."
+---
 
-**Placebo — Learn on your own:**
+## Your decision · A panel of AI agents
+
+**Minutes 62–70**
+
+**Would you let this panel screen companies for your Project 2 — yes, no, or only with a
+condition?** One line, with the condition.
+
+**A panel of AI agents — Learn on your own:**
 
 1. What is it?
-2. How does it work — what does a flipped or random signal tell you?
-3. Explain to your partner why beating buy-and-hold is not enough if a placebo does it too.
+2. How does it work — why do three personas on the same facts disagree?
+3. Explain it to your partner.
 
 ---
 
@@ -147,8 +145,8 @@ the rule; any revised rule needs months after June 2026."
 
 Explain to your partner:
 
-1. what your holdout says that development did not;
-2. what you would need before risking real money on this signal.
+1. where the panel agreed on your company and where it split;
+2. what the threshold probe says about any screen's verdict.
 
 ---
 
@@ -160,9 +158,4 @@ Explain to your partner:
 
 **GitHub links of your files: md, py and/or other files as needed.**
 
-**Before Tuesday — do these**
-
-1. Commit and push your rule card, ledger and decision.
-2. Have your rule card, your data card and your mandate on GitHub.
-
-**Next week:** Project 2 studio — the rule card, the data card and the mandate become one repository.
+**Next week:** Project 2 studio.

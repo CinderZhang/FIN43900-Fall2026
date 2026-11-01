@@ -5,8 +5,7 @@ on GitHub and leave with a cold-run record, a committee answer, and a short must
 
 ## Where each Project 2 part comes from
 
-You built every piece in the labs; before Tuesday you connect the backtest to your app (the
-[prework](student-prework.md)). The studio puts them in one repository.
+You built every piece in the labs. The studio puts them in one repository.
 
 | Project 2 needs | You built it in |
 |---|---|
@@ -14,8 +13,7 @@ You built every piece in the labs; before Tuesday you connect the backtest to yo
 | Baselines and the mandate check | [Lab 14](../week-09/lab-14-portfolio-baselines.md) |
 | Your first app: your universe, the constrained search, the stress run (`app.py`) | [Lab 15](../week-09/lab-15-portfolio-stability.md) |
 | Point-in-time rule and data card | [Lab 16](../week-10/lab-16-provenance-gate.md) and [Lab 17](../week-10/lab-17-point-in-time.md) |
-| Frozen rule card, holdout, placebo, selection ledger | [Lab 18](../week-11/lab-18-holdout-test.md) and [Lab 19](../week-11/lab-19-signal-decision.md) |
-| The product: your app with the holdout panel and the lag and cost controls | Lab 15 and Lab 19, joined in the Week 12 [prework](student-prework.md) |
+| The product: your app with the mandate verdicts and the stress run | [Lab 15](../week-09/lab-15-portfolio-stability.md) |
 | Locked Changed-Input Record | the Week 6 pattern ([Lab 11](../week-06/lab-11-proforma-what-if.md)), on one Project 2 input |
 | The bundle itself | [the Project 2 page](../../projects/project-2-investment-management-application.md) and the [submission architecture](../../PROJECT-SUBMISSION-ARCHITECTURE.md) |
 
@@ -59,7 +57,7 @@ apply these validation ideas to the finance model and decision system only.
 | Video 3 — committee presentation | What should the committee do, under what conditions, and what reverses it? |
 
 Rehearse Video 3 to your partner; your partner asks one sceptical question on the mandate, the
-timing, the baseline or the holdout. "My system cannot establish that" is an acceptable answer.
+timing or the baseline. "My system cannot establish that" is an acceptable answer.
 
 ## Final studio checklist
 

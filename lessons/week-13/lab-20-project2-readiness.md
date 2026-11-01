@@ -23,11 +23,11 @@ and does the decision survive one changed input?**
 
 | Manifest part | Ready means |
 |---|---|
-| The tool | a teammate moves one control and reads the mandate verdict and the holdout |
+| The tool | a teammate moves one control and reads the mandate verdict |
 | Repository | a README with the one command that produces your result |
 | Visible output | the decision numbers readable on GitHub without running anything |
 | Decision memo (`docs/decision-memo.md`) | the same numbers, dates and conditions as the output |
-| Validation and AI use | baseline, mandate check, stress run, holdout, placebo, Locked Changed-Input Record |
+| Validation and AI use | baseline, mandate check, stress run, Locked Changed-Input Record |
 | Videos 1–3 and transcripts | links work; each video answers its own question |
 
 The full list is on [the Project 2 page](../../projects/project-2-investment-management-application.md).
@@ -46,12 +46,6 @@ The full list is on [the Project 2 page](../../projects/project-2-investment-man
    the effect you expect on the decision. Commit and push.
 2. Rerun. Keep the before and after output. Under the prediction write what happened, whether the
    decision changes, and why the actual matched your prediction or not — or why nothing changed.
-
-A changed-lag run is a sensitivity scenario: your original frozen rule and holdout stay the evidence.
-
-*Example (Meridian, Lab 15):* "Equity return 8.0% → 7.0% a year; I expect the lowest-risk mix to
-add equity and the decision to hold. Actual: 55 → 80 points of equity, volatility 9.44% → 12.94%.
-Matched: a lower equity return needs more equity to reach the objective. Decision holds: pilot, not adopt."
 
 **Explain the code** (six minutes, no AI). Open the block of your Project 2 code that produces your decision number. Explain it to your partner line by
 line; your partner asks one question you answer from the code. Swap. A line you cannot explain is

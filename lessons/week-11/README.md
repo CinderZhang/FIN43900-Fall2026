@@ -1,64 +1,66 @@
-# Week 11 — Signal Robustness and Market Usefulness
+# Week 11 — AI Skills: Investors as Skills
 
 ## Mission
 
-Tuesday: freeze a trading rule, build the backtest from an instruction, and let an untouched
-holdout judge it on a training series. Thursday: your own admitted series from Week 10 through a
-frozen rule, a placebo and a holdout — then a decision you can defend.
+More AI, less finance: turn an investor's page from FAskills into a skill your AI runs the same way
+every time — code computes every number from the 10-K, the model only judges.
 
-**GitHub is the main delivery.** Every lab and project is handed in as GitHub links to your own
-files; this week the commit time of your rule card is part of the evidence.
+Tuesday: Buffett as a skill, with a script on keyless SEC EDGAR data and a Streamlit app. Thursday:
+Graham and Burry join him, a panel on one company, and a decision on whether to trust it.
 
 ## You arrive with
 
-- your Lab 17 `asof.py`, your series and its admit, quarantine or reject call;
-- your Lab 15 prices for your Project 2 universe, in your Course/Work Folder;
+- Antigravity or Codex in VS Code; the Streamlit apps you built on live data (Lab 17);
 - your partner.
 
 ## Outcomes
 
-- Write a rule card before any result exists, and commit it so the timestamp proves it.
-- Build a backtest with a lag, a cost per switch, and separate development and holdout results.
-- Show how removing the lag manufactures returns, and why a holdout is used once.
-- Compare a signal with a placebo and make a reject, redesign, more-evidence or bounded research
-  pilot decision.
+- Write a skill: a name and a description that tell your AI when to use it, and a bundled script.
+- Download a company's 10-K facts from SEC EDGAR with no key, and print each number with its XBRL tag.
+- Keep the numbers in code and the judgment in the model: a memo that uses only printed numbers, and
+  an app that flags any number the script did not print.
+- Keep honest gaps: "not found" and "not known", never an estimate.
+- Run three investor skills on the same facts, read where they agree and split, and decide whether
+  to trust the panel.
 
 ## Prerequisites and prework
 
-**Before Tuesday — about 20 minutes.** Read the SEC order
-[*In the Matter of F-Squared Investments*](https://www.sec.gov/files/litigation/admin/2014/ia-3988.pdf),
-Section III.A **"Summary," paragraphs 1–4, PDF pages labeled 2–3** (5–7 minutes). Ask: **how can one
-week of timing leakage manufacture most of the apparent alpha?** The
-[handout's F-Squared summary](student-handout.md#f-squared-accessible-case-summary) is the complete
-alternative.
+**Before Tuesday — about 20 minutes.** Read your AI's skills page:
+[Antigravity](https://antigravity.google/docs/skills) or
+[Codex](https://developers.openai.com/codex/skills). Then read the
+[FAskills README](https://github.com/CinderZhang/FAskills/blob/main/README.md) and
+[Buffett's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/warren_buffett.md).
+Ask: **what on Buffett's page could code compute, and what only judgment can?**
 
-**Before Thursday — about 15 minutes.** Put your Lab 17 series — at each month-end, the value your as-of
-filter says was published by then — and one fund's monthly returns from your Lab 15 `prices.csv`
-side by side by month. Ask your AI to help; check three months by hand.
+**Before Thursday — about 10 minutes.** On the holdings page of one of your Project 2 funds, find
+its largest company and note its ticker. Read
+[Graham's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md)
+and [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md).
 
 ## The two sessions
 
 | Session | Lab | One thing |
 |---|---|---|
-| Tuesday | [Lab 18](lab-18-holdout-test.md) | a frozen rule and an untouched holdout, on the training series |
-| Thursday | [Lab 19](lab-19-signal-decision.md) | your signal through the rule, a placebo and the holdout; a decision |
+| Tuesday | [Lab 18](lab-18-holdout-test.md) | Buffett's page as a skill: code computes every number from the 10-K; the model only judges |
+| Thursday | [Lab 19](lab-19-signal-decision.md) | Graham and Burry join him: a panel on one company, side by side in your app; trust it or not |
 
 ## Teams this week
 
-Two people, the same partner; each keeps their own Project 2. Explain before you build, swap
-and break on Tuesday, argue bull and bear on Thursday. Checkouts stay individual.
+Two people, the same partner; each keeps their own Project 2. Explain before you build, explain the
+code both ways, argue bull and bear on Thursday. Checkouts stay individual.
 
 ## DRIVER this week
 
-Define: the same question for everyone — does the rule work on months it has never seen, after
-costs? Represent: the rule card, committed first. Implement: the backtest from one request.
-Validate: the known answer and the lag-0 break. Evolve: the placebo and your own data. Reflect:
-what the holdout says that development did not.
+Define: the same question for everyone — can an investor's philosophy become a skill your AI runs
+the same way every time? Represent: the investor's page and the rules your numbers follow.
+Implement: the skill, its script and the app, from your own request. Validate: Costco's known
+answer, JPMorgan's gaps and a hand-typed number the app must flag. Evolve: the panel on your fund's
+largest company. Reflect: what the skill makes the same every time, and what it leaves to the model.
 
 ## Package map
 
 - [Lab 18](lab-18-holdout-test.md) and [Lab 19](lab-19-signal-decision.md) — the labs.
-- [Student handout](student-handout.md) — F-Squared, the digits once, the rules.
+- [Student handout](student-handout.md) — the rules, the EDGAR endpoints, the digits once.
 - [Open challenge](open-ended-challenge.md) — after class.
 - [Prework](student-prework.md) — generated from the prework section above.
 - Instructor guide, grading key and verification record — instructor only, not published.

@@ -1,6 +1,6 @@
 # Open-Ended Challenge — Honest Failure Memo
 
-The strategy fails its untouched holdout but reveals one potentially useful operational insight.
+Your process fails to beat its baseline after costs but reveals one potentially useful operational insight.
 
 1. Without AI, write the strongest claim the evidence still supports and three claims it cannot.
 2. Ask AI for reject, redesign, and pilot cases; tag each statement as output, source, assumption,

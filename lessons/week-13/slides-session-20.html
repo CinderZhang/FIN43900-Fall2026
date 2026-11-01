@@ -36,7 +36,7 @@ and does the decision survive one changed input?</strong></p>
 </thead>
 <tbody><tr>
 <td>The tool</td>
-<td>a teammate moves one control and reads the mandate verdict and the holdout</td>
+<td>a teammate moves one control and reads the mandate verdict</td>
 </tr>
 <tr>
 <td>Repository</td>
@@ -52,7 +52,7 @@ and does the decision survive one changed input?</strong></p>
 </tr>
 <tr>
 <td>Validation and AI use</td>
-<td>baseline, mandate check, stress run, holdout, placebo, Locked Changed-Input Record</td>
+<td>baseline, mandate check, stress run, Locked Changed-Input Record</td>
 </tr>
 <tr>
 <td>Videos 1–3 and transcripts</td>
@@ -83,10 +83,6 @@ the effect you expect on the decision. Commit and push.</li>
 <li>Rerun. Keep the before and after output. Under the prediction write what happened, whether the
 decision changes, and why the actual matched your prediction or not — or why nothing changed.</li>
 </ol>
-<p>A changed-lag run is a sensitivity scenario: your original frozen rule and holdout stay the evidence.</p>
-<p><em>Example (Meridian, Lab 15):</em> "Equity return 8.0% → 7.0% a year; I expect the lowest-risk mix to
-add equity and the decision to hold. Actual: 55 → 80 points of equity, volatility 9.44% → 12.94%.
-Matched: a lower equity return needs more equity to reach the objective. Decision holds: pilot, not adopt."</p>
 </section>
 <section class="slide">
 <h2>Explain the code</h2>

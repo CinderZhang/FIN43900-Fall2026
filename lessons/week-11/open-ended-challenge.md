@@ -1,14 +1,16 @@
-# Open-Ended Challenge — The Failed Holdout
+# Open-Ended Challenge — A Fourth Investor, or Skill Against No Skill
 
-The preregistered signal earns +1.5% per period in development and −1.0% in holdout before costs.
-AI suggests reversing the sign.
+After class. Pick one.
 
-1. Without AI, state what the original test establishes and what it does not.
-2. Ask two AI systems for the strongest case to reverse and the strongest case to abandon.
-3. Tag every claim as observed output, sourced fact, assumption, or speculation.
-4. Register the reversed rule as a new hypothesis with an untouched/prospective evidence plan.
-5. Close AI and decide reject, redesign, or bounded pilot. A pilot needs a size, duration,
-   monitoring owner, and kill rule; it cannot be justified by relabeling the failed holdout.
+**A fourth investor.** Choose another investor in
+[FAskills](https://github.com/CinderZhang/FAskills/tree/main/financial-researcher/experts) whose
+checks need only the facts your script already prints. Write the checks in code, add the skill to
+your panel, and run it on COST and on your fund's largest company. Say where the fourth investor
+agrees with the other three and where it splits.
 
-Deliver a one-page failure memo that preserves the negative result and states the next decisive
-evidence. Honest rejection can be the strongest answer.
+**Skill against no skill.** Pick three companies. For each, ask a fresh chat with no skill for the
+investor's verdict and the numbers behind it, then run your skill. Mark every number in the
+no-skill answer that your script did not print, and say which answer you would hand to a client and
+why. Decide without AI first, then compare.
+
+Keep "not found" and "not known" as they are. Push your work to GitHub.
