@@ -41,8 +41,8 @@ and [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-r
 
 | Session | Lab | One thing |
 |---|---|---|
-| Tuesday | [Lab 18](lab-18-holdout-test.md) | Buffett's page as a skill: code computes every number from the 10-K; the model only judges |
-| Thursday | [Lab 19](lab-19-signal-decision.md) | Graham and Burry join him: a panel on one company, side by side in your app; trust it or not |
+| Tuesday | [Lab 18](lab-18-legend-investor-as-skill.md) | Buffett's page as a skill: code computes every number from the 10-K; the model only judges |
+| Thursday | [Lab 19](lab-19-legend-panel.md) | Graham and Burry join him: a panel on one company, side by side in your app; trust it or not |
 
 ## Teams this week
 
@@ -59,7 +59,7 @@ largest company. Reflect: what the skill makes the same every time, and what it 
 
 ## Package map
 
-- [Lab 18](lab-18-holdout-test.md) and [Lab 19](lab-19-signal-decision.md) — the labs.
+- [Lab 18](lab-18-legend-investor-as-skill.md) and [Lab 19](lab-19-legend-panel.md) — the labs.
 - [Student handout](student-handout.md) — the rules, the EDGAR endpoints, the digits once.
 - [Open challenge](open-ended-challenge.md) — after class.
 - [Prework](student-prework.md) — generated from the prework section above.

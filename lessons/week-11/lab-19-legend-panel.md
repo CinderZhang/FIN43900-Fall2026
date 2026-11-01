@@ -9,7 +9,7 @@
 
 **Pace — 75 minutes, on the slides:** opener 0–8 · build the panel 8–33 · V and probe 33–43 · your company 43–50 · explain the code 50–56 · bull and bear 56–62 · decision and learn 62–70 · reflect and checkout 70–75.
 
-**You arrive with:** your [Lab 18](lab-18-holdout-test.md) skill and app matching COST · your Lab 18
+**You arrive with:** your [Lab 18](lab-18-legend-investor-as-skill.md) skill and app matching COST · your Lab 18
 chat · your partner · the ticker of the largest company inside one of your Project 2 funds
 ([the prework](student-prework.md)).
 

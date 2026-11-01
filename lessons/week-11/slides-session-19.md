@@ -13,7 +13,7 @@
 7. Decision and learn — 62–70
 8. Reflect and checkout — 70–75
 
-[Lab 19](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-19-signal-decision.md)
+[Lab 19](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-19-legend-panel.md)
 
 ---
 

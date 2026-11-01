@@ -12,7 +12,7 @@
 6. Decision, learn, reflect — 58–70
 7. Checkout — 70–75
 
-[Lab 18](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-18-holdout-test.md)
+[Lab 18](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-11/lab-18-legend-investor-as-skill.md)
 
 ---
 
