@@ -1,7 +1,7 @@
 <!-- AUTHORED HOME. Rebuilt 2026-11-01 on the owner's order: AI skills from FAskills; the 2026-10-28
      trading-strategy version is superseded. -->
 
-# Lab 18 — An Investor as a Skill
+# Lab 18 — Legend Investor as Skill
 
 **One thing today: turn Buffett's page in FAskills into a skill your AI runs the same way every time — code computes every number from the 10-K; the model only judges.**
 

@@ -1,7 +1,7 @@
 <!-- AUTHORED HOME. Rebuilt 2026-11-01 on the owner's order: AI skills from FAskills — a panel of three
      investor skills on the same 10-K facts; the 2026-10-28 trading-strategy version is superseded. -->
 
-# Lab 19 — The Investor Panel
+# Lab 19 — Legend Panel
 
 **One thing today: add Graham and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.**
 

@@ -1,4 +1,4 @@
-# Session 19 — The Investor Panel
+# Session 19 — Legend Panel
 
 > **One thing today: add Graham and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.**
 

@@ -1,4 +1,4 @@
-# Session 18 — An Investor as a Skill
+# Session 18 — Legend Investor as Skill
 
 > **One thing today: turn Buffett's page in FAskills into a skill your AI runs the same way every time — code computes every number from the 10-K; the model only judges.**
 
