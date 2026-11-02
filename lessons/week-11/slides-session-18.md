@@ -62,6 +62,10 @@ data sources. Your numbers come from SEC EDGAR, keyless, by these rules:
 
 No request is given: write your own to your AI from this list, Buffett's page and the rules.
 
+**What a skill is:** a folder with a `SKILL.md` file. The file starts with a name and a
+description between `---` lines, then gives your AI the instructions. Scripts can sit in the
+same folder.
+
 Your skill must:
 
 1. live where your AI reads skills (its skills page says where), with a name and a description
