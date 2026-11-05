@@ -11,5 +11,5 @@ Ask: **what on Buffett's page could code compute, and what only judgment can?**
 
 **Before Thursday — about 10 minutes.** On the holdings page of one of your Project 2 funds, find
 its largest company and note its ticker. Read
-[Graham's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md)
+[Cathie Wood's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/cathie_wood.md)
 and [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md).

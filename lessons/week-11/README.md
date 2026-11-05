@@ -6,7 +6,7 @@ More AI, less finance: turn an investor's page from FAskills into a skill your A
 every time — code computes every number from the 10-K, the model only judges.
 
 Tuesday: Buffett as a skill, with a script on keyless SEC EDGAR data and a Streamlit app. Thursday:
-Graham and Burry join him, a panel on one company, and a decision on whether to trust it.
+Cathie Wood and Burry join him, a panel on one company, and a decision on whether to trust it.
 
 ## You arrive with
 
@@ -34,7 +34,7 @@ Ask: **what on Buffett's page could code compute, and what only judgment can?**
 
 **Before Thursday — about 10 minutes.** On the holdings page of one of your Project 2 funds, find
 its largest company and note its ticker. Read
-[Graham's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md)
+[Cathie Wood's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/cathie_wood.md)
 and [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md).
 
 ## The two sessions
@@ -42,7 +42,7 @@ and [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-r
 | Session | Lab | One thing |
 |---|---|---|
 | Tuesday | [Lab 18](lab-18-legend-investor-as-skill.md) | Buffett's page as a skill: code computes every number from the 10-K; the model only judges |
-| Thursday | [Lab 19](lab-19-legend-panel.md) | Graham and Burry join him: a panel on one company, side by side in your app; trust it or not |
+| Thursday | [Lab 19](lab-19-legend-panel.md) | Cathie Wood and Burry join him: a panel on one company, side by side in your app; trust it or not |
 
 ## Teams this week
 

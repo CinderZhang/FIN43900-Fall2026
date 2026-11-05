@@ -187,8 +187,8 @@ Explain to your partner:
 **Before Thursday — do these**
 
 1. Keep your skill and app matching COST.
-2. Find the largest company inside one of your Project 2 funds, note its ticker, and read Graham's
-   and Burry's pages: the [Thursday prework](student-prework.md).
+2. Find the largest company inside one of your Project 2 funds, note its ticker, and read Cathie
+   Wood's and Burry's pages: the [Thursday prework](student-prework.md).
 
-**Thursday preview:** the panel — Graham and Burry join Buffett on the same 10-K facts; then the
+**Thursday preview:** the panel — Cathie Wood and Burry join Buffett on the same 10-K facts; then the
 largest company inside one of your Project 2 funds.

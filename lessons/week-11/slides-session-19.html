@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Slides Session 19</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{margin:0;height:100%;background:#fff;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif}.slide{display:none;box-sizing:border-box;min-height:100vh;overflow:auto;padding:4vh 0;font-size:clamp(18px,2.2vh + .8vw,34px);line-height:1.45}.slide.active{display:flex;flex-direction:column;justify-content:center}.slide>*{width:min(92vw,1050px);margin-left:auto;margin-right:auto;box-sizing:border-box}h1{font-size:clamp(30px,4.5vh + 1.2vw,64px);margin:.2em auto}h2{font-size:clamp(24px,3.6vh + 1vw,52px);margin:.2em auto;color:#8a6d00}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:.4em .6em;text-align:left}code{background:#f4f2ec;padding:0 .25em}.slide .table-wrap{width:min(92vw,1050px)!important;margin:.5em auto!important;overflow-x:auto!important}.slide .table-wrap table{width:100%!important;min-width:0!important;font-size:.85em}.slide caption{display:none}td[align=right],th[align=right]{text-align:right}blockquote{border-left:.3em solid #c9b458;padding-left:1em;color:#444}#pos{position:fixed;bottom:10px;right:16px;font-size:14px;color:#999}</style></head><body><section class="slide active"><h1>Session 19 — Legend Panel</h1>
 <blockquote>
-<p><strong>One thing today: add Graham and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.</strong></p>
+<p><strong>One thing today: add Cathie Wood and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.</strong></p>
 </blockquote>
 <h2>Today's run of show</h2>
 <ol>
@@ -23,27 +23,29 @@
 <p><strong>When three investors' skills read the same 10-K facts, where do they agree, where do they split — and would you trust the panel?</strong></p>
 </blockquote>
 <p>Paste it into your Lab 18 chat.</p>
-<p><strong>Explain to your partner first</strong> (five minutes, no screen): from their pages, one place Graham or
-Burry would read Costco differently from Buffett. Swap.</p>
+<p><strong>Today's market.</strong> The Nasdaq fell about 5% today, chip stocks about 10%, Nvidia about 9%
+(<a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html" target="_blank" rel="noopener">Yahoo Finance, 3:45 p.m. ET</a>).</p>
+<p><strong>Explain to your partner first</strong> (five minutes, no screen): from their pages, what Cathie Wood and
+Burry would each do in today's sell-off. Swap.</p>
 <p>Something not working? Debug with your AI: the exact command and the exact error text.</p>
 </section>
 <section class="slide">
 <h2>Build — the panel, your request</h2>
 <p><strong>Minutes 8–33</strong></p>
 <p>Write your own request to your AI; keep everything your skill and app already do. The same facts
-and the same rules as Lab 18, plus <code>Liabilities</code>, <code>AssetsCurrent</code> and <code>LiabilitiesCurrent</code>;
-current ratio = current assets ÷ current liabilities.</p>
+and the same rules as Lab 18, plus <code>Liabilities</code> and <code>ResearchAndDevelopmentExpense</code>; revenue
+growth a year = (last revenue ÷ first revenue)^(1/4) − 1.</p>
 <p>Your panel must:</p>
 <ol>
-<li>two more skills, Graham and Burry from FAskills, each with its checks in code on the same facts —
-<strong>Graham:</strong> current ratio of 2 or more, latest year; net income positive every year; net income
-grew, first year to last. <strong>Burry:</strong> operating cash flow at least net income every year;
+<li>two more skills, Cathie Wood and Burry from FAskills, each with its checks in code on the same facts —
+<strong>Cathie Wood:</strong> revenue grew 15% or more a year, first year to last; R&amp;D 5% or more of revenue,
+latest year. <strong>Burry:</strong> operating cash flow at least net income every year;
 liabilities no more than twice equity, latest year;</li>
 <li>each skill writes its own memo from printed numbers only;</li>
 <li>the app shows a panel table — investor × check: pass, fail or not known — each investor's
 verdict, the three memos side by side, and the unprinted-number flag across all memos.</li>
 </ol>
-<p><strong>Sources:</strong> <a href="https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md" target="_blank" rel="noopener">Graham's page</a> ·
+<p><strong>Sources:</strong> <a href="https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/cathie_wood.md" target="_blank" rel="noopener">Cathie Wood's page</a> ·
 <a href="https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md" target="_blank" rel="noopener">Burry's page</a> ·
 <a href="https://docs.streamlit.io" target="_blank" rel="noopener">Streamlit docs</a>.</p>
 <p>Run the panel on COST. <em>Expect:</em> the panel table, three verdicts and three memos side by side.</p>
@@ -52,7 +54,7 @@ verdict, the three memos side by side, and the unprinted-number flag across all 
 <section class="slide">
 <h2>V — prove it on the known answer</h2>
 <p><strong>Minutes 33–43</strong></p>
-<p>Costco (COST), the two new ratios:</p>
+<p>Costco (COST), the new numbers:</p>
 <div class="table-wrap table-region" tabindex="0" role="region" aria-label="V — prove it on the known answer (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">V — prove it on the known answer</caption>
 <thead>
 <tr>
@@ -65,12 +67,12 @@ verdict, the three memos side by side, and the unprinted-number flag across all 
 </tr>
 </thead>
 <tbody><tr>
-<td>Current ratio</td>
-<td align="right">1.02</td>
-<td align="right">1.07</td>
-<td align="right">0.97</td>
-<td align="right">1.03</td>
-<td align="right">1.06</td>
+<td>R&amp;D ÷ revenue</td>
+<td align="right">not found</td>
+<td align="right">not found</td>
+<td align="right">not found</td>
+<td align="right">not found</td>
+<td align="right">not found</td>
 </tr>
 <tr>
 <td>Liabilities ÷ equity</td>
@@ -81,6 +83,7 @@ verdict, the three memos side by side, and the unprinted-number flag across all 
 <td align="right">1.49</td>
 </tr>
 </tbody></table></div>
+<p>Revenue growth a year, FY2022 to FY2026: 7.51%.</p>
 <h3>The panel on COST</h3>
 <div class="table-wrap table-region" tabindex="0" role="region" aria-label="The panel on COST (scrollable)" style="display: block; width: 100%; max-width: 100%; overflow-x: auto;"><table style="width: max-content; min-width: 100%; border-collapse: collapse;"><caption style="text-align: left; font-weight: 700; padding: 0.5rem; color: rgb(23, 23, 23); background-color: rgb(255, 255, 255);">The panel on COST</caption>
 <thead>
@@ -106,19 +109,14 @@ verdict, the three memos side by side, and the unprinted-number flag across all 
 <td>pass</td>
 </tr>
 <tr>
-<td>Graham</td>
-<td>Current ratio of 2 or more, latest year</td>
-<td><strong>fail</strong> (1.06)</td>
+<td>Cathie Wood</td>
+<td>Revenue grew 15% or more a year, first year to last</td>
+<td><strong>fail</strong> (7.51%)</td>
 </tr>
 <tr>
-<td>Graham</td>
-<td>Net income positive every year</td>
-<td>pass</td>
-</tr>
-<tr>
-<td>Graham</td>
-<td>Net income grew, first year to last</td>
-<td>pass</td>
+<td>Cathie Wood</td>
+<td>R&amp;D 5% or more of revenue, latest year</td>
+<td>not known</td>
 </tr>
 <tr>
 <td>Burry</td>
@@ -131,11 +129,11 @@ verdict, the three memos side by side, and the unprinted-number flag across all 
 <td>pass (1.49)</td>
 </tr>
 </tbody></table></div>
-<p>Buffett 3 of 3, Graham 2 of 3, Burry 2 of 2. Every value matches, or debug with your AI until they
-do.</p>
-<p><strong>Probe — a threshold is a design choice.</strong> Lower Graham's current-ratio threshold to 1.0 in his
-skill. <em>Expect:</em> Graham now passes COST. Record the threshold you keep, and why, in one line under
-Graham's memo.</p>
+<p>Buffett 3 of 3; Cathie Wood growth fails, R&amp;D not known; Burry 2 of 2. Every value matches, or
+debug with your AI until they do.</p>
+<p><strong>Probe — a threshold is a design choice.</strong> Lower Cathie Wood's growth threshold to 5% in her
+skill. <em>Expect:</em> her growth check now passes COST; R&amp;D stays not known. Record the threshold you
+keep, and why, in one line under her memo.</p>
 </section>
 <section class="slide">
 <h2>Your company</h2>
@@ -147,7 +145,7 @@ that files one, and say so.</p>
 <section class="slide">
 <h2>Explain the code</h2>
 <p><strong>Minutes 50–56</strong></p>
-<p>Six minutes, no AI. Open the function that turns Graham's checks into pass,
+<p>Six minutes, no AI. Open the function that turns Cathie Wood's checks into pass,
 fail or not known. Explain it to your partner line by line; your partner asks what it does when an
 input is missing, and you answer from the code. Swap.</p>
 </section>

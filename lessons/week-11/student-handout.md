@@ -27,10 +27,11 @@ name and your email.
 | Operating cash flow | `NetCashProvidedByUsedInOperatingActivities` |
 | Capital spending | `PaymentsToAcquirePropertyPlantAndEquipment`, then `PaymentsToAcquireProductiveAssets` |
 | Equity · liabilities | `StockholdersEquity` · `Liabilities` |
-| Current assets · current liabilities | `AssetsCurrent` · `LiabilitiesCurrent` |
+| R&D | `ResearchAndDevelopmentExpense`, then `ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost` |
 | ROE | net income ÷ year-end equity |
 | Owner earnings | operating cash flow − capital spending |
-| Current ratio | current assets ÷ current liabilities |
+| Revenue growth a year | (last revenue ÷ first revenue)^(1/4) − 1 |
+| R&D ÷ revenue | R&D ÷ revenue, the same year |
 | A value not found | prints "not found", never an estimate |
 | Equity zero or below | ROE and liabilities ÷ equity are "not known" |
 | A check with a missing input | "not known" |
@@ -39,16 +40,16 @@ name and your email.
 
 Costco (COST), $ millions:
 
-| FY end | Net income | Operating cash flow | Capital spending | Owner earnings | Equity | ROE % | Current ratio | Liabilities ÷ equity |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2022-08-28 | 5,844 | 7,392 | 3,891 | 3,501 | 20,642 | 28.3 | 1.02 | 2.11 |
-| 2023-09-03 | 6,292 | 11,068 | 4,323 | 6,745 | 25,058 | 25.1 | 1.07 | 1.75 |
-| 2024-09-01 | 7,367 | 11,339 | 4,710 | 6,629 | 23,622 | 31.2 | 0.97 | 1.96 |
-| 2025-08-31 | 8,099 | 13,335 | 5,498 | 7,837 | 29,164 | 27.8 | 1.03 | 1.64 |
-| 2026-08-30 | 9,226 | 15,817 | 6,435 | 9,382 | 35,803 | 25.8 | 1.06 | 1.49 |
+| FY end | Net income | Operating cash flow | Capital spending | Owner earnings | Equity | ROE % | Liabilities ÷ equity |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 2022-08-28 | 5,844 | 7,392 | 3,891 | 3,501 | 20,642 | 28.3 | 2.11 |
+| 2023-09-03 | 6,292 | 11,068 | 4,323 | 6,745 | 25,058 | 25.1 | 1.75 |
+| 2024-09-01 | 7,367 | 11,339 | 4,710 | 6,629 | 23,622 | 31.2 | 1.96 |
+| 2025-08-31 | 8,099 | 13,335 | 5,498 | 7,837 | 29,164 | 27.8 | 1.64 |
+| 2026-08-30 | 9,226 | 15,817 | 6,435 | 9,382 | 35,803 | 25.8 | 1.49 |
 
-Revenue: 226,954 in FY2022, 303,154 in FY2026. The panel on COST: Buffett 3 of 3; Graham 2 of 3,
-the current ratio failing at 1.06; Burry 2 of 2.
+Revenue: 226,954 in FY2022, 303,154 in FY2026, 7.51% a year; R&D not found. The panel on COST:
+Buffett 3 of 3; Cathie Wood growth fails at 7.51%, R&D not known; Burry 2 of 2.
 
 ## The rules
 

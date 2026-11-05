@@ -1,6 +1,6 @@
 # Session 19 — Legend Panel
 
-> **One thing today: add Graham and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.**
+> **One thing today: add Cathie Wood and Burry as skills, run the three on one company, show them side by side in your app, and decide whether to trust the panel.**
 
 ## Today's run of show
 
@@ -27,8 +27,11 @@ Open your app first: COST's values.
 
 Paste it into your Lab 18 chat.
 
-**Explain to your partner first** (five minutes, no screen): from their pages, one place Graham or
-Burry would read Costco differently from Buffett. Swap.
+**Today's market.** The Nasdaq fell about 5% today, chip stocks about 10%, Nvidia about 9%
+([Yahoo Finance, 3:45 p.m. ET](https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html)).
+
+**Explain to your partner first** (five minutes, no screen): from their pages, what Cathie Wood and
+Burry would each do in today's sell-off. Swap.
 
 Something not working? Debug with your AI: the exact command and the exact error text.
 
@@ -39,20 +42,20 @@ Something not working? Debug with your AI: the exact command and the exact error
 **Minutes 8–33**
 
 Write your own request to your AI; keep everything your skill and app already do. The same facts
-and the same rules as Lab 18, plus `Liabilities`, `AssetsCurrent` and `LiabilitiesCurrent`;
-current ratio = current assets ÷ current liabilities.
+and the same rules as Lab 18, plus `Liabilities` and `ResearchAndDevelopmentExpense`; revenue
+growth a year = (last revenue ÷ first revenue)^(1/4) − 1.
 
 Your panel must:
 
-1. two more skills, Graham and Burry from FAskills, each with its checks in code on the same facts —
-   **Graham:** current ratio of 2 or more, latest year; net income positive every year; net income
-   grew, first year to last. **Burry:** operating cash flow at least net income every year;
+1. two more skills, Cathie Wood and Burry from FAskills, each with its checks in code on the same facts —
+   **Cathie Wood:** revenue grew 15% or more a year, first year to last; R&D 5% or more of revenue,
+   latest year. **Burry:** operating cash flow at least net income every year;
    liabilities no more than twice equity, latest year;
 2. each skill writes its own memo from printed numbers only;
 3. the app shows a panel table — investor × check: pass, fail or not known — each investor's
    verdict, the three memos side by side, and the unprinted-number flag across all memos.
 
-**Sources:** [Graham's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/ben_graham.md) ·
+**Sources:** [Cathie Wood's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/cathie_wood.md) ·
 [Burry's page](https://github.com/CinderZhang/FAskills/blob/main/financial-researcher/experts/michael_burry.md) ·
 [Streamlit docs](https://docs.streamlit.io).
 
@@ -66,12 +69,14 @@ Run the panel on COST. *Expect:* the panel table, three verdicts and three memos
 
 **Minutes 33–43**
 
-Costco (COST), the two new ratios:
+Costco (COST), the new numbers:
 
 | FY end | 2022-08-28 | 2023-09-03 | 2024-09-01 | 2025-08-31 | 2026-08-30 |
 |---|---:|---:|---:|---:|---:|
-| Current ratio | 1.02 | 1.07 | 0.97 | 1.03 | 1.06 |
+| R&D ÷ revenue | not found | not found | not found | not found | not found |
 | Liabilities ÷ equity | 2.11 | 1.75 | 1.96 | 1.64 | 1.49 |
+
+Revenue growth a year, FY2022 to FY2026: 7.51%.
 
 ### The panel on COST
 
@@ -80,18 +85,17 @@ Costco (COST), the two new ratios:
 | Buffett | ROE of 15% or more every year | pass |
 | Buffett | Owner earnings positive every year | pass |
 | Buffett | Owner earnings grew, first year to last | pass |
-| Graham | Current ratio of 2 or more, latest year | **fail** (1.06) |
-| Graham | Net income positive every year | pass |
-| Graham | Net income grew, first year to last | pass |
+| Cathie Wood | Revenue grew 15% or more a year, first year to last | **fail** (7.51%) |
+| Cathie Wood | R&D 5% or more of revenue, latest year | not known |
 | Burry | Operating cash flow at least net income every year | pass |
 | Burry | Liabilities no more than twice equity, latest year | pass (1.49) |
 
-Buffett 3 of 3, Graham 2 of 3, Burry 2 of 2. Every value matches, or debug with your AI until they
-do.
+Buffett 3 of 3; Cathie Wood growth fails, R&D not known; Burry 2 of 2. Every value matches, or
+debug with your AI until they do.
 
-**Probe — a threshold is a design choice.** Lower Graham's current-ratio threshold to 1.0 in his
-skill. *Expect:* Graham now passes COST. Record the threshold you keep, and why, in one line under
-Graham's memo.
+**Probe — a threshold is a design choice.** Lower Cathie Wood's growth threshold to 5% in her
+skill. *Expect:* her growth check now passes COST; R&D stays not known. Record the threshold you
+keep, and why, in one line under her memo.
 
 ---
 
@@ -109,7 +113,7 @@ that files one, and say so.
 
 **Minutes 50–56**
 
-Six minutes, no AI. Open the function that turns Graham's checks into pass,
+Six minutes, no AI. Open the function that turns Cathie Wood's checks into pass,
 fail or not known. Explain it to your partner line by line; your partner asks what it does when an
 input is missing, and you answer from the code. Swap.
 

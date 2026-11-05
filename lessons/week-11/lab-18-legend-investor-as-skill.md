@@ -144,5 +144,5 @@ model; 2. why "not found" is a better answer than an estimate.
 
 **GitHub links of your files: md, py and/or other files as needed.**
 
-**Thursday preview:** the panel — Graham and Burry join Buffett on the same 10-K facts; then the
+**Thursday preview:** the panel — Cathie Wood and Burry join Buffett on the same 10-K facts; then the
 largest company inside one of your Project 2 funds.
