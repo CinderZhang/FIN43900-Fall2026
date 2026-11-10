@@ -1,9 +1,9 @@
 # Major Project Student Checklist
 
 **Project 2 and the capstone:** every written part below is a Markdown file in your repository's
-`docs/` folder, not a PDF (`decision-memo.md`, `validation-and-ai-use.md`, and for the capstone
-`edition-a.md` and `research-evolution.md`); attach the same `.md` files to the Brightspace
-submission. **Project 2 has no Edition A or B:** skip "Before AI" and the research-evolution item.
+`docs/` folder, not a PDF (`decision-memo.md`, `validation-and-ai-use.md`); attach the same `.md`
+files to the Brightspace submission. **Edition A and Edition B are yours to keep and compare; neither is submitted.** Skip "Before AI" and the
+research-evolution item. **Videos are YouTube links, not video files.**
 **Project 2 also requires** two short statements opening your README, your memo and each video
 (an AI announcement; education, not investment advice), and Video 3 opens with a live demo of
 your app. See the [Project 2 page](project-2-investment-management-application.md).

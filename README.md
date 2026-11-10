@@ -3,13 +3,12 @@
 Course home: every lab, project requirement, deck, and reading lives here.
 Brightspace only collects your submissions. Dates and points: [the syllabus](syllabus/FIN43900-Fall2026-syllabus.pdf) and Brightspace.
 
-## This week — Week 11
+## This week — Week 12
 
-- [Week 11 — AI Skills: Investors as Skills](lessons/week-11/) — projected slides: [Session 18](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-11/slides-session-18.html) · [Session 19](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-11/slides-session-19.html)
+- [Week 12 — Project 2 Audit and Investment-Committee Defense](lessons/week-12/)
 
 ## Ahead
 
-- [Week 12 — Project 2 Audit and Investment-Committee Defense](lessons/week-12/)
 - [Week 13 — Project 2 Due & Applied Decision Systems](lessons/week-13/) — projected slides: [Session 20](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-13/slides-session-20.html)
 - [Week 14 — Applied Financial Decision Systems](lessons/week-14/)
 - [Week 15 — Integrated Capstone Development](lessons/week-15/)
@@ -33,6 +32,7 @@ Brightspace only collects your submissions. Dates and points: [the syllabus](syl
 - [Week 8 — Project 1 Due & Portfolio Construction Opens](lessons/week-08/)
 - [Week 9 — Portfolio Construction & Optimization](lessons/week-09/) — projected slides: [Session 14](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-09/slides-session-14.html) · [Session 15](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-09/slides-session-15.html)
 - [Week 10 — Alternative Data & Market Analysis](lessons/week-10/) — projected slides: [Session 16](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-10/slides-session-16.html) · [Session 17](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-10/slides-session-17.html)
+- [Week 11 — AI Skills: Investors as Skills](lessons/week-11/) — projected slides: [Session 18](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-11/slides-session-18.html) · [Session 19](https://cinderzhang.github.io/FIN43900-Fall2026/lessons/week-11/slides-session-19.html)
 - [Project 1 — Corporate Finance Application](projects/project-1-corporate-finance-application.md)
 
 Slides open in the browser from the projected-slides links (arrow keys or click to advance).

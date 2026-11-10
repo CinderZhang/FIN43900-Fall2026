@@ -1,6 +1,6 @@
 # AI Boundary Card — Use This All Semester
 
-This card controls the Edition A checkpoints of Project 1 and the capstone; Project 2 has none
+This card controls the Edition A checkpoint of Project 1; Project 2 and the capstone have none
 (changed 2026-10-14), so AI is open for it from the start. A weekly lab may add a narrower AI-off phase,
 but it cannot silently change these project rules.
 

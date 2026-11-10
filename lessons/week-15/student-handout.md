@@ -9,30 +9,23 @@ three failure budget, cold-run record, consistent submission bundle, and committ
 
 ## Prework
 
-Use **2–3 hours from Nov. 29–Dec. 1** to assemble reused components into an integration skeleton
+Use **3–4 hours from Nov. 29–Dec. 1** to assemble reused components into an integration skeleton
 and locate the current component outputs, README, memo/deck, and validation evidence. Write the
 committee decision, name the issuer/corporate and investment components, and identify the material
 input or state exchanged between them. Reserve the final 30 minutes for an AI-off prediction of
 one entity/date/currency/unit/frequency/price/scenario/version interface that could fail.
 
-Between Tuesday and Thursday, use **2–3 hours from Dec. 1–3** to produce the first end-to-end
-runnable README-only cold-run package and draft Edition B, memo/validation updates, and outlines
-for all three videos. These phases come from the published 10–14 out-of-class project hours; they are not extra
-assignments. No required course work is assigned during Thanksgiving Break.
+Between Tuesday and Thursday, produce the first end-to-end version a classmate can run from your
+README alone. This is capstone work, not an extra assignment. No required course work is assigned during Thanksgiving Break.
 
 You may repair and improve a reused Project 1 or Project 2 component for the capstone even if its
 earlier project score was low. Preserve the prior artifact/commit, identify the capstone repair,
 and retest the interface. This does not reopen or regrade the earlier project; it prevents prior
 performance from becoming a permanent capstone access barrier.
 
-## Capstone Edition A checkpoint
+## Edition A and Edition B
 
-Your immutable Edition A window was **Thu Nov. 19, 6:00 p.m. ET–Tue Nov. 24, 1:30 p.m. ET**,
-identical for both sections. Preserve the unchanged file and first successful Brightspace
-receipt; reconcile it to the current Edition B. Prior-project AI use is disclosed provenance,
-not a reason to claim the capstone began AI-free. If the checkpoint is missing, do not recreate
-or backdate it. The missing A-to-B evidence is scored once under **Problem Definition and Decision
-Usefulness**; approved accommodations and Special Access use the published escalation route.
+Edition A and Edition B are yours to keep and compare; neither is submitted.
 
 ## Studio 1 — evidence graph
 
@@ -89,11 +82,11 @@ not the easiest checks.
 
 Give a reviewer only the README. Record environment, command, elapsed time, first failure, response,
 and visible-output location. Reconcile numbers/as-of dates across output, memo/deck, validation
-record, and all videos. Preserve Edition A and explain supported change or stability in Edition B.
+record, and all videos.
 
 ## Three-video evidence
 
-- Video 1: research evolution, attribution of change, one tested AI output, and why the conclusion changed or held.
+- Video 1: how you built it with AI, one tested AI output, and why the conclusion changed or held.
 - Video 2: code/data architecture, finance logic, and highest-risk changed-input result.
 - Video 3: formal committee presentation—action/range, conditions, risk, trigger, and ask.
 
@@ -101,7 +94,7 @@ Practice a no-AI answer to one skeptical data, finance, validation, mandate, or 
 question. AI may improve structure only after every accepted edit is tagged and rechecked.
 
 Retain as **formative capstone cold-review evidence**: cold-run log, failure budget, A/B
-reconciliation, and committee ask. It creates no separate points but belongs in the final
+and committee ask. It creates no separate points but belongs in the final
 validation evidence.
 
 ## Common submission-integrity checkpoint
@@ -120,9 +113,8 @@ Complete this in Week 15, before the Week 16 consultation studios:
 ## Capstone delivery — recorded submission and consultation studios
 
 There is no live board and no scheduled defense. The capstone is delivered as the recorded
-submission bundle defined on the Capstone assignment page: repository, problem statement then
-and now (Editions A/B), three face-on-camera YouTube videos with transcripts enabled, and the
-launch-post draft. The Week 15–16 class meetings are consultation studios — formative working
+submission bundle defined on the Capstone assignment page: repository, memo and validation
+record, three face-on-camera YouTube links with transcripts enabled, and the launch-post draft. The Week 15–16 class meetings are consultation studios — formative working
 sessions where the teaching team pressure-tests your evidence and submission mechanics. Studios
 create no points and no penalties; only the final submitted bundle is graded, to the common
 deadline on the assignment header.

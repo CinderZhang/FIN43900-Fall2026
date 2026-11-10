@@ -8,8 +8,8 @@ Both class meetings this week are consultation studios built for exactly that.
 
 There is no live board, no scheduled defense, and no new graded work. The only graded object
 is the capstone submission bundle defined on the **Capstone assignment page**: repository with
-the AI component identified, problem statement then and now (Editions A/B), the three
-face-on-camera YouTube videos with transcripts enabled, and the launch-post draft. The due
+the AI component identified, the memo and validation record, the three face-on-camera
+YouTube links with transcripts enabled, and the launch-post draft. The due
 date and points are on the assignment header.
 
 ## Consultation studios
@@ -18,8 +18,8 @@ Bring whatever is weakest. The teaching team works the room the way a senior des
 junior analyst's package before it goes upstairs:
 
 - **Tuesday studio** — evidence pressure-test: cold-run your README on a machine that is not
-  yours, trace one committee claim from the memo back to its source and as-of date, and let a
-  TA challenge your highest-risk validation. If the AI component's guardrails have not been
+  yours, trace one committee claim from the memo back to its source and as-of date, and let the
+  instructor challenge your highest-risk validation. If the AI component's guardrails have not been
   challenged yet, this is the room to do it in.
 - **Thursday studio** — submission mechanics: video links open from a logged-out browser,
   YouTube visibility is Unlisted or Public (never Private), transcripts are enabled and
@@ -37,7 +37,9 @@ missing evidence if the graders find it instead.
 3. All video links open without owner credentials; transcripts are enabled and corrected.
 4. The manifest's fourteen rows resolve, including the launch-post draft and the
    AI-component pointer.
-5. Submit, then open your own Brightspace receipt. The receipt, not the upload screen, is
+5. Your README, memo, each video and the launch-post draft open with the AI announcement and
+   "education, not investment advice".
+6. Submit, then open your own Brightspace receipt. The receipt, not the upload screen, is
    your evidence of submission.
 
 Publishing your launch post or flipping a video to Public afterward is your call — it is

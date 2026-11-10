@@ -5,12 +5,12 @@ investment work into one committee decision. Recommend two things: the action, w
 conditions; and whether the committee should **approve, revise, defer, or reject the system for
 decision use**.
 
-Points and the enforced due date appear in the Brightspace assignment header. Use AI. How you
-build it is yours.
+Points and the enforced due date appear in the Brightspace assignment header. Edition A and Edition B are yours to keep and compare; neither is submitted.
+Use AI. How you build it is yours.
 
 ## Base requirements
 
-Every capstone meets all eight.
+Every capstone meets all seven.
 
 1. **The system runs.** A Python web app a stranger starts from your README and operates without
    you.
@@ -30,28 +30,24 @@ Every capstone meets all eight.
    before the run, then the result.
 5. **One cross-component test:** a contradiction between the components, or a failure of an input
    they share.
-6. **Edition A unchanged and Edition B:** your problem statement then and now. Submit the
-   [Capstone — Edition A Checkpoint (AI Closed)](capstone-edition-a-checkpoint.md) in its window,
-   before you ask AI for new capstone work. Commit the same file unchanged.
-7. **The two-part recommendation**, what the system cannot establish, and the triggers that would
+6. **The two-part recommendation**, what the system cannot establish, and the triggers that would
    reverse it.
-8. **Two statements** open your README, your memo, each video and the launch-post draft: which AI
+7. **Two statements** open your README, your memo, each video and the launch-post draft: which AI
    you used and for what, and that the analysis and the decision are yours; education, not
    investment advice.
 
 ## Submit
 
 1. The GitHub repository, with the AI component named by file and function in the manifest.
-2. `docs/edition-a.md` and `docs/research-evolution.md` (Edition B).
-3. `docs/decision-memo.md` and `docs/validation-and-ai-use.md`, with the Locked Changed-Input
+2. `docs/decision-memo.md` and `docs/validation-and-ai-use.md`, with the Locked Changed-Input
    Record.
-4. Three videos on YouTube, Unlisted or Public (your choice, never Private), face on camera,
+3. Three videos as YouTube links, not video files, Unlisted or Public (your choice, never Private), face on camera,
    transcripts enabled: Video 1, how you built it with AI (6:00 at most); Video 2, the technical
    overview (10:00 at most); Video 3, the committee presentation, opening with your system running
    live (8:00 at most). Attach the transcripts, or link them in your repo.
-5. `docs/launch-post.md`, a draft of about 800 words. Publishing it is optional, encouraged, and
+4. `docs/launch-post.md`, a draft of about 800 words. Publishing it is optional, encouraged, and
    never graded.
-6. The manifest: every location a GitHub link, except the videos.
+5. The manifest: every location a GitHub link, except the videos.
 
 Attach the same `.md` files to the Brightspace submission. Formats and the manifest's rows: the
 [student checklist](major-project-student-checklist.md).

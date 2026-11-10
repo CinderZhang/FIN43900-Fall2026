@@ -3,8 +3,8 @@
 You are a portfolio analyst. Build an investment management app a committee could adopt, and
 recommend **adopt, allocate to, rebalance, pilot, or reject** your process under your mandate.
 
-Points and the enforced due date appear in the Brightspace assignment header. There is no
-Edition A checkpoint and no Edition B. Use AI from day one. How you build it is yours.
+Points and the enforced due date appear in the Brightspace assignment header. Edition A and
+Edition B are yours to keep and compare; neither is submitted. Use AI from day one. How you build it is yours.
 
 ## Base requirements
 
@@ -30,7 +30,7 @@ Every project meets all eight.
 1. The GitHub repository.
 2. `docs/decision-memo.md`.
 3. `docs/validation-and-ai-use.md`, with the Locked Changed-Input Record.
-4. Three videos as YouTube links, not video attachments, with transcripts enabled: Video 1, how
+4. Three videos as YouTube links, not video files, with transcripts enabled: Video 1, how
    your system and your thinking changed, and one AI output you checked; Video 2, the code
    walkthrough; Video 3, the committee presentation, opening with your app running live. Attach
    all the transcripts, or link the transcripts in your repo.

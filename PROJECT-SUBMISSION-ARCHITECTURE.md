@@ -175,7 +175,7 @@ student's ownership and defense of the final judgment; it does not repeat the de
 the code walkthrough. AI may assist preparation when disclosed, but the student owns every
 claim, recommendation, and response presented.
 
-All three videos use separate, descriptively titled YouTube links — **Unlisted or Public, the
+All three videos use separate, descriptively titled YouTube links, not video files — **Unlisted or Public, the
 student's choice; never Private** — or an approved Purdue-hosted equivalent. Public visibility
 is a personal portfolio decision and is never graded in either direction. Links must remain
 viewable by the instructional team through the grade-appeal window. Captions/transcripts are required; students review and correct finance
@@ -211,9 +211,7 @@ the assignment page before the Edition A checkpoint opens.
 ### Markdown, not PDF — Project 2 and the capstone (owner ruling 2026-10-13)
 
 From Project 2 on, every written part is a Markdown file in the repository's `docs/` folder:
-`edition-a.md` (capstone only, committed unchanged after its Brightspace receipt),
-`research-evolution.md` (capstone only), `decision-memo.md` and `validation-and-ai-use.md`. The
-capstone Edition A checkpoint takes `edition-a.md`; the final submission attaches the same `.md` files, which are the frozen grading and appeal record
+`decision-memo.md` and `validation-and-ai-use.md`. The final submission attaches the same `.md` files, which are the frozen grading and appeal record
 in place of the PDFs named above. Manifest rows keep their names; each location is the GitHub
 link. Project 1 keeps the PDFs.
 
@@ -221,6 +219,11 @@ link. Project 1 keeps the PDFs.
 and their A-to-B comparison (parts 1 and 2 above) do not apply to it; the Locked Changed-Input
 Record and its AI-off prediction remain required for Project 2. Its manifest's research-evolution
 row is marked not required, and its Video 1 covers how the system and the student's thinking changed plus one checked AI output.
+
+**Editions A and B are the student's own — Project 2 and the capstone (owner ruling 2026-11-10):**
+"edition A and edition B are for students themselves to keep and compare, no submission required for project 2 and capstone". For the capstone too, parts 1 and 2 above, its Edition A
+checkpoint and the manifest's research-evolution row do not apply; the Locked Changed-Input Record
+and its AI-off prediction remain required. The videos are YouTube links, not video files.
 
 ### Capstone-only extensions
 
@@ -311,7 +314,7 @@ project to audit consistency across graders and sections.
 
 For each major project, build:
 
-1. one Edition A checkpoint (Project 1 and the capstone; Project 2 has none) with a published availability window and a timestamped receipt;
+1. one Edition A checkpoint (Project 1 only; Project 2 and the capstone have none) with a published availability window and a timestamped receipt;
 2. one final assignment with a required link/file manifest and the six-criterion rubric;
 3. one student-facing checklist using the seven bundle headings above;
 4. one submission template with consistent filenames and link labels; and
